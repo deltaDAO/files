@@ -2,7 +2,7 @@ const { createHash } = require('crypto')
 const fs = require('fs')
 const os = require('os')
 
-const inputFolder="/data/inputs"
+const inputFolder="/data/inputs";
 const outputFolder="/data/outputs"
 
 const startTime = new Date()
@@ -48,7 +48,7 @@ async function countLines(filepath, file_string) {
     const num_rows = file_string.split("\n").length - 1
       
     fs.appendFileSync(`${outputFolder}/results.txt`, `The file ${filepath} contains ${num_rows} rows.\n`)
-    console.log(`Added row count for ${filepath} to results`)
+    console.log(`Added row count for ${filepath} to results`);
   } catch(err) {
     console.error(err)
   }
@@ -63,8 +63,18 @@ function printFileInfo(filepath, stats, file_string) {
 }
 
 function printIntro() {
-  console.log(fs.readFileSync('.banner').toString())
-  console.log(`Find the results in ${outputFolder}/results.txt\n`)
+  console.log("=================================================")
+  console.log("***  This demo algorithm is brought to you by ***")
+  console.log("          _      _ _        ____    _    ___  ")
+  console.log("       __| | ___| | |_ __ _|  _ \\  / \\  / _ \\  ")
+  console.log("      / _` |/ _ \\ | __/ _` | | | |/ _ \\| | | | ")
+  console.log("     | (_| |  __/ | || (_| | |_| / ___ \\ |_| | ")
+  console.log("      \\__,_|\\___|_|\\__\\__,_|____/_/   \\_\\___/  \n")  
+  console.log("                       ***\n")   
+  console.log("                  delta-dao.com\n")   
+  console.log("                       ***\n")
+  console.log("=================================================")
+  console.log(`Results will be written in results.txt\n`)
 }
 
 function printOutro() {
