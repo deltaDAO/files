@@ -2,7 +2,7 @@ const { createHash } = require('crypto')
 const fs = require('fs')
 const os = require('os')
 
-const inputFolder="/data/inputs";
+const inputFolder="/data/inputs"
 const outputFolder="/data/outputs"
 
 const startTime = new Date()
@@ -48,7 +48,7 @@ async function countLines(filepath, file_string) {
     const num_rows = file_string.split("\n").length - 1
       
     fs.appendFileSync(`${outputFolder}/results.txt`, `The file ${filepath} contains ${num_rows} rows.\n`)
-    console.log(`Added row count for ${filepath} to results`);
+    console.log(`Added row count for ${filepath} to results`)
   } catch(err) {
     console.error(err)
   }
