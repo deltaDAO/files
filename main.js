@@ -21,7 +21,7 @@ async function processInput(path) {
   }
 }
 
-async function handleFile(filepath){
+async function handleFile(filepath) {
   try {
     const stats = fs.statSync(filepath)
       
@@ -43,7 +43,7 @@ async function handleFile(filepath){
   }
 }
 
-async function countLines(filepath, file_string){
+async function countLines(filepath, file_string) {
   try{
     const num_rows = file_string.split("\n").length - 1
       
@@ -57,17 +57,17 @@ async function countLines(filepath, file_string){
 function printFileInfo(filepath, stats, file_string) {
   console.log("\n================== FILLE INFO ===================")
   console.log(`File: ${filepath}`)
-  //convert size to MB
   console.log(`Size: ${stats.size}B`)
   console.log(`Hash: ${createHash('sha256').update(file_string).digest('hex')}`)
   console.log("=================================================\n")
 }
 
-function printIntro(){
+function printIntro() {
   console.log(fs.readFileSync('.banner').toString())
   console.log(`Find the results in ${outputFolder}/results.txt\n`)
 }
-function printOutro(){
+
+function printOutro() {
   const endTime = new Date()
   console.log("\n============== ALGORITHM FINISHED ===============")
   console.log(`End Time:        ${printableDate(endTime)}`)
@@ -76,7 +76,7 @@ function printOutro(){
   console.log("=================================================\n")
 }
 
-function printSystemInfo(){
+function printSystemInfo() {
   console.log("\n================== SYSTEM INFO ==================")
   console.log(`Start Time:  ${printableDate(startTime)}`)
   console.log(`OS:`)
@@ -91,12 +91,12 @@ function printSystemInfo(){
   console.log("=================================================\n")
 }
 
-function printableDate(_date){
+function printableDate(_date) {
   const date = new Date(_date)
   return date.toLocaleString("en-US", { hour12: false, timeZoneName: 'short' })
 }
 
-async function runAlgorithm(){
+async function runAlgorithm() {
   printIntro()
   printSystemInfo()
   await processInput(inputFolder)
