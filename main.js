@@ -55,7 +55,7 @@ async function countLines(filepath, file_string) {
 }
 
 function printFileInfo(filepath, stats, file_string) {
-  console.log("\n================== FILLE INFO ===================")
+  console.log("\n================== FILE INFO ===================")
   console.log(`File: ${filepath}`)
   console.log(`Size: ${stats.size}B`)
   console.log(`Hash: ${createHash('sha256').update(file_string).digest('hex')}`)
