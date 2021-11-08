@@ -1,0 +1,48 @@
+{
+  "@context" : [ "https://www.w3.org/2018/credentials/v1" ],
+  "credentialSubject" : {
+    "DNSpublicKey" : "04:8B:CA:33:B1:A1:3A:69:E6:A2:1E:BE:CB:4E:DF:75:A9:70:8B:AA:51:83:AB:A1:B0:5A:35:20:3D:B4:29:09:AD:67:B4:12:19:3B:6A:B5:7C:12:3D:C4:CA:DD:A5:E0:DA:05:1E:5E:1A:4B:D1:F2:BA:8F:07:4D:C7:B6:AA:23:46",
+    "brandName" : "deltaDAO",
+    "commercialRegister" : {
+      "countryName" : "Germany",
+      "locality" : "Hamburg",
+      "organizationName" : "Amtsgericht Hamburg (-Mitte)",
+      "organizationUnit" : "Registergericht",
+      "postalCode" : "20355",
+      "streetAddress" : "Caffamacherreihe 20"
+    },
+    "corporateEmailAddress" : "contact@delta-dao.com",
+    "ethereumAddress" : {
+      "id" : "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52"
+    },
+    "id" : "did:key:z6MkqzKeadwn1friqp3BfJsck1YduWmJdkkm1uYVQAY4zudF",
+    "individualContactLegal" : "legal@delta-dao.com",
+    "individualContactTechnical" : "support@delta-dao.com",
+    "jurisdiction" : "Germany",
+    "legalForm" : "Stock Company",
+    "legalRegistrationNumber" : "HRB 170364",
+    "legallyBindingAddress" : {
+      "countryName" : "Germany",
+      "locality" : "Hamburg",
+      "postalCode" : "22303",
+      "streetAddress" : "Geibelstr. 46B"
+    },
+    "legallyBindingName" : "deltaDAO AG",
+    "trustState" : "untrusted",
+    "webAddress" : {
+      "url" : "https://www.delta-dao.com/"
+    }
+  },
+  "id" : "did:ebsi-eth:00000001/credentials/1872",
+  "issuanceDate" : "2020-08-24T14:13:44Z",
+  "issuer" : "did:ebsi:z224RU8HfsGqcXgUF5uqsnsU",
+  "type" : [ "VerifiableCredential", "GaiaxCredential" ],
+  "proof" : {
+    "type" : "EcdsaSecp256k1Signature2019",
+    "creator" : "did:ebsi:z224RU8HfsGqcXgUF5uqsnsU",
+    "created" : "2021-11-08T13:40:07Z",
+    "domain" : "https://api.preprod.ebsi.eu",
+    "nonce" : "803bba72-5b40-4d94-acdb-456b210dab9e",
+    "jws" : "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFUzI1NksifQ..tM6ng4yDsXOkaR2VvSXboLTYIoSXrxcg7Sm2JsOThIcH7eDwlaeSP7wFMJFqfZUc_O3ZHCrSvDnS_yL21P90uA"
+  }
+}
