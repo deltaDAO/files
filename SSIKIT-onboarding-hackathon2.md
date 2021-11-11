@@ -1,4 +1,4 @@
-# SSI Onboarding GaiaX hackathon #2
+# SSI Onboarding Gaia-X hackathon #2
 
 A quick and easy four-step guide focussing on onboarding to the MVG SSI solution.
 
