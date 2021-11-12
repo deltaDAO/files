@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "date": "1999-01-01T01:00:00.000Z",
+      "temperature": 12,
+      "humidity": 84,
+      "rain": 10,
+      "windSpeed": 12,
+      "windDir": "W"
+    }
+  ]
+}
