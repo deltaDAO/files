@@ -1,8 +1,4 @@
 {
-  "@context" : [ "https://www.w3.org/2018/credentials/v1" ],
-  "holder" : "did:key:z6MkqzKeadwn1friqp3BfJsck1YduWmJdkkm1uYVQAY4zudF",
-  "id" : "urn:uuid:c9a9ac32-9c6a-44b1-8c89-b71078434862",
-  "verifiableCredential" : [ {
     "@context" : [ "https://www.w3.org/2018/credentials/v1" ],
     "credentialSubject" : {
       "DNSpublicKey" : "04:8B:CA:33:B1:A1:3A:69:E6:A2:1E:BE:CB:4E:DF:75:A9:70:8B:AA:51:83:AB:A1:B0:5A:35:20:3D:B4:29:09:AD:67:B4:12:19:3B:6A:B5:7C:12:3D:C4:CA:DD:A5:E0:DA:05:1E:5E:1A:4B:D1:F2:BA:8F:07:4D:C7:B6:AA:23:46",
@@ -19,7 +15,7 @@
       "ethereumAddress" : {
         "id" : "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52"
       },
-      "id" : "did:key:z6MkqzKeadwn1friqp3BfJsck1YduWmJdkkm1uYVQAY4zudF",
+      "id" : "did:key:z6MkeyKp5NNXVfetsR1Gv919Pkd7xFbLtf1u3wEunUzpEfA7",
       "individualContactLegal" : "legal@delta-dao.com",
       "individualContactTechnical" : "support@delta-dao.com",
       "jurisdiction" : "Germany",
@@ -32,33 +28,21 @@
         "streetAddress" : "Geibelstr. 46B"
       },
       "legallyBindingName" : "deltaDAO AG",
-      "trustState" : "untrusted",
+      "trustState" : "trusted",
       "webAddress" : {
         "url" : "https://www.delta-dao.com/"
       }
     },
     "id" : "did:ebsi-eth:00000001/credentials/1872",
     "issuanceDate" : "2020-08-24T14:13:44Z",
-    "issuer" : "did:ebsi:z224RU8HfsGqcXgUF5uqsnsU",
+    "issuer" : "did:web:gaiax.delta-dao.com",
+    "type" : [ "VerifiableCredential", "GaiaxCredential" ],
     "proof" : {
-      "created" : "2021-11-08T13:40:07Z",
-      "creator" : "did:ebsi:z224RU8HfsGqcXgUF5uqsnsU",
+      "type" : "Ed25519Signature2018",
+      "creator" : "did:web:gaiax.delta-dao.com",
+      "created" : "2021-11-28T18:52:14Z",
       "domain" : "https://api.preprod.ebsi.eu",
-      "jws" : "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFUzI1NksifQ..tM6ng4yDsXOkaR2VvSXboLTYIoSXrxcg7Sm2JsOThIcH7eDwlaeSP7wFMJFqfZUc_O3ZHCrSvDnS_yL21P90uA",
-      "nonce" : "803bba72-5b40-4d94-acdb-456b210dab9e",
-      "type" : "EcdsaSecp256k1Signature2019"
-    },
-    "type" : [ "VerifiableCredential", "GaiaxCredential" ]
-  } ],
-  "type" : [ "VerifiablePresentation" ],
-  "proof" : {
-    "type" : "Ed25519Signature2018",
-    "creator" : "did:key:z6MkqzKeadwn1friqp3BfJsck1YduWmJdkkm1uYVQAY4zudF",
-    "created" : "2021-11-08T13:48:13Z",
-    "domain" : "https://api.preprod.ebsi.eu",
-    "nonce" : "b3e0ec34-559a-47cd-b5e2-87402d735003",
-    "proofPurpose" : "authentication",
-    "verificationMethod" : "z6MkqzKeadwn1friqp3BfJsck1YduWmJdkkm1uYVQAY4zudF#z6MkqzKeadwn1friqp3BfJsck1YduWmJdkkm1uYVQAY4zudF",
-    "jws" : "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFZERTQSJ9..F8eU3LRihsakEp9ad318WF8TvFr4Mp3zC6eyjsYt6QzP-l0rFiPlOlXmDwQwlO1C2czU9PlyVB_oNbfxSF08Dw"
+      "nonce" : "c2ba60a2-c512-4cee-9edf-00a83723712e",
+      "jws" : "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFZERTQSJ9..NW1BrKaYahtDrJ5f8HDbO78MEAEjbsIYE8VfzEEm2-dGQUFEUtqNY54chJnpcetGC4nwLGipET1QMYeZMHNtBA"
+    }
   }
-}
