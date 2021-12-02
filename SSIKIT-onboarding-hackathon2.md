@@ -58,7 +58,7 @@ To get a credential issued for your organization, head over to https://signatory
     "subjectDid": "did:key:z6MkfubzrwauC368uAixa8uBMXtvVw6r25GkBMTPPz3ruDuD"
     "proofType": "LD_PROOF",
     "issueDate": "2021-12-02T12:20:18.831Z",
-    "validDate": "2021-12-02T12:20:18.831Z",
+    "validDate": "2021-12-02T12:20:18.831Z"
   },
   "credentialData": {
     ...
