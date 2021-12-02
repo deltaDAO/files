@@ -85,7 +85,7 @@ If you are all set up, your request body should look something like this:
        "subjectDid": "did:key:z6MkfubzrwauC368uAixa8uBMXtvVw6r25GkBMTPPz3ruDuD"
        "proofType": "LD_PROOF",
        "issueDate": "2021-12-02T12:20:18.831Z",
-       "validDate": "2021-12-02T12:20:18.831Z",
+       "validDate": "2021-12-02T12:20:18.831Z"
      },
   "credentialData": {
     "@context": ["https://www.w3.org/2018/credentials/v1"],
