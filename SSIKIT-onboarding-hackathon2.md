@@ -47,15 +47,64 @@ DID document (below, JSON):
 
 You can now sign Verifiable Credentials using the created DID document and the walt.id SSIKIT. More on that in step 4.
 
-## Step 3: Get a Verifiable Credential issued by an external EBSI registered organization
+## Step 3: Get a Verifiable Credential issued by an external organization (issuer)
 
-In the current state you can communicate your public DID key (in hte example above this would be `did:key:z6MkfubzrwauC368uAixa8uBMXtvVw6r25GkBMTPPz3ruDuD`) as well as the required information (Refer to the [GaiaxCredential Template here](https://github.com/deltaDAO/files/blob/main/vc.json)) to deltaDAO in our hackathon sessions or simply message us at contact@delta-dao.com.
-
+To get a credential issued for your organization, head over to https://signatory.gaiax.delta-dao.com/v1/swagger. Here you will use the `walt.id SSIKIT` signatory to issue a credential, which is currently hosted and operated by deltaDAO. Head down to the `/v1/credentials/issue` route and expand the section. Click on `Try it out` to be able to edit the request body. Here you need to provide the following info:
+```json
+{
+  "templateId": "GaiaxCredential",
+  "config": {
+    "issuerDid": "did:web:gaiax.delta-dao.com",
+    "subjectDid": "did:key:z6MkfubzrwauC368uAixa8uBMXtvVw6r25GkBMTPPz3ruDuD"
+    "proofType": "LD_PROOF",
+    "issueDate": "2021-12-02T12:20:18.831Z",
+    "validDate": "2021-12-02T12:20:18.831Z",
+  },
+  "credentialData": {
+    ...
+  }
+}
 ```
-TODO: automate API
+
+- For the MVG context we use the `GaiaxCredential` template. You can find an example of how this looks [here](https://raw.githubusercontent.com/deltaDAO/files/main/vc.json).
+- The only `issuerDid` currently set up with our signatory is the `did:web:gaiax.delta-dao.com`, so we will use it for MVG demos.
+- For the `subjectDid` you can use the did you created in step 2.
+- The `proofType` should be set to LD_PRROF, to receivee a valid JSON-LD file.
+- You can keep the pre-configured values for `issueDate` and `validDate` or set them to any desired dates.
+
+For the last step we need to provide some Credential Data. For ease of access we set this up via the API call, with the only restriction of being valid data in the `GaiaxCredential`-Template context. However in a production environment there would be more restrictions or even a compley KYC process foregoing this step.
+
+To get you started quickly we provide a template for the `credentialData` field: https://raw.githubusercontent.com/deltaDAO/files/main/template.json
+
+If you are all set up, your request body should look something like this:
+```json
+{
+  "templateId": "GaiaxCredential",
+     "config": {
+       "issuerDid": "did:web:gaiax.delta-dao.com",
+       "subjectDid": "did:key:z6MkfubzrwauC368uAixa8uBMXtvVw6r25GkBMTPPz3ruDuD"
+       "proofType": "LD_PROOF",
+       "issueDate": "2021-12-02T12:20:18.831Z",
+       "validDate": "2021-12-02T12:20:18.831Z",
+     },
+  "credentialData": {
+    "@context": ["https://www.w3.org/2018/credentials/v1"],
+     "credentialSubject": {
+       "DNSpublicKey": "your public key",
+       "brandName": "my Brand",
+       
+       ...
+       
+       "trustState": "trusted",
+       "webAddress": {
+         "url": "https://www.my-brand.com/"
+       }
+     }
+  }
+}
 ```
 
-We will then process your public information and issue a Verifiable Credential for your organization. This will then be sent back to you, enabling you to sign and present the credential.
+You can now click on the `Execute` button in the Swagger interface and if everything was set up correctly, you will receive your new issued Verifiable Credential below in the `response body`.
 
 ## Step 4: Present your Verifiable Credential
 
