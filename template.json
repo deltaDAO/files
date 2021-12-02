@@ -1,0 +1,35 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "credentialSubject": {
+    "DNSpublicKey": "your public key",
+    "brandName": "my Brand",
+    "commercialRegister": {
+      "countryName": "Germany",
+      "locality": "Some City",
+      "organizationName": "e.g. Amtsgericht",
+      "organizationUnit": "e.g. Registergericht",
+      "postalCode": "12345",
+      "streetAddress": "Sample Street 12"
+    },
+    "corporateEmailAddress": "contact@my-brand.com",
+    "ethereumAddress": {
+      "id": "0x..."
+    },
+    "individualContactLegal": "legal@my-brand.com",
+    "individualContactTechnical": "support@my-brand.com",
+    "jurisdiction": "Germany",
+    "legalForm": "Stock Company",
+    "legalRegistrationNumber": "HRB 123456",
+    "legallyBindingAddress": {
+      "countryName": "Germany",
+      "locality": "City",
+      "postalCode": "12345",
+      "streetAddress": "Sample Street 123"
+    },
+    "legallyBindingName": "My Brand AG",
+    "trustState": "trusted",
+    "webAddress": {
+      "url": "https://www.my-brand.com/"
+    }
+  }
+}
