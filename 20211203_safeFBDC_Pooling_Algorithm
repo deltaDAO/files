@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "https://www.w3.org/ns/dcat#" ,
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "vcard": "https://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gax-core": "http://w3id.org/gaia-x/core#",
+    "gax-participant": "http://w3id.org/gaia-x/participant#",
+    "gax-service": "http://w3id.org/gaia-x/service#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:did:op:b9D7177e3726c728B8C608201737E04164b7f3f0",
+  "@type": "gax-service:ServiceOffering",
+  "gax-service:hasServiceTitle": "safeFBDC - Pooling Algorithm",
+  "gax-service:hasVersion": "0.1",
+  "gax-service:providedBy": {
+    "@id": "ex:did:key:z6MkueLqrgBGwCzx6GZd5LRQxzxv4r1jAxNrKCR5eQuQLXFs",
+    "@type": "gax-participant:Provider"
+  },
+  "dcat:keyword": [
+    "Analytics",
+    "AML",
+    "safeFBDC",
+    "finance"
+  ],
+  "gax-service:hasWebAddress": {
+    "@value": "https://safefbdc.portal.minimal-gaia-x.eu/asset/did:op:b9D7177e3726c728B8C608201737E04164b7f3f0" ,
+    "@type": "xsd:anyURI"
+  },
+  "gax-service:hasProvisionType": "E.g., Hybrid" ,
+  "gax-service:hasServiceModel": "E.g., SaaS" ,
+  "dct:modified": {
+    "@value": "2020-11-25T17:00:00+01:00",
+    "@type": "xsd:dateTimeStamp"
+  },
+  "dct:description": "This service estimates allele-specific copy numbers from WGS data",
+  "gax-service:consumes": {
+    "@type": "gax-service:ApiDescription",
+    "dct:description": "This algorithm is executed on financial data within the safeFBDC consortium and is limited to its members.",
+    "gax-service:hasContentType": "algorithm",
+    "rdfs:comment": "AML detection on graphs"
+  },
+  "gax-service:produces": {
+    "@type": "gax-service:ApiDescription",
+    "dct:description": "This algorithm generates alert based on the detection of suspicous activity and will provide results for the data holders.",
+    "gax-service:hasContentType": "application/csv",
+    "rdfs:comment": "Analysis results"
+  },
+  "gax-service:hasBilling": [
+    {
+      "@type": "gax-service:PayPerUseModel",
+      "gax-service:hasPrice": {
+        "@type": "gax-core:Measure",
+        "gax-core:hasValue": {
+          "@value": "0.0",
+          "@type": "xsd:float"
+        },
+        "gax-core:hasUnit": "EUR"
+      }
+    },
+    {
+      "@type": "gax-service:BasicPaymentModel",
+      "gax-service:hasPrice": {
+        "@type": "gax-core:Measure",
+        "gax-core:hasValue": {
+          "@value": "0.0",
+          "@type": "xsd:float"
+        },
+        "gax-core:hasUnit": "EUR"
+      },
+      "gax-service:hasFrequenceOfPayment": "daily"
+    }
+  ]
+}
