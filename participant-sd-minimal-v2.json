@@ -1,0 +1,40 @@
+{
+  "selfDescription": {
+    "@context": {
+      "sh": "http://www.w3.org/ns/shacl#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "gx-participant": "http://w3id.org/gaia-x/participant#"
+    },
+    "@id": "http://example.org/participant-dp6gtq7i75lmk9p4j2tfg",
+    "@type": "gx-participant:LegalPerson",
+    "gx-participant:registrationNumber": {
+      "@type": "xsd:string",
+      "@value": "DEANY1234NUMBER"
+    },
+    "gx-participant:headquarterAddress": {
+      "@type": "gx-participant:Address",
+      "gx-participant:country": {
+        "@type": "xsd:string",
+        "@value": "DEU"
+      }
+    },
+    "gx-participant:legalAddress": {
+      "@type": "gx-participant:Address",
+      "gx-participant:country": {
+        "@type": "xsd:string",
+        "@value": "DEU"
+      }
+    }
+  },
+  "credentialSubject": {
+    "id": "",
+    "sdHash": "2057ad24277a37982e0c424287ebf5307fc98b0eec3270023afb59d3c6e03b6d"
+  },
+  "proof": {
+    "type": "RsaSignature2018",
+    "created": "2022-05-25T08:27:37.517Z",
+    "proofPurpose": "assertionMethod",
+    "verifcationMethod": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2Y8StOyFogarVHnQaHh9\nzpqstOHlcYyNvugXivfjVr2p0C9jUWmCgCIOnZ0uKD6nWhq4DXLhyFGL3tae62YF\njQSu9IcAvLNa1WYVQIXFd1x3ZiWV06mVPPbt8K0ltsk2QpGfuhfkAp/VBtTkmMg5\nXGxQxuliKCI1O9Lm7Rp/+I9gLsUjXFj/yDBN/ih136lQ0IGHSGgz7HHkAIxJSAUn\nZ9bsS4QZf7uTyJJav0XiH1TXjMOzhfT3cbkdmm6iWsHorLunP3Oiy5ksuyHwF+uv\nl9b2I8eiMN/8IIGavjCpQ3Fq9VnVjephxz0Cjrvdy2rwBPasYXXf73WZa2NRwT5X\naQIDAQAB\n-----END PUBLIC KEY-----",
+    "jws": "eyJhbGciOiJQUzI1NiJ9.MjA1N2FkMjQyNzdhMzc5ODJlMGM0MjQyODdlYmY1MzA3ZmM5OGIwZWVjMzI3MDAyM2FmYjU5ZDNjNmUwM2I2ZA.rTgYBx25OpuHRFrYJ8g1hnOnqBxjcx6AIBDtrUfzynwkjqEozwIfes_by3ATFPQ2bwOmULvskYFg5m6-LKEZomjbtBfjUKCfTgafJEoT2aw5MJc88dNlUuh8lnbqy4D6qZs_6z_X-83Q-QLT-3O18P5hOPFNGthGuH5-cINHirqw130MXzb1YVMwYtIJ_DWELiDNRpzBRBn-xbi2RfJEKQfDfaps1KvsxJ_ExwVUhpq4P1mMALr8_hAh3vWYEq6GWp04s-E9H96Bp-mmjhHKGaLdivY0wVxpmtclX4n0M8Sx1MDrxukXxP377UMKP8_HNi0XHxtvih_SheKGX5o9vQ"
+  }
+}
