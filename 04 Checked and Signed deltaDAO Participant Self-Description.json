@@ -1,37 +1,3 @@
-To be checked with PROD
-https://compliance.gaia-x.eu/docs/#/Participant/ParticipantController_verifyParticipantRaw
-
-{
-    "conforms": true,
-    "shape": {
-      "conforms": true,
-      "results": []
-    },
-    "content": {
-      "conforms": true,
-      "results": []
-    },
-    "isValidSignature": true
-  }
-
-or DEV
-https://compliance.lab.gaia-x.eu/docs/#/Participant/ParticipantController_verifyParticipantRaw
-
-
-{
-    "conforms": false,
-    "shape": {
-      "conforms": true,
-      "results": []
-    },
-    "content": {
-      "conforms": true,
-      "results": []
-    },
-    "isValidSignature": false,
-    "isValidCredentialSubject": true
-  }
-
 {
     "selfDescription": {
       "@context": {
@@ -124,4 +90,3 @@ https://compliance.lab.gaia-x.eu/docs/#/Participant/ParticipantController_verify
         "spkiPem": "-----BEGIN PUBLIC KEY----- MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2Y8StOyFogarVHnQaHh9 zpqstOHlcYyNvugXivfjVr2p0C9jUWmCgCIOnZ0uKD6nWhq4DXLhyFGL3tae62YF jQSu9IcAvLNa1WYVQIXFd1x3ZiWV06mVPPbt8K0ltsk2QpGfuhfkAp/VBtTkmMg5 XGxQxuliKCI1O9Lm7Rp/+I9gLsUjXFj/yDBN/ih136lQ0IGHSGgz7HHkAIxJSAUn Z9bsS4QZf7uTyJJav0XiH1TXjMOzhfT3cbkdmm6iWsHorLunP3Oiy5ksuyHwF+uv l9b2I8eiMN/8IIGavjCpQ3Fq9VnVjephxz0Cjrvdy2rwBPasYXXf73WZa2NRwT5X aQIDAQAB -----END PUBLIC KEY-----"
     }
 }
-
