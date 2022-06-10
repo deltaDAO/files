@@ -1,36 +1,51 @@
 {
-  "selfDescription": {
-    "@context": {
-      "sh": "http://www.w3.org/ns/shacl#",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "gx-participant": "http://w3id.org/gaia-x/participant#"
+    "selfDescriptionCredential": {
+        "selfDescription": {
+            "@context": {
+                "sh": "http://www.w3.org/ns/shacl#",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "gx-participant": "http://w3id.org/gaia-x/participant#"
+            },
+            "@id": "http://example.org/participant-dp6gtq7i75lmk9p4j2tfg",
+            "@type": "gx-participant:LegalPerson",
+            "gx-participant:registrationNumber": {
+                "@type": "xsd:string",
+                "@value": "DEANY1234NUMBER"
+            },
+            "gx-participant:headquarterAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@type": "xsd:string",
+                    "@value": "DEU"
+                }
+            },
+            "gx-participant:legalAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@type": "xsd:string",
+                    "@value": "DEU"
+                }
+            }
+        },
+        "proof": {
+            "type": "RsaSignature2018",
+            "created": "2022-06-09T21:15:57.827Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rbRu2att-CbnguoZ1cf3eouyfyTWr3Uc49FNZVL8xGOMy8A0kSPDFypWR4YzEdHfMLCvau8r6bBX4cLJ-TDEMlRgL3_PgUF9Pxk6n_5wnt51dEKQ5XLKKxuaxf5wHcA7fNrWKFRXm4iGcSphRuPQSva3d7GxXy8ruuCo5hpzc94tRSZDF6Md16mf9gzas_MxbAex88W-l1N1I4dI0M2IDMg58olow_4zY0Wr56Lp8Z02zUBMKvmpE9pSHn-klbM_Z4tHuBGW6aAU9oNeilFZT4uvvwKjrJ6d9nEfTR9bwYibDgNV9jdf5-kutXQkM_mrDRRd8iOXSC3tVIqKoyC4KQ"
+        }
     },
-    "@id": "http://example.org/participant-dp6gtq7i75lmk9p4j2tfg",
-    "@type": "gx-participant:LegalPerson",
-    "gx-participant:registrationNumber": {
-      "@type": "xsd:string",
-      "@value": "DEANY1234NUMBER"
-    },
-    "gx-participant:legalAddress": {
-      "@type": "gx-participant:Address",
-      "gx-participant:country": {
-        "@type": "xsd:string",
-        "@value": "DEU"
-      }
-    },
-    "gx-participant:headquarterAddress": {
-      "@type": "gx-participant:Address",
-      "gx-participant:country": {
-        "@type": "xsd:string",
-        "@value": "DEU"
-      }
+    "complianceCredential": {
+        "credentialSubject": {
+            "id": "http://example.org/participant-dp6gtq7i75lmk9p4j2tfg",
+            "hash": "0859337843c6122da161810c6ff101a399585a81ca1713025df368ab5fceedff"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-10T07:00:54.107Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..OFpDKHoRY-10SpY2V9oi41Y17I9KzLhpH_vBMvFuNLPbDw7nh_WqXqCeHTLnxQlOVKKBrtjbsin4G-emSU8L8c-ovthk_p5I18ZKLyX9Sf6stwV3DrUVobQdA6xXMJHz3mFxOtsWCJqhvyMaJ5p1JXUlybYovWmc61LOtfJWwJJjsvAVkaVpym0OYzPY61I3tHSelgCeTjmP5wJkoh3JluJS5haEvVDYhfBKeBaGPS8Vd43X5xq3w4vHIAFTfL4N-KRUcNpkjf_Ij2KQ0BpdpKB5fw_E5gj7PTQVmf4B5Vs9ZNG0nhzCdZG15oUGP_3sowOv_Hd3Ips7pi5zA3uoMQ",
+            "verificationMethod": "-----BEGIN CERTIFICATE-----\nMIIFNjCCBB6gAwIBAgISA4SrtQupPJhh3vDIohkmgMFdMA0GCSqGSIb3DQEBCwUA\nMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD\nEwJSMzAeFw0yMjA1MTExNzQzMDFaFw0yMjA4MDkxNzQzMDBaMCMxITAfBgNVBAMT\nGGNvbXBsaWFuY2UubGFiLmdhaWEteC5ldTCCASIwDQYJKoZIhvcNAQEBBQADggEP\nADCCAQoCggEBALpZlxGtJ3oW0d9/IekGli4zKn1xO5igPT16Av+v/HdusSkLgSgF\n2uZNLh4c0HzZQJcTviKQg4H/XFc8SD/rZJHn7I613PLr5HSjSuk2PZFMYFJzr4oj\ni6R3vPBQeXTEx+ilFBpI4j36tz9BfX1xwxKEJBkqVrou3g/Pe6khHVxa3v9POp7N\nyPIUlQsaMZVvYLl2v7ESEiGsAik+FAN2VCmMo7btMUcu5kcTRYdsB9Ikk0H6n+A1\nlFE4V90vo3kQkcajhkHUJWaB8ptqcpydSGIoiDjDvS9iEK0Jd+ZMfeCxh4hfK/Ak\naS64GF01XfVNe/p4Ja1JiZq8hAsVvueeaaUCAwEAAaOCAlMwggJPMA4GA1UdDwEB\n/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/\nBAIwADAdBgNVHQ4EFgQUvAtSKkgiB/3PQfbaGipU8dxsCZ8wHwYDVR0jBBgwFoAU\nFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzAB\nhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5p\nLmxlbmNyLm9yZy8wIwYDVR0RBBwwGoIYY29tcGxpYW5jZS5sYWIuZ2FpYS14LmV1\nMEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUH\nAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBBAYKKwYBBAHWeQIEAgSB\n9QSB8gDwAHYAQcjKsd8iRkoQxqE6CUKHXk4xixsD6+tLx2jwkGKWBvYAAAGAtG5+\nPQAABAMARzBFAiEAluT6qKvBS0l7PvlJ0fne1xeC3t5dqW+xRNhggdVIDuACIAij\nW062iunfCKaxTPaWSYq6B9GzwTjybGX+1uS2l4m4AHYARqVV63X6kSAwtaKJafTz\nfREsQXS+/Um4havy/HD+bUcAAAGAtG5+UQAABAMARzBFAiEAhSNSu6mZ9bVcetvP\nmoCuvScA1l60Dr/VCljIoBnHxUkCIEf8JA+lmE5BRzSP88QcuDmI16K1jxUq/ZLU\n672WRziRMA0GCSqGSIb3DQEBCwUAA4IBAQCqZBziZgevnEXghTuDKwAlpDVCdg8F\nL3INLNVkfX9mKQ6pbRUhRXbnw/URHvBTdiNrqynr0yCc6+n9rluW1s26uHqBT5/X\nszlRkcPAgiDR/KKbkDfIHbVyHm2yUoqoafGBobHTxGhoPOzfeCKx+K/amRdC7PI9\nK3LvU9G5HlaUc0jLFDMjIBROxX5coJhzkWv84SjlQsEPwcrLOwkBsIat5neD7hu3\nx5/v6Q93aMAbBtOZYry25MSmF1AVpaB2Ii6PZC3j2dzN14oFaM4U2ZzReEWZ/Oj9\na01cUpVaCKZ3PptCvg+GRWI559Gig6i4/xwadQ0l/+WIPu5e2rZGM7RH\n-----END CERTIFICATE-----"
+        }
     }
-  },
-  "proof": {
-    "type": "RsaSignature2018",
-    "created": "2022-05-18T10:25:47.926Z",
-    "proofPurpose": "assertionMethod",
-    "verifcationMethod": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxHETOBbHODQmN0uc/+b8\nwh6JPi7Q5YEPmY7O4K0K3FcwVJ8t+jyxoa/BUBPb2aH9g1hOZhCxTjq2mDaMKSnq\nMzqBcBBXqlhbPte8XTTWu/Rx0W3RPuGmiWaAPIb99okLhfcgU6jRekljhyluxFK3\naJFlFF+zYaltFV0Jq3vfKARaiB6OtXV9EzMvNE8Zs6rC4oiROy5ZgNCrBHH6KtBX\n3YJOdmLiZLGTcVTSvhoSEPKKQGxWdE6EYCYtAehPljafRVKKd3KVdZVaXolDbHb+\nhIFnSQdLxx9Q18i1q28QpuziLmkRrNFA9vCbjt/a2VBWjw+GgRIPNx0ANJCkVLht\nhQIDAQAB\n-----END PUBLIC KEY-----",
-    "jws": "eyJhbGciOiJQUzI1NiJ9.eyJzZWxmRGVzY3JpcHRpb24iOnsiQGNvbnRleHQiOnsic2giOiJodHRwOi8vd3d3LnczLm9yZy9ucy9zaGFjbCMiLCJ4c2QiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSMiLCJneC1wYXJ0aWNpcGFudCI6Imh0dHA6Ly93M2lkLm9yZy9nYWlhLXgvcGFydGljaXBhbnQjIn0sIkBpZCI6Imh0dHA6Ly9leGFtcGxlLm9yZy9wYXJ0aWNpcGFudC1kcDZndHE3aTc1bG1rOXA0ajJ0ZmciLCJAdHlwZSI6Imd4LXBhcnRpY2lwYW50OkxlZ2FsUGVyc29uIiwiZ3gtcGFydGljaXBhbnQ6cmVnaXN0cmF0aW9uTnVtYmVyIjp7IkB0eXBlIjoieHNkOnN0cmluZyIsIkB2YWx1ZSI6IkRFQU5ZMTIzNE5VTUJFUiJ9LCJneC1wYXJ0aWNpcGFudDpsZWdhbEFkZHJlc3MiOnsiQHR5cGUiOiJneC1wYXJ0aWNpcGFudDpBZGRyZXNzIiwiZ3gtcGFydGljaXBhbnQ6Y291bnRyeSI6eyJAdHlwZSI6InhzZDpzdHJpbmciLCJAdmFsdWUiOiJERVUifX0sImd4LXBhcnRpY2lwYW50OmhlYWRxdWFydGVyQWRkcmVzcyI6eyJAdHlwZSI6Imd4LXBhcnRpY2lwYW50OkFkZHJlc3MiLCJneC1wYXJ0aWNpcGFudDpjb3VudHJ5Ijp7IkB0eXBlIjoieHNkOnN0cmluZyIsIkB2YWx1ZSI6IkRFVSJ9fX19.j26-_wKDX7-2SX-FzqMjyI16_MR8yWebJvSC-dZ8bL02pT_sZKHklXQcVdtJQvWiUma8UByKK9EXjggrU0ECaF27Lxh0NKHtyJrW-1g156y91RUysn6INRr2w6PRDH1wVfTtUv6gXgOOSPCOeK-S2UtomgaQtmSXxkhdbL5wwGCVAo1gOdXaryzOTyhXzHxQfKDqMZL_CxuLjuvUfPMMLxkBCNq5oppK9lJKRttmCxxpmN7rOm8escnm18PiZGTFsNCdQqHrTME7XMwLNrWfM1Kwb2jbQ_couYj9qnU7f1UaPys3EFPPAvBhX0n8f3Od9VLZlafrCZQsb6OtpNF4KQ"
-  }
 }
