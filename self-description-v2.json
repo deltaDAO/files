@@ -1,0 +1,91 @@
+{
+    "selfDescriptionCredential": {
+        "selfDescription": {
+            "@context": {
+                "gx-participant": "http://w3id.org/gaia-x/participant#",
+                "sh": "http://www.w3.org/ns/shacl#",
+                "xsd": "http://www.w3.org/2001/XMLSchema#"
+            },
+            "@id": "did:web:delta-dao.com",
+            "@type": "gx-participant:LegalPerson",
+            "gx-participant:name": {
+                "@value": "deltaDAO AG",
+                "@type": "xsd:string"
+            },
+            "gx-participant:legalName": {
+                "@value": "deltaDAO AG",
+                "@type": "xsd:string"
+            },
+            "gx-participant:registrationNumber": {
+                "@value": "DEK1101R.HRB170364",
+                "@type": "xsd:string"
+            },
+            "gx-participant:leiCode": {
+                "@value": "391200FJBNU0YW987L26",
+                "@type": "xsd:string"
+            },
+            "gx-participant:ethereumAddress": {
+                "@value": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52",
+                "@type": "xsd:string"
+            },
+            "gx-participant:headquarterAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "DE",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Geibelstraße 46b",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "22303",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Hamburg",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-participant:legalAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "DE",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Geibelstraße 46b",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "22303",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Hamburg",
+                    "@type": "xsd:string"
+                }
+            }
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-10T12:06:33.575Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..I9-w5TXTGZCtdaA_IMKEmPwmMW1eYS31_0TQDEPA9BrkDcZiGhSG_px9kfChSyg0YGB7URtpMcV1OX_SOB9JtSuykK8V9AseXyl9o43SxQHR6Pup9azBbTjOqf4pViqXgq9nEPuoRv8CR13vdOJs4OhFpf8iN0ZRnDz2mq8tgL_Rxh45M4UZzD2vqq4wg1M-7UFVx4F04FEnmOYmz5lqjkpLv-CHQgg6wXs3ijwsS94c_BDMX6fXxjP3mUPxUJdBQAPpVBOpjkSDNwUbpWlgMV-giU_n8HDd4Ka1f-nPrxdP1vFYfqXASC9WQh8Vifn4Wdf5kAjJ7Sci-_APQYqxnQ"
+        }
+    },
+    "complianceCredential": {
+        "credentialSubject": {
+            "id": "did:web:delta-dao.com",
+            "hash": "0c82c0594b192fd6ea1b108b0aace6c128415db0ec9b1b178677123bed18717e"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-10T12:06:58.301Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iinpztVbyGIJEPgnA2lddhvxYAFQdMLDXWytBm-ylHAxl9-YMFYY06as4Oqk_N9V42W7ujFYSyhjsrk77zaXYaA5S_AwCSQ5xLihWBxbKHskBINcpipsb59TZpqx65tgPjkzfRBCNuSRIAGqbUxkPJx7iryajfEHfTzFw2iTL8Aac7fUX4_DWjR8DfNlgAv-BDtSLcdBrX2xyrHI7k4Fe4LB2oUFECqh5uV3Nw7C83DPAmZRSeUgFc-8bzeFZVjxmvPQD7Y9zjm3s-M1NrGn3ZtzG4tc2htQZmUss1OM2L20SZS0yWph8eDByKGvye8U2nDP3MrtJINLCittrXAn-w",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}
