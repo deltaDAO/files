@@ -1,0 +1,57 @@
+{
+    "selfDescription": {
+        "@context": {
+            "gx-participant": "http://w3id.org/gaia-x/participant#",
+            "sh": "http://www.w3.org/ns/shacl#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        "@id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+        "@type": "gx-participant:LegalPerson",
+        "gx-participant:name": {
+            "@value": "OVH",
+            "@type": "xsd:string"
+        },
+        "gx-participant:legalName": {
+            "@value": "OVH",
+            "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+            "@value": "FR5751.844454868",
+            "@type": "xsd:string"
+        },
+        "gx-participant:leiCode": {
+            "@value": "9695007586GCAKPYJ703",
+            "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+                "@value": "FR",
+                "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+                "@value": "4 rue Gambetta",
+                "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+                "@value": "Metz",
+                "@type": "xsd:string"
+            }
+        },
+        "gx-participant:legalAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+                "@value": "FR",
+                "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+                "@value": "Geibelstraße 46b",
+                "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+                "@value": "Metz",
+                "@type": "xsd:string"
+            }
+        }
+    }
+}
