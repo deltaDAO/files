@@ -1,0 +1,41 @@
+{
+    "selfDescription": {
+        "@context": {
+            "sh": "http://www.w3.org/ns/shacl#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "gx-participant": "http://w3id.org/gaia-x/participant#",
+            "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
+        },
+        "@type": ["GaiaXSelfDescription", "ServiceOfferingExperimental"],
+        "@id": "https://compliance.gaia-x.eu/.well-known/managedK8sCluster.json",
+        "gx-service-offering:providedBy": {
+            "@type": "xsd:string",
+            "@value": "https://compliance.gaia-x.eu/.well-known/participantOVH.json"
+        },
+        "gx-service-offering:name": {
+            "@type": "xsd:string",
+            "@value": "Managed OVH Cloud K8s Cluster"
+        },
+        "gx-service-offering:description": {
+            "@type": "xsd:string",
+            "@value": "Managed OVH Cloud K8s Cluster"
+        },
+        "gx-service-offering:termsAndConditions": [
+            {
+                "@type": "gx-service-offering:TermsAndConditions",
+                "gx-service-offering:url": "https://www.ovhcloud.com/fr/terms-and-conditions/",
+                "gx-service-offering:hash": "myrandomhash"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "@type": "xsd:anyURI",
+                "gx-service-offering:imprint": "https://www.ovhcloud.com/fr/terms-and-conditions/"
+            },
+            {
+                "@type": "xsd:anyURI",
+                "gx-service-offering:privacyPolicy": "https://www.ovhcloud.com/fr/personal-data-protection/"
+            }
+        ]
+    }
+}
