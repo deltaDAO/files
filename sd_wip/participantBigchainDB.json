@@ -1,0 +1,63 @@
+{
+    "selfDescriptionCredential": {
+      "selfDescription": {
+        "@context": {
+          "gx-participant": "http://w3id.org/gaia-x/participant#",
+          "sh": "http://www.w3.org/ns/shacl#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        "@id": "https://compliance.gaia-x.eu/.well-known/participantBigchainDB.json",
+        "@type": "gx-participant:LegalPerson",
+        "gx-participant:name": {
+          "@value": "BigchainDB",
+          "@type": "xsd:string"
+        },
+        "gx-participant:legalName": {
+          "@value": "BigchainDB GmbH",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "F1103R.HRB160856",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "An der Kolonade 11",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "10117",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Berlin",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "An der Kolonade 11",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "10117",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Berlin",
+            "@type": "xsd:string"
+          }
+        }
+      }
+    }
+  }
