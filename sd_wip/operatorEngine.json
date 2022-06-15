@@ -38,6 +38,12 @@
           "@type": "xsd:anyURI",
           "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
         }
+      ],
+       "gx-service-offering:dependsOn": [
+        {
+          "@type": "xsd:anyURI",
+          "@value": "https://delta-dao.com/.well-known/K8sCluster.json"
+        }
       ]
     }
   }
