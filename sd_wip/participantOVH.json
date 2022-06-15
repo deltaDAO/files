@@ -1,57 +1,89 @@
 {
+  "selfDescriptionCredential": {
     "selfDescription": {
-        "@context": {
-            "gx-participant": "http://w3id.org/gaia-x/participant#",
-            "sh": "http://www.w3.org/ns/shacl#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+      "@context": {
+        "gx-participant": "http://w3id.org/gaia-x/participant#",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+      },
+      "@id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+      "@type": "gx-participant:LegalPerson",
+      "gx-participant:name": {
+        "@value": "OVH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "OVH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "FR5751.844454868",
+        "@type": "xsd:string"
+      },
+      "gx-participant:leiCode": {
+        "@value": "9695007586GCAKPYJ703",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "FR",
+          "@type": "xsd:string"
         },
-        "@id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
-        "@type": "gx-participant:LegalPerson",
-        "gx-participant:name": {
-            "@value": "OVH",
-            "@type": "xsd:string"
+        "gx-participant:street-address": {
+          "@value": "4 rue Gambetta",
+          "@type": "xsd:string"
         },
-        "gx-participant:legalName": {
-            "@value": "OVH",
-            "@type": "xsd:string"
-        },
-        "gx-participant:registrationNumber": {
-            "@value": "FR5751.844454868",
-            "@type": "xsd:string"
-        },
-        "gx-participant:leiCode": {
-            "@value": "9695007586GCAKPYJ703",
-            "@type": "xsd:string"
-        },
-        "gx-participant:headquarterAddress": {
-            "@type": "gx-participant:Address",
-            "gx-participant:country": {
-                "@value": "FR",
-                "@type": "xsd:string"
-            },
-            "gx-participant:street-address": {
-                "@value": "4 rue Gambetta",
-                "@type": "xsd:string"
-            },
-            "gx-participant:locality": {
-                "@value": "Metz",
-                "@type": "xsd:string"
-            }
-        },
-        "gx-participant:legalAddress": {
-            "@type": "gx-participant:Address",
-            "gx-participant:country": {
-                "@value": "FR",
-                "@type": "xsd:string"
-            },
-            "gx-participant:street-address": {
-                "@value": "Geibelstraße 46b",
-                "@type": "xsd:string"
-            },
-            "gx-participant:locality": {
-                "@value": "Metz",
-                "@type": "xsd:string"
-            }
+        "gx-participant:locality": {
+          "@value": "Metz",
+          "@type": "xsd:string"
         }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "FR",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Geibelstraße 46b",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Metz",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-15T08:16:38.972Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..lsIbxjFe36LOXsgIrcucGMVWyIW3FywXzVzuVjqoWvxBXA3xi6y3EZDhCpbdsJ6i1hSiPp5mgEB32H0zXwhZeBS15HXYD3V78C3mwppVzTdbGKhYHhIuFdhXFCz_P-Acs5OwR2Aiptb9MENcRo2THlC3LSS-BvfXv6i6aVokXnk-pNDavuckjumS6uGW-YWwJMOshdi4X5lRpKMdZDxSMrP_4QlcKiPR-vbYXQk0faB8piF0dgk_SLfk5kMYe4VlWTSYkixL60KZ66OA0XaXDsK4F5aG6LFuCHz5FcWZTG1Swk9LpGtXgwxSZthH4a8uKT6sBc3U0MWZ29MsQ1ZN1A"
     }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655281001308",
+    "issuer": "did:web:compliance.lab.gaia-x.eu",
+    "issuanceDate": "2022-06-15T08:16:41.308Z",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+      "hash": "693335e13e42a0ba5b9791c1e32d667f71ec281e05f98a7e019202edf4980535"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-15T08:16:41.307Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..qYLZQup2hriqkSNgXGW0YioXSZ9JIYR6UeYqEol37pqocyWsMukAGDMxW6GdV4xn-jvifVMcHn5lQMy7JpiaGp9lw3BDWgzP6jNyCyuRnXP3QpZelqFupUvd8Gf_EFbF0AKfoaq7s0OQGDZKaM2HhNUpS1a5HUmAD1COAdkMY5tCa3mUD-PO2vcrwryFMm_-K3mkOt2f5pHtWjz-Zwu4OcTVh5J-gNictiLFO65f_hZBEHMT9ZG8i3u0QOh1xDcQUgTh4zRJgmVdpuyaTu0DwaTpmqFSo6TlbCCpWgb3KbfN65TJIL0EmRdJtGDXyAnjp4BkBCGiEkIgnmVuvA0igg",
+      "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+    }
+  }
 }
