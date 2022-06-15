@@ -1,0 +1,121 @@
+{
+    "selfDescription": {
+        "@context": {
+          "gx-participant": "http://w3id.org/gaia-x/participant#",
+          "sh": "http://www.w3.org/ns/shacl#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        "@id": "https://compliance.gaia-x.eu/.well-known/participantMicrosoft.json",
+        "@type": "gx-participant:LegalPerson",
+        "gx-participant:name": {
+          "@value": "Microsoft Ireland Operations Limited",
+          "@type": "xsd:string"
+        },
+        "gx-participant:legalName": {
+          "@value": "Microsoft Corporation",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "IECRO.905753",
+          "@type": "xsd:string"
+        },
+        "gx-participant:leiCode": {
+          "@value": "549300WCLFVEBTBNRF76",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "IRL",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "70 Sir John Rogerson's Quay, Dublin 2",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "D02 R296",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Dublin",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "IRL",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "70 Sir John Rogerson's Quay, Dublin 2",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "D02 R296",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Dublin",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:parentOrganisation": [
+            {
+                "@type": "gx-participant:LegalPerson",
+                "gx-participant:legalName": {
+                    "@type": "xsd:string",
+                    "@value": "Microsoft Corporation"
+                },
+                "gx-participant:legalAddress": {
+                    "@type": "gx-participant:Address",
+                    "gx-participant:country": {
+                        "@value": "US",
+                        "@type": "xsd:string"
+                    },
+                    "gx-participant:street-address": {
+                        "@value": "300 DESCHUTES WAY SW STE 208 MC-CSC1",
+                        "@type": "xsd:string"
+                    },
+                    "gx-participant:postal-code": {
+                        "@value": "98501",
+                        "@type": "xsd:string"
+                    },
+                    "gx-participant:locality": {
+                        "@value": "TUMWATER",
+                        "@type": "xsd:string"
+                    },
+                    "gx-participant:state": {
+                        "@value": "WA",
+                        "@type": "xsd:string"
+                    }
+
+                },
+                "gx-participant:headquarterAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@type": "xsd:string",
+                    "@value": "US"
+                },
+                "gx-participant:street-address": {
+                    "@value": "1 Microsoft Way",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "98052",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Redmond",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:state": {
+                    "@value": "WA",
+                    "@type": "xsd:string"
+                }
+            }
+        }
+        ]
+    }
+}
