@@ -1,57 +1,65 @@
 {
-    "selfDescription": {
-        "@context": {
-            "sh": "http://www.w3.org/ns/shacl#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "gx-resource": "http://w3id.org/gaia-x/resource#",
-            "gx-participant": "http://w3id.org/gaia-x/participant#",
-            "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
-            
-        },
-        "@type": ["GaiaXSelfDescription", "gx-experimental-service-offering:ExperimentalServiceOffering"],
-        "@id": "https://compliance.gaia-x.eu/.well-known/serviceOffering.json",
-        "gx-service-offering:providedBy": {
-            "@type": "xsd:string",
-            "@value": "https://compliance.gaia-x.eu/.well-known/participant.json"
-        },
-        "gx-service-offering:name": {
-            "@type": "xsd:string",
-            "@value": "Gaia-X Lab Compliance Service"
-        },
-        "gx-service-offering:description": {
-            "@type": "xsd:string",
-            "@value": "The Compliance Service will validate the shape and content of Self Descriptions. Required fields and consistency rules are defined in the Gaia-X Trust Framework."
-        },
-        "gx-service:webAddress": {
-            "@value": "https://compliance.gaia-x.eu/",
-            "@type": "xsd:anyURI"
-        },
-        "gx-service-offering:termsAndConditions": [
-            {
-                "@type": "gx-service-offering:TermsAndConditions",
-                "gx-service-offering:url": "https://compliance.gaia-x.eu/terms",
-                "gx-service-offering:hash": "myrandomhash"
-            }
-        ],
-        "gx-service-offering:gdpr": [
-            {
-                "@type": "xsd:anyURI",
-                "gx-service-offering:imprint": "https://gaia-x.eu/imprint/"
-            },
-            {
-                "@type": "xsd:anyURI",
-                "gx-service-offering:privacyPolicy": "https://gaia-x.eu/privacy-policy/"
-            }
-        ],
-        "gx-service-offering:dependsOn": [
-            {
-                "@type": "xsd:anyURI",
-                "@value": "https://compliance.gaia-x.eu/.well-known/managedDatabase.json"
-            },
-            {
-                "@type": "xsd:anyURI",
-                "@value": "https://compliance.gaia-x.eu/.well-known/managedK8sCluster.json"
-            }
-        ]
-    }
+  "selfDescriptionCredential": {
+  "selfDescription": {
+    "@context": {
+      "sh": "http://www.w3.org/ns/shacl#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "gx-resource": "http://w3id.org/gaia-x/resource#",
+      "gx-participant": "http://w3id.org/gaia-x/participant#",
+      "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
+    },
+    "@type": "gx-experimental-service-offering:ExperimentalServiceOffering",
+    "@id": "https://compliance.gaia-x.eu/.well-known/serviceOffering.json",
+    "gx-service-offering:providedBy": {
+      "@type": "xsd:string",
+      "@value": "https://compliance.gaia-x.eu/.well-known/participant.json"
+    },
+    "gx-service-offering:name": {
+      "@type": "xsd:string",
+      "@value": "Gaia-X Lab Compliance Service"
+    },
+    "gx-service-offering:description": {
+      "@type": "xsd:string",
+      "@value": "The Compliance Service will validate the shape and content of Self Descriptions. Required fields and consistency rules are defined in the Gaia-X Trust Framework."
+    },
+    "gx-service:webAddress": {
+      "@value": "https://compliance.gaia-x.eu/",
+      "@type": "xsd:anyURI"
+    },
+    "gx-service-offering:termsAndConditions": [
+      {
+        "@type": "gx-service-offering:TermsAndConditions",
+        "gx-service-offering:url": "https://compliance.gaia-x.eu/terms",
+        "gx-service-offering:hash": "myrandomhash"
+      }
+    ],
+    "gx-service-offering:gdpr": [
+      {
+        "@type": "xsd:anyURI",
+        "gx-service-offering:imprint": "https://gaia-x.eu/imprint/"
+      },
+      {
+        "@type": "xsd:anyURI",
+        "gx-service-offering:privacyPolicy": "https://gaia-x.eu/privacy-policy/"
+      }
+    ],
+    "gx-service-offering:dependsOn": [
+      {
+        "@type": "xsd:anyURI",
+        "@value": "https://compliance.gaia-x.eu/.well-known/managedDatabase.json"
+      },
+      {
+        "@type": "xsd:anyURI",
+        "@value": "https://compliance.gaia-x.eu/.well-known/managedK8sCluster.json"
+      }
+    ]
+  },
+  "proof": {
+    "type": "JsonWebKey2020",
+    "created": "2022-06-15T08:30:20.201Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
+    "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..XUnoE57XnYugbpYRkrVxozAJ8EuQY5EgYC79P00dPIPcbx9Q2RY1IGFMUiXQSBzU8t4Gcs6FejdQmbWE96aF3yAwsLQMa_g1Vx3cDxAqxlBV-jfZFWH0BvyE0o5UggqdXIUEayXIF4keKfBp45cSNNHITV9WshJhWXJmwKgzG64yE9dKrJ2Qz3_io5oN_ri7BmwHWDzDFaThxKMefBSt0-TjDLGTMDvadlwioZwmv-mx91u-6twraGCrlrQcQAvFJ4Fk42s1b1wmGfGrjIY5o4N7Kuhiu3umwglg5v3xXI1J0GKWXfc2ljC-ajNVyB-P5IZBfYGQ1nsbLmFmVAaQtQ"
+  }
+}
 }
