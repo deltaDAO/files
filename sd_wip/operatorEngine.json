@@ -1,0 +1,44 @@
+{
+    "selfDescriptionCredential": {
+    "selfDescription": {
+      "@context": {
+        "sh": "http://www.w3.org/ns/shacl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "gx-resource": "http://w3id.org/gaia-x/resource#",
+        "gx-participant": "http://w3id.org/gaia-x/participant#",
+        "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
+      },
+      "@type": "gx-experimental-service-offering:ExperimentalServiceOffering",
+      "@id": "https://delta-dao.com/.well-known/operatorEngine.json",
+      "gx-service-offering:providedBy": {
+        "@type": "xsd:string",
+        "@value": "https://delta-dao.com/.well-known/participant.json"
+      },
+      "gx-service-offering:name": {
+        "@type": "xsd:string",
+        "@value": "Ocean Operator Engine"
+      },
+      "gx-service-offering:description": {
+        "@type": "xsd:string",
+        "@value": "The Operator-Engine is the backend service that orchestrates and manages the compute infrastructure."
+      },
+      "gx-service-offering:termsAndConditions": [
+        {
+          "@type": "gx-service-offering:TermsAndConditions",
+          "gx-service-offering:url": "https://raw.githubusercontent.com/oceanprotocol/operator-engine/v4main/LICENSE",
+          "gx-service-offering:hash": "myrandomhash"
+        }
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+        },
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+        }
+      ]
+    }
+  }
+  }

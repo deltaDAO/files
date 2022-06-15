@@ -1,0 +1,55 @@
+{
+  "selfDescriptionCredential": {
+  "selfDescription": {
+    "@context": {
+      "sh": "http://www.w3.org/ns/shacl#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "gx-resource": "http://w3id.org/gaia-x/resource#",
+      "gx-participant": "http://w3id.org/gaia-x/participant#",
+      "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
+    },
+    "@type": "gx-experimental-service-offering:ExperimentalServiceOffering",
+    "@id": "https://delta-dao.com/.well-known/accesscontroller.json",
+    "gx-service-offering:providedBy": {
+      "@type": "xsd:string",
+      "@value": "https://delta-dao.com/.well-known/participant.json"
+    },
+    "gx-service-offering:name": {
+      "@type": "xsd:string",
+      "@value": "Ocean accesscontroler"
+    },
+    "gx-service-offering:description": {
+      "@type": "xsd:string",
+      "@value": "Ocean Provider enables on-premise computing by allowing data services to be consumed and a container component to be run by data providers. It is required for remote machine learning to work with \"Compute-to-Data\" functionality."
+    },
+    "gx-service:webAddress": {
+      "@value": "https://provider.gaiax.delta-dao.com",
+      "@type": "xsd:anyURI"
+    },
+    "gx-service-offering:termsAndConditions": [
+      {
+        "@type": "gx-service-offering:TermsAndConditions",
+        "gx-service-offering:url": "https://github.com/oceanprotocol/provider/blob/main/LICENSE",
+        "gx-service-offering:hash": "myrandomhash"
+      }
+    ],
+    "gx-service-offering:gdpr": [
+      {
+        "@type": "xsd:anyURI",
+        "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+      },
+      {
+        "@type": "xsd:anyURI",
+        "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+      }
+    ]
+  },
+  "proof": {
+    "type": "JsonWebKey2020",
+    "created": "2022-06-15T08:30:20.201Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:web:provider.gaiax.delta-dao.com",
+    "jws": ""
+  }
+}
+}
