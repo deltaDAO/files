@@ -12,7 +12,7 @@
       "@id": "https://delta-dao.com/.well-known/s3bucket.json",
       "gx-service-offering:providedBy": {
         "@type": "xsd:string",
-        "@value": ""
+        "@value": "https://delta-dao.com/.well-known/participantAmazon.json"
       },
       "gx-service-offering:operatedBy": {
         "@type": "xsd:string",
