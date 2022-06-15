@@ -20,7 +20,7 @@
       },
       "gx-service-offering:description": {
         "@type": "xsd:string",
-        "@value": "The Operator-Engine is the backend service that orchestrates and manages the compute infrastructure."
+        "@value": "The Operator-Service manages the Compute-to-Data workflow, communicates with the data provider, and performs the computation."
       },
       "gx-service-offering:termsAndConditions": [
         {
