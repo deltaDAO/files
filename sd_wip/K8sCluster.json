@@ -29,18 +29,18 @@
       "gx-service-offering:termsAndConditions": [
         {
           "@type": "gx-service-offering:TermsAndConditions",
-          "gx-service-offering:url": "https://azure.microsoft.com/en-au/support/legal/subscription-agreement/",
+          "gx-service-offering:url": "https://www.microsoft.com/en-us/legal/terms-of-use",
           "gx-service-offering:hash": "myrandomhash"
         }
       ],
       "gx-service-offering:gdpr": [
         {
           "@type": "xsd:anyURI",
-          "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+          "gx-service-offering:imprint": "https://www.microsoft.com/de-de/rechtliche-hinweise/impressum"
         },
         {
           "@type": "xsd:anyURI",
-          "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+          "gx-service-offering:privacyPolicy": "https://privacy.microsoft.com/de-de/privacystatement"
         }
       ]
     }
