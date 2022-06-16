@@ -1,63 +1,93 @@
 {
-    "selfDescriptionCredential": {
-      "selfDescription": {
-        "@context": {
-          "gx-participant": "http://w3id.org/gaia-x/participant#",
-          "sh": "http://www.w3.org/ns/shacl#",
-          "xsd": "http://www.w3.org/2001/XMLSchema#"
-        },
-        "@id": "https://compliance.gaia-x.eu/.well-known/participantBigchainDB.json",
-        "@type": "gx-participant:LegalPerson",
-        "gx-participant:name": {
-          "@value": "BigchainDB",
+  "selfDescriptionCredential": {
+    "selfDescription": {
+      "@context": {
+        "gx-participant": "http://w3id.org/gaia-x/participant#",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+      },
+      "@id": "https://compliance.gaia-x.eu/.well-known/participantBigchainDB.json",
+      "@type": "gx-participant:LegalPerson",
+      "gx-participant:name": {
+        "@value": "BigchainDB",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "BigchainDB GmbH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "F1103R.HRB160856",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "DE",
           "@type": "xsd:string"
         },
-        "gx-participant:legalName": {
-          "@value": "BigchainDB GmbH",
+        "gx-participant:street-address": {
+          "@value": "An der Kolonade 11",
           "@type": "xsd:string"
         },
-        "gx-participant:registrationNumber": {
-          "@value": "F1103R.HRB160856",
+        "gx-participant:postal-code": {
+          "@value": "10117",
           "@type": "xsd:string"
         },
-        "gx-participant:headquarterAddress": {
-          "@type": "gx-participant:Address",
-          "gx-participant:country": {
-            "@value": "DE",
-            "@type": "xsd:string"
-          },
-          "gx-participant:street-address": {
-            "@value": "An der Kolonade 11",
-            "@type": "xsd:string"
-          },
-          "gx-participant:postal-code": {
-            "@value": "10117",
-            "@type": "xsd:string"
-          },
-          "gx-participant:locality": {
-            "@value": "Berlin",
-            "@type": "xsd:string"
-          }
+        "gx-participant:locality": {
+          "@value": "Berlin",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "DE",
+          "@type": "xsd:string"
         },
-        "gx-participant:legalAddress": {
-          "@type": "gx-participant:Address",
-          "gx-participant:country": {
-            "@value": "DE",
-            "@type": "xsd:string"
-          },
-          "gx-participant:street-address": {
-            "@value": "An der Kolonade 11",
-            "@type": "xsd:string"
-          },
-          "gx-participant:postal-code": {
-            "@value": "10117",
-            "@type": "xsd:string"
-          },
-          "gx-participant:locality": {
-            "@value": "Berlin",
-            "@type": "xsd:string"
-          }
+        "gx-participant:street-address": {
+          "@value": "An der Kolonade 11",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "10117",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Berlin",
+          "@type": "xsd:string"
         }
       }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-16T06:51:58.073Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ugyO45FDXCwFaT7R60dJ4aNZ3WSYxoEUN1g_EhhQPxD9l3QmdfhRN4TA4smrgPxC6J_H6u9AVe8hMBoBzir3vj3WZH4MyuPXQLfAThnWsx_zhXlS5PLysx6EptPtwpWJ8eY9pgnzzeF9_zLJJ6Tq8K-sReUi-VLPklwugIu5KJF_mTqft-C25K8_9fdKhiplGALx2K3kLclEsojMu-YQfPf_8dry9G19fCi_ubAxXz9GPzSyXhah-qROkcaMCzAoN06CDZ3_YNYS4mLFiKHHeb5-CykIy5k6clN_1VkrfztYRN2yH_3LvQH6FV1l6DCdLIyPKkhCO9K33FxORt_ccg"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655362320146",
+    "issuer": "did:web:compliance.lab.gaia-x.eu",
+    "issuanceDate": "2022-06-16T06:52:00.146Z",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/participantBigchainDB.json",
+      "hash": "1c38de2087d9d400eb01a0bf1889ef201f13759ef3ea174004f3ba9420dc87b9"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-16T06:52:00.146Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..X6mAiBmZubIFWmMZxisDXkQ6NSWBuT9tYuW3l7Vj8pi0cDoc8GUtk3F0qJ8_BfKK_So4iWf6lcRBHYHNb6sX4I5WX_fgrLNgVagJdphgdoEg1HzXEa9QHsk6ALGQrIlhCx7qPRLwAQUvkt7saQ6wLozqNuFP4QpbEidr_frkyfGm3MU-Vp1-CH4C4l-9OqX8qA3LhD-he6nO8wDntNQ4t8XTuEqpNXCnxTqxN_kJRRhWCVlnuacneK21-c2Hqk5nU45PE1_oC2wt4i9Hchs5B-YpqOiJExVh7mxBLjiMi8x6I_xBfvtjcEAa9cVRokjqGIF9v34psQir5T95bThxoA",
+      "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
     }
   }
+}
