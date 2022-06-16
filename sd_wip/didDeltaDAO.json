@@ -1,1 +1,18 @@
-
+{
+  "@context": ["https://www.w3.org/ns/did/v1"],
+  "id": "did:web:delta-dao.com",
+  "verificationMethod": [
+    {
+      "@context": "https://w3c-ccg.github.io/lds-jws2020/contexts/v1/",
+      "id": "did:web:delta-dao.com#JWK2020-RSA",
+      "publicKeyJwk": {
+        "kty": "RSA",
+        "n": "1i2eAO03Q8nQobwiTjg0eW_vrcjNDWw1jdU8q9OrKB0rQVrQDpLGnW0STiYMNxVKTUPin-L2NlYFamYNH_GoJbWSWnc3lyhXI3S6a7ocNEDfihuB4G4GLjkHNtH14W2n1ZKmGZPLViDW6ZkDwTvzMSfEzyfT8l0daVq_9HqAqURD2ZACD8LU4XgIoQUvZBcdEgvuLJAxqJv0yBTxaKvN5dEwQ1CBd3VOrxlWVOvPitRg_X0-HkBrY1rQpB3W_GetMYAMN9hLYFmUalklQv99MdifpefXHkG3XLA3gDszZFb7pzp_hXrbPMLRpMGVJ7GH5a4hELXwDnWGtrulRrS6tw",
+        "e": "AQAB",
+        "alg": "PS256"
+      },
+      "x5u": "https://delta-dao.com/.well-known/x509CertificateChain.pem"
+    }
+  ],
+  "assertionMethod": ["did:web:delta-dao.com#JWK2020-RSA"]
+}
