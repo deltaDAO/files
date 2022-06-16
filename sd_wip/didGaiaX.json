@@ -1,1 +1,14 @@
-
+{
+  "services": [
+    {
+      "id": "compliance.lab.gaia-x.eu/.well-known/x509PublicKey",
+      "type": "X509PublicKey",
+      "serviceEndpoint": "https://compliance.lab.gaia-x.eu/.well-known/x509PublicKey.pem"
+    },
+    {
+      "id": "compliance.lab.gaia-x.eu/.well-known/x509CertificateChain",
+      "type": "X509Certificate",
+      "serviceEndpoint": "https://compliance.lab.gaia-x.eu/.well-known/x509CertificateChain.pem"
+    }
+  ]
+}
