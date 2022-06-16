@@ -1,65 +1,102 @@
 {
-    "selfDescription": {
-        "@context": {
-            "gx-participant": "http://w3id.org/gaia-x/participant#",
-            "sh": "http://www.w3.org/ns/shacl#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "@nest"
+    ],
+    "@id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+    "@type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+      "gx-participant:name": {
+        "@value": "OVH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "OVH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "FR5910.424761419",
+        "@type": "xsd:string"
+      },
+      "gx-participant:leiCode": {
+        "@value": "9695007586GCAKPYJ703",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "FR",
+          "@type": "xsd:string"
         },
-        "@id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
-        "@type": "gx-participant:LegalPerson",
-        "gx-participant:name": {
-            "@value": "OVH",
-            "@type": "xsd:string"
+        "gx-participant:street-address": {
+          "@value": "2 rue Kellermann",
+          "@type": "xsd:string"
         },
-        "gx-participant:legalName": {
-            "@value": "OVH",
-            "@type": "xsd:string"
+        "gx-participant:postal-code": {
+          "@value": "59100",
+          "@type": "xsd:string"
         },
-        "gx-participant:registrationNumber": {
-            "@value": "FR5910.424761419",
-            "@type": "xsd:string"
-        },
-        "gx-participant:leiCode": {
-            "@value": "9695007586GCAKPYJ70",
-            "@type": "xsd:string"
-        },
-        "gx-participant:headquarterAddress": {
-            "@type": "gx-participant:Address",
-            "gx-participant:country": {
-                "@value": "FR",
-                "@type": "xsd:string"
-            },
-            "gx-participant:street-address": {
-                "@value": "2 rue Kellermann",
-                "@type": "xsd:string"
-            },
-            "gx-participant:postal-code": {
-                "@value": "59100",
-                "@type": "xsd:string"
-            },
-            "gx-participant:locality": {
-                "@value": "Roubaix",
-                "@type": "xsd:string"
-            }
-        },
-        "gx-participant:legalAddress": {
-            "@type": "gx-participant:Address",
-            "gx-participant:country": {
-                "@value": "FR",
-                "@type": "xsd:string"
-            },
-            "gx-participant:street-address": {
-                "@value": "2 rue Kellermann",
-                "@type": "xsd:string"
-            },
-            "gx-participant:postal-code": {
-                "@value": "59100",
-                "@type": "xsd:string"
-            },
-            "gx-participant:locality": {
-                "@value": "Roubaix",
-                "@type": "xsd:string"
-            }
+        "gx-participant:locality": {
+          "@value": "Roubaix",
+          "@type": "xsd:string"
         }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "FR",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "2 rue Kellermann",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "59100",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Roubaix",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-16T22:53:45.839Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:compliance.gaia-x.eu",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..BvX_G4bt7Uc5qkbv2qjyWAt-vcsLDPolHMc5EpWqdbYGy-wq0ObijlJBplIOVHdMnT-ahjRWYYqT6cefUpZZ1UVRBKJmp7a8EjETdpyKkUvVNmAOePNEe_o1_JxbJE80rmZBVjXTrRLiYA_qMAPnDVDxluYjq0znft8Xbm5odxnxX6nSe8LGbKbgsjstQACkVGpZ0qzbeXf-vS7_h08vPTyDM0sE7PjP2GAxI3byZjN0FDCrxJhNq1aTHqsgUhqsduQ83EsA1GvaIiFiGbBg6a2yFnNmXH-8lS_uL0uPgKr5n0TeEmPOwcnwRJXhHRGBCyXtGG6cOlcEK1rdbBnv4w"
     }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655420027824",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-16T22:53:47.824Z",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+      "hash": "af57d77db8bee15884559d03ba863d33bec77d120b084995320809c9157f0db0"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-16T22:53:47.824Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..eKPHWj88DILrTTeNLU2RlnOFMsKRVio5cN4AShHo6voCyr64MsiAkXV2gJ745_PMZFPnxrH0Yy5NEwxr8nW0MTrsByAzJpUgPMtnY6m8TyF5BJWgGh1kUXaBjtPjYgu9R0dolzmauK8wKgt8OfAaO1-QiKXNMehILNWLd_mZ-8LRZ56J14bViNed1CXQWK69Qqn92Iem5E7v9goeoL_3k0-kYufq1_YRyRo-z-gyDLmr4ycSmBJ7ALCXFvv_pQCcNbysVyiVrXUkGWx5ZNaJGryKaeEWPprEhXBHPG1onLavzy6gzVaGt4ZS_caAbQgsxIwBNkdAzI_vAQB5j2Ccxg",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
 }
