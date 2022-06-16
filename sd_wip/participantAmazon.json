@@ -1,152 +1,120 @@
 {
-  "selfDescriptionCredential": {
-    "selfDescription": {
-      "@context": {
-        "gx-participant": "http://w3id.org/gaia-x/participant#",
-        "sh": "http://www.w3.org/ns/shacl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#"
-      },
-      "@id": "https://delta-dao.com/.well-known/participantAmazon.json",
-      "@type": "gx-participant:LegalPerson",
-      "gx-participant:name": {
-        "@value": "Amazon Web Services",
+  "selfDescription": {
+    "@context": {
+      "gx-participant": "http://w3id.org/gaia-x/participant#",
+      "sh": "http://www.w3.org/ns/shacl#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@id": "https://delta-dao.com/.well-known/participantAmazon.json",
+    "@type": "gx-participant:LegalPerson",
+    "gx-participant:name": {
+      "@value": "Amazon Web Services",
+      "@type": "xsd:string"
+    },
+    "gx-participant:legalName": {
+      "@value": "Amazon Web Services EMEA SARL",
+      "@type": "xsd:string"
+    },
+    "gx-participant:registrationNumber": {
+      "@value": "LURCSL.B186284",
+      "@type": "xsd:string"
+    },
+    "gx-participant:headquarterAddress": {
+      "@type": "gx-participant:Address",
+      "gx-participant:country": {
+        "@value": "LU",
         "@type": "xsd:string"
       },
-      "gx-participant:legalName": {
-        "@value": "Amazon Web Services EMEA SARL",
+      "gx-participant:street-address": {
+        "@value": "38, avenue John F. Kennedy",
         "@type": "xsd:string"
       },
-      "gx-participant:registrationNumber": {
-        "@value": "LURCSL.B186284",
+      "gx-participant:postal-code": {
+        "@value": "1855",
         "@type": "xsd:string"
       },
-      "gx-participant:headquarterAddress": {
-        "@type": "gx-participant:Address",
-        "gx-participant:country": {
-          "@value": "LU",
-          "@type": "xsd:string"
-        },
-        "gx-participant:street-address": {
-          "@value": "38, avenue John F. Kennedy",
-          "@type": "xsd:string"
-        },
-        "gx-participant:postal-code": {
-          "@value": "1855",
-          "@type": "xsd:string"
-        },
-        "gx-participant:locality": {
-          "@value": "Luxembourg",
-          "@type": "xsd:string"
-        }
+      "gx-participant:locality": {
+        "@value": "Luxembourg",
+        "@type": "xsd:string"
+      }
+    },
+    "gx-participant:legalAddress": {
+      "@type": "gx-participant:Address",
+      "gx-participant:country": {
+        "@value": "LU",
+        "@type": "xsd:string"
       },
-      "gx-participant:legalAddress": {
-        "@type": "gx-participant:Address",
-        "gx-participant:country": {
-          "@value": "LU",
-          "@type": "xsd:string"
-        },
-        "gx-participant:street-address": {
-          "@value": "38, avenue John F. Kennedy",
-          "@type": "xsd:string"
-        },
-        "gx-participant:postal-code": {
-          "@value": "1855",
-          "@type": "xsd:string"
-        },
-        "gx-participant:locality": {
-          "@value": "Luxembourg",
-          "@type": "xsd:string"
-        }
+      "gx-participant:street-address": {
+        "@value": "38, avenue John F. Kennedy",
+        "@type": "xsd:string"
       },
-      "gx-participant:parentOrganisation": [
-        {
-          "@type": "gx-participant:LegalPerson",
-          "gx-participant:legalName": {
-            "@type": "xsd:string",
-            "@value": "Amazon Web Services, Inc."
-          },
-          "gx-participant:registrationNumber": {
-            "@value": "0000174230",
+      "gx-participant:postal-code": {
+        "@value": "1855",
+        "@type": "xsd:string"
+      },
+      "gx-participant:locality": {
+        "@value": "Luxembourg",
+        "@type": "xsd:string"
+      }
+    },
+    "gx-participant:parentOrganisation": [
+      {
+        "@type": "gx-participant:LegalPerson",
+        "gx-participant:legalName": {
+          "@type": "xsd:string",
+          "@value": "Amazon Web Services, Inc."
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "0000174230",
+          "@type": "xsd:string"
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "US",
             "@type": "xsd:string"
           },
-          "gx-participant:legalAddress": {
-            "@type": "gx-participant:Address",
-            "gx-participant:country": {
-              "@value": "US",
-              "@type": "xsd:string"
-            },
-            "gx-participant:street-address": {
-              "@value": "410 Terry Avenue North",
-              "@type": "xsd:string"
-            },
-            "gx-participant:postal-code": {
-              "@value": "WA 98109-5210",
-              "@type": "xsd:string"
-            },
-            "gx-participant:locality": {
-              "@value": "Seattle",
-              "@type": "xsd:string"
-            },
-            "gx-participant:state": {
-              "@value": "WA",
-              "@type": "xsd:string"
-            }
+          "gx-participant:street-address": {
+            "@value": "410 Terry Avenue North",
+            "@type": "xsd:string"
           },
-          "gx-participant:headquarterAddress": {
-            "@type": "gx-participant:Address",
-            "gx-participant:country": {
-              "@type": "xsd:string",
-              "@value": "US"
-            },
-            "gx-participant:street-address": {
-              "@value": "410 Terry Avenue North",
-              "@type": "xsd:string"
-            },
-            "gx-participant:postal-code": {
-              "@value": "WA 98109-5210",
-              "@type": "xsd:string"
-            },
-            "gx-participant:locality": {
-              "@value": "Seattle",
-              "@type": "xsd:string"
-            },
-            "gx-participant:state": {
-              "@value": "WA",
-              "@type": "xsd:string"
-            }
+          "gx-participant:postal-code": {
+            "@value": "WA 98109-5210",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Seattle",
+            "@type": "xsd:string"
+          },
+          "gx-participant:state": {
+            "@value": "WA",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@type": "xsd:string",
+            "@value": "US"
+          },
+          "gx-participant:street-address": {
+            "@value": "410 Terry Avenue North",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "WA 98109-5210",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Seattle",
+            "@type": "xsd:string"
+          },
+          "gx-participant:state": {
+            "@value": "WA",
+            "@type": "xsd:string"
           }
         }
-      ]
-    },
-    "proof": {
-      "type": "JsonWebKey2020",
-      "created": "2022-06-16T06:57:15.122Z",
-      "proofPurpose": "assertionMethod",
-      "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..eB1yewaCfpts9BJzNbBg5dYQgNYdqoDLIZtWm-8XWEa8fSksWdWgQ4mL9BdsbA7B8auhGXOW82euudWmQkV-cynuoL6MY2QOuWDsWRySNxf1ibJg0FUWK3Ln0dzf60DpWxtkhWigxcKv28jrXSEAq6xYER2HDc9w18munBeTJdiK2Wr3AzH9a-PbSx6LCEqpheKDpc3eKXcC994AlNEq15B6xoSHfAqgWFk5cm-0S2Hq2mxUpP-aJmCPvEaqcFZnv_SJE2eOVtmjABLmqNJuWNWS2EIn80JmA6HL5M5ICMCFaLCWKK08So8dVgftddxfko7M9jSfOIlWKdWXFI9XjA"
-    }
-  },
-  "complianceCredential": {
-    "@context": [
-      "https://www.w3.org/2018/credentials/v1"
-    ],
-    "@type": [
-      "VerifiableCredential",
-      "ParticipantCredential"
-    ],
-    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655362637265",
-    "issuer": "did:web:compliance.lab.gaia-x.eu",
-    "issuanceDate": "2022-06-16T06:57:17.265Z",
-    "credentialSubject": {
-      "id": "https://delta-dao.com/.well-known/participantAmazon.json",
-      "hash": "d41a354622714a181d7f813e5c5c3d8421e760dbfc34a3189c13624abdf540db"
-    },
-    "proof": {
-      "type": "JsonWebKey2020",
-      "created": "2022-06-16T06:57:17.265Z",
-      "proofPurpose": "assertionMethod",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..k1IvJq67P-LIKAlAiW7PRll7x_ecrZuHBaj4d_zQOUqscxUsqDojopSQn89zmGInXAzMe-ZcFU-wpkVigYmwOoeq7rVUesDcPw7XnKbUOx_d6YbCOTEubrA48c1adKD1XMYlevIyJeYHdRbT1xYSVIbSSP5Mb7Qm6sAxTQxFpk11vGf1KyLdX03ltFU_LKVvalT_x6QCWBq9gidZv-oKI1gWRd7w8D2vex2hIrEUi6lSD-oq5F5NkG-k5vb6LhXpLlaSJydIU-4wzf1_XYetSL6rGmOl_HBPp-sqieD1-0IeNd3bvY7fTe4gOAD2iUYaVBVoZh0IfJpWjgo2sJAjyw",
-      "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-    }
+      }
+    ]
   }
 }
