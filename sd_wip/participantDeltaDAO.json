@@ -1,101 +1,69 @@
 {
-  "selfDescriptionCredential": {
     "selfDescription": {
-      "@context": {
-        "gx-participant": "http://w3id.org/gaia-x/participant#",
-        "sh": "http://www.w3.org/ns/shacl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#"
-      },
-      "@id": "did:web:delta-dao.com",
-      "@type": "gx-participant:LegalPerson",
-      "gx-participant:name": {
-        "@value": "deltaDAO AG",
-        "@type": "xsd:string"
-      },
-      "gx-participant:legalName": {
-        "@value": "deltaDAO AG",
-        "@type": "xsd:string"
-      },
-      "gx-participant:registrationNumber": {
-        "@value": "DEK1101R.HRB170364",
-        "@type": "xsd:string"
-      },
-      "gx-participant:leiCode": {
-        "@value": "391200FJBNU0YW987L26",
-        "@type": "xsd:string"
-      },
-      "gx-participant:ethereumAddress": {
-        "@value": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52",
-        "@type": "xsd:string"
-      },
-      "gx-participant:headquarterAddress": {
-        "@type": "gx-participant:Address",
-        "gx-participant:country": {
-          "@value": "DE",
-          "@type": "xsd:string"
+        "@context": {
+            "gx-participant": "http://w3id.org/gaia-x/participant#",
+            "sh": "http://www.w3.org/ns/shacl#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
-        "gx-participant:street-address": {
-          "@value": "Geibelstraße 46b",
-          "@type": "xsd:string"
+        "@id": "did:web:delta-dao.com",
+        "@type": "gx-participant:LegalPerson",
+        "gx-participant:name": {
+            "@value": "deltaDAO AG",
+            "@type": "xsd:string"
         },
-        "gx-participant:postal-code": {
-          "@value": "22303",
-          "@type": "xsd:string"
+        "gx-participant:legalName": {
+            "@value": "deltaDAO AG",
+            "@type": "xsd:string"
         },
-        "gx-participant:locality": {
-          "@value": "Hamburg",
-          "@type": "xsd:string"
+        "gx-participant:registrationNumber": {
+            "@value": "DEK1101R.HRB170364",
+            "@type": "xsd:string"
+        },
+        "gx-participant:leiCode": {
+            "@value": "391200FJBNU0YW987L26",
+            "@type": "xsd:string"
+        },
+        "gx-participant:ethereumAddress": {
+            "@value": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52",
+            "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+                "@value": "DE",
+                "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+                "@value": "Geibelstraße 46b",
+                "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+                "@value": "22303",
+                "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+                "@value": "Hamburg",
+                "@type": "xsd:string"
+            }
+        },
+        "gx-participant:legalAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+                "@value": "DE",
+                "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+                "@value": "Geibelstraße 46b",
+                "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+                "@value": "22303",
+                "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+                "@value": "Hamburg",
+                "@type": "xsd:string"
+            }
         }
-      },
-      "gx-participant:legalAddress": {
-        "@type": "gx-participant:Address",
-        "gx-participant:country": {
-          "@value": "DE",
-          "@type": "xsd:string"
-        },
-        "gx-participant:street-address": {
-          "@value": "Geibelstraße 46b",
-          "@type": "xsd:string"
-        },
-        "gx-participant:postal-code": {
-          "@value": "22303",
-          "@type": "xsd:string"
-        },
-        "gx-participant:locality": {
-          "@value": "Hamburg",
-          "@type": "xsd:string"
-        }
-      }
-    },
-    "proof": {
-      "type": "JsonWebKey2020",
-      "created": "2022-06-16T07:12:04.161Z",
-      "proofPurpose": "assertionMethod",
-      "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..N4JDgE3UldudirhEuiaqKH_jrHwJSETw9vAdKpXNW0ykoQ9nC7x1PxFE5Nw0qQ1gEvTy8mVaApWs_QFgx6BYyQMYF9rBoJ-UxYOgM8Fspppc7wjTFWAvfVu7QHsUjCzN5swdQ0FMQgxfGJBfs46rzY8grt7sSFRDVddqiqmbPM-6fVrQnepMrT3MNcaolyUs-rg8xVJg4iX0GQt6yHkAE-R7XoKf5NysWfmB1xpJmiCwIgZdvFtNwoGvmSXx41ybu_jYlBsdyb6K-FoPVPzIhnNXkAHnXRwFQRjWDNcW1J-DtKVl-vMadMsFKa7T9mQFJ_jndG7X059hdeZ3cu0jHg"
     }
-  },
-  "complianceCredential": {
-    "@context": [
-      "https://www.w3.org/2018/credentials/v1"
-    ],
-    "@type": [
-      "VerifiableCredential",
-      "ParticipantCredential"
-    ],
-    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655363526381",
-    "issuer": "did:web:compliance.lab.gaia-x.eu",
-    "issuanceDate": "2022-06-16T07:12:06.381Z",
-    "credentialSubject": {
-      "id": "did:web:delta-dao.com",
-      "hash": "e3705ca63e0665e2a3c4091b0a35a4946711dfd7224b8978d7b710f7f788c78a"
-    },
-    "proof": {
-      "type": "JsonWebKey2020",
-      "created": "2022-06-16T07:12:06.380Z",
-      "proofPurpose": "assertionMethod",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Il_HOudXOlmRG7O2UyJyxdNRSRJa8zuzX0Ok-T0OZZ-Ddzo47q2xef5bFTX11diL1PL24BzXHJkv6Fz2NfnxOybqIW7y5pp9_kkWRaMQBFQXSm_33SA_y0fyI7OmUELAPQ6E9Ys8Uf4nicBXVFy1PN0SHz_x-9gl4Qk06moKbmuKr13-DW8My6f5w5VSx8TQTkpffwk1rHwSmWTpbbiEa6CdwH5N4766cT9OgplFEiNwl-f3fusfuoOrsi1QfXuTdS_FYQRrQHyZE0MDXwyWK1Kt40nNbp2QaCyHEiHukYDna3j5HQp22-kBUC7q5GPWMlYZq1pd6axu2cWw9tORpw",
-      "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-    }
-  }
 }
