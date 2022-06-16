@@ -1,44 +1,78 @@
 {
-    "selfDescription": {
-        "@context": {
-            "sh": "http://www.w3.org/ns/shacl#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "gx-participant": "http://w3id.org/gaia-x/participant#",
-            "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
-        },
-        "@type": [
-            "GaiaXSelfDescription",
-            "gx-experimental-service-offering:ExperimentalServiceOffering"
-        ],
-        "@id": "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json",
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "http://w3id.org/gaia-x/resource#",
+        "http://w3id.org/gaia-x/participant#",
+        "http://w3id.org/gaia-x/service-offering#"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+      ],
+      "@id": "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json",
+      "credentialSubject": {
+        "id": "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json",
         "gx-service-offering:providedBy": {
-            "@type": "xsd:string",
-            "@value": "https://compliance.gaia-x.eu/.well-known/participantOVH.json"
+          "@type": "xsd:string",
+          "@value": "https://compliance.gaia-x.eu/.well-known/participantOVH.json"
         },
         "gx-service-offering:name": {
-            "@type": "xsd:string",
-            "@value": "Managed OVH Cloud K8s Cluster"
+          "@type": "xsd:string",
+          "@value": "Managed OVH Cloud K8s Cluster"
         },
         "gx-service-offering:description": {
-            "@type": "xsd:string",
-            "@value": "Managed OVH Cloud K8s Cluster"
+          "@type": "xsd:string",
+          "@value": "Managed OVH Cloud K8s Cluster"
         },
         "gx-service-offering:termsAndConditions": [
-            {
-                "@type": "gx-service-offering:TermsAndConditions",
-                "gx-service-offering:url": "https://www.ovhcloud.com/fr/terms-and-conditions/",
-                "gx-service-offering:hash": "myrandomhash"
-            }
+          {
+            "@type": "gx-service-offering:TermsAndConditions",
+            "gx-service-offering:url": "https://www.ovhcloud.com/fr/terms-and-conditions/",
+            "gx-service-offering:hash": "myrandomhash"
+          }
         ],
         "gx-service-offering:gdpr": [
-            {
-                "@type": "xsd:anyURI",
-                "gx-service-offering:imprint": "https://www.ovhcloud.com/fr/terms-and-conditions/"
-            },
-            {
-                "@type": "xsd:anyURI",
-                "gx-service-offering:privacyPolicy": "https://www.ovhcloud.com/fr/personal-data-protection/"
-            }
+          {
+            "@type": "xsd:anyURI",
+            "gx-service-offering:imprint": "https://www.ovhcloud.com/fr/terms-and-conditions/"
+          },
+          {
+            "@type": "xsd:anyURI",
+            "gx-service-offering:privacyPolicy": "https://www.ovhcloud.com/fr/personal-data-protection/"
+          }
         ]
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-16T23:13:39.746Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:compliance.gaia-x.eu",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iaC84IDmHUpoaYLlJWiS7ExQjmSUpYLKG6-YM8YOSvWpI0Cc0a8LIJeGvvhlass6DEkYMVePEMstWloJ9-TbuztYPy02NQ4mPuWsx3AVkmPT2_BCQcd_naEY0sqbBjTFtHpxXw4yQWCIZx-UpDd4-GeqE1YBnS8JoFlAZj53oAe4zdD_2pW-NxxEn5f67kc5tjr_dD9OimVIDlGlCKhDAm0KoK3_uoilaRqbK7JmgjmrUI93_C76yaWqnesxFUHsZnAv00KDVViubnx4d93Ap9K3Xr3ExZoV_4MPs5lOQN-cngTV_TVPdPIg1gFwiE9biICyFEhZ65wvNWxjCx53VA"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ServiceOfferingCredentialExperimental"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655421223048",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-16T23:13:43.048Z",
+      "credentialSubject": {
+        "id": "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json",
+        "hash": "ee218619db0f913936d540450f328cca9df8a1bcac7a40555dcd6141f446aa1e"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-16T23:13:43.048Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TcErobyrA7McESbe8PG_KwGMtqKrJy1yURTXdAU3BQs0c95ouzSYZfEWbBTmcQrtfuLRMv4It4hJ-6d8xoPJRA1G4e7kx_TaaD2RWNBGEOPdTGuxy8nFe_vuL1_iA0uXnvNQsWvyLQ7WTXUsgNT84R9q_AhqPRk1PbOFthII2tHmpWr95KXXaokFJ6qRJCJwu9eAY4zM5NATb7agKbU5dAzUiEYLNi0Q6egGpk1oMQ_Tw0ylyvdtZx9jbPFzypFmav4QkWtyC3xhA8opSVavph66WSfn-6JYHyZutW7yU-QJBPibskx1oZpPmxgqK8CCMRp_7jUerg_aUVQIlv9r7A",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
     }
-}
+  }
