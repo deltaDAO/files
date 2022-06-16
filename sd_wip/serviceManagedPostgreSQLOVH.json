@@ -6,8 +6,11 @@
             "gx-participant": "http://w3id.org/gaia-x/participant#",
             "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
         },
-        "@type": ["GaiaXSelfDescription", "gx-experimental-service-offering:ExperimentalServiceOffering"],
-        "@id": "https://compliance.gaia-x.eu/.well-known/managedDatabase.json",
+        "@type": [
+            "GaiaXSelfDescription",
+            "gx-experimental-service-offering:ExperimentalServiceOffering"
+        ],
+        "@id": "https://compliance.gaia-x.eu/.well-known/managedPostgreSQLOVH.json",
         "gx-service-offering:providedBy": {
             "@type": "xsd:string",
             "@value": "https://compliance.gaia-x.eu/.well-known/participantOVH.json"
