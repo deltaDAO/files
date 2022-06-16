@@ -1,0 +1,41 @@
+{
+    "selfDescription": {
+        "@context": {
+            "sh": "http://www.w3.org/ns/shacl#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "gx-participant": "http://w3id.org/gaia-x/participant#",
+            "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
+        },
+        "@type": ["GaiaXSelfDescription", "gx-experimental-service-offering:ExperimentalServiceOffering"],
+        "@id": "https://compliance.gaia-x.eu/.well-known/portal.json",
+        "gx-service-offering:providedBy": {
+            "@type": "xsd:string",
+            "@value": "https://compliance.gaia-x.eu/.well-known/participantNetlify.json"
+        },
+        "gx-service-offering:name": {
+            "@type": "xsd:string",
+            "@value": "EuProGigant Portal"
+        },
+        "gx-service-offering:description": {
+            "@type": "xsd:string",
+            "@value": "EuProGigant MVG Portal"
+        },
+        "gx-service-offering:termsAndConditions": [
+            {
+                "@type": "gx-service-offering:TermsAndConditions",
+                "gx-service-offering:url": "",
+                "gx-service-offering:hash": "myrandomhash"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "@type": "xsd:anyURI",
+                "gx-service-offering:imprint": "https://euprogigant.portal.minimal-gaia-x.eu/imprint"
+            },
+            {
+                "@type": "xsd:anyURI",
+                "gx-service-offering:privacyPolicy": "https://euprogigant.portal.minimal-gaia-x.eu/privacy/en"
+            }
+        ]
+    }
+}
