@@ -1,0 +1,61 @@
+{
+    "selfDescriptionCredential": {
+        "selfDescription": {
+            "@context": {
+                "sh": "http://www.w3.org/ns/shacl#",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "gx-participant": "http://w3id.org/gaia-x/participant#"
+            },
+            "@id": "http://example.org/participant-dp6gtq7i75lmk9p4j2tfg",
+            "@type": "gx-participant:LegalPerson",
+            "gx-participant:registrationNumber": {
+                "@type": "xsd:string",
+                "@value": "DEANY1234NUMBER"
+            },
+            "gx-participant:legalAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@type": "xsd:string",
+                    "@value": "DEU"
+                }
+            },
+            "gx-participant:headquarterAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@type": "xsd:string",
+                    "@value": "DEU"
+                }
+            }
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-14T14:51:52.948Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Hcd6aVKrukD0SVstgAtfjbq37bm6h4eqyF-IK3qO-CRJEs7x4LtymUwpXSsIkOGZSHeQXbfsBbOq3DewcX_N772vnUmFJ46_ozFEX9-iAsz8kJ2lsnjVpKdDfQakVGNsOwC7WMO4LXPvvk2rl-08yNPD9JXfrt-tDShVGxWzXk1UtpBtqoQEvAWXarayo9VK9fK26GwOeFAvDpSenNkA3hbcLiVOoKVMAjl9uDIolc8kr-YHHA3yqCOzX8bV0qTae82o_c27O7onzeRW8zPmOWvrcE_SGqZXeMVgfCMU3wRtq4zAxuTW4gPRVoy6iVjVnGFLMxGU0TgwFMbB393KIA"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ParticipantCredential"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655218314928",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-06-14T14:51:54.928Z",
+        "credentialSubject": {
+            "id": "http://example.org/participant-dp6gtq7i75lmk9p4j2tfg",
+            "hash": "90fb624d3a1eee9e14bedfb7497c26bce0100b04bb71992b41cc954e4cfd89f6"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-14T14:51:54.928Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..K-Fdw7oeM6zGRoOg7C_9h4QSRgoF9rOX7MFO4ljDekbzBTDmq-lSKBfm9JNKFcKOcmyt56zqW0Dxgx33dQzEOVGMimI9doQD-ksTVGtJJ56R9ubLxdtwerymrFCdSf01HtMnB_gkjMcGXlERCSFxXHUTER2s12kyPe3wY0QlDKl3TG5PbUUO2_Ig-fKVvvUkExhOOhrv0si6hxqYjWIsVcskMsZQVToWFtHe3oacSxVcjya0EaC-oqpIhdNlIuahY1zI_FRvdBSHDPPi9G2UvZkmq2L8wozLQqKK9SRlXLZn0Rw8nRXxCOlLSAxGqFDyggsuDYuX_6NV3N-tdHqVSg",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}
