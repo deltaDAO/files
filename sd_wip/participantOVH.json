@@ -1,89 +1,65 @@
 {
-  "selfDescriptionCredential": {
     "selfDescription": {
-      "@context": {
-        "gx-participant": "http://w3id.org/gaia-x/participant#",
-        "sh": "http://www.w3.org/ns/shacl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#"
-      },
-      "@id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
-      "@type": "gx-participant:LegalPerson",
-      "gx-participant:name": {
-        "@value": "OVH",
-        "@type": "xsd:string"
-      },
-      "gx-participant:legalName": {
-        "@value": "OVH",
-        "@type": "xsd:string"
-      },
-      "gx-participant:registrationNumber": {
-        "@value": "FR5751.844454868",
-        "@type": "xsd:string"
-      },
-      "gx-participant:leiCode": {
-        "@value": "9695007586GCAKPYJ703",
-        "@type": "xsd:string"
-      },
-      "gx-participant:headquarterAddress": {
-        "@type": "gx-participant:Address",
-        "gx-participant:country": {
-          "@value": "FR",
-          "@type": "xsd:string"
+        "@context": {
+            "gx-participant": "http://w3id.org/gaia-x/participant#",
+            "sh": "http://www.w3.org/ns/shacl#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
-        "gx-participant:street-address": {
-          "@value": "4 rue Gambetta",
-          "@type": "xsd:string"
+        "@id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+        "@type": "gx-participant:LegalPerson",
+        "gx-participant:name": {
+            "@value": "OVH",
+            "@type": "xsd:string"
         },
-        "gx-participant:locality": {
-          "@value": "Metz",
-          "@type": "xsd:string"
+        "gx-participant:legalName": {
+            "@value": "OVH",
+            "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+            "@value": "FR5910.424761419",
+            "@type": "xsd:string"
+        },
+        "gx-participant:leiCode": {
+            "@value": "9695007586GCAKPYJ70",
+            "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+                "@value": "FR",
+                "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+                "@value": "2 rue Kellermann",
+                "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+                "@value": "59100",
+                "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+                "@value": "Roubaix",
+                "@type": "xsd:string"
+            }
+        },
+        "gx-participant:legalAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+                "@value": "FR",
+                "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+                "@value": "2 rue Kellermann",
+                "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+                "@value": "59100",
+                "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+                "@value": "Roubaix",
+                "@type": "xsd:string"
+            }
         }
-      },
-      "gx-participant:legalAddress": {
-        "@type": "gx-participant:Address",
-        "gx-participant:country": {
-          "@value": "FR",
-          "@type": "xsd:string"
-        },
-        "gx-participant:street-address": {
-          "@value": "4 rue Gambetta",
-          "@type": "xsd:string"
-        },
-        "gx-participant:locality": {
-          "@value": "Metz",
-          "@type": "xsd:string"
-        }
-      }
-    },
-    "proof": {
-      "type": "JsonWebKey2020",
-      "created": "2022-06-15T08:22:57.751Z",
-      "proofPurpose": "assertionMethod",
-      "verificationMethod": "did:web:compliance.lab.gaia-x.eu",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MniUKGK2TXFmgt4JhfaYUv473mx1gJl99ju1P6Sge3mEY839P65oERi91akh42uJumVkMq6Z2zcEwXhMTfpeOeXF40Qz102BRXRp-kgOQZicLBpAx8yeGIExvpXleyRqzMyL8oMD2-unUs1-EKbjyMMqCFnm-ipkbnHbe6GNMjAENtWfwUaoosJO9YuwM4FFJI-IcB1fOFcm-4CSrIchAAmwMi9_T7y7qbI9SWhtKXdsbvi55iHp0O-h7fBlmSIsPL-8HCsSwe959Fm_yHgkgKLAlGhSJD-yZGwMvA1m-dF3w2hiAHYXGfjZ0LNxZsbtjwzoZ6qvoKwJS5BcAUc2Hw"
     }
-  },
-  "complianceCredential": {
-    "@context": [
-      "https://www.w3.org/2018/credentials/v1"
-    ],
-    "@type": [
-      "VerifiableCredential",
-      "ParticipantCredential"
-    ],
-    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655281380993",
-    "issuer": "did:web:compliance.lab.gaia-x.eu",
-    "issuanceDate": "2022-06-15T08:23:00.994Z",
-    "credentialSubject": {
-      "id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
-      "hash": "1a5331ad145aca0ef0479f7e3d2d0cc879ca852dc7685a26454ae178b844d7ee"
-    },
-    "proof": {
-      "type": "JsonWebKey2020",
-      "created": "2022-06-15T08:23:00.993Z",
-      "proofPurpose": "assertionMethod",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..bS00OzDMiZZjMV7yQqzE7rx9SsDLYZBmMAT6gaWAQofJNtEuqIErwHy-hSmgrFxH9m7m6pys5kuTMZHGq2A59mqZejID8hYCQ76iq0iXsS5qs7BWb4sXDRkFrK6-pw-ZtChwB4UZUY84aFGpoH4By0gfBy96ZbijqFZoiA75fLDjLfT1ac0ILqYU2ZUKpP5uICpvrgDvzeco07zjdnV5z8Lvdif09CmhpTtB_Dnn-lUG3NnamMu3506T110qbcWLZYxSpF3SEeTo8GAP756oKtcFKYG57yeu1biwRu3nUB1FzZvfOKHivewSZXSiiOn7lzx1KQcxJF35Y2YmkWekEQ",
-      "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-    }
-  }
 }
