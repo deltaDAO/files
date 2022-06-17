@@ -1,18 +1,22 @@
 {
-    "selfDescriptionCredential": {
-    "selfDescription": {
-      "@context": {
-        "sh": "http://www.w3.org/ns/shacl#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "gx-resource": "http://w3id.org/gaia-x/resource#",
-        "gx-participant": "http://w3id.org/gaia-x/participant#",
-        "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
-      },
-      "@type": "gx-experimental-service-offering:ExperimentalServiceOffering",
-      "@id": "https://delta-dao.com/.well-known/K8sCluster.json",
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/resource#",
+      "http://w3id.org/gaia-x/participant#",
+      "http://w3id.org/gaia-x/service-offering#"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "@id": "https://delta-dao.com/.well-known/K8sCluster.json",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/K8sCluster.json",
       "gx-service-offering:providedBy": {
         "@type": "xsd:string",
-        "@value": "https://delta-dao.com/.well-known/microsoftParticipant.json"
+        "@value": "https://delta-dao.com/.well-known/participantMicrosoft.json"
       },
       "gx-service-offering:operatedBy": {
         "@type": "xsd:string",
@@ -24,7 +28,7 @@
       },
       "gx-service-offering:description": {
         "@type": "xsd:string",
-        "@value": "Ocean Provider enables on-premise computing by allowing data services to be consumed and a container component to be run by data providers. It is required for remote machine learning to work with \"Compute-to-Data\" functionality."
+        "@value": "The managed K8s cluster provides the basis for the computation and storage."
       },
       "gx-service-offering:termsAndConditions": [
         {
@@ -43,6 +47,36 @@
           "gx-service-offering:privacyPolicy": "https://privacy.microsoft.com/de-de/privacystatement"
         }
       ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-17T11:58:20.580Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..bk3yn61-fkOgV7Nf9s2i5y4Fr9qyXTBYoIXkRJjkCOkdzrdc4O8cXXlwkM94w3d9Qm3FtSDjCFw0eDPQWrAl0FsNeugRwSrq5PPRMYA1xvi6QzIEzmDJUcrsPcDjmhi0jyhWftFzmgiW01njK01yjQRQgc7y52I2WPG5hIU6LHZ4-5R6eKE8n1YcX0SOtNucu_6OHURSzZemuWVnEvwrVYyyLTbeiwvOIK6z1AEWjgCeRGn7xT7eozSAjyc0ksFc1zHqjst8LY7sDRH67f9Lce4CbsezjZyyYdMptW_Esdd2KwlOedjfpdnUe5ELQ-W6E8mizDf6d0ikpynoT7uvlg"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655467105122",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-17T11:58:25.123Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/K8sCluster.json",
+      "hash": "fe86b93057872bb4488f7667db5f9a54dd1ba1cd52b6346eeb57570592ca42e3"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-17T11:58:25.122Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..F5fLgW_V9GUZxFxm-0X1cCYEqI1F9bgrmTW1m4qLK5faZoHd8-kEG-Aj6xHrVawuwIRKiMJWzDpQIDAc6-CLyEzJczFbzZ_U6usJk84QdOzzIaXKCtjTITEnB5uqjZjrj_qlay3-850SvRP96yZ9lf2Cf4TOTogyLLwWEZdlwX-D57iF3qBCbUZjcc_73iWRko3HkhMwEH3Jmv-haezasQ4qzWmNx7r7BKLRLzbvxLVDd6EbBxl6jt4vYt3nefZO7LYH2aoCxDvwGMHuuFgzZmNhCORdxVtVcnaL5Xjsq1o9k_r2uQgpEvLxJUdznOzAscILEIEUYgSESfIjgoJm0Q",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
 }
