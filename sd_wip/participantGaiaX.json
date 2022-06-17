@@ -66,17 +66,17 @@
             "gx-participant:termsAndConditions": [
                 {
                     "@type": "gx-participant:termsAndConditions",
-                    "gx-service-offering:url": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
-                    "gx-service-offering:hash": "36BA819F30A3C4D4A7F16EE0A77259FC92F2E1EBF739713609F1C11EB41499E7AA2CD3A5D2011E073F9BA9C107493E3E8629CC15CD4FC07F67281D7EA9023DB0"
+                    "gx-participant:termsUrl": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+                    "gx-participant:termsHash": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0"
                 }
             ]
         },
         "proof": {
             "type": "JsonWebKey2020",
-            "created": "2022-06-17T13:33:15.890Z",
+            "created": "2022-06-17T13:40:04.216Z",
             "proofPurpose": "assertionMethod",
             "verificationMethod": "did:web:compliance.gaia-x.eu",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..a9eWk5gArfx057mlKnFy9Ktyux20Ch3k5FIo39LaqSaH1EOV_4NjLCgt6FaxDSkNJkKXQwy7NEFeK9gvid1l4z1Sp6qBzsQPBmn7dKmyhZ7ISfJwBvGwpp17gFp89C0RUOJrNqvnBcbOc9obdBzOPWJXEog1EH85NUrWZ23Wov3FiJUen_hjBExAlyQ1tJLZqTuGdAyRIwtfoQEO2oePSK8QIGP-eFqF6GekITy1_8ekLvRyzWTuSojqqowIY022c2yXWM1n932VKprgVz1WNqDwZpcBpyXhAM0V2qiwgUj78k8txbZiO9B_wQuP3RxhIa40XYxiMFpPQzY7DMeqsQ"
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..pFKilerPX9i-iae4Sp_QUqQKVkUyl9y8Aq1VcoxYJpW5LE9dWt2aKCI3F4Ly4Y_DEgwoB__qXfIXqatD1ujhffgI8bfiVUB4EBkbGk22UJwhMN3Xm6ZKWEF4bUts9-ETX5xQYG_N1NohSY6sSFdXo9pWnATu0UBfvtD6d6tguOMndORBVjS5TY1p7FLEcQS7xRk01XuzY0K0hi6PmMSsaaBHkoQ-DEQ88EKFCm87WpLGtNn-jHPOJMfDAYeQJUgAaTE1bNvrXn3dX_v7kgqWZUIp8b9nreniGIgv6b_b9CL_V8wiF684YMIKvwYDW4q3BumdL8U1xcTXyYGfKZZj4w"
         }
     },
     "complianceCredential": {
@@ -87,18 +87,18 @@
             "VerifiableCredential",
             "ParticipantCredential"
         ],
-        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655472797723",
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655473205914",
         "issuer": "did:web:compliance.gaia-x.eu",
-        "issuanceDate": "2022-06-17T13:33:17.723Z",
+        "issuanceDate": "2022-06-17T13:40:05.914Z",
         "credentialSubject": {
             "id": "did:compliance.gaia-x.eu",
-            "hash": "dddd7b537cb342d732d818b47748e46dbb647dc16c906fc725cf9a0fcf158891"
+            "hash": "e7f950b49dea90d671b8df4a72d70c61a095092db07157741789d02d21f2754d"
         },
         "proof": {
             "type": "JsonWebKey2020",
-            "created": "2022-06-17T13:33:17.723Z",
+            "created": "2022-06-17T13:40:05.914Z",
             "proofPurpose": "assertionMethod",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..koNI316GosbuB_GqPfJJvzcjLDAhZ4S78acSEeWFGiU7hhVIbZEVimo2ic-cTa-hKF03sPQkRbd8XnqO3xpYxB8k0rBy7QIVKOg6-pzYUF08Z_HMlRW6U2QT5oQi-uVvGkSDPgBicqFWns_T7KcVyvM8sZX0UUK7ENSwaYqHEMJd_ykk9DxWYc1f2SJ3MJ6KKYOvj0haJduAHnRjRRiWyQr8yyaVJec29h67kBzRnI_oNPzz279ANgTCzfRrX5Sz_D2DeH3CWQUFI7t3DM915JtDVUIDefAqmyGP0udBIar3IePACQP_jJNsF5lATuHW25Q00NbHU2x9nyjlGvXA3g",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..fLVZIWBYVN1eog90-8CBYrGjl4jNiGNPOb1QfxUI5R2HS1O89j3XN5JATovpcB30LAcwG4eQ21xpCTmuZhXvALUntiMZOrbiLwuJlxO5ObpBj8YWOcmLbXmoj6dQiiq70rcEj_SyGtPvagadqJaXTdWX1at41Z552lAeslNGu-BzgnTQIXvGinocau_QPaMjFNiVzzdCi0gFzS3jBhITBhfbq4GHS8OqRlYcKk5vkHqzDu9X-c-UlyF25HzqvKsUQNsfloBJ2hx827inzl2D5uwx4RPeBF5tEST8l7IRymVv0jPM1buDEM_H3AjIbdqn0zXxAiHbs0-8Gl6fbne1qw",
             "verificationMethod": "did:web:compliance.gaia-x.eu"
         }
     }
