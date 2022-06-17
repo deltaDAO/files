@@ -1,124 +1,161 @@
 {
-    "selfDescription": {
-        "@context": {
-            "gx-participant": "http://w3id.org/gaia-x/participant#",
-            "sh": "http://www.w3.org/ns/shacl#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "@nest"
+    ],
+    "@id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+    "@type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+      "gx-participant:name": {
+        "@value": "Microsoft",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "Microsoft Ireland Operations Limited",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "IECRO.905753",
+        "@type": "xsd:string"
+      },
+      "gx-participant:leiCode": {
+        "@value": "549300WCLFVEBTBNRF76",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "IRL",
+          "@type": "xsd:string"
         },
-        "@id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
-        "@type": "gx-participant:LegalPerson",
-        "gx-participant:name": {
-            "@value": "Microsoft",
+        "gx-participant:street-address": {
+          "@value": "70 Sir John Rogerson's Quay, Dublin 2",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "D02 R296",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Dublin",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "IRL",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "70 Sir John Rogerson's Quay, Dublin 2",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "D02 R296",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Dublin",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:parentOrganisation": [
+        {
+          "@type": "gx-participant:LegalPerson",
+          "gx-participant:legalName": {
+            "@type": "xsd:string",
+            "@value": "Microsoft Corporation"
+          },
+          "gx-participant:registrationNumber": {
+            "@value": "600413485",
             "@type": "xsd:string"
-        },
-        "gx-participant:legalName": {
-            "@value": "Microsoft Ireland Operations Limited",
-            "@type": "xsd:string"
-        },
-        "gx-participant:registrationNumber": {
-            "@value": "IECRO.905753",
-            "@type": "xsd:string"
-        },
-        "gx-participant:leiCode": {
-            "@value": "549300WCLFVEBTBNRF76",
-            "@type": "xsd:string"
-        },
-        "gx-participant:headquarterAddress": {
+          },
+          "gx-participant:legalAddress": {
             "@type": "gx-participant:Address",
             "gx-participant:country": {
-                "@value": "IRL",
-                "@type": "xsd:string"
+              "@value": "US",
+              "@type": "xsd:string"
             },
             "gx-participant:street-address": {
-                "@value": "70 Sir John Rogerson's Quay, Dublin 2",
-                "@type": "xsd:string"
+              "@value": "300 DESCHUTES WAY SW STE 208 MC-CSC1",
+              "@type": "xsd:string"
             },
             "gx-participant:postal-code": {
-                "@value": "D02 R296",
-                "@type": "xsd:string"
+              "@value": "98501",
+              "@type": "xsd:string"
             },
             "gx-participant:locality": {
-                "@value": "Dublin",
-                "@type": "xsd:string"
+              "@value": "TUMWATER",
+              "@type": "xsd:string"
+            },
+            "gx-participant:state": {
+              "@value": "WA",
+              "@type": "xsd:string"
             }
-        },
-        "gx-participant:legalAddress": {
+          },
+          "gx-participant:headquarterAddress": {
             "@type": "gx-participant:Address",
             "gx-participant:country": {
-                "@value": "IRL",
-                "@type": "xsd:string"
+              "@type": "xsd:string",
+              "@value": "US"
             },
             "gx-participant:street-address": {
-                "@value": "70 Sir John Rogerson's Quay, Dublin 2",
-                "@type": "xsd:string"
+              "@value": "1 Microsoft Way",
+              "@type": "xsd:string"
             },
             "gx-participant:postal-code": {
-                "@value": "D02 R296",
-                "@type": "xsd:string"
+              "@value": "98052",
+              "@type": "xsd:string"
             },
             "gx-participant:locality": {
-                "@value": "Dublin",
-                "@type": "xsd:string"
+              "@value": "Redmond",
+              "@type": "xsd:string"
+            },
+            "gx-participant:state": {
+              "@value": "WA",
+              "@type": "xsd:string"
             }
-        },
-        "gx-participant:parentOrganisation": [
-            {
-                "@type": "gx-participant:LegalPerson",
-                "gx-participant:legalName": {
-                    "@type": "xsd:string",
-                    "@value": "Microsoft Corporation"
-                },
-                "gx-participant:registrationNumber": {
-                    "@value": "600413485",
-                    "@type": "xsd:string"
-                },
-                "gx-participant:legalAddress": {
-                    "@type": "gx-participant:Address",
-                    "gx-participant:country": {
-                        "@value": "US",
-                        "@type": "xsd:string"
-                    },
-                    "gx-participant:street-address": {
-                        "@value": "300 DESCHUTES WAY SW STE 208 MC-CSC1",
-                        "@type": "xsd:string"
-                    },
-                    "gx-participant:postal-code": {
-                        "@value": "98501",
-                        "@type": "xsd:string"
-                    },
-                    "gx-participant:locality": {
-                        "@value": "TUMWATER",
-                        "@type": "xsd:string"
-                    },
-                    "gx-participant:state": {
-                        "@value": "WA",
-                        "@type": "xsd:string"
-                    }
-                },
-                "gx-participant:headquarterAddress": {
-                    "@type": "gx-participant:Address",
-                    "gx-participant:country": {
-                        "@type": "xsd:string",
-                        "@value": "US"
-                    },
-                    "gx-participant:street-address": {
-                        "@value": "1 Microsoft Way",
-                        "@type": "xsd:string"
-                    },
-                    "gx-participant:postal-code": {
-                        "@value": "98052",
-                        "@type": "xsd:string"
-                    },
-                    "gx-participant:locality": {
-                        "@value": "Redmond",
-                        "@type": "xsd:string"
-                    },
-                    "gx-participant:state": {
-                        "@value": "WA",
-                        "@type": "xsd:string"
-                    }
-                }
-            }
-        ]
+          }
+        }
+      ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-17T09:43:55.639Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PPCV0GWj7TX6rAvfVsY0Q1G0f5w3iDI5kMOFXmmSt1Zc3FUEsRi0jh33r2bQLh7YlrIBJ3O0cmTcc0e6A_Vb5FPu0C6gBqUAaLc1S_oDGhaNwOTQ8GinZu3Dnh5-zqIebjd5TCvbnBl96pJM2eHS_L_rM_7k4A64i6tyxxL-ZkzNOTv7vdYXRoAhMGJvLMtgibo-8BtnjiCgnb1mJ_7CTgJHCAmMPfRtIi6xnkb5Q8k8oebYak7j4pBi5IPCTKNY9ktKOIlOTDtqnCjP4TeFg8viwUMk7uru9G1R3lbMz_39sh55or3lbNMCWYz5xyL5GhMttuAcj5TvzzlVZFFbCA"
     }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655459037902",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-17T09:43:57.902Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+      "hash": "7eccd25434f9796a3a1a29ccece9aae250522145c2d5664dbde1e22cbac57f22"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-17T09:43:57.902Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iItlBc6KPlxiMAR82DCO-6z3UuwknmRUUK7PjOs6E2anAbg_1sEu2SANzXYrXcJxseNzj2H-r90pJnLo2uSDIo0EQSaIOZ-Aai6AUD596X7hxUJt4pPZiNTMvD42WqsqdINgHO1xFZqbfbOw34VBhTZAR8LsZYxpDmMuetnEYlZRQdznjiPTa9x6f-AJBXs2CmaU6POoIaIX-W824Px6-qVhBH8CyYbzO7EzTkXp3S2LFMbtw8Nyug6deTPjBUFtEgFa9NOpwZa4OiqWzMNlBVxPZ8rSRCB3lZC7h04OsxVlq6yGxPRHW-Kydn8gZ3Cnh_wWtBi_fds8sw5YWkMc1w",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
 }
