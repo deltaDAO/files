@@ -1,61 +1,105 @@
 {
-  "selfDescription": {
-    "@context": {
-      "gx-participant": "http://w3id.org/gaia-x/participant#",
-      "sh": "http://www.w3.org/ns/shacl#",
-      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "selfDescriptionCredential": {
+        "@context": [
+            "http://www.w3.org/ns/shacl#",
+            "http://www.w3.org/2001/XMLSchema#",
+            "http://w3id.org/gaia-x/participant#",
+            "@nest"
+        ],
+        "@id": "https://compliance.gaia-x.eu/.well-known/participant.json",
+        "@type": [
+            "VerifiableCredential",
+            "LegalPerson"
+        ],
+        "credentialSubject": {
+            "id": "did:compliance.gaia-x.eu",
+            "gx-participant:name": {
+                "@value": "Gaia-X AISBL",
+                "@type": "xsd:string"
+            },
+            "gx-participant:legalName": {
+                "@value": "Gaia-X European Association for Data and Cloud AISBL",
+                "@type": "xsd:string"
+            },
+            "gx-participant:registrationNumber": {
+                "@value": "0762747721",
+                "@type": "xsd:string"
+            },
+            "gx-participant:headquarterAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "BE",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Avenue des Arts 6-9",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "1210",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Bruxelles/Brussels",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-participant:legalAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "BE",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Avenue des Arts 6-9",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "1210",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Bruxelles/Brussels",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-service-offering:termsAndConditions": [
+                {
+                    "@type": "gx-participant:termsAndConditions",
+                    "gx-service-offering:url": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+                    "gx-service-offering:hash": "36BA819F30A3C4D4A7F16EE0A77259FC92F2E1EBF739713609F1C11EB41499E7AA2CD3A5D2011E073F9BA9C107493E3E8629CC15CD4FC07F67281D7EA9023DB0"
+                }
+            ]
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-17T13:28:52.254Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:compliance.gaia-x.eu",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..aysPRHuuifDyDPCnrFX1hVbo1hc1VDMNa9UJSnI-bVNvoAbA5NOd616E0PVJzdpDe5CaukfXKOiNTXuepXKEEiuKeclwg2aJLwaK3OimMLv23SlkJlCAFA9L_AUQjYQLouS7CxTwPUYumFb7JGhmy2y7IJ-Qf65-6uWzjpORmJZ6EQyRoGnOtmUbssIiS0IyG0ZEy58ENNYLYls4BjvuIYQuKSM8Pc4Cho7IaUVRcJxc1nNyy1tQ0XHa4vzsD71go6UhBAnVtN1vzqJ55whTVHFMlt2JyiyoAca8zu5ORbz5RnQ9Ecbn4A6VSCAwEfNPI6adGTPUyQrrxc4dn9zs2g"
+        }
     },
-    "@id": "did:web:compliance.gaia-x.eu",
-    "@type": "gx-participant:LegalPerson",
-    "gx-participant:name": {
-      "@value": "Gaia-X AISBL",
-      "@type": "xsd:string"
-    },
-    "gx-participant:legalName": {
-      "@value": "Gaia-X European Association for Data and Cloud AISBL",
-      "@type": "xsd:string"
-    },
-    "gx-participant:registrationNumber": {
-      "@value": "0762747721",
-      "@type": "xsd:string"
-    },
-    "gx-participant:headquarterAddress": {
-      "@type": "gx-participant:Address",
-      "gx-participant:country": {
-        "@value": "BE",
-        "@type": "xsd:string"
-      },
-      "gx-participant:street-address": {
-        "@value": "Avenue des Arts 6-9",
-        "@type": "xsd:string"
-      },
-      "gx-participant:postal-code": {
-        "@value": "1210",
-        "@type": "xsd:string"
-      },
-      "gx-participant:locality": {
-        "@value": "Bruxelles/Brussels",
-        "@type": "xsd:string"
-      }
-    },
-    "gx-participant:legalAddress": {
-      "@type": "gx-participant:Address",
-      "gx-participant:country": {
-        "@value": "BE",
-        "@type": "xsd:string"
-      },
-      "gx-participant:street-address": {
-        "@value": "Avenue des Arts 6-9",
-        "@type": "xsd:string"
-      },
-      "gx-participant:postal-code": {
-        "@value": "1210",
-        "@type": "xsd:string"
-      },
-      "gx-participant:locality": {
-        "@value": "Bruxelles/Brussels",
-        "@type": "xsd:string"
-      }
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ParticipantCredential"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655472534072",
+        "issuer": "did:web:compliance.gaia-x.eu",
+        "issuanceDate": "2022-06-17T13:28:54.072Z",
+        "credentialSubject": {
+            "id": "did:compliance.gaia-x.eu",
+            "hash": "ce70c2b77e12faa4b92a84b43c382a573123a68f3a4d44d45849673e09c9f53c"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-17T13:28:54.072Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Plaus4DjqlfkcednzBcquz0q7P8pwEvy2hdpo6t_VnG4kVdbjLHeROi2vYbRRSYwC8Ad_cw6QtCEs-ooKRrTdrfG2_yYKZIZi23Bb0WAZQwcjKMseNFELRgEUbN_inFFCQQtNstQwykSrfgtW1elfCNUhmAcLGvbO8_fh1ypPhcvn35xirU-OHyIpMDMTcwbh2cVJGg0xzvqYw0G3ubMw6K8SDq_CFeXdLuX2tnVNqFrgoz5bkGuDI-ON-m_pCQkIauguJliyie5wwygSkrYrJWSp7uGSdAp71ZitZfE8eA9803oMe8KuGMG615Xr2veSujqPjXoPR59SzwYG6wnBg",
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
+        }
     }
-  }
 }
