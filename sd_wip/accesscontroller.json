@@ -1,61 +1,88 @@
 {
   "selfDescriptionCredential": {
-  "selfDescription": {
-    "@context": {
-      "sh": "http://www.w3.org/ns/shacl#",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "gx-resource": "http://w3id.org/gaia-x/resource#",
-      "gx-participant": "http://w3id.org/gaia-x/participant#",
-      "gx-service-offering": "http://w3id.org/gaia-x/service-offering#"
-    },
-    "@type": "gx-experimental-service-offering:ExperimentalServiceOffering",
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/resource#",
+      "http://w3id.org/gaia-x/participant#",
+      "http://w3id.org/gaia-x/service-offering#"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
     "@id": "https://delta-dao.com/.well-known/accesscontroller.json",
-    "gx-service-offering:providedBy": {
-      "@type": "xsd:string",
-      "@value": "https://delta-dao.com/.well-known/participant.json"
-    },
-    "gx-service-offering:name": {
-      "@type": "xsd:string",
-      "@value": "Ocean accesscontroler"
-    },
-    "gx-service-offering:description": {
-      "@type": "xsd:string",
-      "@value": "Ocean Provider enables on-premise computing by allowing data services to be consumed and a container component to be run by data providers. It is required for remote machine learning to work with \"Compute-to-Data\" functionality."
-    },
-    "gx-service:webAddress": {
-      "@value": "https://provider.gaiax.delta-dao.com",
-      "@type": "xsd:anyURI"
-    },
-    "gx-service-offering:termsAndConditions": [
-      {
-        "@type": "gx-service-offering:TermsAndConditions",
-        "gx-service-offering:url": "https://github.com/oceanprotocol/provider/blob/main/LICENSE",
-        "gx-service-offering:hash": "myrandomhash"
-      }
-    ],
-    "gx-service-offering:gdpr": [
-      {
-        "@type": "xsd:anyURI",
-        "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/accesscontroller.json",
+      "gx-service-offering:providedBy": {
+        "@type": "xsd:string",
+        "@value": "https://delta-dao.com/.well-known/participant.json"
       },
-      {
-        "@type": "xsd:anyURI",
-        "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
-      }
-    ],
-    "gx-service-offering:dependsOn": [
+      "gx-service-offering:name": {
+        "@type": "xsd:string",
+        "@value": "Ocean accesscontroler"
+      },
+      "gx-service-offering:description": {
+        "@type": "xsd:string",
+        "@value": "Ocean Provider enables on-premise computing by allowing data services to be consumed and a container component to be run by data providers. It is required for remote machine learning to work with \"Compute-to-Data\" functionality."
+      },
+      "gx-service:webAddress": {
+        "@value": "https://provider.gaiax.delta-dao.com",
+        "@type": "xsd:anyURI"
+      },
+      "gx-service-offering:termsAndConditions": [
+        {
+          "@type": "gx-service-offering:TermsAndConditions",
+          "gx-service-offering:url": "https://github.com/oceanprotocol/provider/blob/main/LICENSE",
+          "gx-service-offering:hash": "myrandomhash"
+        }
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+        },
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+        }
+      ],
+      "gx-service-offering:dependsOn": [
         {
           "@type": "xsd:anyURI",
           "@value": "https://delta-dao.com/.well-known/K8sCluster.json"
         }
       ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-17T11:48:44.890Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Iu5zZ3KleU0DAuPYl5X38b-rIq7zU2E2zxsGtAqTX8Oq6ZonRns-bNYfIurD-qKxRSRl6kLb0G58P01ChbgQYUilzUzJ2nsBDpmN7ctZwJazFgr2ZTM28rcGvFd7gvcIoxmxnzulZN0YK7B7xGTzI4BzMkucRcvcn9ntn1tbIs-cjOXNJRvZoCFLzjWBxEKvHRSb242KgXGHGucHfA38-5wV9qntzMNlaPZhVBXs2DK_kLwVQwCuwv3PONFoGobGsFaboBKtb_QQy-1D85QOqDz-r9JEuQQw7zKmkRa2RqUlNGOcKCFDLvfAKN-tTYbvVPl-IHm6QbWB7wHhF9rA1Q"
+    }
   },
-  "proof": {
-    "type": "JsonWebKey2020",
-    "created": "2022-06-15T08:30:20.201Z",
-    "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:web:provider.gaiax.delta-dao.com",
-    "jws": ""
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655466529974",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-17T11:48:49.974Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/accesscontroller.json",
+      "hash": "b311b6ce4e8a26bf0a438c2bb38eda64df4de3d0125296b40902cbd8bc7a3086"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-17T11:48:49.974Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..XNXYoaMYyusH5zKJHVbVW7I6kt2So0lSQxbAvUg6KMIW4uJOE7mMs9IHTX5bCyLLSjxhg36nFg0wS7MHqCOf1a5eCP2Ihptc-kPHxQUNdsD_bLnd4hCdqGdnxhSq6sDeTb7o2is4qoEJSdX-7NA8vQASkjxcH5Ncod4MKcJbKZ0-E12CGGQkWL-SqdsI_nH2uGpN3FZhlCBpO5Nybin4NcJ5k_NezqBZUvKYjIYUzC-vKzO5ldiphuCzdrG6f7Q9zMBZogMc-hhHUrZl1fXQYPPNngGJyj8_gJXNRVuQwI78ShP8izX-inK6GxN5sauMMoxMQvmJxw4n4lVl7Y7F4g",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
   }
-}
 }
