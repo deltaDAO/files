@@ -1,0 +1,106 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "http://www.w3.org/ns/shacl#",
+            "http://www.w3.org/2001/XMLSchema#",
+            "http://w3id.org/gaia-x/resource#",
+            "http://w3id.org/gaia-x/participant#",
+            "http://w3id.org/gaia-x/service-offering#"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ServiceOfferingExperimental"
+        ],
+        "@id": "https://delta-dao.com/.well-known/servicePortal.json",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/servicePortal.json",
+            "gx-service-offering:providedBy": {
+                "@type": "xsd:string",
+                "@value": "https://delta-dao.com/.well-known/participant.json"
+            },
+            "gx-service-offering:name": {
+                "@type": "xsd:string",
+                "@value": "Minimal Viable Gaia-X Portal"
+            },
+            "gx-service-offering:description": {
+                "@type": "xsd:string",
+                "@value": "Minimal Viable Gaia-X Portal Demonstrator"
+            },
+            "gx-service-offering:termsAndConditions": [
+                {
+                    "@type": "gx-service-offering:TermsAndConditions",
+                    "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/terms",
+                    "gx-service-offering:hash": "3878f92efe020u09af0266575aed57w57577d772527d575a75d7e5d57ae57"
+                }
+            ],
+            "gx-service-offering:gdpr": [
+                {
+                    "@type": "xsd:anyURI",
+                    "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
+                },
+                {
+                    "@type": "xsd:anyURI",
+                    "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
+                }
+            ],
+            "gx-service-offering:dependsOn": [
+                {
+                    "@type": "xsd:anyURI",
+                    "@value": "https://delta-dao.com/.well-known/cataloguecache.json"
+                },
+                {
+                    "@type": "xsd:anyURI",
+                    "@value": "https://delta-dao.com/.well-known/serviceNetlify.json"
+                }
+            ],
+            "gx-service-offering:aggregationOf": [
+                {
+                    "@id": "https://delta-dao.com/.well-known/serviceDLTnetwork.json",
+                    "@type": "gx-resource:dataResource"
+                },
+                {
+                    "@id": "https://delta-dao.com/.well-known/catalogueCache.json",
+                    "@type": "gx-resource:storage"
+                },
+                {
+                    "@id": "https://delta-dao.com/.well-known/K8sCluster.json",
+                    "@type": "gx-resource:storage"
+                },
+                {
+                    "@id": "https://delta-dao.com/.well-known/s3bucket.json",
+                    "@type": "gx-resource:storage"
+                }
+            ]
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-18T23:07:40.163Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dZljiLofk0nZ3u7mjb5PPvyvl3nFzErosUoJMOQ9cj2cBQRhqC2nj7QqnydsigkeTsIKROvjNhjkN1sT5f5EuVWtQ2XhxQ9uO4qFhUy-nWwqE4R4nyCXqGhuPRnN1tJRaxHMNMS1V8tzC_cmDRZYhA2307zv7rb6h3-bktdohyaLlaRNXKCACxQYdxLd2OxFO1qF11eRdx53BG11ZIY29XE4KCwTaJzVN1CLZNEUZo_nCuIoE-gBF8DKhuECYjs_1R-qIVrugr_jnf0pYhIDhyVQHXjb3e2jJ1UVHp9m3M2SQ4qwx7ND5HIfISdFVA1to1QLlIXKexroYaV8hXjFWw"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ServiceOfferingCredentialExperimental"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655593664176",
+        "issuer": "did:web:compliance.gaia-x.eu",
+        "issuanceDate": "2022-06-18T23:07:44.176Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/servicePortal.json",
+            "hash": "d4501470f1847b5c1909855b079767443291322b0ae537870b17bbda1dc7102f"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-18T23:07:44.175Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..E43c8WP3PLC-zbMtuB5oQqdrtwwy3ieKNpes1ybLTlMuy4Wq-TD5HPFozErOnPrreKTDnfd7nSS_UZaxNw23IqzndtS-PEClxu7HAmWXC3udyPRveMn3lw2L-8wIigh9ddLkoVXg3vNwot1mlIezScICF2PH5D8HuxYyTrMzyG6kot2lW35pKr3NoIYUs5kpJhv2n-2koL0Ze3yFZSoH0yn4qN_Ugo_C23fut0Ep0WzRQn-i8u96EAiTAPcQForQ-RqMC6GgII7l47yOYyVYfc9b8_gAcDmIijoWy8ty3N4kXTv2s24GVNPQOa7aGos_eDb1PGXWTka40x6i_cZnQg",
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
+        }
+    }
+}
