@@ -20,7 +20,7 @@
       },
       "gx-service-offering:name": {
         "@type": "xsd:string",
-        "@value": "Elastic Search Database"
+        "@value": "Elastic Search DB"
       },
       "gx-service-offering:description": {
         "@type": "xsd:string",
