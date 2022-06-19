@@ -1,0 +1,167 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "http://w3id.org/gaia-x/participant#",
+        "@nest"
+      ],
+      "@id": "https://delta-dao.com/.well-known/participantSintefOcean.json",
+      "@type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantSintefOcean.json",
+        "gx-participant:name": {
+          "@value": "SINTEF Ocean",
+          "@type": "xsd:string"
+        },
+        "gx-participant:legalName": {
+          "@value": "SINTEF Ocean AS",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "937357370",
+          "@type": "xsd:string"
+        },
+        "gx-participant:leiCode": {
+          "@value": "549300XDNWF9FOR0O908",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "NO",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Strindvegen 4",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "7034",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Trondheim",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "NO",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Strindvegen 4",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "7034",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Trondheim",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:parentOrganisation": [
+          {
+            "@type": "gx-participant:LegalPerson",
+            "gx-participant:legalName": {
+              "@type": "xsd:string",
+              "@value": "SINTEF Ocean AS"
+            },
+            "gx-participant:registrationNumber": {
+              "@value": "937357370",
+              "@type": "xsd:string"
+            },
+            "gx-participant:leiCode": {
+              "@value": "549300XDNWF9FOR0O908",
+              "@type": "xsd:string"
+            },
+            "gx-participant:legalAddress": {
+              "@type": "gx-participant:Address",
+              "gx-participant:country": {
+                "@value": "NO",
+                "@type": "xsd:string"
+              },
+              "gx-participant:street-address": {
+                "@value": "Otto Nielsens veg 10",
+                "@type": "xsd:string"
+              },
+              "gx-participant:postal-code": {
+                "@value": "7052",
+                "@type": "xsd:string"
+              },
+              "gx-participant:locality": {
+                "@value": "Trondheim",
+                "@type": "xsd:string"
+              }
+            },
+            "gx-participant:headquarterAddress": {
+              "@type": "gx-participant:Address",
+              "gx-participant:country": {
+                "@type": "xsd:string",
+                "@value": "NO"
+              },
+              "gx-participant:street-address": {
+                "@value": "Otto Nielsens veg 10",
+                "@type": "xsd:string"
+              },
+              "gx-participant:postal-code": {
+                "@value": "7052",
+                "@type": "xsd:string"
+              },
+              "gx-participant:locality": {
+                "@value": "Trondheim",
+                "@type": "xsd:string"
+              }
+            }
+          }
+        ],
+        "gx-service-offering:TermsAndConditions": {
+          "gx-service-offering:url": {
+            "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+            "@type": "xsd:string"
+          },
+          "gx-service-offering:hash": {
+            "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-19T16:40:10.124Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:delta-dao.com",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..JmVTO3nDSB0pZWmC659MJixAxaEX7jFRa9T2GPfuHTatU3E56Jb0HgNy8AMQHHKQTxRNJackcci9wnrDyYQ2IDEAioF47G5wnjzULJcnoodhSHRn6LQvPAk4n9jlFAkM9mL4QWJAsuoZuS80S4GabltW8RJGem6zSPRyNgF7B8pbLEDL-LdpoZUxNRvSBhFObCgGyHnHr9GLbgtJcYttypTbPCPAbfodgJXmbjPHJkRNjK2pqXZfeNlP6v9N0g2k09o_rhBC_h1M0UOQxh7f8009In0JYFKf3B_Iw1awlj3W8S2C_wxgSj_xNSNpcWWUlMZaCIhXJkHwsbV--E_lyw"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655656813373",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-19T16:40:13.373Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantSintefOcean.json",
+        "hash": "8fc9ccde559c8be34fff24ef015ba28c7ae384c3756bad139613b4f03a5ed79a"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-19T16:40:13.373Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..jUvi3rh39dIO2j_AeW1PiQqiTQ1Nejm1qmCcT-fQ3LUmgcL5G4qhYM2o5pt7v7OQFq5LlPBokcTj9lz2wP5XgMsoSTUUlvpo4E_WUrX8OIhS7NC4Vklp08fHOzAAQV6b2_hvGP98t842-0P-EHligEPnvFooFQ37uHj9clkY7WLzXlx4QHhJDmM8eyPWCnTIG75HzYHYsqbcl-j2iNEgFTztPp_1bZqJ2hAt6fYwgAHRm0GJCFWbx2oc-_ssk_voywpB9_AA-22Il1FAwOYFlOotpQTrXoQVZPdlChzenHG2ycMkd_kjf0oaxBD4pjdnxWTo6LYHYXBh6Q8h5sJmRA",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
+    }
+  }
