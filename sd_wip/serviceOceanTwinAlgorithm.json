@@ -1,0 +1,143 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "http://w3id.org/gaia-x/resource#",
+        "http://w3id.org/gaia-x/participant#",
+        "http://w3id.org/gaia-x/service-offering#"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+      ],
+      "@id": "https://delta-dao.com/.well-known/serviceOceanTwinAlgorithm.json",
+      "credentialSubject": {
+        "id": "did:op:b30393155a1f6944Ab021a1126D328621584b478",
+        "gx-service-offering:providedBy": {
+          "@value": "https://delta-dao.com/.well-known/participantSintefOcean.json",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:name": {
+          "@value": "Data for Iliad - Ocean Twin - Water Temperature Prediction Model",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:description": [
+          {
+            "@value": "Data for Iliad - Ocean Twin - Water Temperature Prediction Model",
+            "@type": "xsd:string"
+          }
+        ],
+        "gx-service-offering:serviceModel": {
+          "@value": "subscription",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:servicePrice": {
+          "@value": "subscription",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:subscriptionDuration": {
+          "@value": "86400",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:webAddress": [
+          {
+            "@value": "https://portal.minimal-gaia-x.eu/asset/did:op:b30393155a1f6944Ab021a1126D328621584b478",
+            "@type": "xsd:anyURI"
+          }
+        ],
+        "gx-service-offering:TermsAndConditions": {
+          "gx-service-offering:url": {
+            "@value": "https://creativecommons.org/licenses/by/4.0/",
+            "@type": "xsd:string"
+          },
+          "gx-service-offering:hash": {
+            "@value": "54895d592300bdd22f5173efbc43db791e5cf54fb1ba71884099ae91eaa9b452",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-service-offering:policies": [
+          {
+            "@value": "Policy A ODRL/REGO",
+            "@type": "xsd:string"
+          }
+        ],
+        "gx-service-offering:gdpr": [
+          {
+            "@type": "xsd:anyURI",
+            "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+          },
+          {
+            "@type": "xsd:anyURI",
+            "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+          }
+        ],
+        "gx-service-offering:dependsOn": [
+          {
+            "@id": "https://www.delta-dao.com/.well-known/operatorEngine.json",
+            "@type": "gx-service:serviceOfferingExperimental"
+          },
+          {
+            "@id": "https://www.delta-dao.com/.well-known/operatorService.json",
+            "@type": "gx-service:serviceOfferingExperimental"
+          },
+          {
+            "@id": "https://www.delta-dao.com/.well-known/accesscontroller.json",
+            "@type": "gx-service:serviceOfferingExperimental"
+          },
+          {
+            "@id": "https://www.delta-dao.com/.well-known/servicePortal.json",
+            "@type": "gx-service:serviceOfferingExperimental"
+          }
+        ],
+        "gx-service-offering:aggregationOf": [
+          {
+            "@value": "https://delta-dao.com/.well-known/serviceDLTnetwork.json",
+            "@type": "xsd:string"
+          },
+          {
+            "@value": "https://delta-dao.com/.well-known/catalogueCache.json",
+            "@type": "xsd:string"
+          },
+          {
+            "@value": "https://delta-dao.com/.well-known/K8sCluster.json",
+            "@type": "xsd:string"
+          },
+          {
+            "@value": "https://delta-dao.com/.well-known/s3bucket.json",
+            "@type": "xsd:string"
+          }
+        ]
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-19T17:58:35.542Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:delta-dao.com",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DaxVkJZ_oC3wDEIQHQY9BpIXES9jpajXkMa-9OfPllNWlx1-7_aer7gJTK-7UHm8vV2nUdrl4Bi6WD72ZaIOYNalHV1bFHAhUl1FNzCfcPXdKwyqR9Tsnmhk0I9mV4vPHZo98PBw0wcjAKQw4AL-CB_h5qoGp_Jf0Yz6vwJT5WvVXDuhbkx1N_ape0cEiM3LW_SP7kqPU4-G6mkHT9ZF_mH-meZN_1FCVodE_ufq1k49YhEeVUaBmpcx8FmlTb03yLV7sOw_PXHKK27ULmh59puWj0H4LX05Wyb8fvSru0dYgvKfipp59GCduUwuBTq4qjjaOMCzqvFbpHYYqCsNgw"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ServiceOfferingCredentialExperimental"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655661519011",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-19T17:58:39.011Z",
+      "credentialSubject": {
+        "id": "did:op:b30393155a1f6944Ab021a1126D328621584b478",
+        "hash": "d22f21f1a2a519147e3624e46b29cd206079571aec9a1a784ffc99953e5d2ac0"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-19T17:58:39.011Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..GUEp0-gmEB_KBvYezwnhSeZi3FKugcAR479d7Oly1gEPoelXi-7vYxVgDMwe1-hMKmjmIpnmQZmRrjll_3BT4oYaRNYdquclD26fuMopjfy67JjaOUQ_2PsXuNR79c7AJYFF1LNTc5RUDzIr1HnLN1b7qmUqSoB7KbeHzaEaNCKppLc1GI8LSlgSQv1kaGJXriXm84nVMjLiz0yjQNFmz2SI5FqC-jEjsoFydBBZVs2Xb_RG36tIzAFBEO4FjijgTxZ8pMjQLWiFBjRsx_N-0uLUbF3a8sm8WPmSggzAH4L4YlM0XEs-rTsJwbcNPb50-fHNULVS3RsEI03AASPpvA",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
+    }
+  }
