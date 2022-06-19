@@ -1,0 +1,107 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "http://www.w3.org/ns/shacl#",
+            "http://www.w3.org/2001/XMLSchema#",
+            "http://w3id.org/gaia-x/resource#",
+            "http://w3id.org/gaia-x/participant#",
+            "http://w3id.org/gaia-x/service-offering#"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ServiceOfferingExperimental"
+        ],
+        "@id": "https://delta-dao.com/.well-known/serviceDLTvalidatorBDB.json",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceDLTvalidatorBDB.json",
+            "gx-service-offering:providedBy": {
+                "@value": "https://delta-dao.com/.well-known/participantBigchainDB.json",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:name": {
+                "@value": "Gaia-X Test Network Validator Node",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:description": [
+                {
+                    "@value": "Gaia-X Test Network Validator Node",
+                    "@type": "xsd:string"
+                }
+            ],
+            "gx-service-offering:chainID": {
+                "@value": "2021000",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:chainSymbol": {
+                "@value": "GX",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:rpcAddress": {
+                "@value": "https://rpc.gaiaxtestnet.oceanprotocol.com",
+                "@type": "xsd:anyURI"
+            },
+            "gx-service-offering:chainExplorer": {
+                "@value": "https://blockscout.gaiaxtestnet.oceanprotocol.com",
+                "@type": "xsd:anyURI"
+            },
+            "gx-service-offering:nodeClient": {
+                "@value": "OpenEthereum",
+                "@type": "xsd:anyURI"
+            },
+            "gx-service-offering:nodeClientVersion": {
+                "@value": "3.2.6",
+                "@type": "xsd:anyURI"
+            },
+            "gx-service-offering:TermsAndConditions": {
+                "gx-service-offering:url": {
+                    "@value": "https://creativecommons.org/licenses/by/4.0/",
+                    "@type": "xsd:string"
+                },
+                "gx-service-offering:hash": {
+                    "@value": "54895d592300bdd22f5173efbc43db791e5cf54fb1ba71884099ae91eaa9b452",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-service-offering:gdpr": [
+                {
+                    "@type": "xsd:anyURI",
+                    "gx-service-offering:imprint": "https://www.bigchaindb.com/imprint/"
+                },
+                {
+                    "@type": "xsd:anyURI",
+                    "gx-service-offering:privacyPolicy": "https://www.bigchaindb.com/privacy/"
+                }
+            ]
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-19T20:06:25.002Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..R8652IO2OU_-psmMpUjhkB6RjHgFoHBPal6uopDQg1ZqIUT0I3pQfjdWRL4wY8Upa8k5Na9WqMuqkQGJuUW259E1KbClyFRI6yq_iJcqB-yzn8rTWqstcMi-dGozb7D9wzdHjyaeEBW0QGaGRgfA9d2ABRWv8aL44I-tU00_7xMy2nMItpKftHr3FGf2vy4AvvpZmuvxAJdeBAMHhBMmyj2l6oHoM00xwZtTrzLZPXK0ykUps-g3wo5U3RsigC-AXdiJjveCaAtw-9Fst7YTbwd-GD1Du1PDQRPLNuR2ON0VGUxsz5tYg2lNv-iMMk1c5CwJVF92waFdo41CnoctDg"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ServiceOfferingCredentialExperimental"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655669188297",
+        "issuer": "did:web:compliance.gaia-x.eu",
+        "issuanceDate": "2022-06-19T20:06:28.297Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceDLTvalidatorBDB.json",
+            "hash": "548d2b96922cacc2d7c2cdd0c49f482e47475697a5df2d343701dd6c1e4bf4b3"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-19T20:06:28.296Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ShnpUOJXgmCCTHmio4V9B92-7mGRoj6Nuo1aM-jHZ5t6OkCZTqU-0yA4AewfHf9M-wAMGbWtnsubrCrcemrsvW0NXr5-K11GDWow-Nm2bNsjYb2R2baco95mfupGsmjj10JQbnxkDu7j6c4uI3BxoJ8pVIcG924XEHh8-rKGxUNrc8iIbyGbQqA9riSuR-BzbRJLy0U_AsF9USZa79OcTR4LS8qlCxe46d5BQA-y_3xOBzAiQ6-g2Kbdm-Ad4IWzUkOTzEjrbzcHTe-HS5S4UUa_qbWGaDkADQjGonzM7MgRGs9bD9ma_ELGXRmFwvSJuoS3pFVMSNMpa4ub9WYvdg",
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
+        }
+    }
+}
