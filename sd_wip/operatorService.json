@@ -26,13 +26,16 @@
         "@type": "xsd:string",
         "@value": "The Operator-Service manages the Compute-to-Data workflow, communicates with the data provider, and performs the computation."
       },
-      "gx-service-offering:termsAndConditions": [
-        {
-          "@type": "gx-service-offering:TermsAndConditions",
-          "gx-service-offering:url": "https://raw.githubusercontent.com/oceanprotocol/operator-service/v4main/LICENSE",
-          "gx-service-offering:hash": "myrandomhash"
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://raw.githubusercontent.com/oceanprotocol/operator-service/v4main/LICENSE",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "dc6b68d13b8cf959644b935f1192b02c71aa7a5cf653bd43b4480fa89eec8d4d3f16a2278ec8c3b40ab1fdb233b3173a78fd83590d6f739e0c9e8ff56c282557",
+          "@type": "xsd:string"
         }
-      ],
+      },
       "gx-service-offering:gdpr": [
         {
           "@type": "xsd:anyURI",
@@ -56,10 +59,10 @@
     },
     "proof": {
       "type": "JsonWebKey2020",
-      "created": "2022-06-17T13:07:34.146Z",
+      "created": "2022-06-19T07:29:52.515Z",
       "proofPurpose": "assertionMethod",
       "verificationMethod": "did:web:delta-dao.com",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..M1K8p1Sl2582KWWH_S4p7aiRCKFLiN1q-tLSejK5d_JUVrQkqfC6gcX_7-55gU2wRGx0vjoYKhWiDQvZ1AcaBIJcKw3wsp5adSwslphhDqWo3JXDuI_CixACfWZCBauEKcz2Tl9HHkV0zgo0QxNWITHOefbk5WstA_FuFLpwRotcbAeATuvvQ2LYORuQEIcGR67fkS8_6nfhQkocRYfQNc0DGWXdKF5izvFylMA2yz3I3aYjPa3-VAg_onyEKBjRaRVuVXaNMWEBtrkJyzXo96UiQpU5vU1YDy0JvHTgkpnXZ_5Llrc-6v112LetGFJhi4ukFXtF2CE1o7VEqeFd8Q"
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..JBTdeREvN8XxkcuGEtbVdA3HhncM2rtvOduNOytCUmUysH-KbvDb8MveUjArfI791Qhvp5utshUaDsyWiYlbySybsoUAY2ONNp2sbuZ6Zr49A6l6yGx0l7-hm2pnzoYc2-yjO9Za-G0tkHRGc9PhjMgF4rbZsXzkd5HzCVevBSYXXRIQgciSM26Gpew-LdH67esaqJ_geeh63XWX7TrzB3k2r7PTW8BIBfclGKiLLH3UbRap0_jE5ik8TnxgHHKivhiDfoRMozE4oYSKEj4FSscWhSMfqYFOkH_is970ekWSAvgt_gB0lqSdPSgl-zvewqoD2bM9Lk1syVMuiCYC_g"
     }
   },
   "complianceCredential": {
@@ -70,18 +73,18 @@
       "VerifiableCredential",
       "ServiceOfferingCredentialExperimental"
     ],
-    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655471258624",
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655623796146",
     "issuer": "did:web:compliance.gaia-x.eu",
-    "issuanceDate": "2022-06-17T13:07:38.624Z",
+    "issuanceDate": "2022-06-19T07:29:56.146Z",
     "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/operatorService.json",
-      "hash": "05c3897e12d1cef502d1349c5bdac3546cb9240098add730b5e58c8125057b14"
+      "hash": "1493846487b02d2044dd38b7882e2cbdba9bfbc67cde4e19439dc2b3658e8688"
     },
     "proof": {
       "type": "JsonWebKey2020",
-      "created": "2022-06-17T13:07:38.624Z",
+      "created": "2022-06-19T07:29:56.146Z",
       "proofPurpose": "assertionMethod",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..qXaM1gMtJfMw_HtZfF-8OS1y4Wx3VXGlJZDeT-YE71Zl8_bv5DcAEwdQPTp3FIZMxvY1WvK5szrduBnJt6OfmHyOEqSXCiR2qaGoByMCvExwIreAK4oceso5yImwwb9RoWjT_anSUWMMvbZFqz30-aQrISzCa4rHiW4X4aiBmOcnegNTOhm_hVHN8G_B_8fj4Qp23WTh0J9LgStyQXTuBDLDvvuajnWdk_6T0eyFj4LOOypTHiveqj16ajgfPT6uR1nsb4j6tXRpXhUJQIvSMsYcZJFnWGs6N95_sTCvAL1Gl5UBISji_q2H-isR1CJghzJURuGm-nn9vQ-3NNB5XQ",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Uon8vYyWBBnK0KE2EiHuaCHSkC7K5CcKG2wQm0dzDAe8dD6hlXsCEwHAv6iuHtH9QMUSRrJKrNOLIMJ828aBlZgR190MGVclWrZ0baoAixvVc5FCuDHwvGXFBSKGN69MtRwgii9W4DL1-W5xYMQiU7RF9skoqUK748cUrzGZYhogkNkLFlZW68sDt3LokFwLu2aTESIUTBDt9ffJdGLGwvAk0lqPxo9S1HfBGUAL65mJeS2SqpnDWNFM_vSlav_455jAQH7ZqsLQN3FMXHx7UlbT5WqIYfcdVjLLvjywnsnE2BJnABiYTCHMMjHk71jy5e4XG42lJGsqMKqVm46TPg",
       "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }

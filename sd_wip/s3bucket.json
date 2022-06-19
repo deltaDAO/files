@@ -30,13 +30,16 @@
         "@type": "xsd:string",
         "@value": "Amazon S3 bucket is a public cloud storage resource."
       },
-      "gx-service-offering:termsAndConditions": [
-        {
-          "@type": "gx-service-offering:TermsAndConditions",
-          "gx-service-offering:url": "https://aws.amazon.com/service-terms/?nc1=h_lsE",
-          "gx-service-offering:hash": "myrandomhash"
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://aws.amazon.com/service-terms/?nc1=h_lsE",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "contentHash",
+          "@type": "xsd:string"
         }
-      ],
+      },
       "gx-service-offering:gdpr": [
         {
           "@type": "xsd:anyURI",
@@ -50,10 +53,10 @@
     },
     "proof": {
       "type": "JsonWebKey2020",
-      "created": "2022-06-17T12:51:26.160Z",
+      "created": "2022-06-19T07:30:10.408Z",
       "proofPurpose": "assertionMethod",
       "verificationMethod": "did:web:delta-dao.com",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ROr97A2IajnD33uEcWEGKUrmG1k7k8Wmt8rQMzcAfZ96ic7hq0AFvv8smyvSrZzKt0tNKJOlOyCC224JPGcfw9wnVXGZ-T0qM3HyEJpuLRU0HP6z5Ezjd4TqYZvzvCwE_Sc7c9zCczN4x6wlcJO0VsxdXc2i2chBL0yIvWDU1A_qCK7PtCUXnEtSFlUUrBGqAlcNHGd15MOSfllDOwxWAXdskKllP16pltxjEagplSHdiRZmNCjlAiBHSZjasKUsujts8bhtdie7Ho6YimdnOeR3YsOCAvWN-P2T5iWa1ty5jzfe-UgRviUfRjQszKunVRq0XgjVaH-mi-j0LvwhEg"
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ovy2LoOva2TMB2mgwOrRE7gyNkkdYYv_snhxGvMXKaP7qyz3UglR7Z-l-YFN8oUjVf6XSQzru4rPINcFo7TkXlGtDC8wUk6gX8v6JY8c9Gl7Z1SKDCorQM5C_IXKMoEcyHbaYJP4oRAiuh4lo8LN448pp-HQgS49zYkG2s8la99LSQvGo1RctimZs5fDwWT0fNRafd8vwZ1qAoX1qtyCQRBNZ27_z5RxCqqU2nULNcpndBGq_AJADHkjI6Nb-7fqxPiMU0RIc3p-BWWVzNOiPbmuQ3DpCp9YuGQagXVVykl3ntfUqWjoMZA5-YGY7sEnEv9m3aUxhzAGcKiSX7SV9g"
     }
   },
   "complianceCredential": {
@@ -64,18 +67,18 @@
       "VerifiableCredential",
       "ServiceOfferingCredentialExperimental"
     ],
-    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655470290671",
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655623814006",
     "issuer": "did:web:compliance.gaia-x.eu",
-    "issuanceDate": "2022-06-17T12:51:30.671Z",
+    "issuanceDate": "2022-06-19T07:30:14.006Z",
     "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/s3bucket.json",
-      "hash": "7e79f84f92abb4a8188372a97b7e0ee9720295431e604201aafa5c32272dc71d"
+      "hash": "63000af6839e65def087450b153d1708f0e028e5fab84f9941f9cdf6fb600c35"
     },
     "proof": {
       "type": "JsonWebKey2020",
-      "created": "2022-06-17T12:51:30.671Z",
+      "created": "2022-06-19T07:30:14.006Z",
       "proofPurpose": "assertionMethod",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..titi2QOMKOwlyG9mfz3vQ2BDYNY5yln8jjXe1_XOT7_aQ4GZhKNazE83wm9X5H2Jtnfi1uvn8MCSKfO5K8Vh49fUi3CExBsd9fPxMFpJXlXWpidc3IW-0SAKxJ-27kuBnUi1reYU0WNT0ro5yqhytvlCFPylwBnXORolNqbeEZsndoiPQzcdF8eEyRoF7j3uxSDTvidXOCeDOTApy4USpHipKKUkR0WC4pSkewC32eAxICLk3aVTn1TOsyrftPXE1EzQY3X4qfi6y9X4ZZr-1xLR2KUxkBr-5qe82-ZL0s9dVH-HxDKDWsX13pOqxiPlEat_ASTK9rYZpf3vM09fKw",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..nN4IJ5Z_X0gfv8HPUvPk_-1LLXeX8PlUvsEJuZYF1AGrByHd3x_RLhr_hJ29BTjUFZwWkfGHsx8FieNrxR_-_99TKjZvGE2vXYuf0DcXTCRGf2BEQf0EGMNyJG9LEpOGxRcEYv2fslsWIKHW0h0so8jNFj4Af3Z_rNNvIH2zAjn0wKLJrAZ0oQEfWZCIG-8k6hn189niXbMW0Ma0GOBQQjXaFqb68IRisdh9ojeMYpPlU20Dg6Z7a9v_2Vb6TO7DLU4KRSolA8lsUs4o6XzfH1AfPXKkEiiRN4pFr-vv9I7UvXppnmIf-YbuGHXoyOrNY3Il2p785-ODpYCc8nTp6Q",
       "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }

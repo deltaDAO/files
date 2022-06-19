@@ -126,20 +126,23 @@
           }
         }
       ],
-      "gx-participant:termsAndConditions": [
-        {
-          "@type": "gx-participant:termsAndConditions",
-          "gx-participant:termsUrl": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
-          "gx-participant:termsHash": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0"
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+          "@type": "xsd:string"
         }
-      ]
+      }
     },
     "proof": {
       "type": "JsonWebKey2020",
-      "created": "2022-06-17T21:38:42.929Z",
+      "created": "2022-06-19T07:03:02.490Z",
       "proofPurpose": "assertionMethod",
       "verificationMethod": "did:web:delta-dao.com",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MtVHdaSrkuKUKrpDeGWC-NePLXFVkrP3ue0QuhAx2n_sEE1jwpuWzTP8c1dOrheJnoGKGOYu6bLuU_l3fSvkdAkD5DyRik-YxlRA9XmVLVXVAwlhHhrt9PjjgEOGL4JlwbmqB9Xmf4UCk1wGf6AkqKurk1sO7WCFDSrS4PoK1yIAM4MGaown_ChzTAw1xlOajP25LKs2OGCMVU_AKfqWKWOp-0wSrwx-92PTP-MfH_XEpjHQyklsGoSWE9rflEhV_ATXy2phHnv7pqXDlAM7a8G-12AEltJv2iP8VrGPzxKnn1ywPcnZigaDhS_JG3L7R4GeCSn8Dcq9ueAjs61f3w"
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..km2fSoIgXMIUuvMFdXx1oesvGfNT305La4hDBr36UWIGUfJm2PjSeguM4mKh7g0NjCgD9MD3W-rKjvzrMPu9VasjhPJBuop2gBF6C7XIe87NqkuNd0k2WwA5dKJTkrSq95F0TGmNaYwYVEUbIWTkhKcXtOULyCsa9PeZTNF1_4spy_VhGNhS2rBOnfbn4J6MxtSVpwhenqfe0loCHCB4aAKCAKgmXLWSE1D35W6n7AYiUCUq3Gqc66g_U8IFy0KIkAcaqkcOxbdrEdJ-TxJYZsqjmsy2NelAraNCEMubVMZvyV1Y1r2Juxix9Vav8ntiD1ISmvFvbrCKby4DYRKD8w"
     }
   },
   "complianceCredential": {
@@ -150,18 +153,18 @@
       "VerifiableCredential",
       "ParticipantCredential"
     ],
-    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655501925817",
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655622184672",
     "issuer": "did:web:compliance.gaia-x.eu",
-    "issuanceDate": "2022-06-17T21:38:45.817Z",
+    "issuanceDate": "2022-06-19T07:03:04.672Z",
     "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
-      "hash": "ff21f140edff97d470c1bc6a28c4a5cff1c55c31e195f207fba5b8c0e6543740"
+      "hash": "b02fbc7aae48f112ff2b5f645ea37bd29b9b771e72cfd10ac521f89dc5a8e633"
     },
     "proof": {
       "type": "JsonWebKey2020",
-      "created": "2022-06-17T21:38:45.817Z",
+      "created": "2022-06-19T07:03:04.672Z",
       "proofPurpose": "assertionMethod",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..FAhNt2vjvaW_iOg6IWwIgD-yMk2ya8x1lMfvc2_7dD883pdyIznNn0UNpXnIvdKnWFhx8i2ThiaeNc_fXjMx5cpE7FuYD36BcaAHRpl588uJyIDw7M-ZI3p253E9zr_1KJlt_c4SPaejzm_60ikxgODadLc9GFAd9jAACeiZQwfSckNDR4G-NFTb9NSBmuyAHxPWd1-SHZIGcvuGREF1mVt0Pd01KJ6EC7dAEvsFwe-9f_ZnSgvJmf8FvQAOHBHPlAcN8icaQQSeMRvjLz_tGLFLqINehpE0agbHGFkGtaiZINI1Rxt-LY3uS1WlUh1h1GRjrgOYbjaMqbQIfuRmHQ",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ZzjOaWA0dQmIUd58FPEI4E91pqwIp908vox1ILA1QzWwHplamlXEI4MtVnDtK6uqHDdwz-bnqCBxLkcIsnjDqgxrFTaKgO2bwSzR4BKvS9GTqGw_qza-ZpXhgJozxS5FDoRY-Pnr078Gpx-sW2EYrM-07eKoQ0d6G4mY9_CXVIEj5S1qP1d0-KT-fRoTR9Us0Bh4h9mV9VCtdI7asWEB2Lp_FKmZRPPE-pTxFmcY8k38lSTkgdF5Gbicoexnf91Ilm-L7ScJUAkBq_6vUiJpw1DOKgKC4eJukkrV9J4gY-Be5qE-9ZWMZN1LQ-AsEPunVpOXi28IGiNwK9HWlZ8mqA",
       "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }

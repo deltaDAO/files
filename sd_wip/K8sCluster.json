@@ -30,13 +30,16 @@
         "@type": "xsd:string",
         "@value": "The managed K8s cluster provides the basis for the computation and storage."
       },
-      "gx-service-offering:termsAndConditions": [
-        {
-          "@type": "gx-service-offering:TermsAndConditions",
-          "gx-service-offering:url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-          "gx-service-offering:hash": "myrandomhash"
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://www.microsoft.com/en-us/legal/terms-of-use",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "contentHash",
+          "@type": "xsd:string"
         }
-      ],
+      },
       "gx-service-offering:gdpr": [
         {
           "@type": "xsd:anyURI",
@@ -50,10 +53,10 @@
     },
     "proof": {
       "type": "JsonWebKey2020",
-      "created": "2022-06-17T11:58:20.580Z",
+      "created": "2022-06-19T07:28:55.203Z",
       "proofPurpose": "assertionMethod",
       "verificationMethod": "did:web:delta-dao.com",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..bk3yn61-fkOgV7Nf9s2i5y4Fr9qyXTBYoIXkRJjkCOkdzrdc4O8cXXlwkM94w3d9Qm3FtSDjCFw0eDPQWrAl0FsNeugRwSrq5PPRMYA1xvi6QzIEzmDJUcrsPcDjmhi0jyhWftFzmgiW01njK01yjQRQgc7y52I2WPG5hIU6LHZ4-5R6eKE8n1YcX0SOtNucu_6OHURSzZemuWVnEvwrVYyyLTbeiwvOIK6z1AEWjgCeRGn7xT7eozSAjyc0ksFc1zHqjst8LY7sDRH67f9Lce4CbsezjZyyYdMptW_Esdd2KwlOedjfpdnUe5ELQ-W6E8mizDf6d0ikpynoT7uvlg"
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..D5g4576QSoXNbGqeIFSkPGC6a1I4NnuezaKKyfLKup-2Y7GvthL8ouqy0eRUO-_yDfnBYs2oi2ueCdaPtSXzSjksNr0zuc7NIO-R-w0_0w9kXrV0yPgjPVexua6DtaSO9ewzYkoRO_QFfAeEBd8BKc1ZK6y3vBhJ_djXm0QLA7WsS3FWqohYbTn3x4zZSumNaQ9uKTEHgoq1z2xKwEzTbvXSvMphqourlQD-WkA4CHT3yyGYE1EiV8mnyo-chULmoT-9lh3V7vVNvRTp5nisQNYZ76hHLdNaRxhnODkfxFn6eMIc4lJhoGIMsZ8r_DG9PY4VvxQfDH7glXDiF0dGcQ"
     }
   },
   "complianceCredential": {
@@ -64,18 +67,18 @@
       "VerifiableCredential",
       "ServiceOfferingCredentialExperimental"
     ],
-    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655467105122",
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655623739226",
     "issuer": "did:web:compliance.gaia-x.eu",
-    "issuanceDate": "2022-06-17T11:58:25.123Z",
+    "issuanceDate": "2022-06-19T07:28:59.226Z",
     "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/K8sCluster.json",
-      "hash": "fe86b93057872bb4488f7667db5f9a54dd1ba1cd52b6346eeb57570592ca42e3"
+      "hash": "9c3d675bbc06a79dc40e688c993d3935ad63a62e2ff4cb7044c63ea7ab21b36b"
     },
     "proof": {
       "type": "JsonWebKey2020",
-      "created": "2022-06-17T11:58:25.122Z",
+      "created": "2022-06-19T07:28:59.226Z",
       "proofPurpose": "assertionMethod",
-      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..F5fLgW_V9GUZxFxm-0X1cCYEqI1F9bgrmTW1m4qLK5faZoHd8-kEG-Aj6xHrVawuwIRKiMJWzDpQIDAc6-CLyEzJczFbzZ_U6usJk84QdOzzIaXKCtjTITEnB5uqjZjrj_qlay3-850SvRP96yZ9lf2Cf4TOTogyLLwWEZdlwX-D57iF3qBCbUZjcc_73iWRko3HkhMwEH3Jmv-haezasQ4qzWmNx7r7BKLRLzbvxLVDd6EbBxl6jt4vYt3nefZO7LYH2aoCxDvwGMHuuFgzZmNhCORdxVtVcnaL5Xjsq1o9k_r2uQgpEvLxJUdznOzAscILEIEUYgSESfIjgoJm0Q",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Av_36Yw01zkyFbdqR9SnERDOElHqkd_4gusznA19RFRtgXu9j5iQSB3P0DBQ4OGikNDKCbUanMAVuB_xj0U8bVwXjhB-PjXwSRsTXZsh7MaC1TsgNT-hABkcCA65npVpiW6dB62bbWKd8WaLMNL3FnzeRNySKOZfwbcyoeehPSoAFuPH1rXinC6x55STaQYu_gSCpfm6BBun_mtat29L6ldvszuJXPUuLMRr7UbKsu4mfKK3o8wey7HouhCUdLXQY-mwAp76MRDAYWGppMt87Go1UC5l6uyil61UPESLvgBECv8GXf48zT7hfcjIqSV1ASjHeIGYUzt2rXKC3662_A",
       "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
