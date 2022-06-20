@@ -1,0 +1,167 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "@nest"
+    ],
+    "@id": "http://delta-dao.com/.well-known/participantArLab.json",
+    "@type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "credentialSubject": {
+      "id": "http://delta-dao.com/.well-known/participantArLab.json",
+      "gx-participant:name": {
+        "@value": "Arsys Lab",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "Arsys Internet",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "ES26010.000059252",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "ES",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Madre de Dios 21",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "26004",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Logroño",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "ES",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Madre de Dios 21",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "26004",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Logroño",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:parentOrganisation": [
+        {
+          "@type": "gx-participant:LegalPerson",
+          "gx-participant:legalName": {
+            "@type": "xsd:string",
+            "@value": "United Internet AG"
+          },
+          "gx-participant:registrationNumber": {
+            "@value": "DET2214V.HRB5762",
+            "@type": "xsd:string"
+          },
+          "gx-participant:legalAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+              "@value": "DE",
+              "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+              "@value": "Elgendorfer Str. 57",
+              "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+              "@value": "56410",
+              "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+              "@value": "Montabaur",
+              "@type": "xsd:string"
+            },
+            "gx-participant:state": {
+              "@value": "DE-RP",
+              "@type": "xsd:string"
+            }
+          },
+          "gx-participant:headquarterAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+              "@type": "xsd:string",
+              "@value": "DE"
+            },
+            "gx-participant:street-address": {
+              "@value": "Elgendorfer Str. 57",
+              "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+              "@value": "56410",
+              "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+              "@value": "Montabaur",
+              "@type": "xsd:string"
+            },
+            "gx-participant:state": {
+              "@value": "DE-RP",
+              "@type": "xsd:string"
+            }
+          }
+        }
+      ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-20T12:32:20.556Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..FzZvt7RFF0XOfNbupi_yjwiA5I9CRjFR8YcMW-OJr814g_HKFZTJ_4GcYTla42fK-twgePYxo6LPHNDBtEBGciVpu6bRKOD37W9qKOrSp3gvt7p1VuyLpA3HCM_rTbH9tKdG63l39NTLR80O8_-Vv2FFW4ik3LTBGO09yDxcrinb066pN-O53eYgS0uvkoRD1fekhVO8BsAhh8_MMfMm8RbCf0fzJyO-KZgxdyccZ0Sudt9JQyZ13hd4sCn1g7NRwc9Mkm_HLMWjb-cS-akRXiKs-GjqvD0EVxaECWHYcsOVw806_X2xR9B_-t95DO8T5NhoYU_U_9Up5cSJyU4AzA"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655728342319",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-20T12:32:22.319Z",
+    "credentialSubject": {
+      "id": "http://delta-dao.com/.well-known/participantArLab.json",
+      "hash": "87b9bd3f002c8a96fdb43d2a23272302412dda9ef57cad20e1b02380e03dc7a2"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-20T12:32:22.319Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..WCK1DY2aNnHsq-rpg1evW7951-OEI75bL5TDWtdnR83iUFVD6v2UoBXzbHjVuzganAdlJmihrZp5nx4q_orcZ1Lha8SmEkS3zEmp6rqaYnKy-6KimZQU3gOgwK-akJaR6NXCJMQq6VanHm9ztSYWkCkPSvUZlOLhZGUBHeszBFzq-wUJwLj9QrSdzFNzMq4GEH_WvxIdnD0wgkW2y1a6p2xklqai2X2tiOys-tGBcUHHq7zzUhcRCRy4xq363EYSS3i7EEHmwtsKiAhLEJoM3NC5MY7grpiF2L7KT84pNWRMc9pGFo0hhJKk6pKQourEleLDS_UHPcDt2XddBmXUrw",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}
