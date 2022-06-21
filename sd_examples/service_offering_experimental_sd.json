@@ -1,0 +1,59 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "http://w3id.org/gaia-x/resource#",
+        "http://w3id.org/gaia-x/participant#",
+        "http://w3id.org/gaia-x/service-offering#"
+    ],
+    "@type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "@id": "https://delta-dao.com/.well-known/serviceMVGPortal.json",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceMVGPortal.json",
+        "gx-service-offering:providedBy": {
+            "@type": "xsd:string",
+            "@value": "https://delta-dao.com/.well-known/participant.json"
+        },
+        "gx-service-offering:name": {
+            "@type": "xsd:string",
+            "@value": "EuProGigant Portal"
+        },
+        "gx-service-offering:description": {
+            "@type": "xsd:string",
+            "@value": "EuProGigant Minimal Viable Gaia-X Portal"
+        },
+        "gx-service-offering:TermsAndConditions": {
+            "gx-service-offering:url": {
+                "@value": "https://euprogigant.com/en/terms/",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:hash": {
+                "@value": "contentHash",
+                "@type": "xsd:string"
+            }
+        },
+        "gx-service-offering:gdpr": [
+            {
+                "@type": "xsd:anyURI",
+                "gx-service-offering:imprint": "https://euprogigant.portal.minimal-gaia-x.eu/imprint"
+            },
+            {
+                "@type": "xsd:anyURI",
+                "gx-service-offering:privacyPolicy": "https://euprogigant.portal.minimal-gaia-x.eu/privacy/en"
+            }
+        ],
+        "gx-service-offering:dependsOn": [
+            {
+                "@type": "xsd:anyURI",
+                "@value": "https://delta-dao.com/.well-known/cataloguecache.json"
+            },
+            {
+                "@type": "xsd:anyURI",
+                "@value": "https://delta-dao.com/.well-known/serviceNetlify.json"
+            }
+        ]
+    }
+}
