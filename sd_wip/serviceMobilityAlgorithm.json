@@ -1,0 +1,143 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "http://www.w3.org/ns/shacl#",
+            "http://www.w3.org/2001/XMLSchema#",
+            "http://w3id.org/gaia-x/resource#",
+            "http://w3id.org/gaia-x/participant#",
+            "http://w3id.org/gaia-x/service-offering#"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ServiceOfferingExperimental"
+        ],
+        "@id": "https://delta-dao.com/.well-known/serviceMobilityAlgorithm.json",
+        "credentialSubject": {
+            "id": "did:op:4bB5353309913f8003a9451B8E0C15C81dCB9064",
+            "gx-service-offering:providedBy": {
+                "@value": "https://delta-dao.com/.well-known/participantRijkswaterstaat.json",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:name": {
+                "@value": "MOVE-1 Algorithm for the Future Mobility Marketplace",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:description": [
+                {
+                    "@value": "This data service offering offers an example algorithm for object detection and annotation.",
+                    "@type": "xsd:string"
+                }
+            ],
+            "gx-service-offering:serviceModel": {
+                "@value": "subscription",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:servicePrice": {
+                "@value": "10 Ocean",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:subscriptionDuration": {
+                "@value": "86400",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:webAddress": [
+                {
+                    "@value": "https://portal.minimal-gaia-x.eu/asset/did:op:4bB5353309913f8003a9451B8E0C15C81dCB9064",
+                    "@type": "xsd:anyURI"
+                }
+            ],
+            "gx-service-offering:TermsAndConditions": {
+                "gx-service-offering:url": {
+                    "@value": "https://creativecommons.org/licenses/by/4.0/",
+                    "@type": "xsd:string"
+                },
+                "gx-service-offering:hash": {
+                    "@value": "54895d592300bdd22f5173efbc43db791e5cf54fb1ba71884099ae91eaa9b452",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-service-offering:policies": [
+                {
+                    "@value": "computeToDataOnly",
+                    "@type": "xsd:string"
+                }
+            ],
+            "gx-service-offering:gdpr": [
+                {
+                    "@type": "xsd:anyURI",
+                    "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+                },
+                {
+                    "@type": "xsd:anyURI",
+                    "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+                }
+            ],
+            "gx-service-offering:dependsOn": [
+                {
+                    "@id": "https://www.delta-dao.com/.well-known/operatorEngine.json",
+                    "@type": "gx-service:serviceOfferingExperimental"
+                },
+                {
+                    "@id": "https://www.delta-dao.com/.well-known/operatorService.json",
+                    "@type": "gx-service:serviceOfferingExperimental"
+                },
+                {
+                    "@id": "https://www.delta-dao.com/.well-known/accesscontroller.json",
+                    "@type": "gx-service:serviceOfferingExperimental"
+                },
+                {
+                    "@id": "https://www.delta-dao.com/.well-known/servicePortal.json",
+                    "@type": "gx-service:serviceOfferingExperimental"
+                }
+            ],
+            "gx-service-offering:aggregationOf": [
+                {
+                    "@value": "https://delta-dao.com/.well-known/serviceDLTnetwork.json",
+                    "@type": "xsd:string"
+                },
+                {
+                    "@value": "https://delta-dao.com/.well-known/catalogueCache.json",
+                    "@type": "xsd:string"
+                },
+                {
+                    "@value": "https://delta-dao.com/.well-known/K8sCluster.json",
+                    "@type": "xsd:string"
+                },
+                {
+                    "@value": "https://delta-dao.com/.well-known/s3bucket.json",
+                    "@type": "xsd:string"
+                }
+            ]
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-26T17:10:26.138Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..KJer1MD-eG8wiqG9AN6tGfGDm3JQpe0ZcH7Xfbg5f1lDx3jm3QfQElxr3Uc1xlkae3MGthOva2Q9tUq_HjPueH8TnmHjYb10NrmR9So73ruiMhn8v3H_kHA0tfDO7cpsqKEPYGoF57f59kH7yI2h8VqIQVgW-rjXjpdO01_YgpqV9R6AZWMyhCzbo2FnkBYjNyMrXGAYsl4MNp33WDQ4I6agRw13aphXF3edD-h_gc9T1l6h8zv9Yc5fmndfLVUM4fFfYcv8gjaA3RvInBy_XA87oZNgkuonRo8f_fOu0ql7DUCB1JWKhFEG9pqGnrejOmi538Gqvk7Ydz7zkb7Z8w"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ServiceOfferingCredentialExperimental"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1656263430268",
+        "issuer": "did:web:compliance.gaia-x.eu",
+        "issuanceDate": "2022-06-26T17:10:30.268Z",
+        "credentialSubject": {
+            "id": "did:op:4bB5353309913f8003a9451B8E0C15C81dCB9064",
+            "hash": "6ce4531da5bf773a2f2c0019768c06ed78e5886cbfcb437c48f5cfbac3755f0c"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-26T17:10:30.267Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..XxHzLecNvfFpGwU0pdYhMdzMXu6JSggAlq-I66H2hAOnya7giAgcfqBnoJ39lMXFXQ8zjpqSX9P26oWEIbl2AlRpG8xphccXKtlhGB1xOYq95OVR8RrdGq7mABhQW1O5tM_w7UFINmj4-nI-Fdl276vEyorMAyq4ywqddSmrpgUWLhuofEjzafXFowc1LjRaFpCcAX5JA8g3c4qYRU75SSy4w2EDBE1DeFGl3EbZHPgCswcuy9Cf37W1XdX0Na-j4iTmzs0oVJY4rCYqoN3Go-DnGeaa4XiAcL5eQMzfC-UjqZ9zqUFfWwr_2n3chk1X6FExSIQDS3XFNotR_xcVgA",
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
+        }
+    }
+}
