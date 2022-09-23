@@ -8,29 +8,29 @@
         "VerifiableCredential",
         "LegalPerson"
     ],
-    "id": "https://delta-dao.com/.well-known/participantPeaq.json",
+    "id": "https://delta-dao.com/.well-known/participantDatarella.json",
     "issuer": "did:web:delta-dao.com",
     "issuanceDate": "2022-09-23T23:23:23.235Z",
     "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantPeaq.json",
-        "gx-participant:legalName": "Peaq Technology GmbH",
-        "gx-participant:website": "https://www.peaq.network/",
+        "id": "https://delta-dao.com/.well-known/participantDatarella.json",
+        "gx-participant:legalName": "Datarella GmbH",
+        "gx-participant:website": "https://datarella.com/",
         "gx-participant:registrationNumber": {
             "gx-participant:registrationNumberType": "EUID",
-            "gx-participant:registrationNumberNumber": "DEF1103R.HRB190416B"
+            "gx-participant:registrationNumberNumber": "DED2601V.HRB207851"
         },
-        "gx-participant:blockchainAccountId": "0xe3Df4851c094f5F6F1AC9AbfA4FC2075276195Ec",
+        "gx-participant:blockchainAccountId": "0x0aec046a558F13Ff18aAEc5E6f76084185358cdf",
         "gx-participant:headquarterAddress": {
             "gx-participant:addressCountryCode": "DE",
-            "gx-participant:addressCode": "DE-BE",
-            "gx-participant:streetAddress": "Chausseestraße 86",
-            "gx-participant:postalCode": "10115"
+            "gx-participant:addressCode": "DE-BY",
+            "gx-participant:streetAddress": "Oskar-von-Miller-Ring 36",
+            "gx-participant:postalCode": "80333"
         },
         "gx-participant:legalAddress": {
             "gx-participant:addressCountryCode": "DE",
-            "gx-participant:addressCode": "DE-BE",
-            "gx-participant:streetAddress": "Chausseestraße 86",
-            "gx-participant:postalCode": "10115"
+            "gx-participant:addressCode": "DE-BY",
+            "gx-participant:streetAddress": "Oskar-von-Miller-Ring 36",
+            "gx-participant:postalCode": "80333"
         },
         "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     }
