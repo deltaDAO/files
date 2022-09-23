@@ -1,0 +1,61 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "http://w3id.org/gaia-x/participant",
+        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantDenso.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantDenso.json",
+        "gx-participant:legalName": "DENSO AUTOMOTIVE Deutschland GmbH",
+        "gx-participant:website": "https://www.denso.com/",
+        "gx-participant:registrationNumber": {
+            "gx-participant:registrationNumberType": "EUID",
+            "gx-participant:registrationNumberNumber": "DED2601V.HRB72576"
+        },
+        "gx-participant:blockchainAccountId": "0x2b92BF0496B7B41ea2d723325DDE96651795c784",
+        "gx-participant:headquarterAddress": {
+            "gx-participant:addressCountryCode": "DE",
+            "gx-participant:addressCode": "DE-BY",
+            "gx-participant:streetAddress": "Freisinger Str. 21-23",
+            "gx-participant:postalCode": "85386",
+            "gx-participant:locality": "Munich"
+        },
+        "gx-participant:legalAddress": {
+            "gx-participant:addressCountryCode": "DE",
+            "gx-participant:addressCode": "DE-BY",
+            "gx-participant:streetAddress": "Freisinger Str. 21-23",
+            "gx-participant:postalCode": "85386",
+            "gx-participant:locality": "Munich"
+        },
+        "gx-participant:parentOrganisation": {
+            "gx-participant:legalName": "DENSO Corporation",
+            "gx-participant:registrationNumber": {
+                "gx-participant:registrationNumberType": "leiCode",
+                "gx-participant:registrationNumberNumber": "549300RYPA10CQM3QK38"
+            },
+            "gx-participant:headquarterAddress": {
+                "gx-participant:addressCountryCode": "JP",
+                "gx-participant:addressCode": "JP-23",
+                "gx-participant:streetAddress": "1-1, Showa-cho",
+                "gx-participant:postalCode": "448 8661",
+                "gx-participant:locality": "Kariya"
+            },
+            "gx-participant:legalAddress": {
+                "gx-participant:addressCountryCode": "JP",
+                "gx-participant:addressCode": "JP-23",
+                "gx-participant:streetAddress": "1-1, Showa-cho",
+                "gx-participant:postalCode": "448 8661",
+                "gx-participant:locality": "Kariya"
+            },
+            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    }
+}
