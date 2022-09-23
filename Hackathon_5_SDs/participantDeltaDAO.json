@@ -1,0 +1,69 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "http://w3id.org/gaia-x/participant",
+            "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "LegalPerson"
+        ],
+        "id": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+        "issuer": "did:web:delta-dao.com",
+        "issuanceDate": "2022-09-23T23:23:23.235Z",
+        "credentialSubject": {
+            "id": "did:web:delta-dao.com",
+            "gx-participant:legalName": "deltaDAO AG",
+            "gx-participant:website": "https://delta-dao.com",
+            "gx-participant:registrationNumber": {
+                "gx-participant:registrationNumberType": "leiCode",
+                "gx-participant:registrationNumberNumber": "391200FJBNU0YW987L26"
+            },
+            "gx-participant:blockchainAccountId": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52",
+            "gx-participant:headquarterAddress": {
+                "gx-participant:addressCountryCode": "DE",
+                "gx-participant:addressCode": "DE-HH",
+                "gx-participant:streetAddress": "Geibelstraße 46b",
+                "gx-participant:postalCode": "22303"
+            },
+            "gx-participant:legalAddress": {
+                "gx-participant:addressCountryCode": "DE",
+                "gx-participant:addressCode": "DE-HH",
+                "gx-participant:streetAddress": "Geibelstraße 46b",
+                "gx-participant:postalCode": "22303"
+            },
+            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-23T20:42:48.153Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TytxDVZtFmF0JWBK_Tb9bAO6I3cXRdE3dC9zEQD-BSjNUFE9-H_ZRfSpMuSXWHDJ7RsvC8Vvib18ZSMHQezpQ7KZjozPXhixhfbKe9drJmJXHNmuAED9RdEeSirNRK5-VdhGluc2pNpl9mgQENvyPd7i_UQT-Y4KlXgM1QFLXUcTdqBGfYrWfsZ6s2SuMQJ97Dt4jSx-xNeywG7yFELw2B1mVgdHooEqbhqg6PWt0AL29UALP9Y5WSRY4kqDspeZO7vSfFOaDf_UNOpOMu350jkSxZpWQlt9AoLABQCu_86l0IC9pNmBdcqblX7y6YKLwC8Y9PUa-UVlPvfI9on8sg"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ParticipantCredential"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1663965772429",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-09-23T20:42:52.429Z",
+        "credentialSubject": {
+            "id": "did:web:delta-dao.com",
+            "hash": "a6fe43717ec0fede06fd4ddd2b7f05e7b9c53457f970f2465b9d22b1cac12905"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-09-23T20:42:52.429Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..mVlhHivAOHU3G-i_5G9VDKgUp0rDK8Byb6xd7Ica6_4tEdjyiAHz5mFjhBJgfSepEs6QGM_mZAEAJCwxFsYepp4upidkeX0WHC9cQXstzpVaPb_ySFd1KRNCupKvAvJaJp-HXFSxB-N4TrzV1NmcI9k7SPZdshkPfkwY1avktkRCuouKoaVsn1WS8eDAq_HzYcmVQAYlPhOEEAetwoOQ_oaiMVl6JZm_vmCd9St9PLas27jFtwzmHdE6ZANCrneajqlQJXF6hZX5is39WnM6RxednQ00o8Q9OaDOPt6TD85PAc24VHsCL0qOGVXUjXZC2W1vEsYX2sq5_R2L7ZA9JA",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}

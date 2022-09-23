@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "http://w3id.org/gaia-x/participant",
+        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
+        "id": "did:web:delta-dao.com",
+        "gx-participant:legalName": "deltaDAO AG",
+        "gx-participant:website": "https://delta-dao.com",
+        "gx-participant:registrationNumber": {
+            "gx-participant:registrationNumberType": "leiCode",
+            "gx-participant:registrationNumberNumber": "391200FJBNU0YW987L26"
+        },
+        "gx-participant:blockchainAccountId": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52",
+        "gx-participant:headquarterAddress": {
+            "gx-participant:addressCountryCode": "DE",
+            "gx-participant:addressCode": "DE-HH",
+            "gx-participant:streetAddress": "Geibelstraße 46b",
+            "gx-participant:postalCode": "22303"
+        },
+        "gx-participant:legalAddress": {
+            "gx-participant:addressCountryCode": "DE",
+            "gx-participant:addressCode": "DE-HH",
+            "gx-participant:streetAddress": "Geibelstraße 46b",
+            "gx-participant:postalCode": "22303"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    }
+}
