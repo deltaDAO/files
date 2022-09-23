@@ -1,0 +1,93 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "http://w3id.org/gaia-x/participant",
+            "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "LegalPerson"
+        ],
+        "id": "https://delta-dao.com/.well-known/participantRijkswaterstaat.json",
+        "issuer": "did:web:delta-dao.com",
+        "issuanceDate": "2022-09-23T23:23:23.235Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/participantRijkswaterstaat.json",
+            "gx-participant:legalName": "Rijkswaterstaat",
+            "gx-participant:website": "https://www.rijkswaterstaat.nl/",
+            "gx-participant:registrationNumber": {
+                "gx-participant:registrationNumberType": "local",
+                "gx-participant:registrationNumberNumber": "27364178"
+            },
+            "gx-participant:blockchainAccountId": "0xa98A6eefbAE870b88a9C7A43f4b50066A01c93b6",
+            "gx-participant:headquarterAddress": {
+                "gx-participant:addressCountryCode": "NL",
+                "gx-participant:addressCode": "NL-ZH",
+                "gx-participant:streetAddress": "Rijnstraat 8",
+                "gx-participant:postalCode": "2515XP",
+                "gx-participant:locality": "Den Haag"
+            },
+            "gx-participant:legalAddress": {
+                "gx-participant:addressCountryCode": "NL",
+                "gx-participant:addressCode": "NL-ZH",
+                "gx-participant:streetAddress": "Rijnstraat 8",
+                "gx-participant:postalCode": "2515XP",
+                "gx-participant:locality": "Den Haag"
+            },
+            "gx-participant:parentOrganisation": {
+                "gx-participant:legalName": "Ministerie van Infrastructuur en Waterstaat",
+                "gx-participant:registrationNumber": {
+                    "gx-participant:registrationNumberType": "local",
+                    "gx-participant:registrationNumberNumber": "52766179"
+                },
+                "gx-participant:headquarterAddress": {
+                    "gx-participant:addressCountryCode": "NL",
+                    "gx-participant:addressCode": "NL-ZH",
+                    "gx-participant:streetAddress": "Rijnstraat 8",
+                    "gx-participant:postalCode": "2515XP",
+                    "gx-participant:locality": "Den Haag"
+                },
+                "gx-participant:legalAddress": {
+                    "gx-participant:addressCountryCode": "NL",
+                    "gx-participant:addressCode": "NL-ZH",
+                    "gx-participant:streetAddress": "Rijnstraat 8",
+                    "gx-participant:postalCode": "2515XP",
+                    "gx-participant:locality": "Den Haag"
+                },
+                "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+            },
+            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-23T23:01:20.517Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..nPrCFnvXzYl-sEH74BbwAF2jjvs0ji_2vB554h55sJ2H75oD10U_7BHz2mE_9_Q7utWWRNAs1dF8PkjDEMl5FLoBcP326PsF2xqcZ7PAGWKFo0EJILS9jakOrq9zKIuJo_9wolWHi0IIaHfndPf13GapvxCFJTeDpgVXT6FbdVt_bZvA1Du3HLwjPA45Pa3gf-rkYk4JS3q7ZcEqGcie3sOLcfZd3vaZh7BPLCLauzrW1ZA5GGzYMSQa99tDm4l5S3uzlBZMmuB3jLcUpBeD95nbXZNqpRXgFLv9lXFY_DEIFJrLJhSpakS79FyZMJiSDgTVE5EB8AE4F_fXl9eIwQ"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ParticipantCredential"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1663974084445",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-09-23T23:01:24.445Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/participantRijkswaterstaat.json",
+            "hash": "f034083cb99ffaa2483b27319ab7a2525a5b6a427584157a27241ea0b10c930c"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-09-23T23:01:24.445Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Vd5dY19lw33DKGjGvI2-SMd20KISuO_n7cTshBSRlQpSiGdSno73Xcg28VM4Y176EvQZZRlgdaLLebgU8GFkDsShqIIkoqyA7_qMDSJvSoP8W9oyu9KMascBtTGcJE_9zELTByXTnUWtuYo1m7bG218MyyrnJ_BYe2zFbzxpCfLNh430cKL9aRqNqrkAi3C2VR0qPErhwvMDn4HWhrYke1TCcsZ1Ek1wkkgRDH6rYr-flpnGE37MgPXhbs4TcNxBpDQi22tKDb7lQQPtCu51pxiu98dKGQ20RC8eMtLnXqqUx1GSwYeY3jrmQiY9PzE7gbpnKTCRgNhcaKmGhqbDyQ",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}
