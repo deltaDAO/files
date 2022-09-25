@@ -1,93 +1,93 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "http://w3id.org/gaia-x/participant",
-        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "LegalPerson"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "http://w3id.org/gaia-x/participant",
+      "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantDenso.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/participantDenso.json",
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-23T23:23:23.235Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantDenso.json",
-        "gx-participant:legalName": "DENSO AUTOMOTIVE Deutschland GmbH",
-        "gx-participant:website": "https://www.denso.com/",
+      "gx-participant:legalName": "DENSO AUTOMOTIVE Deutschland GmbH",
+      "gx-participant:website": "https://www.denso.com/",
+      "gx-participant:registrationNumber": {
+        "gx-participant:registrationNumberType": "EUID",
+        "gx-participant:registrationNumberNumber": "DED2601V.HRB72576"
+      },
+      "gx-participant:blockchainAccountId": "0x2b92BF0496B7B41ea2d723325DDE96651795c784",
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-BY",
+        "gx-participant:streetAddress": "Freisinger Str. 21-23",
+        "gx-participant:postalCode": "85386",
+        "gx-participant:locality": "Munich"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-BY",
+        "gx-participant:streetAddress": "Freisinger Str. 21-23",
+        "gx-participant:postalCode": "85386",
+        "gx-participant:locality": "Munich"
+      },
+      "gx-participant:parentOrganisation": {
+        "gx-participant:legalName": "DENSO Corporation",
         "gx-participant:registrationNumber": {
-          "gx-participant:registrationNumberType": "EUID",
-          "gx-participant:registrationNumberNumber": "DED2601V.HRB72576"
+          "gx-participant:registrationNumberType": "leiCode",
+          "gx-participant:registrationNumberNumber": "549300RYPA10CQM3QK38"
         },
-        "gx-participant:blockchainAccountId": "0x2b92BF0496B7B41ea2d723325DDE96651795c784",
         "gx-participant:headquarterAddress": {
-          "gx-participant:addressCountryCode": "DE",
-          "gx-participant:addressCode": "DE-BY",
-          "gx-participant:streetAddress": "Freisinger Str. 21-23",
-          "gx-participant:postalCode": "85386",
-          "gx-participant:locality": "Munich"
+          "gx-participant:addressCountryCode": "JP",
+          "gx-participant:addressCode": "JP-23",
+          "gx-participant:streetAddress": "1-1, Showa-cho",
+          "gx-participant:postalCode": "448 8661",
+          "gx-participant:locality": "Kariya"
         },
         "gx-participant:legalAddress": {
-          "gx-participant:addressCountryCode": "DE",
-          "gx-participant:addressCode": "DE-BY",
-          "gx-participant:streetAddress": "Freisinger Str. 21-23",
-          "gx-participant:postalCode": "85386",
-          "gx-participant:locality": "Munich"
-        },
-        "gx-participant:parentOrganisation": {
-          "gx-participant:legalName": "DENSO Corporation",
-          "gx-participant:registrationNumber": {
-            "gx-participant:registrationNumberType": "leiCode",
-            "gx-participant:registrationNumberNumber": "549300RYPA10CQM3QK38"
-          },
-          "gx-participant:headquarterAddress": {
-            "gx-participant:addressCountryCode": "JP",
-            "gx-participant:addressCode": "JP-23",
-            "gx-participant:streetAddress": "1-1, Showa-cho",
-            "gx-participant:postalCode": "448 8661",
-            "gx-participant:locality": "Kariya"
-          },
-          "gx-participant:legalAddress": {
-            "gx-participant:addressCountryCode": "JP",
-            "gx-participant:addressCode": "JP-23",
-            "gx-participant:streetAddress": "1-1, Showa-cho",
-            "gx-participant:postalCode": "448 8661",
-            "gx-participant:locality": "Kariya"
-          },
-          "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+          "gx-participant:addressCountryCode": "JP",
+          "gx-participant:addressCode": "JP-23",
+          "gx-participant:streetAddress": "1-1, Showa-cho",
+          "gx-participant:postalCode": "448 8661",
+          "gx-participant:locality": "Kariya"
         },
         "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
       },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-23T22:41:32.377Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:delta-dao.com",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..asQDqxEvfYLogvLzIWqgQYY9SrE1dJjJ2WxYPzsZCaNrUCAzV0b2MvKmgblY8SUmZRRDJHL2fMJTzGcNMt1hiWdbzz3i8Jt8lRPyje4ticbGbF9vUFpSmS7wI56b3AxWJmMb-aN8aUWsqhKjoPRAIA5yfkbFn3oaFZqAtBOkCEIXHKkDFVcWH7GGJyzdXq_DuH5q823zg1FjrPXxDBN_hnxlLZ2iRtdQgYgm4RwHnq_CTMsrKNFwP115aHMWorhHMLiR2g3ldhBkVVcr_iy2S7Kmck1fcVHNIjqX_D-yDDzy0vf2PlMwg1IW_IOfTR8WHrSkB-CbwrF9KBgwwNG0FQ"
-      }
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ParticipantCredential"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1663972896247",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-23T22:41:36.247Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantDenso.json",
-        "hash": "322ffb7bc45ff34038ab5c258caa0c6e1726ee777633f6e4080244d34430996c"
-      },
-      "proof": {
-        "type": "JsonWebKey2020",
-        "created": "2022-09-23T22:41:36.247Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..IEr4AWp11iom07gZnpgAS6DaGAW3YiSlS2Olak2I1InvLJMmJgGH1NOPwXsODjVvTuxeJbHZ3FYnJoWguEIF-S6LgPMQe179cLttA4TvojCGS9mSB1dWdcJLKN3dBSblrLy6hcRI3XM1_VEjd8rBnigL28lQYsoYqLmAUXzm-xGV_CzgLke7zw4A57hMZQoe-vL3Z37RJnMJG-Y61xMSiWCmFVB_Jp-TFeznHmnX-hw1E06nyPIJ5TJydPfw1TvXNjKk04DXwadIAF24vjKezuThO6PJYpDgpfZr1ZxylVrp4ZTG2lt9I65aNLHYBMDjtja997duPWIcvD8HDKeM5A",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-25T15:02:42.833Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..qn2iSRC8lmdBGhjRxE8D4VxCJs3QtuBCAGeaSacBpQppzPQjEjVaJn2X8aqk4skRFyMqANnTxatTXYYbiCuexwvhfFpPwW8CUOHSSD6S2qgaohyxPKIV4iwVy8u_d38TEMnpBNOkaNotPQZ4lkcvpVdLsaGtpX6qUyoOwT-KqizBvDSp8LKf6lj_4bhrpcoq4Fxy22afphs54TEw3zBfZAIF-BEW3NDfirGZYECyE55PFJtLXdtj4xwngjzr_a-U_-ky-V2zXml7stJJqt6KQLlvR5mGNI5lPoKMZ_jM0v-JCi6mugyx-f316jlq9WUwUUVOCSK9mnXX8l0HerR2EQ"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664118166523",
+    "issuer": "did:web:compliance.lab.gaia-x.eu",
+    "issuanceDate": "2022-09-25T15:02:46.523Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantDenso.json",
+      "hash": "322ffb7bc45ff34038ab5c258caa0c6e1726ee777633f6e4080244d34430996c"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-09-25T15:02:46.524Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..BVPqrDctzfn0lh-RWEu-q71nvPgQ5lkLOwIpnmVsxmYqx1m1Z2ZQIPN45BEn9Kqz-ylYGC4ekAhif9Un2m4O_7VurBB6CxPlB-SkO3r3OhR9jhKbfgbd8a1CbtGOQyzgnlB11Bp0DaKlnf4zQZZA86t2MpokQK8ceLrUinhM6ns1aEjbuU5LhMOEnbUS7nDSiU5apJrSxH57Ng8_-GiSozzZk3C8hq-GhDo6-zx2kBMlwvQvMCerGip7PZVk7rgXXkM0Q7aJggUZRTrvZda0xCNPmIIU-yi_fjxoPhqBGDbH0YAMaJOEB8JEwlNxA1avua-V63Na1ZYKfecb9mx5Tg",
+      "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
     }
   }
+}
