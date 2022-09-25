@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "id": "https://vc.craftworks.euprogigant.io/sd/participant.json",
+  "type": [
+    "VerifiableCredential",
+    "LegalPerson"
+  ],
+  "issuer": "did:web:vc.craftworks.euprogigant.io",
+  "issuanceDate": "2022-09-23T23:23:23.235Z",
+  "credentialSubject": {
+    "id": "did:web:vc.craftworks.euprogigant.io",
+    "gx-participant:legalName": "craftworks GmbH",
+    "gx-participant:registrationNumber": {
+      "gx-participant:registrationNumberType": "EUID",
+      "gx-participant:registrationNumberNumber": "ATBRA.424082-000"
+    },
+    "gx-participant:headquarterAddress": {
+      "gx-participant:addressCountryCode": "AT",
+      "gx-participant:addressCode": "AT-9",
+      "gx-participant:streetAddress": "Schottenfeldgasse 20/6A",
+      "gx-participant:postalCode": "1070",
+      "gx-participant:locality": "Wien"
+    },
+    "gx-participant:legalAddress": {
+      "gx-participant:addressCountryCode": "AT",
+      "gx-participant:addressCode": "AT-9",
+      "gx-participant:streetAddress": "Schottenfeldgasse 20",
+      "gx-participant:postalCode": "1070",
+      "gx-participant:locality": "Wien"
+    },
+    "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+  }
+}

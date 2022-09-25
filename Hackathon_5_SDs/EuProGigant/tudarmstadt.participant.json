@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "id": "did:web:vc.ptw.tu-darmstadt:euprogigant.io",
+  "type": [
+    "VerifiableCredential",
+    "LegalPerson"
+  ],
+  "issuer": "did:web:vc.ptw.tu-darmstadt:euprogigant.io",
+  "issuanceDate": "2022-09-23T23:23:23.235Z",
+  "credentialSubject": {
+    "id": "did:web:vc.ptw.tu-darmstadt:euprogigant.io",
+    "gx-participant:name": "Institut für Produktionsmanagement, Technologie und Werkzeugmaschinen",
+    "gx-participant:legalName": "Technische Universität Darmstadt",
+    "gx-participant:registrationNumber": [
+      {
+        "gx-participant:registrationNumberType": "EUID",
+        "gx-participant:registrationNumberNumber": "DEK1101R.RA999999"
+      },
+      {
+        "gx-participant:registrationNumberType": "leiCode",
+        "gx-participant:registrationNumberNumber": "529900F96SGD8JFV9842"
+      }
+    ],
+    "gx-participant:headquarterAddress": {
+      "gx-participant:addressCountryCode": "DE",
+      "gx-participant:addressCode": "DE-HE",
+      "gx-participant:streetAddress": "Otto-Berndt-Strasse 2",
+      "gx-participant:postalCode": "64297",
+      "gx-participant:locality": "Darmstadt"
+    },
+    "gx-participant:legalAddress": {
+      "gx-participant:addressCountryCode": "DE",
+      "gx-participant:addressCode": "DE-HE",
+      "gx-participant:streetAddress": "Karolinenplatz 5",
+      "gx-participant:postalCode": "64289",
+      "gx-participant:locality": "Darmstadt"
+    },
+    "gx-participant:parentOrganisation": {
+      "@id": "eupg:darmstadt.group:LegalPerson",
+      "@type": "gx-participant:LegalPerson",
+      "gx-participant:legalName": "Technische Universität Darmstadt",
+      "gx-participant:registrationNumber": [
+        {
+          "gx-participant:registrationNumberType": "EUID",
+          "gx-participant:registrationNumberNumber": "DEK1101R.RA999999"
+        },
+        {
+          "gx-participant:registrationNumberType": "leiCode",
+          "gx-participant:registrationNumberNumber": "529900F96SGD8JFV9842"
+        }
+      ],
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-HE",
+        "gx-participant:streetAddress": "Karolinenplatz 5",
+        "gx-participant:postalCode": "64289",
+        "gx-participant:locality": "Darmstadt"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-HE",
+        "gx-participant:streetAddress": "Karolinenplatz 5",
+        "gx-participant:postalCode": "64289",
+        "gx-participant:locality": "Darmstadt"
+      },
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    },
+    "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+  }
+}

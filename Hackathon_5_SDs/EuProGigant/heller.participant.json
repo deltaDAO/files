@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "id": "https://vc.craftworks.euprogigant.io/sd/participant.json",
+  "type": [
+    "VerifiableCredential",
+    "LegalPerson"
+  ],
+  "issuer": "https://vc.heller.euprogigant.io/sd/participant.json",
+  "issuanceDate": "2022-09-23T23:23:23.235Z",
+  "credentialSubject": {
+    "id": "did:web:vc.heller.euprogigant.io",
+    "gx-participant:legalName": "Gebrüder Heller Maschinenfabrik GmbH",
+    "gx-participant:registrationNumber": [
+      {
+        "gx-participant:registrationNumberType": "EUID",
+        "gx-participant:registrationNumberNumber": "DEB8534.HRB220233"
+      },
+      {
+        "gx-participant:registrationNumberType": "leiCode",
+        "gx-participant:registrationNumberNumber": "529900XJBRSYA2F0T237"
+      }
+    ],
+    "gx-participant:headquarterAddress": {
+      "gx-participant:addressCountryCode": "DE",
+      "gx-participant:addressCode": "DE-BW",
+      "gx-participant:streetAddress": "Gebrüder-Heller-Strasse 15",
+      "gx-participant:postalCode": "72622",
+      "gx-participant:locality": "Nürtingen"
+    },
+    "gx-participant:legalAddress": {
+      "gx-participant:addressCountryCode": "DE",
+      "gx-participant:addressCode": "DE-BW",
+      "gx-participant:streetAddress": "Gebrüder-Heller-Strasse 15",
+      "gx-participant:postalCode": "72622",
+      "gx-participant:locality": "Nürtingen"
+    },
+    "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+  }
+}
