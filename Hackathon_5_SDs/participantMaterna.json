@@ -1,69 +1,77 @@
 {
     "selfDescriptionCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1",
-            "http://w3id.org/gaia-x/participant",
-            "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "LegalPerson"
-        ],
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "http://w3id.org/gaia-x/participant",
+        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "id": "https://delta-dao.com/.well-known/participantMaterna.json",
+      "issuer": "did:web:delta-dao.com",
+      "issuanceDate": "2022-09-23T23:23:23.235Z",
+      "credentialSubject": {
         "id": "https://delta-dao.com/.well-known/participantMaterna.json",
-        "issuer": "did:web:delta-dao.com",
-        "issuanceDate": "2022-09-23T23:23:23.235Z",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/participantMaterna.json",
-            "gx-participant:legalName": "Materna Information & Communications SE",
-            "gx-participant:website": "https://www.materna.de/",
-            "gx-participant:registrationNumber": {
-                "gx-participant:registrationNumberType": "EUID",
-                "gx-participant:registrationNumberNumber": "DER2402.HRB30301"
-            },
-            "gx-participant:blockchainAccountId": "0xf596D17C4a3A5c92c4721627B9e5E5064651BF46",
-            "gx-participant:headquarterAddress": {
-                "gx-participant:addressCountryCode": "DE",
-                "gx-participant:addressCode": "DE-NW",
-                "gx-participant:streetAddress": "Voßkuhle 37",
-                "gx-participant:postalCode": "44141"
-            },
-            "gx-participant:legalAddress": {
-                "gx-participant:addressCountryCode": "DE",
-                "gx-participant:addressCode": "DE-NW",
-                "gx-participant:streetAddress": "Voßkuhle 37",
-                "gx-participant:postalCode": "44141"
-            },
-            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        "gx-participant:legalName": "Materna Information & Communications SE",
+        "gx-participant:website": "https://www.materna.de/",
+        "gx-participant:registrationNumber": [
+          {
+            "gx-participant:registrationNumberType": "EUID",
+            "gx-participant:registrationNumberNumber": "DER2402.HRB30301"
+          },
+          {
+            "gx-participant:registrationNumberType": "leiCode",
+            "gx-participant:registrationNumberNumber": "529900US8JCYXTUDNP08"
+          }
+        ],
+        "gx-participant:blockchainAccountId": "0xf596D17C4a3A5c92c4721627B9e5E5064651BF46",
+        "gx-participant:headquarterAddress": {
+          "gx-participant:addressCountryCode": "DE",
+          "gx-participant:addressCode": "DE-NW",
+          "gx-participant:streetAddress": "Voßkuhle 37",
+          "gx-participant:postalCode": "44141",
+          "gx-participant:locality": "Dortmund"
         },
-        "proof": {
-            "type": "JsonWebSignature2020",
-            "created": "2022-09-23T22:09:03.995Z",
-            "proofPurpose": "assertionMethod",
-            "verificationMethod": "did:web:delta-dao.com",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MjbUc-hbLAnqzuadQ9GxKcJiuWD7_mIBq-QXbTpySqRIqsCeHAe7_qS6znfLV6x_8dhuCbhqBKUaJZWAT5NusBSA0rjENKhbZHvpErNRsnZY9lGLCszO3-3T8BJGUIAL5fXrHQMrdJwLd3NS2m7zj0QJCdeyIvCn3rvjxGEYN18iV3VZis3OvXth1mm2PeMlF16PnPzapr_Px3exGUC54hgpaNlk51z6yKrUYiEth_NbIir2YaMh_mOPpA1tkpr3XR-iYyP_6-gK1DPs81Lnm6rSdPwGW7ff5tCdkxdA5xm8EyH1NJ7fhQL6mM7424cvyMoQ_zAyGmKUX--XZQzOQw"
-        }
+        "gx-participant:legalAddress": {
+          "gx-participant:addressCountryCode": "DE",
+          "gx-participant:addressCode": "DE-NW",
+          "gx-participant:streetAddress": "Voßkuhle 37",
+          "gx-participant:postalCode": "44141",
+          "gx-participant:locality": "Dortmund"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T14:50:05.155Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:delta-dao.com",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ZJfkJlRhJo0NOmaZ4jsmmfEYdVFx0Ly5dDsgwxLY90TbMd7QjVxLA9vUONZxo9DjDvb0fy_H9s6DDBgh1ZmM_qSEifQDzuN5Jp33XK1xldlHdHzFEgb_FTVNgGT8EaD11ispy02T0E6kHG9wxXKxQhDHceIjMr-BTdYeqe1oqbPBAIPZOlgrCkNQce8Yp7x24lqeIZ-HV_lDcRiKF-AadVmRFlCmF52GQFdKoj5asI9XYz7Qlt1NHcMnjOtlW4Toq1XNRsREcqCNcXJUoXwF0fnhP4N2-KtLU6MG1yvwNSFSMpMdRchyIBrJ3VGLvjQL9Y4M06UVdaMg1XrxHdPt7g"
+      }
     },
     "complianceCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "ParticipantCredential"
-        ],
-        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1663970948002",
-        "issuer": "did:web:compliance.lab.gaia-x.eu",
-        "issuanceDate": "2022-09-23T22:09:08.002Z",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/participantMaterna.json",
-            "hash": "53d96b15cba4841e7a0afd99f8fbe9bd93c4ebe8576d2078eb7a4bf676e422c4"
-        },
-        "proof": {
-            "type": "JsonWebKey2020",
-            "created": "2022-09-23T22:09:08.002Z",
-            "proofPurpose": "assertionMethod",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..UjkY12Gibg6BL1oarY2V85Zvkm4oJzzjxdT1P_Phw-4_NUGki_Yi4w2NHeU3w4KVKUIEgw9XHQkqnneqD8Qd5OtKSYT2v9VCkS4FNiNJfYFOD1Ra2vzPm618hWPnNJH4-CkPtWnLHtcqFuIFKAUkYkW4v5spK1QAcw6nf2DtVadIaP2k9e2Ufd7XoNG9OSCcIw-wGvfTfO21i59OqUX_C6dETMEl0F19GXaECMjhb7GSd_QykqOhu6ASfPtz2lvkvvUd8-aGvWqQiXKuOo_xTVF_qvuoNhNY50SGIptnxOmNWmGg75HoW-2DNP7idkgt_So1QEDXj_IB96aJsz95ZA",
-            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-        }
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664117408786",
+      "issuer": "did:web:compliance.lab.gaia-x.eu",
+      "issuanceDate": "2022-09-25T14:50:08.786Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantMaterna.json",
+        "hash": "7312eac33cce84dcb2c64959a40a2be763c24b443ff961114b8569c949156ca0"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-09-25T14:50:08.786Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..pOi7YZi3k81jV2MP_kxhwDmZRP57l1u6UVFPwDNlPiV5F9FC7eGNulhCLpmEBK2Gc0Toal7qIvYF5k3i6Q5tuO3fYlZvG38V1bQIl8XazbQ5FeMViBLd3VfVJTufQ0v2YufxGs8khLm6FYCIKeD_bE2RwgbcAsCRa5wsDMcQyfnTZGDNWK0aSJ2RzfXeNSKe83irWgmUATDXT3SoTiVGnvjU9PfEaU6kQxZ4GVwEEYHxzh46j8K_QB2--DbyJ_aat1Jg9OXDj1zhC1eNx84uP2lkuOutMSnCKW-SmE5qOBOWnY2eyg3laKMHEwm9ieBxru-nF5LoXLuCYVG-QXsTnQ",
+        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+      }
     }
-}
+  }
