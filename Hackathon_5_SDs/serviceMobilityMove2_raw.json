@@ -1,0 +1,68 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.lab.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceMobilityMove2.json",
+    "credentialSubject": {
+        "id": "did:op:6865B70CddB1041f49d83c9c46D676f16D8Bd496",
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantRijkswaterstaat.json",
+        "gx-service-offering:name": "MOVE-2 Data for the Future Mobility Marketplace",
+        "gx-service-offering:description": "This data service offering consists of traffic data for object detection and annotation.",
+        "gx-service-offering:serviceModel": "subscription",
+        "gx-service-offering:servicePrice": [
+            {
+                "gx-service-offering:servicePriceCurrency": "Ocean",
+                "gx-service-offering:servicePriceValue": "1"
+            }
+        ],
+        "gx-service-offering:subscriptionDuration": "86400",
+        "gx-service-offering:Policies": "computeToDataOnly",
+        "gx-service-offering:whitelistedUsage": [
+            {
+                "gx-service-offering:whitelistedUsageAlgorithm": "did:op:985d3E0134bCE4d82b90d639d5d83627DE687870"
+            },
+            {
+                "gx-service-offering:whitelistedUsageAlgorithm": "did:op:4bB5353309913f8003a9451B8E0C15C81dCB9064"
+            }
+        ],
+        "gx-service-offering:webAddress": "https://marketplace.future-mobility-alliance.org/asset/did:op:6865B70CddB1041f49d83c9c46D676f16D8Bd496",
+        "gx-service-offering:termsAndConditions": [
+            {
+                "gx-service-offering:url": "https://creativecommons.org/licenses/by/4.0/",
+                "gx-service-offering:hash": "2edd334433cb3ff9c2904b194653d714cf42398e6af750fb44c65679a9fce6cc"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "gx-service-offering:imprint": "https://www.delta-dao.com/imprint/"
+            },
+            {
+                "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy/"
+            }
+        ],
+        "gx-service-offering:dependsOn": [
+            "https://www.delta-dao.com/.well-known/operatorEngine.json",
+            "https://www.delta-dao.com/.well-known/operatorService.json",
+            "https://www.delta-dao.com/.well-known/accesscontroller.json",
+            "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
+            "https://delta-dao.com/.well-known/s3bucket.json",
+            "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
+            "https://delta-dao.com/.well-known/resourceMobilityDataMove2.json"
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+            "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": {
+            "gx-service-offering:requestType": "email",
+            "gx-service-offering:accessType": "digital",
+            "gx-service-offering:formatType": "mime/png"
+        }
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z"
+}
