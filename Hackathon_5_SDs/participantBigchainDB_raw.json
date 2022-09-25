@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "http://w3id.org/gaia-x/participant",
+        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantBigchainDB.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantBigchainDB.json",
+        "gx-participant:legalName": "BigchainDB GmbH",
+        "gx-participant:website": "https://www.bigchaindb.com/",
+        "gx-participant:registrationNumber": {
+            "gx-participant:registrationNumberType": "EUID",
+            "gx-participant:registrationNumberNumber": "DEF1103R.HRB160856B"
+        },
+        "gx-participant:blockchainAccountId": "0x61DB12d8b636Cb49ea09eCa58a893dA9480E1F33",
+        "gx-participant:headquarterAddress": {
+            "gx-participant:addressCountryCode": "DE",
+            "gx-participant:addressCode": "DE-BE",
+            "gx-participant:streetAddress": "An der Kolonade 11",
+            "gx-participant:postalCode": "10117",
+            "gx-participant:locality": "Berlin"
+        },
+        "gx-participant:legalAddress": {
+            "gx-participant:addressCountryCode": "DE",
+            "gx-participant:addressCode": "DE-BE",
+            "gx-participant:streetAddress": "An der Kolonade 11",
+            "gx-participant:postalCode": "10117",
+            "gx-participant:locality": "Berlin"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    }
+}
