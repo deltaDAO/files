@@ -15,10 +15,16 @@
         "id": "https://delta-dao.com/.well-known/participantATOS.json",
         "gx-participant:legalName": "Atos Information Technology GmbH",
         "gx-participant:website": "https://atos.net/",
-        "gx-participant:registrationNumber": {
-            "gx-participant:registrationNumberType": "EUID",
-            "gx-participant:registrationNumberNumber": "DED2601V.HRB235509"
-        },
+        "gx-participant:registrationNumber": [
+            {
+                "gx-participant:registrationNumberType": "EUID",
+                "gx-participant:registrationNumberNumber": "DED2601V.HRB235509"
+            },
+            {
+                "gx-participant:registrationNumberType": "leiCode",
+                "gx-participant:registrationNumberNumber": "5493004LD2P8IKTYZN80"
+            }
+        ],
         "gx-participant:blockchainAccountId": "0x943CaA8afCAdd2F64a7cE9E53A91d5ea0BEb40c1",
         "gx-participant:headquarterAddress": {
             "gx-participant:addressCountryCode": "DE",
@@ -36,11 +42,17 @@
         },
         "gx-participant:parentOrganisation": {
             "gx-participant:legalName": "ATOS SE",
-            "gx-participant:registrationNumber": {
-                "gx-participant:registrationNumberType": "EUID",
-                "gx-participant:registrationNumberNumber": "FR7802.323623603"
-            },
-            "gx-participant:headquarterAddress": {
+            "gx-participant:registrationNumber": [
+                {
+                    "gx-participant:registrationNumberType": "EUID",
+                    "gx-participant:registrationNumberNumber": "FR7802.323623603"
+                },
+                {
+                    "gx-participant:registrationNumberType": "leiCode",
+                    "gx-participant:registrationNumberNumber": "5493001EZOOA66PTBR68"
+                }
+            ],
+        "gx-participant:headquarterAddress": {
                 "gx-participant:addressCountryCode": "FR",
                 "gx-participant:addressCode": "FR-95",
                 "gx-participant:streetAddress": "Immeuble River Ouest, 80 Quai Voltaire",
