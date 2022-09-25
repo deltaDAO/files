@@ -24,13 +24,15 @@
             "gx-participant:addressCountryCode": "DE",
             "gx-participant:addressCode": "DE-BE",
             "gx-participant:streetAddress": "Chausseestraße 86",
-            "gx-participant:postalCode": "10115"
+            "gx-participant:postalCode": "10115",
+            "gx-participant:locality": "Berlin"
         },
         "gx-participant:legalAddress": {
             "gx-participant:addressCountryCode": "DE",
             "gx-participant:addressCode": "DE-BE",
             "gx-participant:streetAddress": "Chausseestraße 86",
-            "gx-participant:postalCode": "10115"
+            "gx-participant:postalCode": "10115",
+            "gx-participant:locality": "Berlin"
         },
         "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     }
