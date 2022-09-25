@@ -1,6 +1,7 @@
 {
   "@context": [
-    "https://www.w3.org/2018/credentials/v1"
+    "https://www.w3.org/2018/credentials/v1",
+    "https://registry.gaia-x.eu/api/v2206/shape/files?file=participant&type=jsonld"
   ],
   "id": "did:web:vc.ptw.tu-darmstadt:euprogigant.io",
   "type": [
