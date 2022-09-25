@@ -1,0 +1,60 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "http://w3id.org/gaia-x/participant",
+        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantAmazon.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantAmazon.json",
+        "gx-participant:legalName": "Amazon Web Services EMEA SARL",
+        "gx-participant:website": "https://aws.amazon.com/",
+        "gx-participant:registrationNumber": {
+            "gx-participant:registrationNumberType": "EUID",
+            "gx-participant:registrationNumberNumber": "LURCSL.B186284"
+        },
+        "gx-participant:headquarterAddress": {
+            "gx-participant:addressCountryCode": "LU",
+            "gx-participant:addressCode": "LU-LU",
+            "gx-participant:streetAddress": "38, avenue John F. Kennedy",
+            "gx-participant:postalCode": "1855",
+            "gx-participant:locality": "Luxembourg"
+        },
+        "gx-participant:legalAddress": {
+            "gx-participant:addressCountryCode": "LU",
+            "gx-participant:addressCode": "LU-LU",
+            "gx-participant:streetAddress": "38, avenue John F. Kennedy",
+            "gx-participant:postalCode": "1855",
+            "gx-participant:locality": "Luxembourg"
+        },
+        "gx-participant:parentOrganisation": {
+            "gx-participant:legalName": "Amazon Web Services, Inc.",
+            "gx-participant:registrationNumber": {
+                "gx-participant:registrationNumberType": "local",
+                "gx-participant:registrationNumberNumber": "0000174230"
+            },
+            "gx-participant:headquarterAddress": {
+                "gx-participant:addressCountryCode": "US",
+                "gx-participant:addressCode": "US-WA",
+                "gx-participant:streetAddress": "410 Terry Avenue North",
+                "gx-participant:postalCode": "98109-5210",
+                "gx-participant:locality": "Seattle"
+            },
+            "gx-participant:legalAddress": {
+                "gx-participant:addressCountryCode": "JP",
+                "gx-participant:addressCode": "US-WA",
+                "gx-participant:streetAddress": "410 Terry Avenue North",
+                "gx-participant:postalCode": "98109-5210",
+                "gx-participant:locality": "Seattle"
+            },
+            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    }
+}
