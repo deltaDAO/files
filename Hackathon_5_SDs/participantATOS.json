@@ -1,105 +1,104 @@
 {
     "selfDescriptionCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1",
-            "http://w3id.org/gaia-x/participant",
-            "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "LegalPerson"
-        ],
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.gaia-x.eu/v2206/api/shape"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "id": "https://delta-dao.com/.well-known/participantATOS.json",
+      "issuer": "did:web:delta-dao.com",
+      "issuanceDate": "2022-09-23T23:23:23.235Z",
+      "credentialSubject": {
         "id": "https://delta-dao.com/.well-known/participantATOS.json",
-        "issuer": "did:web:delta-dao.com",
-        "issuanceDate": "2022-09-23T23:23:23.235Z",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/participantATOS.json",
-            "gx-participant:legalName": "Atos Information Technology GmbH",
-            "gx-participant:website": "https://atos.net/",
-            "gx-participant:registrationNumber": [
-                {
-                    "gx-participant:registrationNumberType": "EUID",
-                    "gx-participant:registrationNumberNumber": "DED2601V.HRB235509"
-                },
-                {
-                    "gx-participant:registrationNumberType": "leiCode",
-                    "gx-participant:registrationNumberNumber": "5493004LD2P8IKTYZN80"
-                }
-            ],
-            "gx-participant:blockchainAccountId": "0x943CaA8afCAdd2F64a7cE9E53A91d5ea0BEb40c1",
-            "gx-participant:headquarterAddress": {
-                "gx-participant:addressCountryCode": "DE",
-                "gx-participant:addressCode": "DE-BY",
-                "gx-participant:streetAddress": "Otto-Hahn-Ring 6",
-                "gx-participant:postalCode": "81739",
-                "gx-participant:locality": "Munich"
-            },
-            "gx-participant:legalAddress": {
-                "gx-participant:addressCountryCode": "DE",
-                "gx-participant:addressCode": "DE-BY",
-                "gx-participant:streetAddress": "Otto-Hahn-Ring 6",
-                "gx-participant:postalCode": "81739",
-                "gx-participant:locality": "Munich"
-            },
-            "gx-participant:parentOrganisation": {
-                "gx-participant:legalName": "ATOS SE",
-                "gx-participant:registrationNumber": [
-                    {
-                        "gx-participant:registrationNumberType": "EUID",
-                        "gx-participant:registrationNumberNumber": "FR7802.323623603"
-                    },
-                    {
-                        "gx-participant:registrationNumberType": "leiCode",
-                        "gx-participant:registrationNumberNumber": "5493001EZOOA66PTBR68"
-                    }
-                ],
-                "gx-participant:headquarterAddress": {
-                    "gx-participant:addressCountryCode": "FR",
-                    "gx-participant:addressCode": "FR-95",
-                    "gx-participant:streetAddress": "Immeuble River Ouest, 80 Quai Voltaire",
-                    "gx-participant:postalCode": "95870",
-                    "gx-participant:locality": "Bezons"
-                },
-                "gx-participant:legalAddress": {
-                    "gx-participant:addressCountryCode": "FR",
-                    "gx-participant:addressCode": "FR-95",
-                    "gx-participant:streetAddress": "Immeuble River Ouest, 80 Quai Voltaire",
-                    "gx-participant:postalCode": "95870",
-                    "gx-participant:locality": "Bezons"
-                },
-                "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
-            },
-            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        "gx-participant:legalName": "Atos Information Technology GmbH",
+        "gx-participant:website": "https://atos.net/",
+        "gx-participant:registrationNumber": [
+          {
+            "gx-participant:registrationNumberType": "EUID",
+            "gx-participant:registrationNumberNumber": "DED2601V.HRB235509"
+          },
+          {
+            "gx-participant:registrationNumberType": "leiCode",
+            "gx-participant:registrationNumberNumber": "5493004LD2P8IKTYZN80"
+          }
+        ],
+        "gx-participant:blockchainAccountId": "0x943CaA8afCAdd2F64a7cE9E53A91d5ea0BEb40c1",
+        "gx-participant:headquarterAddress": {
+          "gx-participant:addressCountryCode": "DE",
+          "gx-participant:addressCode": "DE-BY",
+          "gx-participant:streetAddress": "Otto-Hahn-Ring 6",
+          "gx-participant:postalCode": "81739",
+          "gx-participant:locality": "Munich"
         },
-        "proof": {
-            "type": "JsonWebSignature2020",
-            "created": "2022-09-25T14:00:23.656Z",
-            "proofPurpose": "assertionMethod",
-            "verificationMethod": "did:web:delta-dao.com",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..SCXzFlxEe_VHJa4ICiwsdklLb2RYknLTPHIP7ylmRauGALUo2qgJk5SWQNRBtPQGR1Cj-EXd6Ri79AnOlhv0JKnEPWbgQNcKhO8hBkPDCSUsoqt2f-qFiNUPXCfKHanyef8U66ovSztovrroma0Vq82lCF6ahAvfACndKiaGPksT4UHCPbqHPqV3EUUTLoUnFBa_lb6aZ67osLAlLgbgexi1a1x7opx6uFGhC9NltWUCa4asx_3ASSCJiFNWbX4BXLxIYEpfcjjxyx8DU5c3_Jz2P7BHGQPlyqZSIfW3v_pyrk1NB6NxGu6qVG8nYM4az4oklSB0FjnyoNRJbCdVAg"
-        }
+        "gx-participant:legalAddress": {
+          "gx-participant:addressCountryCode": "DE",
+          "gx-participant:addressCode": "DE-BY",
+          "gx-participant:streetAddress": "Otto-Hahn-Ring 6",
+          "gx-participant:postalCode": "81739",
+          "gx-participant:locality": "Munich"
+        },
+        "gx-participant:parentOrganisation": {
+          "gx-participant:legalName": "ATOS SE",
+          "gx-participant:registrationNumber": [
+            {
+              "gx-participant:registrationNumberType": "EUID",
+              "gx-participant:registrationNumberNumber": "FR7802.323623603"
+            },
+            {
+              "gx-participant:registrationNumberType": "leiCode",
+              "gx-participant:registrationNumberNumber": "5493001EZOOA66PTBR68"
+            }
+          ],
+          "gx-participant:headquarterAddress": {
+            "gx-participant:addressCountryCode": "FR",
+            "gx-participant:addressCode": "FR-95",
+            "gx-participant:streetAddress": "Immeuble River Ouest, 80 Quai Voltaire",
+            "gx-participant:postalCode": "95870",
+            "gx-participant:locality": "Bezons"
+          },
+          "gx-participant:legalAddress": {
+            "gx-participant:addressCountryCode": "FR",
+            "gx-participant:addressCode": "FR-95",
+            "gx-participant:streetAddress": "Immeuble River Ouest, 80 Quai Voltaire",
+            "gx-participant:postalCode": "95870",
+            "gx-participant:locality": "Bezons"
+          },
+          "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T21:11:06.423Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:compliance.gaia-x.eu",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..nq581TtdUCRxvEww7vqkOwRM6veWQvKYaWbWQ45n8ThF2_MDSlQmo1zWKqToVSixQfd3sXoTk80OhPgG4KH9qIiyxb4PfXqvQRJaW3hZpB-xaKuylNhuPubf10D_3VwvfqKN0zmhnLaOiaadSzNA_KwPhTYFRMPpCwTQsdld3GUCcMpTB5sK_HsNk1FKNj0b7jHYeFlKaInq_SJn_YxLAQVWB63x2wxl98a8ySnZ6X3x_two1IML8h42Bkl9Xp8KbwALF7p1kK2RLPdFlj3T6W22HaoqDKeQj5v2NRVXHafopKGi6b8Prdpltu04-XWoQ_wh51h6YDvGKqvMD2iueA"
+      }
     },
     "complianceCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "ParticipantCredential"
-        ],
-        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664114427533",
-        "issuer": "did:web:compliance.lab.gaia-x.eu",
-        "issuanceDate": "2022-09-25T14:00:27.533Z",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/participantATOS.json",
-            "hash": "c0623fcb44dc78caec331f65f45c2e91c43fa236f48529f7256fc7e6458de253"
-        },
-        "proof": {
-            "type": "JsonWebKey2020",
-            "created": "2022-09-25T14:00:27.533Z",
-            "proofPurpose": "assertionMethod",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Onk15f8ZqWHrZw1iNZTEYP3eWlE5Yr0f2oV7a-4i0CxizmAld0g6Iyd7JJsOFApL844z82Gjz1nFCyJvGvInbCwDsAE-CRMoCIGMlTS0-5pHOfdH4OVe0YSxgxEio7f0iGFUECEt-FOSH_Iy3wWzWufnhiTfmAqcNrdLDCj74plg79_-5mxtu8E5LGTYpUAmi1n7vpw7y3Kc8TckeXvy7tuyR0BWRpM1qBmVtZcDM50Oozxf3KqT_pbXCxwi9t0TPCstTd8QmsZEKDJhmITrr3fCD11wISI6-WtqpXZIl5vWnL5PD0tqJkqNG8PbjGPkzPP-QJYquz192lOv05MVVA",
-            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-        }
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664140271009",
+      "issuer": "did:web:compliance.lab.gaia-x.eu",
+      "issuanceDate": "2022-09-25T21:11:11.009Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantATOS.json",
+        "hash": "fd5dbde5674c833e75e08c71ff44641e355c3578e14b19d464a961173119a5d8"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T21:11:11.009Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HHxztpOtCaU4zbbh4F0_nW4VWV-il22CWIVCGQRkJhJPDWReDJyJskUFiD5G5ydhxOcVyGFYjN68hUxHA_LqimvChjy06mXpSxhb4GoHbUvtYmigOvwbt2cPqWBd0KS223flv9ea4eU0rVFHEvD2hOl3vFj6OG3CgL5eAFo9NlaJkTCGpoqiqRc9kBct54ROy_V2prRis6GiVpU1VIOBlYZzfAlqaxdQpz9lXel-dTX6MLmGD3oYZV-0EBlNaT4vlfbC1gQC-wUOlA9Upo72efwy6AVsaaf1A61e1j2vsqRkBwcW9MCDbe4QmUoFka1bv8yQ4Q4jcL5FvYz9P_Yh4A",
+        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+      }
     }
-}
+  }

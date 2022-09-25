@@ -1,88 +1,88 @@
 {
     "selfDescriptionCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1",
-            "https://registry.lab.gaia-x.eu/v2206/api/shape"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "ServiceOfferingExperimental"
-        ],
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.gaia-x.eu/v2206/api/shape"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+      ],
+      "id": "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
+      "credentialSubject": {
         "id": "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
-            "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
-            "gx-service-offering:name": "Gaia-X Web3 Ecosystem POA Test Network",
-            "gx-service-offering:description": "The Gaia-X Web3 Ecosystem POA OpenEthereum Test Network for Gaia-X Web3 Ecosystem Demonstrator.",
-            "gx-service-offering:serviceModel": "pay per use",
-            "gx-service-offering:chainID": "2021000",
-            "gx-service-offering:chainSymbol": "GX",
-            "gx-service-offering:rpcAddress": "https://rpc.gaiaxtestnet.oceanprotocol.com",
-            "gx-service-offering:chainExplorer": "https://blockscout.gaiaxtestnet.oceanprotocol.com",
-            "gx-service-offering:nodeClient": "OpenEthereum",
-            "gx-service-offering:nodeClientVersion": "3.2.6",
-            "gx-service-offering:termsAndConditions": [
-                {
-                    "gx-service-offering:url": "https://www.bigchaindb.com/terms-of-use",
-                    "gx-service-offering:hash": "115b40095d99fcca1f026bd6702d168b8065ec4e853e6279df4d947601222058"
-                }
-            ],
-            "gx-service-offering:gdpr": [
-                {
-                    "gx-service-offering:imprint": "https://www.bigchaindb.com/imprint/"
-                },
-                {
-                    "gx-service-offering:privacyPolicy": "https://www.bigchaindb.com/privacy/"
-                }
-            ],
-            "gx-service-offering:aggreationOf": [
-                "https://delta-dao.com/.well-known/serviceDLTvalidatorDeltaDAO.json",
-                "https://delta-dao.com/.well-known/serviceDLTvalidatorBDB.json",
-                "https://delta-dao.com/.well-known/serviceDLTvalidatorEuProGigant.json",
-                "https://delta-dao.com/.well-known/serviceExchangeLogging.json",
-                "https://delta-dao.com/.well-known/serviceContractingService.json",
-                "https://delta-dao.com/.well-known/serviceRPCnode.json"
-            ],
-            "gx-service-offering:dataProtectionRegime": [
-                "GDPR2016"
-            ],
-            "gx-service-offering:dataExport": {
-                "gx-service-offering:requestType": "email",
-                "gx-service-offering:accessType": "digital",
-                "gx-service-offering:formatType": "mime/png"
-            }
-        },
-        "issuer": "did:web:delta-dao.com",
-        "issuanceDate": "2022-09-25T23:23:23.235Z",
-        "proof": {
-            "type": "JsonWebSignature2020",
-            "created": "2022-09-25T20:18:27.863Z",
-            "proofPurpose": "assertionMethod",
-            "verificationMethod": "did:web:delta-dao.com",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..KIGlVvaHYLHyOMk3BCKcJSwzPl39AvT9bB_mKDdmVejXiZrxxAiqGx392wy23jq6hzcVtu0k-yFQ-Vd24p-ik7bcAE9jEArFfTq0EhYAabHv6EbSjQ7H9YhYcLhufYdyZP22ESluUW1pr4dwS6eTRIFBJyK3DYhh6tIVioWsT5OyG4m3LO6MvlZz5Fa-_xnqBvQQO_C-Fr3afGN7HwqFdDlXujR0uDQ786Vm0tRv0z4aHziq2ItmjNm10k1_E6xzupLIzAxJzaT7SrtFz7BzfL7gRrR1_jy-cxld644RRI3o8X66zuJCCY_LXZ8cc2klau2WzJEJZ93T5GulsQXEOg"
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+        "gx-service-offering:name": "Gaia-X Web3 Ecosystem POA Test Network",
+        "gx-service-offering:description": "The Gaia-X Web3 Ecosystem POA OpenEthereum Test Network for Gaia-X Web3 Ecosystem Demonstrator.",
+        "gx-service-offering:serviceModel": "pay per use",
+        "gx-service-offering:chainID": "2021000",
+        "gx-service-offering:chainSymbol": "GX",
+        "gx-service-offering:rpcAddress": "https://rpc.gaiaxtestnet.oceanprotocol.com",
+        "gx-service-offering:chainExplorer": "https://blockscout.gaiaxtestnet.oceanprotocol.com",
+        "gx-service-offering:nodeClient": "OpenEthereum",
+        "gx-service-offering:nodeClientVersion": "3.2.6",
+        "gx-service-offering:termsAndConditions": [
+          {
+            "gx-service-offering:url": "https://www.bigchaindb.com/terms-of-use",
+            "gx-service-offering:hash": "115b40095d99fcca1f026bd6702d168b8065ec4e853e6279df4d947601222058"
+          }
+        ],
+        "gx-service-offering:gdpr": [
+          {
+            "gx-service-offering:imprint": "https://www.bigchaindb.com/imprint/"
+          },
+          {
+            "gx-service-offering:privacyPolicy": "https://www.bigchaindb.com/privacy/"
+          }
+        ],
+        "gx-service-offering:aggreationOf": [
+          "https://delta-dao.com/.well-known/serviceDLTvalidatorDeltaDAO.json",
+          "https://delta-dao.com/.well-known/serviceDLTvalidatorBDB.json",
+          "https://delta-dao.com/.well-known/serviceDLTvalidatorEuProGigant.json",
+          "https://delta-dao.com/.well-known/serviceExchangeLogging.json",
+          "https://delta-dao.com/.well-known/serviceContractingService.json",
+          "https://delta-dao.com/.well-known/serviceRPCnode.json"
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+          "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": {
+          "gx-service-offering:requestType": "email",
+          "gx-service-offering:accessType": "digital",
+          "gx-service-offering:formatType": "mime/png"
         }
+      },
+      "issuer": "did:web:delta-dao.com",
+      "issuanceDate": "2022-09-25T23:23:23.235Z",
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T21:19:08.847Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:compliance.gaia-x.eu",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..D4OAR6uk65BZeIsc__9gsMx3Pnj1bzJt744oCr6pd6D2nHPD9l4K3VKqMkTmCQ-ZwTZsSafjrKCYRQ7V9dPDrVibmeKhCCrPzVYN2ksCL6OYAO-8IhL_aiLDRMdKqEY9Aeqa92-FBwoX7AahBxcfcsZZFEnVT4GdTiqfOZ9sK8IWAfXVhbDoPbZ0XmlpeTnSOeInVWwoN-2PEOoX2Ezn2J508EyvsbSDVHGrkjZUm-tBI6tkIehqp2T28cjzheZlKvfqkOIeHlBveeLGCiZ_r8_0oWDwMJyy5km_By6j8Is-x-uNf-qz0bRU_sToLXEitq0FoYDAw7XZ8pzqgDlNOQ"
+      }
     },
     "complianceCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "ServiceOfferingCredentialExperimental"
-        ],
-        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664137112726",
-        "issuer": "did:web:compliance.lab.gaia-x.eu",
-        "issuanceDate": "2022-09-25T20:18:32.726Z",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
-            "hash": "f15c8f518e8041c61baf64ec38b34638b760185abd030ad689d9dd9ecd05d236"
-        },
-        "proof": {
-            "type": "JsonWebSignature2020",
-            "created": "2022-09-25T20:18:32.726Z",
-            "proofPurpose": "assertionMethod",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..tfaO8abntx-udtccWkoPdzsQWqA-rSFfMRBj64JXjHCGZP7yAYjQawt39vhPdLpfek82jacHvDqgpINxUuZA_fAOdryWKB_NUapOABjoNrp7W6bz0w2tEX9mGCA3yW2szPVqtv-rq3_KQPKDrdVScTAA_sixTC92QuDNBjNG7f6Y_zrxZUR_-D5HMSdWws3CuL34TRRXj7COx_0dSAXmCwdIHhtJIAuk4Wdrn1KiC492NG7tzb9GWDn3mhjFvPu-jhyZbuT2q3mqhS_Hw6DJapPiVxPlgNQHFKe6De7ALBcy57dQJGLls3x9AxfUNbPMLCGZYHXc0xhadngTPZnvMw",
-            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-        }
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ServiceOfferingCredentialExperimental"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664140753705",
+      "issuer": "did:web:compliance.lab.gaia-x.eu",
+      "issuanceDate": "2022-09-25T21:19:13.705Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
+        "hash": "c7246a3e8499b91864b7f680e25f30a1457be8080653e088106fbd2068c5c0c5"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T21:19:13.705Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..k_WPKDMDF8hFFyb2tUIDblSKuRoJ7COQQcvejGcEqyPfv_yXJMZOkqo3SPPBMJxoi1L3WH_ncjOP6Ru13BVJfna5dk8vcfJa-SjrKiVmnP3rN3M7dlLOpjrRazJDkVp47RTybOTKtXhjOqAEysQAtKVwYx8aACVZoDMiCGfO1s__AAGfG1ao1YdRZ8TSY5xO048461j6E-xwYmxMOywVnk387_YQzz4cosBLZpvN7EFNMKtbafHS0fOmctauCDq0ImkhMPf5HAGPBiQsZ3DhWsg4UfjjYNMIZaQrQ7LDS3yqNIqvLCNDufVDkhuw_SPA0sY7kV0a9UMLdnQlHCx1nA",
+        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+      }
     }
-}
+  }

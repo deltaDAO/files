@@ -1,88 +1,88 @@
 {
     "selfDescriptionCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1",
-            "https://registry.gaia-x.eu/v2206/api/shape/files?file=service-offering&type=ttl#"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "ServiceOfferingExperimental"
-        ],
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.gaia-x.eu/v2206/api/shape"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+      ],
+      "id": "https://delta-dao.com/.well-known/serviceEuProGigantPortal.json",
+      "credentialSubject": {
         "id": "https://delta-dao.com/.well-known/serviceEuProGigantPortal.json",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/serviceEuProGigantPortal.json",
-            "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
-            "gx-service-offering:name": "EuProGigant - European Production Giganet Gaia-X Portal",
-            "gx-service-offering:description": "Gaia-X Portal of the Gaia-X lighthouse project “EuProGigant - European Production Giganet",
-            "gx-service-offering:webAddress": "https://euprogigant.portal.minimal-gaia-x.eu/",
-            "gx-service-offering:serviceModel": "free web service",
-            "gx-service-offering:servicePrice": [
-                {
-                    "gx-service-offering:servicePriceCurrency": "EUR",
-                    "gx-service-offering:servicePriceValue": "0"
-                }
-            ],
-            "gx-service-offering:termsAndConditions": [
-                {
-                    "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/imprint",
-                    "gx-service-offering:hash": "ec71c2a7c9482823f83df7470da93f0447db5f6101b6124521518d610e9785f7"
-                }
-            ],
-            "gx-service-offering:gdpr": [
-                {
-                    "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
-                },
-                {
-                    "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
-                }
-            ],
-            "gx-service-offering:dataProtectionRegime": [
-                "GDPR2016"
-            ],
-            "gx-service-offering:dataExport": [
-                {
-                    "gx-service-offering:requestType": "email",
-                    "gx-service-offering:accessType": "digital",
-                    "gx-service-offering:formatType": "mime/png"
-                }
-            ],
-            "gx-service-offering:dependsOn": [
-                "https://euprogigant.com/.well-known/serviceCatalogueCacheEuProGigant.json",
-                "https://delta-dao.com/.well-known/serviceNetlify.json",
-                "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
-            ]
-        },
-        "issuer": "did:web:delta-dao.com",
-        "issuanceDate": "2022-09-25T23:23:23.235Z",
-        "proof": {
-            "type": "JsonWebSignature2020",
-            "created": "2022-09-25T18:02:40.187Z",
-            "proofPurpose": "assertionMethod",
-            "verificationMethod": "did:web:delta-dao.com",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..XR_dt_Jl5sgK8Bufa77gSRUOoI7xkGQTMuDqiaXK8-4EK9ubDw80XkYXbYGeVUyWPj4GO3P9dUI7sMmCJjvSt-AMlUUwIbGYr4bjPMrhQaij_lRshRSbUiGZb3Rc0a1ax3ymfkUQY_TI046LZO7kAFIRhu7XNbltpoH11gSoU2_lOtD495WCNgXnWvL3GADVLzmPwYC9dZt3Ao1zLz86SyWv8WbXNqMzdQQzqwQFqxtFfnNXjOPFbKyrfGI8Q1B7OIiC-XwR0lDs9dXhVVND3G4pYzgtJiJJsL3t9fHx99jg5mdESSZLCFtaxqgBOftmbA1Vbdv9G8Du9qV1raMaOg"
-        }
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+        "gx-service-offering:name": "EuProGigant - European Production Giganet Gaia-X Portal",
+        "gx-service-offering:description": "Gaia-X Portal of the Gaia-X lighthouse project “EuProGigant - European Production Giganet",
+        "gx-service-offering:webAddress": "https://euprogigant.portal.minimal-gaia-x.eu/",
+        "gx-service-offering:serviceModel": "free web service",
+        "gx-service-offering:servicePrice": [
+          {
+            "gx-service-offering:servicePriceCurrency": "EUR",
+            "gx-service-offering:servicePriceValue": "0"
+          }
+        ],
+        "gx-service-offering:termsAndConditions": [
+          {
+            "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/imprint",
+            "gx-service-offering:hash": "ec71c2a7c9482823f83df7470da93f0447db5f6101b6124521518d610e9785f7"
+          }
+        ],
+        "gx-service-offering:gdpr": [
+          {
+            "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
+          },
+          {
+            "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
+          }
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+          "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": [
+          {
+            "gx-service-offering:requestType": "email",
+            "gx-service-offering:accessType": "digital",
+            "gx-service-offering:formatType": "mime/png"
+          }
+        ],
+        "gx-service-offering:dependsOn": [
+          "https://euprogigant.com/.well-known/serviceCatalogueCacheEuProGigant.json",
+          "https://delta-dao.com/.well-known/serviceNetlify.json",
+          "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
+        ]
+      },
+      "issuer": "did:web:delta-dao.com",
+      "issuanceDate": "2022-09-25T23:23:23.235Z",
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T21:18:31.263Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:compliance.gaia-x.eu",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..h3xKYzHqxy4LOuQSydXI9Tq0AbE_Kj5-z5U1tJJ6as_1_g45qp5VgRTOYK4v38fvZ_JdySgUsSwxHmBP_3J4LR3cTxa1CL4xAzR474Wwn9G1RqlhTHfKtQuiOLAW1vrBd1_m0qYl1LkSq7hDDiOleWtJM-WajTVbdNnpil8ZNOYDO6nNLyGSyEdlCNaFCHWC3Osf31FvxpTodESVplCm5rSxhr1LZaWeza2QQ-khEyAwa6c37ymbU6H87dVZzobKIo-dKWXM_vP-OCpyln4iheq2U1-XrpKJVL3LlQhTbEJa_emOaPiG5URM1Hkwj1KdpJLpDBVZn2h9GgBhDOazGw"
+      }
     },
     "complianceCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "ServiceOfferingCredentialExperimental"
-        ],
-        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664128964562",
-        "issuer": "did:web:compliance.lab.gaia-x.eu",
-        "issuanceDate": "2022-09-25T18:02:44.562Z",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/serviceEuProGigantPortal.json",
-            "hash": "dde2205d987dc933f1f4a8a2f30d650f9c132f1ced68a213933f9ca7d47ac9ae"
-        },
-        "proof": {
-            "type": "JsonWebSignature2020",
-            "created": "2022-09-25T18:02:44.562Z",
-            "proofPurpose": "assertionMethod",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..e6i4QQ2vtHvo-LWTAVKzK2HYhkeEJNBpq0wMyuKIwWUCQVzxUD8NTZnxgB7QQimxe34J4qV2bSp6OE7I_SFElxe3ueEuj7tiXFpj7CziuQnxZuO59bEUSIS15BXK2KmLB7GblyAok4Oted6auDUpeB2Y1KID67_hqQAUQjAMUHenY7a3TdRkq-Qg6CJTpIydzOzLY4ozm6z62_SXP8aCC0lmd7yQhJReeWJ23ZT5iNnhHWf0NpHW88Zk3AFzO0yNE2JGJz3Ziu5B_PmTD7YJijDjDW45nmO6ZbrfvBojDy03uRXIm67QpO5IDfm8m1zUYtlLPe6g5GuMFMQtdS_k2A",
-            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-        }
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ServiceOfferingCredentialExperimental"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664140715963",
+      "issuer": "did:web:compliance.lab.gaia-x.eu",
+      "issuanceDate": "2022-09-25T21:18:35.963Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceEuProGigantPortal.json",
+        "hash": "c9cb5cb2968b4480bb26b960a55b226a5f1d196b922c1faf3507cf513539dd0a"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T21:18:35.963Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..GgboOT1366uVwDcW6JITfyPuIpxJzOdIJK1ywzqcCVj4S5lDKGXQehhNKcfjy-mGCw4f4PBWfUJdWen1Et-46gmVfES-ys_UZhc47Fe6RmCfgeK-JqAtsRh8n7S2GLz_wKNTP17rstcG8krJpcNOOXszDrX7JsoiWr-Au95Wk-RhzXKM41V-1y3vnCj8ezD0Sbb2T7zKCF0cSEkjjluitBUwd7PfQZgCK6k7NAY3lJOxop-HsjrDilH0hoQoRdEZQFg4RarBrki3UUZr66Q8z8FcIiD1PUhMNGQG6XAhAoCWtlQOxIjVJtIPFwsAqJVl6Ejez5X-JZNFl30NxQTTAw",
+        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+      }
     }
-}
+  }
