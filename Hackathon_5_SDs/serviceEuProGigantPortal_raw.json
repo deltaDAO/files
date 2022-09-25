@@ -46,7 +46,7 @@
             }
         ],
         "gx-service-offering:dependsOn": [
-            "https://euprogigant.com/.well-known/serviceCatalogueCache.json",
+            "https://euprogigant.com/.well-known/serviceCatalogueCacheEuProGigant.json",
             "https://delta-dao.com/.well-known/serviceNetlify.json",
             "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
         ]

@@ -1,0 +1,88 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://registry.gaia-x.eu/v2206/api/shape/files?file=service-offering&type=ttl#"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingExperimental"
+        ],
+        "id": "https://delta-dao.com/.well-known/serviceFutureMobilityDataMarketplacePortal.json",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceFutureMobilityDataMarketplacePortal.json",
+            "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+            "gx-service-offering:name": "Future Mobility Data Marketplace",
+            "gx-service-offering:description": "The Future Mobility Data Marketplace matches supply and demand of any kind of data and algorithms that can be relevant for mobility.",
+            "gx-service-offering:webAddress": "https://marketplace.future-mobility-alliance.org/",
+            "gx-service-offering:serviceModel": "free web service",
+            "gx-service-offering:servicePrice": [
+                {
+                    "gx-service-offering:servicePriceCurrency": "EUR",
+                    "gx-service-offering:servicePriceValue": "0"
+                }
+            ],
+            "gx-service-offering:termsAndConditions": [
+                {
+                    "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/imprint",
+                    "gx-service-offering:hash": "ec71c2a7c9482823f83df7470da93f0447db5f6101b6124521518d610e9785f7"
+                }
+            ],
+            "gx-service-offering:gdpr": [
+                {
+                    "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
+                },
+                {
+                    "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
+                }
+            ],
+            "gx-service-offering:dataProtectionRegime": [
+                "GDPR2016"
+            ],
+            "gx-service-offering:dataExport": [
+                {
+                    "gx-service-offering:requestType": "email",
+                    "gx-service-offering:accessType": "digital",
+                    "gx-service-offering:formatType": "mime/png"
+                }
+            ],
+            "gx-service-offering:dependsOn": [
+                "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+                "https://delta-dao.com/.well-known/serviceNetlify.json",
+                "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
+            ]
+        },
+        "issuer": "did:web:delta-dao.com",
+        "issuanceDate": "2022-09-25T23:23:23.235Z",
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-25T18:05:12.335Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rWXlwYkc8NsRBH_gkI6vz-VlpapuWjBA-yaoUrPfMBPE-TPaiJM5ROVAY8SfIJoM_Jw64fLQkXZEd56Hrj51rgGH5lBcdzmBwmmnDtNGeZMSwFfJ5wuzOKGoaFNsiVzn--0nvcsvLbYcw7IOh-0Bp3-r_JRXe6HomldQjiPcen3MSswuZmSbd2V1Wry3LkBGk7_EOaiSjGMCXrSkGA_OisyXHz99WfDlMjCw2cPlQ1jddEFMJq6caZHZ5s9FiLdsrcFM3IlWQ4sTN9oA-Bfwo7_tEE3U8a_kIHyeAxX6VozpnulpBTIxGRDjFwbBVYlAkUkdnUUFGRzz_ZYP1Op93g"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingCredentialExperimental"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664129116972",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-09-25T18:05:16.973Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceFutureMobilityDataMarketplacePortal.json",
+            "hash": "3a27bfbdf48c68b75d91ecf95ad3887dc4f49d7502532fddd6f2762a63507146"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-25T18:05:16.973Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..EZFoOS7___XS5Qe_roJGfc8VWyN8ySdR--67nPv_GT67SEGPTJPGu5HDAYQ52QN5dJSjemcQNsoBGqYrdJpVF1gRJA4dF23Fw9LKXecA6W9wuKZDEl1MyAWYjOe-y0gQRK6zV_JG-i49vkpZ9SXIuQcLamBpS_1SzM6WDKtvk_Iii19hNF3BApcA7uUGdT9NQkhVX8SSMPydLscEKjtAtj7zo85E9viB50HQQcDNq63t7NIb4frYGZTATQtxgS9eRbqheDEsVvmRuE-pFupCDj8DfJscx5ARVZucBv6DTuKD_oTZpUJ5c-Leub-HHESu7SFUgRuFQd8yMQAJo6D1Sg",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://registry.gaia-x.eu/v2206/api/shape/files?file=service-offering&type=ttl#"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingExperimental"
+        ],
+        "id": "https://delta-dao.com/.well-known/serviceUniversityDeLleidaSciencePortal.json",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceUniversityDeLleidaSciencePortal.json",
+            "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+            "gx-service-offering:name": "UDL Science and Research Portal",
+            "gx-service-offering:description": "An open research and science platform for University de Lleida following the FAIR guiding principles of findability, accessibility, interoperability and reusability.",
+            "gx-service-offering:webAddress": "https://udl.portal.minimal-gaia-x.eu/",
+            "gx-service-offering:serviceModel": "free web service",
+            "gx-service-offering:servicePrice": [
+                {
+                    "gx-service-offering:servicePriceCurrency": "EUR",
+                    "gx-service-offering:servicePriceValue": "0"
+                }
+            ],
+            "gx-service-offering:termsAndConditions": [
+                {
+                    "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/imprint",
+                    "gx-service-offering:hash": "ec71c2a7c9482823f83df7470da93f0447db5f6101b6124521518d610e9785f7"
+                }
+            ],
+            "gx-service-offering:gdpr": [
+                {
+                    "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
+                },
+                {
+                    "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
+                }
+            ],
+            "gx-service-offering:dataProtectionRegime": [
+                "GDPR2016"
+            ],
+            "gx-service-offering:dataExport": [
+                {
+                    "gx-service-offering:requestType": "email",
+                    "gx-service-offering:accessType": "digital",
+                    "gx-service-offering:formatType": "mime/png"
+                }
+            ],
+            "gx-service-offering:dependsOn": [
+                "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+                "https://delta-dao.com/.well-known/serviceNetlify.json",
+                "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
+            ]
+        },
+        "issuer": "did:web:delta-dao.com",
+        "issuanceDate": "2022-09-25T23:23:23.235Z",
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-25T18:08:05.736Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..l7UcJYx1lzBkq4y7VKe8UuGW8EEtWn7FEgxZBrL3fnVMTkYuiO9aB_hm746tcdkXpOf5tYV6wy-plhzN1IHq3UKWZMOUsrSsWhwggskx-EOntCzakYqyCdco70uoL2OmvsZ61dGTnxgKfew3zfS3vdHXVVDHTNlYyIXDjAN4cY-7lcvQa3Cz8mHhJkjA9E_0TMzRoUEtYxtViANssMEjA1wJI_L97-s8FNan-1f6dngh41yofFJBcsQEBjIEgvwbeYIBJ5QiZp6ETBJbqjvDp_Ly4x-G-XysmYXNiYdAYuVrVCJAR2Em1bhfLI5r36SBkSmJdeAA0hiGp7eMFYGa8g"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingCredentialExperimental"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664129289314",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-09-25T18:08:09.314Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceUniversityDeLleidaSciencePortal.json",
+            "hash": "1bcc1da98e99410adb2a8b1360e44725f58e2d4f9305bcc18866ac339045d542"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-25T18:08:09.314Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..mbPS1hlI_r2G8ZC34zyyABbGeW7Oe3ReE9W_BtjnPLZnhPtqpYB9Ja9PgsXk3hF1TCgHm9uK-v-WMm1cM70zzL3gZ_xZctFjYPG5F2EOZWWm9YMeHks_u6Zr6mtKwN7qNyLc-0UsY-zduFGrRdd5XiZRDIlfsuFR5U_F0jNypp2eOwmzlMytUeHHoCNQDpdLvVH2B6yQnkqIwFGLuk4lRfxgf022Qz4XoJh0k-B0Q4T9a42eRR4e_wYLLmRM9T__AY-38Y73P2d0A2mhMv4oDbDu8W3fO7W61Li6qjQzdH9jTLkeLOIQ1k95dTDSXiuwxBNatSegqx_RIcidvimUgQ",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}

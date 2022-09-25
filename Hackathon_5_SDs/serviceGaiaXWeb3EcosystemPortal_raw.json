@@ -46,7 +46,7 @@
             }
         ],
         "gx-service-offering:dependsOn": [
-            "https://delta-dao.com/.well-known/serviceCatalogueCache.json",
+            "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
             "https://delta-dao.com/.well-known/serviceNetlify.json",
             "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
         ]
