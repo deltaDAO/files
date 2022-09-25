@@ -1,0 +1,71 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "http://w3id.org/gaia-x/participant",
+        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "id": "https://delta-dao.com/.well-known/participantBosch.json",
+      "issuer": "did:web:delta-dao.com",
+      "issuanceDate": "2022-09-23T23:23:23.235Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantBosch.json",
+        "gx-participant:legalName": "Robert Bosch GmbH",
+        "gx-participant:website": "https://www.bosch.de/",
+        "gx-participant:registrationNumber": {
+          "gx-participant:registrationNumberType": "EUID",
+          "gx-participant:registrationNumberNumber": "DEB8534.HRB14000"
+        },
+        "gx-participant:blockchainAccountId": "0x6fE8aD445AD86b3d1325F79955Ef28d6e9cb2258",
+        "gx-participant:headquarterAddress": {
+          "gx-participant:addressCountryCode": "DE",
+          "gx-participant:addressCode": "DE-BW",
+          "gx-participant:streetAddress": "Robert-Bosch-Platz 1",
+          "gx-participant:postalCode": "70839",
+          "gx-participant:locality": "Gerlingen-Schillerhöhe"
+        },
+        "gx-participant:legalAddress": {
+          "gx-participant:addressCountryCode": "DE",
+          "gx-participant:addressCode": "DE-BW",
+          "gx-participant:streetAddress": "Robert-Bosch-Platz 1",
+          "gx-participant:postalCode": "70839",
+          "gx-participant:locality": "Gerlingen-Schillerhöhe"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T15:13:11.700Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:delta-dao.com",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..QM1KmONHZlAv-7LF1Pw22gfBFEqorBiqpRsAVOAasyOVZDllPDh0QpgJ8hlxxnW3LpVx1Y8JYJUviI8cUxHwUal6KjGYvpHvbYJKbAynG4f9zCaArWCeQd4eBIUQBt878LSau9bQOXUDN0-NSUXxFigQG-zr6EfxhrruBSNB0NyzLnWGIU1RZZLcNkid8n2WPvchMB_2Qizt_qfY8SxNZIpGVORNnaQyZE_AxAazzgn6swSV-bKltkjY3wDQkyR5UN4GmrMAmaJPdqMLAW3FBAIVKD_D2AmRG2iKtWoktGur4uKGfPlUtjaYIOoHB0PKSHMZeA3ABaqCsT2LPCb1bg"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664118795515",
+      "issuer": "did:web:compliance.lab.gaia-x.eu",
+      "issuanceDate": "2022-09-25T15:13:15.515Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantBosch.json",
+        "hash": "3c267fd0875e118ebbff74fba2607fcdef0d7b951200040f856297a8e054e1e8"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-09-25T15:13:15.515Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..GPWZ34F7X1xhPL7i9xFwum_ldv50UklnZ-Ui-bskDeOFQxfjONVK41RSURIp-PaFL_2wlZKJAppkscKX3VKJm-1_J3dBRYY_FnJpePttZcVO7KJ4I9xrXb43_6qNnPnKzqAG5v3-m56ryN7o3USTBGb9GWzQXhQTZKLYnmF68afShQwf66LaXtu_P63hq2MF0xg_Jk0PK7x8lsEN1VEjiCXDClhcu482eit_RI3s2b-PCbQgurjA8HnCXgkhN6frZMXeNEVwMEPRFIABGQ0z_oUVdhGz6IjGsLTPTdQZdKiZJ3Gs1TirTT3zwzxVvCe42yi3huA2iKOoxqKTn7YVtw",
+        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+      }
+    }
+  }
