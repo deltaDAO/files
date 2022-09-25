@@ -1,0 +1,80 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://registry.lab.gaia-x.eu/v2206/api/shape"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingExperimental"
+        ],
+        "id": "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+            "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+            "gx-service-offering:name": "deltaDAO Catalogue Cache Instance for Federated Catalogue",
+            "gx-service-offering:description": "deltaDAO Gaia-X Web3 Ecosystem Catalogue Cache Instance for the Federated Catalogue. The Service Catalogue Cache is an off-chain, multi-chain cache for metadata that is published on chain, connected to an Elasticsearch database. It continually monitors the chains for MetadataCreated and MetadataUpdated events, processes these events and adds them to the database. The Catalogue Cache API offers a convenient way to access the medatata without scanning the chain yourself.",
+            "gx-service-offering:webAddress": "https://aquarius.delta-dao.com",
+            "gx-service-offering:serviceModel": "free service",
+            "gx-service-offering:termsAndConditions": [
+                {
+                    "gx-service-offering:url": "https://raw.githubusercontent.com/oceanprotocol/provider/main/LICENSE",
+                    "gx-service-offering:hash": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+                }
+            ],
+            "gx-service-offering:gdpr": [
+                {
+                    "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+                },
+                {
+                    "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+                }
+            ],
+            "gx-service-offering:dataProtectionRegime": [
+                "GDPR2016"
+            ],
+            "gx-service-offering:dataExport": {
+                "gx-service-offering:requestType": "email",
+                "gx-service-offering:accessType": "digital",
+                "gx-service-offering:formatType": "mime/png"
+            },
+            "gx-service-offering:dependsOn": [
+                "https://delta-dao.com/.well-known/serviceElasticSearchDatabaseDeltaDAO.json",
+                "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
+                "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
+            ]
+        },
+        "issuer": "did:web:delta-dao.com",
+        "issuanceDate": "2022-09-25T23:23:23.235Z",
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-25T19:22:27.589Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Jh63CnmP1pSQjhryhGY-uGjEzKH9gdIrZgsQX3sBBGKxh6rHbHHiTt1Qme-m1oD1Dsyuvf2DatkXHuh36zQRPuJZK_VsdN_mgEYoN3M1BzCU1OMPEebZM4UL9WHF94kijYNR4Bca2doOIuegSLGpvcg3z77BQWnAJvwQV4ygWi0Om3Ss-AledYGUoVBhxo36ImzN6Sc8_s4Ee8K6fmBIPY05HEZ8G5OHVPg3KKd4eSXHD0R1gAxXpjJKUIEURA8IkD-WkYgt9NaVyYtGoRkNCk95NEmgmwE3NTXaBv-7leG9ctorlxcyz33blEPSQGuyT3f_2lUN0TyCIPiW4Oj9Ng"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingCredentialExperimental"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664133752275",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-09-25T19:22:32.275Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+            "hash": "bb98bd6c056b264f9ff59582fdea502eff019fe90a72b06be9d6e8269566f744"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-25T19:22:32.275Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..STIzY9PMHS34K3LPi1uS3Jqrv55WBN2WJEB4Vez34MB1sdBu63p7ybAXdNioRFd5gwoMFlgAbtoteEulUDYbYhkng9-gukLgZSdtvDVtIf3hlwWiPS8fSJg5VfIddB3PIjC0F0IsOU11Rr9L3If_JW3jfNoO6TfdikcwxBRCsqwqC1BDkuLIzR3LRYWDlBPGUW_EtuYuvPkOvs4gnIKRYzkXAo2QXiVScpYBpMxIiiyXeDVCZrW53N1lyAtlxn9-agNwp_lMPZ8wRXdJzhSCdjpO6L0PO114ea_6zo_uLomY9WmX1aF-E2VGCk1xFMFeYEfx1vme_4wc6_tFn7ku8Q",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}

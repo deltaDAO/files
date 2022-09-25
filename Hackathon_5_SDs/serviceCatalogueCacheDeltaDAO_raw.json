@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.lab.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+        "gx-service-offering:name": "deltaDAO Catalogue Cache Instance for Federated Catalogue",
+        "gx-service-offering:description": "deltaDAO Gaia-X Web3 Ecosystem Catalogue Cache Instance for the Federated Catalogue. The Service Catalogue Cache is an off-chain, multi-chain cache for metadata that is published on chain, connected to an Elasticsearch database. It continually monitors the chains for MetadataCreated and MetadataUpdated events, processes these events and adds them to the database. The Catalogue Cache API offers a convenient way to access the medatata without scanning the chain yourself.",
+        "gx-service-offering:webAddress": "https://aquarius.delta-dao.com",
+        "gx-service-offering:serviceModel": "free service",
+        "gx-service-offering:termsAndConditions": [
+            {
+                "gx-service-offering:url": "https://raw.githubusercontent.com/oceanprotocol/provider/main/LICENSE",
+                "gx-service-offering:hash": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+            },
+            {
+                "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+            }
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+            "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": {
+            "gx-service-offering:requestType": "email",
+            "gx-service-offering:accessType": "digital",
+            "gx-service-offering:formatType": "mime/png"
+        },
+        "gx-service-offering:dependsOn": [
+            "https://delta-dao.com/.well-known/serviceElasticSearchDatabaseDeltaDAO.json",
+            "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
+            "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
+        ]
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z"
+}
