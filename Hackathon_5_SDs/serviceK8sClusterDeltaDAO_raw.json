@@ -1,0 +1,42 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.lab.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+        "gx-service-offering:name": "Azure Managed Kubernetes Cluster",
+        "gx-service-offering:description": "The managed K8s cluster provides the basis for the computation and storage.",
+        "gx-service-offering:serviceModel": "subscription",
+        "gx-service-offering:termsAndConditions": [
+            {
+                "gx-service-offering:url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+                "gx-service-offering:hash": "115b40095d99fcca1f026bd6702d168b8065ec4e853e6279df4d947601222058"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "gx-service-offering:imprint": "https://www.microsoft.com/de-de/rechtliche-hinweise/impressum"
+            },
+            {
+                "gx-service-offering:privacyPolicy": "https://privacy.microsoft.com/de-de/privacystatement"
+            }
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+            "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": {
+            "gx-service-offering:requestType": "email",
+            "gx-service-offering:accessType": "digital",
+            "gx-service-offering:formatType": "mime/png"
+        }
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z"
+}
