@@ -1,0 +1,66 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "http://w3id.org/gaia-x/participant",
+        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+        "gx-participant:legalName": "Microsoft Ireland Operations Limited",
+        "gx-participant:website": "https://www.microsoft.com/",
+        "gx-participant:registrationNumber": [
+            {
+                "gx-participant:registrationNumberType": "leiCode",
+                "gx-participant:registrationNumberNumber": "549300WCLFVEBTBNRF76"
+            },
+            {
+                "gx-participant:registrationNumberType": "EUID",
+                "gx-participant:registrationNumberNumber": "IECRO.905753"
+            }
+        ],
+        "gx-participant:headquarterAddress": {
+            "gx-participant:addressCountryCode": "IE",
+            "gx-participant:addressCode": "IE-D",
+            "gx-participant:streetAddress": "70 Sir John Rogerson's Quay, Dublin 2",
+            "gx-participant:postalCode": "D02 R296",
+            "gx-participant:locality": "Dublin"
+        },
+        "gx-participant:legalAddress": {
+            "gx-participant:addressCountryCode": "IE",
+            "gx-participant:addressCode": "IE-D",
+            "gx-participant:streetAddress": "70 Sir John Rogerson's Quay, Dublin 2",
+            "gx-participant:postalCode": "D02 R296",
+            "gx-participant:locality": "Dublin"
+        },
+        "gx-participant:parentOrganisation": {
+            "gx-participant:legalName": "Microsoft Corporation",
+            "gx-participant:registrationNumber": {
+                "gx-participant:registrationNumberType": "local",
+                "gx-participant:registrationNumberNumber": "600413485"
+            },
+            "gx-participant:headquarterAddress": {
+                "gx-participant:addressCountryCode": "US",
+                "gx-participant:addressCode": "US-WA",
+                "gx-participant:streetAddress": "300 DESCHUTES WAY SW STE 208 MC-CSC1",
+                "gx-participant:postalCode": "98501",
+                "gx-participant:locality": "TUMWATER"
+            },
+            "gx-participant:legalAddress": {
+                "gx-participant:addressCountryCode": "JP",
+                "gx-participant:addressCode": "US-WA",
+                "gx-participant:streetAddress": "1 Microsoft Way",
+                "gx-participant:postalCode": "98052",
+                "gx-participant:locality": "Redmond"
+            },
+            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    }
+}
