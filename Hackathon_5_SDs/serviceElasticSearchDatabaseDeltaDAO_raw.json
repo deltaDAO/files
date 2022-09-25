@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.lab.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceElasticSearchDatabaseDeltaDAO.json",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceElasticSearchDatabaseDeltaDAO.json",
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+        "gx-service-offering:name": "deltaDAO Elastic Search DB",
+        "gx-service-offering:description": "A full-text search engine with an HTTP web interface used to store self descriptions of the Catalogue Cache.",
+        "gx-service-offering:serviceModel": "free service",
+        "gx-service-offering:termsAndConditions": [
+            {
+                "gx-service-offering:url": "https://github.com/elastic/elasticsearch/blob/master/LICENSE.txt",
+                "gx-service-offering:hash": "115b40095d99fcca1f026bd6702d168b8065ec4e853e6279df4d947601222058"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+            },
+            {
+                "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+            }
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+            "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": {
+            "gx-service-offering:requestType": "email",
+            "gx-service-offering:accessType": "digital",
+            "gx-service-offering:formatType": "mime/png"
+        },
+        "gx-service-offering:dependsOn": [
+            "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json"
+        ]
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z"
+}
