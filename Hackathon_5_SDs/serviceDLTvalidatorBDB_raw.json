@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.lab.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceDLTvalidatorBDB.json",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceDLTvalidatorBDB.json",
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantBigchainDB.json",
+        "gx-service-offering:name": "Gaia-X Test Network Validator Node",
+        "gx-service-offering:description": "Gaia-X Test Network Validator Node",
+        "gx-service-offering:chainID": "2021000",
+        "gx-service-offering:chainSymbol": "GX",
+        "gx-service-offering:nodeClient": "OpenEthereum",
+        "gx-service-offering:nodeClientVersion": "3.2.6",
+        "gx-service-offering:termsAndConditions": [
+            {
+                "gx-service-offering:url": "https://www.bigchaindb.com/privacy/",
+                "gx-service-offering:hash": "5ccef8a5a697b573ed033dd47ced575d6fe7c9257aa10a06cc5a8da743aba710"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "gx-service-offering:imprint": "https://www.bigchaindb.com/imprint/"
+            },
+            {
+                "gx-service-offering:privacyPolicy": "https://www.bigchaindb.com/privacy/"
+            }
+        ],
+        "gx-service-offering:dependsOn": [
+            "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json"
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+            "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": {
+            "gx-service-offering:requestType": "email",
+            "gx-service-offering:accessType": "digital",
+            "gx-service-offering:formatType": "mime/png"
+        }
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z"
+}
