@@ -1,0 +1,73 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://registry.gaia-x.eu/api/v2206/shape/files?file=participant&type=jsonld"
+  ],
+  "id": "https://vc.a1.digital.euprogigant.io/sd/participant.json",
+  "type": [
+    "VerifiableCredential",
+    "LegalPerson"
+  ],
+  "issuer": "did:web:vc.a1.digital.euprogigant.io",
+  "issuanceDate": "2022-09-23T23:23:23.235Z",
+  "credentialSubject": {
+    "id": "did:web:vc.a1.digital.euprogigant.io",
+    "gx-participant:name": "A1 Digital International GmbH",
+    "gx-participant:legalName": "Mobilkom Beteiligungsgesellschaft mbH",
+    "gx-participant:registrationNumber": [
+      {
+        "gx-participant:registrationNumberType": "EUID",
+        "gx-participant:registrationNumberNumber": "ATBRA.242184d"
+      },
+      {
+        "gx-participant:registrationNumberType": "leiCode",
+        "gx-participant:registrationNumberNumber": "529900ATXOMZ7X2GCX24"
+      }
+    ],
+    "gx-participant:headquarterAddress": {
+      "gx-participant:addressCountryCode": "AT",
+      "gx-participant:addressCode": "AT-9",
+      "gx-participant:streetAddress": "Lasallestrasse 9",
+      "gx-participant:postalCode": "1020",
+      "gx-participant:locality": "Wien"
+    },
+    "gx-participant:legalAddress": {
+      "gx-participant:addressCountryCode": "AT",
+      "gx-participant:addressCode": "AT-9",
+      "gx-participant:streetAddress": "Lasallestrasse 9",
+      "gx-participant:postalCode": "1020",
+      "gx-participant:locality": "Wien"
+    },
+    "gx-participant:parentOrganisation": {
+      "@id": "eupg:a1.group:LegalPerson",
+      "@type": "gx-participant:LegalPerson",
+      "gx-participant:legalName": "Telekom Austria Aktiengesellschaft",
+      "gx-participant:registrationNumber": [
+        {
+          "gx-participant:registrationNumberType": "EUID",
+          "gx-participant:registrationNumberNumber": "ATBRA.144477-000"
+        },
+        {
+          "gx-participant:registrationNumberType": "leiCode",
+          "gx-participant:registrationNumberNumber": "529900KCNFQU5OJH7L33"
+        }
+      ],
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "AT",
+        "gx-participant:addressCode": "AT-9",
+        "gx-participant:streetAddress": "Lasallestrasse 9",
+        "gx-participant:postalCode": "1020",
+        "gx-participant:locality": "Wien"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "AT",
+        "gx-participant:addressCode": "AT-9",
+        "gx-participant:streetAddress": "Lasallestrasse 9",
+        "gx-participant:postalCode": "1020",
+        "gx-participant:locality": "Wien"
+      },
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    },
+    "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+  }
+}

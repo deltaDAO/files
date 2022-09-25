@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://registry.gaia-x.eu/api/v2206/shape/files?file=participant&type=jsonld"
+  ],
+  "id": "https://vc.craftworks.euprogigant.io/sd/participant.json",
+  "type": [
+    "VerifiableCredential",
+    "LegalPerson"
+  ],
+  "issuer": "https://vc.infotec-ag.euprogigant.io/sd/participant.json",
+  "issuanceDate": "2022-09-23T23:23:23.235Z",
+  "credentialSubject": {
+    "id": "did:web:vc.infotec-ag.euprogigant.io",
+    "gx-participant:legalName": "IGH Infotec Aktiengesellschaft",
+    "gx-participant:registrationNumber": {
+      "gx-participant:registrationNumberType": "EUID",
+      "gx-participant:registrationNumberNumber": "DER1101.HRB45996"
+    },
+    "gx-participant:headquarterAddress": {
+      "gx-participant:addressCountryCode": "DE",
+      "gx-participant:addressCode": "DE-NW",
+      "gx-participant:streetAddress": "Berghausener Strasse 98",
+      "gx-participant:postalCode": "40764",
+      "gx-participant:locality": "Langenfeld"
+    },
+    "gx-participant:legalAddress": {
+      "gx-participant:addressCountryCode": "DE",
+      "gx-participant:addressCode": "DE-NW",
+      "gx-participant:streetAddress": "Berghausener Strasse 98",
+      "gx-participant:postalCode": "40764",
+      "gx-participant:locality": "Langenfeld"
+    },
+    "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+  }
+}
