@@ -15,22 +15,46 @@
         "id": "did:web:delta-dao.com",
         "gx-participant:legalName": "deltaDAO AG",
         "gx-participant:website": "https://delta-dao.com",
-        "gx-participant:registrationNumber": {
-            "gx-participant:registrationNumberType": "leiCode",
-            "gx-participant:registrationNumberNumber": "391200FJBNU0YW987L26"
-        },
-        "gx-participant:blockchainAccountId": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52",
+        "gx-participant:registrationNumber": [
+            {
+                "gx-participant:registrationNumberType": "leiCode",
+                "gx-participant:registrationNumberNumber": "391200FJBNU0YW987L26"
+            },
+            {
+                "gx-participant:registrationNumberType": "EUID",
+                "gx-participant:registrationNumberNumber": "DEK1101R.HRB170364"
+            }
+        ],
+        "gx-participant:blockchainAccountId": [
+            {
+                "gx-participant:blockchainAccountId": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52"
+            },
+            {
+                "gx-participant:blockchainAccountId": "0x2859d961a6dBa6e7d30b2d383Af468edb4E7F4f6"
+            },
+            {
+                "gx-participant:blockchainAccountId": "0xaBaf56FC1bB6b4FF9fA4378C3C8723d2B2444324"
+            },
+            {
+                "gx-participant:blockchainAccountId": "0x68C24FA5b2319C81b34f248d1f928601D2E5246B"
+            },
+            {
+                "gx-participant:blockchainAccountId": "0xa76Fa6837A6ffc9F123F2193717A5965c68B0cbA"
+            }
+        ],
         "gx-participant:headquarterAddress": {
             "gx-participant:addressCountryCode": "DE",
             "gx-participant:addressCode": "DE-HH",
             "gx-participant:streetAddress": "Geibelstraße 46b",
-            "gx-participant:postalCode": "22303"
+            "gx-participant:postalCode": "22303",
+            "gx-participant:locality": "Hamburg"
         },
         "gx-participant:legalAddress": {
             "gx-participant:addressCountryCode": "DE",
             "gx-participant:addressCode": "DE-HH",
             "gx-participant:streetAddress": "Geibelstraße 46b",
-            "gx-participant:postalCode": "22303"
+            "gx-participant:postalCode": "22303",
+            "gx-participant:locality": "Hamburg"
         },
         "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     }
