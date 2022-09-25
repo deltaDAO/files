@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.lab.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceNetlify.json",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceNetlify.json",
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantNetlify.json",
+        "gx-service-offering:name": "deltaDAO Netlify App",
+        "gx-service-offering:description": "Netlify CDN: A global CDN to serve web apps, built directly from Git",
+        "gx-service-offering:webAddress": "https://deltadao.netlify.app",
+        "gx-service-offering:serviceModel": "subscription",
+        "gx-service-offering:termsAndConditions": [
+            {
+                "gx-service-offering:url": "https://www.netlify.com/legal/terms-of-use",
+                "gx-service-offering:hash": "ec23647e5cf07b87cb70114e3501a78420e59b5a229f8d80b0457fc615b8f363"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "gx-service-offering:imprint": "https://www.netlify.com/about/"
+            },
+            {
+                "gx-service-offering:privacyPolicy": "https://www.netlify.com/privacy/"
+            }
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+            "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": [
+            {
+                "gx-service-offering:requestType": "email",
+                "gx-service-offering:accessType": "digital",
+                "gx-service-offering:formatType": "mime/png"
+            }
+        ]
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z"
+}
