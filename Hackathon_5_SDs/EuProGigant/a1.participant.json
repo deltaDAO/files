@@ -1,7 +1,7 @@
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://registry.gaia-x.eu/api/v2206/shape/files?file=participant&type=jsonld"
+    "https://registry.gaia-x.eu/v2206/api/shape"
   ],
   "id": "https://vc.a1.digital.euprogigant.io/sd/participant.json",
   "type": [

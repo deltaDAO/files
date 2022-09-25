@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://registry.gaia-x.eu/v2206/api/shape/files?file=service-offering&type=ttl#"
+        "https://registry.gaia-x.eu/v2206/api/shape"
     ],
     "type": [
         "VerifiableCredential",

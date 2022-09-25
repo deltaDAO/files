@@ -1,71 +1,70 @@
 {
     "selfDescriptionCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1",
-            "http://w3id.org/gaia-x/participant",
-            "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "LegalPerson"
-        ],
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.gaia-x.eu/v2206/api/shape"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "id": "https://delta-dao.com/.well-known/participantPeaq.json",
+      "issuer": "did:web:delta-dao.com",
+      "issuanceDate": "2022-09-23T23:23:23.235Z",
+      "credentialSubject": {
         "id": "https://delta-dao.com/.well-known/participantPeaq.json",
-        "issuer": "did:web:delta-dao.com",
-        "issuanceDate": "2022-09-23T23:23:23.235Z",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/participantPeaq.json",
-            "gx-participant:legalName": "Peaq Technology GmbH",
-            "gx-participant:website": "https://www.peaq.network/",
-            "gx-participant:registrationNumber": {
-                "gx-participant:registrationNumberType": "EUID",
-                "gx-participant:registrationNumberNumber": "DEF1103R.HRB190416B"
-            },
-            "gx-participant:blockchainAccountId": "0xe3Df4851c094f5F6F1AC9AbfA4FC2075276195Ec",
-            "gx-participant:headquarterAddress": {
-                "gx-participant:addressCountryCode": "DE",
-                "gx-participant:addressCode": "DE-BE",
-                "gx-participant:streetAddress": "Chausseestraße 86",
-                "gx-participant:postalCode": "10115",
-                "gx-participant:locality": "Berlin"
-            },
-            "gx-participant:legalAddress": {
-                "gx-participant:addressCountryCode": "DE",
-                "gx-participant:addressCode": "DE-BE",
-                "gx-participant:streetAddress": "Chausseestraße 86",
-                "gx-participant:postalCode": "10115",
-                "gx-participant:locality": "Berlin"
-            },
-            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        "gx-participant:legalName": "Peaq Technology GmbH",
+        "gx-participant:website": "https://www.peaq.network/",
+        "gx-participant:registrationNumber": {
+          "gx-participant:registrationNumberType": "EUID",
+          "gx-participant:registrationNumberNumber": "DEF1103R.HRB190416B"
         },
-        "proof": {
-            "type": "JsonWebSignature2020",
-            "created": "2022-09-25T14:28:06.600Z",
-            "proofPurpose": "assertionMethod",
-            "verificationMethod": "did:web:delta-dao.com",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..pdYr12IUWNY1CsUhp_Alwg2mkI8dthezWPyTeG-mD4lx4m_Yjk-oiVcxO1Cj-fh95DIFs9MO5YqwUhjeZ02YTa1HHFy9qm9TuXjzTqXHTy1x7HQYYYY0Rf6HIclzIRIr8GkXvWlWVQiMwzO3FfEUYgL-RtQigWp2SGwFZnOZ83vxABr1B0Qrz2xWFbPT3m4-f4lmb2yu6mLBwYwaaGtnyVX4g300gR7BsTT7x1KVAYlbjVW1SmhUUQMfOp1GreMP67uQNW9vht-zjeXtDZ4PoFb--WRjGTaiF3VFSBNeq8iiDS2KJT4mIZjVk8jKdY5o5emXnC2kpHEbwXWc99IMVA"
-        }
+        "gx-participant:blockchainAccountId": "0xe3Df4851c094f5F6F1AC9AbfA4FC2075276195Ec",
+        "gx-participant:headquarterAddress": {
+          "gx-participant:addressCountryCode": "DE",
+          "gx-participant:addressCode": "DE-BE",
+          "gx-participant:streetAddress": "Chausseestraße 86",
+          "gx-participant:postalCode": "10115",
+          "gx-participant:locality": "Berlin"
+        },
+        "gx-participant:legalAddress": {
+          "gx-participant:addressCountryCode": "DE",
+          "gx-participant:addressCode": "DE-BE",
+          "gx-participant:streetAddress": "Chausseestraße 86",
+          "gx-participant:postalCode": "10115",
+          "gx-participant:locality": "Berlin"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T21:16:44.572Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:compliance.gaia-x.eu",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..QN8KJeCiHMhbRSlRxRJIrDysoYx344c72IrX03ZMKmmiqfih8AFjvkC5-D6r6hP_1ARqrD_mUx3SNBihBtFNXvZSFmb64VMzMC-_eDR3v71oTkx9P25IsUkuE0XUZYip9zyVVPIvmu-Cdt4AFAePYKIjTe_TLDw9piXSGXa2LT9we6V_KV0HPEvkALCPGwtKYs1xQ34xDccHQU6NxOtl7JaaH590kQgSEX5LAidMQtsLakB-_nze6-1E6Q_4ebpmw0MlLOkaGLZJo6PnJ7VpiJfKrCc2kSt57rvuqlXFE1RoePxfoCSmiPlXF50nIb_NrzSJFAZhZpc3NtZj9UmIeg"
+      }
     },
     "complianceCredential": {
-        "@context": [
-            "https://www.w3.org/2018/credentials/v1"
-        ],
-        "type": [
-            "VerifiableCredential",
-            "ParticipantCredential"
-        ],
-        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664116090587",
-        "issuer": "did:web:compliance.lab.gaia-x.eu",
-        "issuanceDate": "2022-09-25T14:28:10.587Z",
-        "credentialSubject": {
-            "id": "https://delta-dao.com/.well-known/participantPeaq.json",
-            "hash": "4a54ba35c4f605132e516653d8feb734abad1714bc90d3bb2138daf1031ff2f5"
-        },
-        "proof": {
-            "type": "JsonWebKey2020",
-            "created": "2022-09-25T14:28:10.587Z",
-            "proofPurpose": "assertionMethod",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..trkbgJmNUnOz5FDUuvRYEkBThd6Orw4FeraUb5CRkzcqTIO0sxAcO_QxuxWp2vdP3EnBKrfFxC7eVGjlgaN5No1OPf1p-W9QYmzTG_RlFw5mkJcEJFY_lecxpBhgmFv1vyi7l7cvmSnIJPSRgnJ4shL5-RbOGugqRI4uHuOwFQcqSesovt1-qVPflE0KYtKE5BKZrTOs5PVZCEWAh1llcujBA93cayk64a_fD06pZER9kp7XSMn4R2mzZnEKn2LsoLVYW5m1wKcdkAjgdI0Jopm2Q1CeOUNQNJ-i1qCRsDxXcfKcxcxB4rCIjTMWx7MmLd0ItUbEklfQK8rYuE6zWA",
-            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-        }
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664140609102",
+      "issuer": "did:web:compliance.lab.gaia-x.eu",
+      "issuanceDate": "2022-09-25T21:16:49.102Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantPeaq.json",
+        "hash": "b0c941cd34d6f4747d1854028f4c628bbc8148e85931388123f13a293153d46a"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-25T21:16:49.102Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..KRTtDqO6wSwksQTzeu8_wayAvZs2yQQdXjPTDpWVerlTofbaCDy_nK0Iw_RRDUamrmbO2UxQVVFksgHHuShaDsQjDXwYyBNNKlCjIgQKpBNV5Ddbe7yhaIvhJJ5qNGIb0ZefnOBqOqYJx42DDSmrkVsVYFgruFLUHb6WY4GtsmarkGFjKTZ3ErGGQzyQLbLyDGNFz4ERiQ609vTbuAZ5SdTItXNgRBnGu-s9W20CP2M91hRZ92tfMzVm9YCqePuVorAkgXswMXDVpa300_g15if6zGeQyJmgIulgjtEV-tLeKzb4YGDEjQk7Qc25_HUAIa66acKHSWCh1HrisfluEw",
+        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+      }
     }
-}
+  }
