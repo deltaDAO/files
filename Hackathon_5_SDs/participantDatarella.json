@@ -1,69 +1,71 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "http://w3id.org/gaia-x/participant",
-        "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "LegalPerson"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "http://w3id.org/gaia-x/participant",
+      "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=ttl"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantDatarella.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/participantDatarella.json",
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-23T23:23:23.235Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantDatarella.json",
-        "gx-participant:legalName": "Datarella GmbH",
-        "gx-participant:website": "https://datarella.com/",
-        "gx-participant:registrationNumber": {
-          "gx-participant:registrationNumberType": "EUID",
-          "gx-participant:registrationNumberNumber": "DED2601V.HRB207851"
-        },
-        "gx-participant:blockchainAccountId": "0x0aec046a558F13Ff18aAEc5E6f76084185358cdf",
-        "gx-participant:headquarterAddress": {
-          "gx-participant:addressCountryCode": "DE",
-          "gx-participant:addressCode": "DE-BY",
-          "gx-participant:streetAddress": "Oskar-von-Miller-Ring 36",
-          "gx-participant:postalCode": "80333"
-        },
-        "gx-participant:legalAddress": {
-          "gx-participant:addressCountryCode": "DE",
-          "gx-participant:addressCode": "DE-BY",
-          "gx-participant:streetAddress": "Oskar-von-Miller-Ring 36",
-          "gx-participant:postalCode": "80333"
-        },
-        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+      "gx-participant:legalName": "Datarella GmbH",
+      "gx-participant:website": "https://datarella.com/",
+      "gx-participant:registrationNumber": {
+        "gx-participant:registrationNumberType": "EUID",
+        "gx-participant:registrationNumberNumber": "DED2601V.HRB207851"
       },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-23T21:45:04.928Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:delta-dao.com",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ooxJCai6Iok34W0TOG8W5uzmx_E_pG3WbBNIteDB7G3dw2V6qIizAntCCpKmwFSGQy4UeJEfuthnF9j2ZLD7jar3Co7uxGVyguLyd8bl6KpFHsIc9GFhbRyJPUej3-vjxMxQQsBNfj8eL2iVJqigm2TSUBbn2UJDXLhYsj2Sj6yA8v6UP0lxqpWwlQrcwbuuDoUXKW4EpdpBygBe0punb8Ny4x2dgs5Xk9smUWnyMom8Tv82p0a0MOAsw4oPUDiXBvANsv7pKS1PgMgVzdfwWdpocaDfycbQM-iZ1cn3xvi__4Cu3OFjLs-12i-JFeJkBpTboKP0C-QZVKrsZvDYTA"
-      }
+      "gx-participant:blockchainAccountId": "0x0aec046a558F13Ff18aAEc5E6f76084185358cdf",
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-BY",
+        "gx-participant:streetAddress": "Oskar-von-Miller-Ring 36",
+        "gx-participant:postalCode": "80333",
+        "gx-participant:locality": "Munich"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-BY",
+        "gx-participant:streetAddress": "Oskar-von-Miller-Ring 36",
+        "gx-participant:postalCode": "80333",
+        "gx-participant:locality": "Munich"
+      },
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ParticipantCredential"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1663969509186",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-23T21:45:09.186Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantDatarella.json",
-        "hash": "307ba5f09671f45d99c72320a8355d2d4f704f742f8fdf3d54503e26d7ef0f1c"
-      },
-      "proof": {
-        "type": "JsonWebKey2020",
-        "created": "2022-09-23T21:45:09.186Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..tT2Owfw2navcSqRBtisTE_9KusvCa2q2j0e4E-AM_lMb9dTIIp1ZbiSRk1viqtpAotC0FIPgHwI7oh1Bs8IizBriGKKauFUNTZMbzGIgsdnJqSN8I0h6Gyr0HQPxvLQQeLR_zndZHAi_QwBsnLq9j-ZIxs4ypvIPA6BQKZvcKtpE8Tql7uSP3Gtz_KjPI_Xhe_stm8fWrytyWbDk7N4pHpsj0T68C0v8evk8u7y3ie3MEc8IEkUzWm4Y_jY_bsNDu7994h3yPWAsiJHdAcC-FNUourg4d3gM-s4Rr7uhHRHNeIjjLCTY6dlKHx8v4Sl2Nfw7CczjgGgtJpO4MdaILw",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-25T14:33:15.164Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..IYm8yd5tTU7DR9creSOcJ27gn2O4NjO0EO-TGUoU5G20tx_7ugrBjvpUZ4DXJx2PAmFWLz3w1wWUa4-1NGN0p5z_gJNM3k1ek25rWDDtIOwa3iJRwPZTtqtEsN5qZIae9VRon3h0uesoTt-mGgFBxFhCmkehVhOzYfYwLnDgYW0UeV-OvRN1l_TxlBdPWjlLzg4RDFhxqV4GlBHn7ItxqRVVtYoCBJpX6ldXpFX4WrBB3tsgH60X3csWI3Kw0nWZQGFhVcAXm60ZOR0_OFY5QFB71sV4gLixuQTNalECOFNOqw-w_Q835Rjs224SstdVPbzpZ4agMIPC_Vb0sbVX7w"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664116399025",
+    "issuer": "did:web:compliance.lab.gaia-x.eu",
+    "issuanceDate": "2022-09-25T14:33:19.025Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantDatarella.json",
+      "hash": "9fbf0dbd2296e8be51cc431f5f29d178c27e1b4f640e0eb692ad356a286a1ef0"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-09-25T14:33:19.026Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..hY5NPf4M5vNaTX2Czzgms-WJNOD6Uqrbe_iFOxVRRQ8OiG-9HMDsUD-RBowxuyvmsdqhJj5NrWwoB7KP52h4Q-qXzHEVn5ZXKsuJ4R3Mlpn6Y2szqa5aMj7xOMUHoOGW_W-LAzb4QkS0yTmnx8nGAqnVFMIXZRpvS6Ondkn9NctRZ02_ebAiMEZNO56I4Do9jkeH0Rc1rQ2S6_8zgYgqdaECDCWgB9VZrcJm039W7o-bfOnbMWYzCZ3eRjomG_i8ClogWXOaKeLel4esrqncLXFte_jRxdoLWsmtQ9kmDnmefY8IxqmsaOmRqou74Z6HWtBmNOMSMzIF6sUK3SnOlQ",
+      "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
     }
   }
+}

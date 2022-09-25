@@ -24,13 +24,15 @@
             "gx-participant:addressCountryCode": "DE",
             "gx-participant:addressCode": "DE-BY",
             "gx-participant:streetAddress": "Oskar-von-Miller-Ring 36",
-            "gx-participant:postalCode": "80333"
+            "gx-participant:postalCode": "80333",
+            "gx-participant:locality": "Munich"
         },
         "gx-participant:legalAddress": {
             "gx-participant:addressCountryCode": "DE",
             "gx-participant:addressCode": "DE-BY",
             "gx-participant:streetAddress": "Oskar-von-Miller-Ring 36",
-            "gx-participant:postalCode": "80333"
+            "gx-participant:postalCode": "80333",
+            "gx-participant:locality": "Munich"
         },
         "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     }
