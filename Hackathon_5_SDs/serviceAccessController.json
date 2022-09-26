@@ -1,0 +1,78 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://registry.gaia-x.eu/v2206/api/shape"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingExperimental"
+        ],
+        "id": "https://delta-dao.com/.well-known/serviceAccessController.json",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceAccessController.json",
+            "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+            "gx-service-offering:name": "Access Controller Component",
+            "gx-service-offering:description": "The Ocean Provider as Access Controller Component enables on-premise computing by allowing data services to be consumed and a container component to be run by data providers. It is required for remote machine learning to work with Compute-to-Data functionality.",
+            "gx-service-offering:serviceModel": "subscription",
+            "gx-service-offering:termsAndConditions": [
+                {
+                    "gx-service-offering:url": "https://raw.githubusercontent.com/oceanprotocol/provider/main/LICENSE",
+                    "gx-service-offering:hash": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+                }
+            ],
+            "gx-service-offering:gdpr": [
+                {
+                    "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+                },
+                {
+                    "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+                }
+            ],
+            "gx-service-offering:dataProtectionRegime": [
+                "GDPR2016"
+            ],
+            "gx-service-offering:dependsOn": [
+                "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
+                "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json"
+            ],
+            "gx-service-offering:dataExport": {
+                "gx-service-offering:requestType": "email",
+                "gx-service-offering:accessType": "digital",
+                "gx-service-offering:formatType": "mime/png"
+            }
+        },
+        "issuer": "did:web:delta-dao.com",
+        "issuanceDate": "2022-09-26T23:23:23.235Z",
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-26T19:37:54.893Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MhdsBfqVx4gLny_vtNXnfMTIgNDEv-rzGtBOCVlpPcP7LMLTxNQWcOhDo_S2MeCfpywAdItwefBY5BeapiHrWPJ9ajoGL8_A5jP_NBGkOwIbZ4_Lvvz1nRwvD12oHRK96dZa6ldGtz7klC09Tug2X2U05sR-AqpJSDewE5te3JU7acxG7sXjcKwuwE0qZZlS0xKnhd40A9mS-ZH626ftwxgxbaqXYizSA7b402kbuUbmFSrRcRBs2fNnTxwr5SKHedkQVa25d1xoLE7nT6wOXILMs8tmdB0iWrarFpKgbv-bRKnSYHh1jjmeTrE8Ni0vB4ZBknSXkMu3FNNSdwrdWw"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingCredentialExperimental"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664221079976",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-09-26T19:37:59.976Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceAccessController.json",
+            "hash": "6b9030a6e8574993ec56af85fe748fc7c9ccdf70df02d8da99484ba57a1ef210"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-26T19:37:59.976Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..fQ_FL6l6EzoWhAI_bNd5wIa4RKrkrY8CXguCKWyDJ-3Tdp497Pj9SAGmnALCLSAlHz6qcussRCBJpwMWSEmJNK37mk7XqkghVCE5u1D551vW5qSQ0KDAJHkEoKpttdEtXp9xBOE7IFH5Qq8kCmsf10swXLgaflCpWt_bk1wUB6GkACeBBIy9aZ3CQbtcRm2et8QGO05cMc5NQiFzhtW7EPrZ3RnA9v4nThbtrPTFNBEFf79R-VrqVMUeiZ8OzoEs8i2_W7HuGyTd5L98Qs6CLPFMwnsjwCBQNZZnDw-TD62bYnq2jjP5_gTiJVoGqdl1NC2_r2H3vjx8GTtzoeaiIg",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}

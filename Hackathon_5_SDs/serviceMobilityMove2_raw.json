@@ -46,11 +46,11 @@
             }
         ],
         "gx-service-offering:dependsOn": [
-            "https://www.delta-dao.com/.well-known/operatorEngine.json",
-            "https://www.delta-dao.com/.well-known/operatorService.json",
-            "https://www.delta-dao.com/.well-known/accesscontroller.json",
+            "https://www.delta-dao.com/.well-known/serviceOperatorEngine.json",
+            "https://www.delta-dao.com/.well-known/serviceOperatorService.json",
+            "https://www.delta-dao.com/.well-known/serviceAccessController.json",
             "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
-            "https://delta-dao.com/.well-known/s3bucket.json",
+            "https://delta-dao.com/.well-known/serviceS3Bucket.json",
             "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
             "https://delta-dao.com/.well-known/resourceMobilityDataMove2.json"
         ],

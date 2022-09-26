@@ -39,11 +39,11 @@
                 }
             ],
             "gx-service-offering:dependsOn": [
-                "https://www.delta-dao.com/.well-known/operatorEngine.json",
-                "https://www.delta-dao.com/.well-known/operatorService.json",
-                "https://www.delta-dao.com/.well-known/accesscontroller.json",
+                "https://www.delta-dao.com/.well-known/serviceOperatorEngine.json",
+                "https://www.delta-dao.com/.well-known/serviceOperatorService.json",
+                "https://www.delta-dao.com/.well-known/serviceAccessController.json",
                 "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
-                "https://delta-dao.com/.well-known/s3bucket.json",
+                "https://delta-dao.com/.well-known/serviceS3Bucket.json",
                 "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json"
             ],
             "gx-service-offering:dataProtectionRegime": [
@@ -59,10 +59,10 @@
         "issuanceDate": "2022-09-25T23:23:23.235Z",
         "proof": {
             "type": "JsonWebSignature2020",
-            "created": "2022-09-25T21:31:41.068Z",
+            "created": "2022-09-26T19:47:29.548Z",
             "proofPurpose": "assertionMethod",
             "verificationMethod": "did:web:delta-dao.com",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..sCm8jGty2Kjvwvv2V-PsYAJc6H1M7LtR8L29scPwlSAEfmN7z34TL1Kzstorxm6zAN3Y8vqslLxXA25_5m53XXuHx6z5TCerUsRxsvJI8ZK_rwSk8jt5UU8Fp6d24-dU7dvVivTBCfnPpO8XXTknHSOHBM9y_rvt9acC5w1Sk-XZ54MpwWsy-1Q54uLkIoAStpiEcfQ-AKdQhNuTpBDri_ysnKfr6I2xDRKyVtTjooL4WcEuLtA6f0qwuIxXAxJqzr0OfBqlnmJTV4Q1P_cVSxfisFkPlqLdWY96g-TbHX0N_9g5WQuDIRekMiMuocGwYEcNPpp4hr2sVQnWlEkkWg"
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..EA0rYf_bu_wAkKiIj9o9Uh1pTsnzVVABoKjy7LxRqqqG5bnu9sqWjTuBphIRdxmPw1G2b8AiWAbL3Al4ipxDpMyXe25o6RKAKIdIlfuDKFj1Whj-O1LhrDMP5RIZWQ-S-k9kUd5GqPW5MUJkepf3Q4308eXntpEITpE8kEFOQgOa5yyYkqO4OhO_CEkEb0VnP1vJxmiJEeubfoioHs_dlK7VXmZwd673yZDwaqlYhLy7u0kmOS0Z9P_nUJCsMcTYQK9Lr-xJ8wsa_k7dHjsdyoWSh_Cbl6i2GCBwrryy7RNKAIPs4vYAcYAJF9jUvPQtaA6EIl5WHXxAss0OW1t8VA"
         }
     },
     "complianceCredential": {
@@ -73,18 +73,18 @@
             "VerifiableCredential",
             "ServiceOfferingCredentialExperimental"
         ],
-        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664141506208",
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664221654462",
         "issuer": "did:web:compliance.lab.gaia-x.eu",
-        "issuanceDate": "2022-09-25T21:31:46.208Z",
+        "issuanceDate": "2022-09-26T19:47:34.463Z",
         "credentialSubject": {
             "id": "did:op:4bB5353309913f8003a9451B8E0C15C81dCB9064",
-            "hash": "ba1b6e18b0adb450f35fe83a85c9ae3b21f8c5a920e47c26b532fd1c4397fe43"
+            "hash": "84bacf1ad34e73a23272ae16fefddf1a361cfb3df9ed956d2227d70b15a044c3"
         },
         "proof": {
             "type": "JsonWebSignature2020",
-            "created": "2022-09-25T21:31:46.208Z",
+            "created": "2022-09-26T19:47:34.463Z",
             "proofPurpose": "assertionMethod",
-            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..mi2pYI4kiLUVtdKzX1mbipE8WhNO9u1hIpXzZrpvMtTlzNYD-ipWiOvH9V3raYnc1xuLwYh0ixKk6Ms0EjkoFxpmRk7uAZk-0EKuB4v3i84-Yp8JZSUckkJgLgQC1F5Yd-GbsbJIpgDqaGciUU-iwfqfDPtFAJCxiGzgO1qxxgI0RtzB6FHh2NmZ5WOVfzd4MZQP0IP462o_y67cwjPIRmLkEnSR-EEoi6YZMjftEYdGuV004dnCpEl7HgLsoMDpGYAeEEtDB0TmukNn8VeI9TcUlKmb9zNpYZC-FPhCaqcvXnn1Xy2TtSLi5fty5JAstii8SSAJLHELcwkVkSqyUQ",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PmX7m_v51Fmi1eugfc85UoXoTky0vTvgQXni1EJ8pk0LjGVN7orxd_H2oKxseLwtpduGpyL-59xs7askc2lQ-67j2IV9faS44NjPAqeVh9C2lp_kL3yIhZ6R-qA8j2jHAvt2Ub0n89cTeCreSPF_PhDqpklnMsYHxvbKM0MgGV1nTVIEjWfGFf-Zi1GGw3sDy6V2Kiw0wotNJJCbsjdd-4Ud0ysJSPKyW8MO-ZaUBcVHUgRNcQ5nwQ3kmkEh4XypU6gXc6W_6jBgg6YpkarB-ru77Gla2rXEA3F2mE32ChS-Un3Q5rFI2QHPYrzsSQ2FbTg1jIJrZCygpGFjzAOBpA",
             "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
         }
     }
