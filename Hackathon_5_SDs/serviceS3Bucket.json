@@ -1,0 +1,74 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://registry.lab.gaia-x.eu/v2206/api/shape"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingExperimental"
+        ],
+        "id": "https://delta-dao.com/.well-known/serviceS3Bucket.json",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceS3Bucket.json",
+            "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantAmazon.json",
+            "gx-service-offering:name": "Amazon S3 Bucket",
+            "gx-service-offering:description": "Amazon S3 bucket is a public cloud storage resource.",
+            "gx-service-offering:serviceModel": "subscription",
+            "gx-service-offering:termsAndConditions": [
+                {
+                    "gx-service-offering:url": "https://aws.amazon.com/service-terms/",
+                    "gx-service-offering:hash": "4f598faf41fb29a44d63ec413730d55fabd2d249f1976fee1c8eec8003d7f539"
+                }
+            ],
+            "gx-service-offering:gdpr": [
+                {
+                    "gx-service-offering:imprint": "https://aws.amazon.com/de/impressum/"
+                },
+                {
+                    "gx-service-offering:privacyPolicy": "https://aws.amazon.com/privacy/?nc1=f_pr"
+                }
+            ],
+            "gx-service-offering:dataProtectionRegime": [
+                "GDPR2016"
+            ],
+            "gx-service-offering:dataExport": {
+                "gx-service-offering:requestType": "email",
+                "gx-service-offering:accessType": "digital",
+                "gx-service-offering:formatType": "mime/png"
+            }
+        },
+        "issuer": "did:web:delta-dao.com",
+        "issuanceDate": "2022-09-26T23:23:23.235Z",
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-26T12:51:19.231Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..He_qjYVcgpRAC_t0M6GC7D-MLK9XkuUabfCj8rxjZ59kKChcnCtvsAbFYQ8tsYW0LppQNxzx3SNLTgrKud3PzVmhlZFXvNxH2yBmlgvwttZJhY0TcHDQvEirSg_EqkZpQRIh0ABpzmiigWfXvMMbaIe6gnZu_hvKmcEp1UKzBCvY50xCN57s_GhzyzUNn443xjxNQlz9zxn_GjQrCP66UNVEwa6ijGiL3Ot7MyRNq1z3nJgsb5QGKtn23Ty6wTln0jgR5QIqP3OZs8lZH6ea3ic1frMEZ6-Edv9MErBjrwKHt2i_QI7psXqxPdQvS7P7NYCzSSwaa2ygXCrfxdVwZw"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ServiceOfferingCredentialExperimental"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664196684218",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-09-26T12:51:24.218Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/serviceS3Bucket.json",
+            "hash": "034f7c766c403e78dc6dd2880dc22691c4f847dd60229442e70950b7ba59192e"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-26T12:51:24.218Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..o3Snm_OT61W1qQ2hd8qoZqmKuvhxw3Nz5fbDyNz5pVww9SMG2ZXOhzH41JfK9mpPNzKM_fBXiJaTusbqfYh0lNqAJCRcC98nRtSfKLxvxCTsCU7oF4b3pLJnq-rFLTGR3XZZEL3diAlKDzWu4qSxc7u9LbF79EOKiTtC8HugvBzS4qanuZ7JmfpMo8EvWssI0kHXV5pkqw1VP4fRcgnM1jvcDY_s8lYFxXpnGWXCIwmQImztynyZP--t86BGIDi9GuaGUIhJIgGZXW_llPEeWNRri-IToXVGXQDGpq3lzGwMm9of81_myPiT2WtzY76PMdNqivxV-tc5CZfdIX_2UA",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}

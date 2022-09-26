@@ -1,0 +1,42 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.lab.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceS3Bucket.json",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceS3Bucket.json",
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantAmazon.json",
+        "gx-service-offering:name": "Amazon S3 Bucket",
+        "gx-service-offering:description": "Amazon S3 bucket is a public cloud storage resource.",
+        "gx-service-offering:serviceModel": "subscription",
+        "gx-service-offering:termsAndConditions": [
+            {
+                "gx-service-offering:url": "https://aws.amazon.com/service-terms/",
+                "gx-service-offering:hash": "4f598faf41fb29a44d63ec413730d55fabd2d249f1976fee1c8eec8003d7f539"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "gx-service-offering:imprint": "https://aws.amazon.com/de/impressum/"
+            },
+            {
+                "gx-service-offering:privacyPolicy": "https://aws.amazon.com/privacy/?nc1=f_pr"
+            }
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+            "GDPR2016"
+        ],
+        "gx-service-offering:dataExport": {
+            "gx-service-offering:requestType": "email",
+            "gx-service-offering:accessType": "digital",
+            "gx-service-offering:formatType": "mime/png"
+        }
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-26T23:23:23.235Z"
+}
