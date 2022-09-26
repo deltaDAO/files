@@ -1,0 +1,68 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://registry.gaia-x.eu/v2206/api/shape"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "LegalPerson"
+        ],
+        "id": "https://delta-dao.com/.well-known/participant51nodes.json",
+        "issuer": "did:web:delta-dao.com",
+        "issuanceDate": "2022-09-26T08:00:00.000Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/participant51nodes.json",
+            "gx-participant:legalName": "51nodes GmbH",
+            "gx-participant:registrationNumber": {
+                "gx-participant:registrationNumberType": "EUID",
+                "gx-participant:registrationNumberNumber": "DEB8534.HRB762846"
+            },
+            "gx-participant:headquarterAddress": {
+                "gx-participant:addressCountryCode": "DE",
+                "gx-participant:addressCode": "DE-BW",
+                "gx-participant:streetAddress": "Industriestr. 4",
+                "gx-participant:postalCode": "70565",
+                "gx-participant:locality": "Stuttgart"
+            },
+            "gx-participant:legalAddress": {
+                "gx-participant:addressCountryCode": "DE",
+                "gx-participant:addressCode": "DE-BW",
+                "gx-participant:streetAddress": "Industriestr. 4",
+                "gx-participant:postalCode": "70565",
+                "gx-participant:locality": "Stuttgart"
+            },
+            "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-26T09:44:47.934Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..o0ZPKlM3a3LWCsL8Vv0Ap_zbA6Kto5CjUkxzgkQXMCUeL4mP45WavozX_-jiacNDCBtb610sJKYN31rwta96BjgW3xtDkYYYlVV4o_f25ACCOz4NqXe5vdQE1jfjGyBzShM_bYeCSSb57UNCAJ8cF2GivSz7oHE-3gp1IKflAo6AyEt-mkvVcDGR8i_6yWpnvXAtAMiU2hKiWyQiH2dBlts9NtMxSguOunvOcx6NniuZVMXEvPs0AafItOhXVECCKHFFYWM8U5-RCguiDG5sYT8xdpLlv6LkQHKW8Ewla-qyxBYL9_1sGItxb56CxxqrsyS2wFKK8OjSxs3lPGAb4Q"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "type": [
+            "VerifiableCredential",
+            "ParticipantCredential"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664185492858",
+        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuanceDate": "2022-09-26T09:44:52.858Z",
+        "credentialSubject": {
+            "id": "https://delta-dao.com/.well-known/participant51nodes.json",
+            "hash": "c5d6076fe79782fdf26e73b0dccbc70fd7303aa8438f3f30bec0e40b93f2dd7f"
+        },
+        "proof": {
+            "type": "JsonWebSignature2020",
+            "created": "2022-09-26T09:44:52.858Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..fUq9eb8icqb6sMyOSMIWLu2WAtbxNwoFcZarlkJJYr4Oy8boFDThpHxsSJ_XpglHmes1rUzJgMHHUSWHgzENzJSjAQ1sdqfc7fgfmvPybOic8MhHs4QN7dmJvt6Zk-5tThMzkY-O1-VgROUAFTVWQWyLkgOkjN8RjZIUiC83PoVsX-OM0bE72Gfb-Wj2eljch7JfMNo8VLpceL5DVs5ChE8bxswYHhn8fTJGFvPQ1tAfJDmpL5YrOhb7Ug-MBAHmW28Flgg3wCco71MMMUdzGUFnYJVzD2WKe5ubmDvMbRvtwgr5nrNvNALbELBvqcoWLYrjIs2v973-xD-2mIBgPQ",
+            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+        }
+    }
+}

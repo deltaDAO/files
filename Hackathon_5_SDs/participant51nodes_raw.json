@@ -1,0 +1,36 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participant51nodes.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-26T08:00:00.000Z",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participant51nodes.json",
+        "gx-participant:legalName": "51nodes GmbH",
+        "gx-participant:registrationNumber": {
+            "gx-participant:registrationNumberType": "EUID",
+            "gx-participant:registrationNumberNumber": "DEB8534.HRB762846"
+        },
+        "gx-participant:headquarterAddress": {
+            "gx-participant:addressCountryCode": "DE",
+            "gx-participant:addressCode": "DE-BW",
+            "gx-participant:streetAddress": "Industriestr. 4",
+            "gx-participant:postalCode": "70565",
+            "gx-participant:locality": "Stuttgart"
+        },
+        "gx-participant:legalAddress": {
+            "gx-participant:addressCountryCode": "DE",
+            "gx-participant:addressCode": "DE-BW",
+            "gx-participant:streetAddress": "Industriestr. 4",
+            "gx-participant:postalCode": "70565",
+            "gx-participant:locality": "Stuttgart"
+        },
+        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    }
+}
