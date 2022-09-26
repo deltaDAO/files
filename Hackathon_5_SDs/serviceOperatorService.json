@@ -1,52 +1,78 @@
 {
-    "@context": [
+    "selfDescriptionCredential": {
+      "@context": [
         "https://www.w3.org/2018/credentials/v1",
         "https://registry.gaia-x.eu/v2206/api/shape"
-    ],
-    "type": [
+      ],
+      "type": [
         "VerifiableCredential",
         "ServiceOfferingExperimental"
-    ],
-    "id": "https://delta-dao.com/.well-known/serviceOperatorEngine.json",
-    "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceOperatorEngine.json",
+      ],
+      "id": "https://delta-dao.com/.well-known/serviceOperatorService.json",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceOperatorService.json",
         "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
-        "gx-service-offering:name": "Gaia-X Web3 Ecosystem Conpute-to-Data Operator Engine",
-        "gx-service-offering:description": "The Operator-Engine is the backend service that orchestrates and manages the compute infrastructure.",
+        "gx-service-offering:name": "Gaia-X Web3 Ecosystem Conpute-to-Data Operator Service",
+        "gx-service-offering:description": "The Operator-Service manages the Compute-to-Data workflow, communicates with the data provider, and performs the computation.",
         "gx-service-offering:serviceModel": "subscription",
         "gx-service-offering:termsAndConditions": [
-            {
-                "gx-service-offering:url": "https://raw.githubusercontent.com/oceanprotocol/operator-engine/v4main/LICENSE",
-                "gx-service-offering:hash": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
-            }
+          {
+            "gx-service-offering:url": "https://raw.githubusercontent.com/oceanprotocol/operator-service/v4main/LICENSE",
+            "gx-service-offering:hash": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+          }
         ],
         "gx-service-offering:gdpr": [
-            {
-                "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
-            },
-            {
-                "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
-            }
+          {
+            "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+          },
+          {
+            "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+          }
         ],
         "gx-service-offering:dataProtectionRegime": [
-            "GDPR2016"
+          "GDPR2016"
         ],
         "gx-service-offering:dependsOn": [
-            "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json"
+          "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
+          "https://delta-dao.com/.well-known/serviceS3Bucket.json"
         ],
         "gx-service-offering:dataExport": {
-            "gx-service-offering:requestType": "email",
-            "gx-service-offering:accessType": "digital",
-            "gx-service-offering:formatType": "mime/png"
+          "gx-service-offering:requestType": "email",
+          "gx-service-offering:accessType": "digital",
+          "gx-service-offering:formatType": "mime/png"
         }
-    },
-    "issuer": "did:web:delta-dao.com",
-    "issuanceDate": "2022-09-26T23:23:23.235Z",
-    "proof": {
+      },
+      "issuer": "did:web:delta-dao.com",
+      "issuanceDate": "2022-09-26T23:23:23.235Z",
+      "proof": {
         "type": "JsonWebSignature2020",
-        "created": "2022-09-26T19:32:50.936Z",
+        "created": "2022-09-26T20:26:48.667Z",
         "proofPurpose": "assertionMethod",
         "verificationMethod": "did:web:delta-dao.com",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..WmYyMZYhold-5TVq92mPCaU5k5eQQriR9NOMofC56wsnGq7EEwtd9ReGyMzJqTNlFL5oBhp6laUOqE1Ydew3UEsMxD_IHH1VF8E-kMf7rBLjCtznhtFH3YZ5l1aaSGdcBYY7sAFwLkBOvjeT2tRjSDMjVEGSTaEjKQpArcXqJLY8EW5PQ6zYPawRVwYyNrbMKMjh4q2QCWC99tvY8vg6r5OuUuCnPAV4Mh030yV8YZH76IRGBXUfUsA4bo-m6V33lOyHfJDoNXul8NK-OLvOvmLNIXhgAJDexpDvjUil4QTOJA7Zw_MW0F4374gOGSWbOI3udoIQBWL3wEfv83-n5w"
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MLjSR5zVid6WZdD1qbU30_Ie0VP2V9Io3seH2wKKgBeOPwicJ1WaQ5EWJnz9p9Cmvu_tNeH4A_O0b88JdCJItDshyjqLq6reOi1FVJGrCuTgiZ13oQZrRz5iTeRuDMORn-UaIUHvjNrTZZ3ieErZUyO0YRUO548r4uNBED67W__XUeIEEaHi3950T5ANIM3-6ABQp4yT-ph_uV4k9OdHMcGKuD6Pr-z71Ul72o70XCBgEci62TTk1b36_Y4JhxIpsOfoit0Kcbq2qzUhwoths4qD-tIYhxX9J0Au3NpCjBH1jlgoo7B8GH4CjtBkwXL6xmqTq3hfzVowI0eW-ew_xg"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "ServiceOfferingCredentialExperimental"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664224014045",
+      "issuer": "did:web:compliance.lab.gaia-x.eu",
+      "issuanceDate": "2022-09-26T20:26:54.045Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceOperatorService.json",
+        "hash": "24ca949aeca098d5895d12204b1359766a0c19ca89098319cd3dc40fe0ae5fc4"
+      },
+      "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2022-09-26T20:26:54.045Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..FE9xuBEXU4a1DNN3EAglCiz3JSKjJ2rPmYxpFZBsA-Nxi8kpSHY33JNR550kw29vt7YX40BO0shttWuJMpEwtSkaY-ZCYv_grLgWEiFUdydTgI5xFCEOz-f1AUCAYbXaytfyW8J6cbji8dbdJ5XWQupdxjwmaWRl8g14eSBDD0Vk3ZgzDaE2_Sf_GfPBiMzFgZ5-kNaqpwhWwAgMspxkMAb4ql46u9BYqS0idXFT75tpwjucCPVNAvhHw5qiX1klbvC9rBiKY6U9n1VhcHL4HLxpymBi_4ld28rjHtI5weBBCbJt4oLP_P4qpsol-C4UWU7MWcofTx6DzkX0OuCzMg",
+        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+      }
     }
-}
+  }

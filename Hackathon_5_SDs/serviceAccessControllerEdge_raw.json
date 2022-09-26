@@ -1,0 +1,46 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceAccessControllerEdge.json",
+    "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/serviceAccessControllerEdge.json",
+        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+        "gx-service-offering:name": "Edge Access Controller Component",
+        "gx-service-offering:description": "The Edge Provider as Access Controller Component enables on-premise computing by allowing data services to be consumed and a container component to be run by data providers. It is required for remote machine learning to work with Compute-to-Data functionality.",
+        "gx-service-offering:serviceModel": "subscription",
+        "gx-service-offering:termsAndConditions": [
+            {
+                "gx-service-offering:url": "https://raw.githubusercontent.com/oceanprotocol/provider/main/LICENSE",
+                "gx-service-offering:hash": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+            }
+        ],
+        "gx-service-offering:gdpr": [
+            {
+                "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+            },
+            {
+                "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+            }
+        ],
+        "gx-service-offering:dataProtectionRegime": [
+            "GDPR2016"
+        ],
+        "gx-service-offering:dependsOn": [
+            "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
+            "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAOEdge.json"
+        ],
+        "gx-service-offering:dataExport": {
+            "gx-service-offering:requestType": "email",
+            "gx-service-offering:accessType": "digital",
+            "gx-service-offering:formatType": "mime/png"
+        }
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-26T23:23:23.235Z"
+}
