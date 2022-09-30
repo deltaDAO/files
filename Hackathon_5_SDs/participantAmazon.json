@@ -74,7 +74,7 @@
             "ParticipantCredential"
         ],
         "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664147447814",
-        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuer": "did:web:compliance.gaia-x.eu",
         "issuanceDate": "2022-09-25T23:10:47.815Z",
         "credentialSubject": {
             "id": "https://delta-dao.com/.well-known/participantAmazon.json",
@@ -85,7 +85,7 @@
             "created": "2022-09-25T23:10:47.815Z",
             "proofPurpose": "assertionMethod",
             "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..oAi6Fl_BMKcwsDTtfCopDrdkt4jQHdY4N7xrQ0Kb_5dTAdbwd-Sjcn9hfcxhxBzHwEnw9lloJ5a-d7qOVJGE72JpvBQMWygYV38NQQyq-6MPg8p19nTAFp6LrSt1ezKH_F4iFAi8inHi5N5I_xR-JXYQU7KZejOJ9E3D9kNxFna6zz0QG5MLAEze-57vY8DJ_--LNhpHjEEKzTqqf7e931DdBID25T1RohaU6tL3IdpJXy-tzudXwY0jpBI34QGCygsGn-N9tp45wnjnxK-h-mUbDB5g8QkVT3ZXfVW997UUzZFPUZviQT5J0YeHhuWFdqCHbg58GnSWV9gxadc3ig",
-            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
         }
     }
 }

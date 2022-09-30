@@ -75,7 +75,7 @@
             "ServiceOfferingCredentialExperimental"
         ],
         "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664226434123",
-        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuer": "did:web:compliance.gaia-x.eu",
         "issuanceDate": "2022-09-26T21:07:14.123Z",
         "credentialSubject": {
             "id": "did:op:4b42dfc40Ae829968De8142eb35f38a8bD46D5FA",
@@ -86,7 +86,7 @@
             "created": "2022-09-26T21:07:14.123Z",
             "proofPurpose": "assertionMethod",
             "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Rzl7CB1kwgxCHHkrmmVgBIaES_9BSKFdyl0bmDcgXJup6n4rNULbgqtblvGSVIz2sJo4GId4ke2aEKpo9kx0ayQFET411cxBLO1_fM6xtVL6eWrtSEbk-UdlSGylQOh_4TBli-ioCNaeWDbhLsCczpCzp7vG_JKFD7oSSbJbtBItA6QAVIP9XUmWsNbtTXQVeKmbbmBtMUnMfyo1dxMv1VGS8xtQ5Zk9zeTt7LhwLDjjhT-xPSwGDJF513mKErdsmVaPM8gLtRCMAaSxZ-gv6O5kZnqFVjFY8txZg1rB8DJMgxjBuvxSAvaI8u_DHz8Pa2gO_NNR_eGc8Xlc4_GecQ",
-            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
         }
     }
 }

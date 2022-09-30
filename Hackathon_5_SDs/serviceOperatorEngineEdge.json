@@ -60,7 +60,7 @@
             "ServiceOfferingCredentialExperimental"
         ],
         "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664224512024",
-        "issuer": "did:web:compliance.lab.gaia-x.eu",
+        "issuer": "did:web:compliance.gaia-x.eu",
         "issuanceDate": "2022-09-26T20:35:12.025Z",
         "credentialSubject": {
             "id": "https://delta-dao.com/.well-known/serviceOperatorEngineEdge.json",
@@ -71,7 +71,7 @@
             "created": "2022-09-26T20:35:12.025Z",
             "proofPurpose": "assertionMethod",
             "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..obChhObf_eohGRlCLKJ2eqzu4-xdb3aEavyXD1RftetmioaVaxnNFLuDSiwsSZvNQMwNxBULAngzgib_8G5QxhUgMVRjDh-gzRes_NZaOm_dcqkEhgvlpvcn1awX_MeTIwGFkmrArPXymauqXKtlzDVCPU9QQZPXvLylv8lUAXCaa1El8ZN0Gk7vMzsQuSKJzpwTouRqMlEOHR8KPE-frDFOh_h2P__ZukiMdAcxAcmun_Pq4aVHLOIH3RlM9G0CWmRSq2aAamNujyscLkvbKkJW3nJXbvi-RNN8pCLcEAqU3xRK175PUUyGqOhY_9x9nyFhcE0vHUDLSGBkoUR2cQ",
-            "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
         }
     }
 }
