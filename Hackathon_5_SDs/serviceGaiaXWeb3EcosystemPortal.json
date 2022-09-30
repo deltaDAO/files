@@ -1,88 +1,88 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://registry.gaia-x.eu/v2206/api/shape"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ServiceOfferingExperimental"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceGaiaXWeb3EcosystemPortal.json",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/serviceGaiaXWeb3EcosystemPortal.json",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceGaiaXWeb3EcosystemPortal.json",
-        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
-        "gx-service-offering:name": "Gaia-X Web3 Ecosystem Portal",
-        "gx-service-offering:description": "A platform to find, publish and consume Gaia-X Service Offerings in the Gaia-X Test Network.",
-        "gx-service-offering:webAddress": "https://portal.minimal-gaia-x.eu/",
-        "gx-service-offering:serviceModel": "free web service",
-        "gx-service-offering:servicePrice": [
-          {
-            "gx-service-offering:servicePriceCurrency": "EUR",
-            "gx-service-offering:servicePriceValue": "0"
-          }
-        ],
-        "gx-service-offering:termsAndConditions": [
-          {
-            "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/imprint",
-            "gx-service-offering:hash": "ec71c2a7c9482823f83df7470da93f0447db5f6101b6124521518d610e9785f7"
-          }
-        ],
-        "gx-service-offering:gdpr": [
-          {
-            "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
-          },
-          {
-            "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
-          }
-        ],
-        "gx-service-offering:dataProtectionRegime": [
-          "GDPR2016"
-        ],
-        "gx-service-offering:dataExport": [
-          {
-            "gx-service-offering:requestType": "email",
-            "gx-service-offering:accessType": "digital",
-            "gx-service-offering:formatType": "mime/png"
-          }
-        ],
-        "gx-service-offering:dependsOn": [
-          "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
-          "https://delta-dao.com/.well-known/serviceNetlify.json",
-          "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
-        ]
-      },
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-25T23:23:23.235Z",
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:19:27.281Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:compliance.gaia-x.eu",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..YqYACVHNEQF3pzl0rD9_1pJ1_JbFgDSbxtm8EYHfS54qf6z1foXhAc7hO7tZaocuJD2Rp3m82yzDSEuw3VKvb6SiHsgI3KSeByhQBAcUk5wu0HdMlvGM9MZMDzYl4EzIiLuOL-PZlmOLRvt7JU953qrSHdHDH6zGHj4TBANd0Q96nEWWeOxDX_bfwVBFOuWDBJ-VZJJJCmiPcXSXcFwLcno5M4VDAFuN8PwZMLYfA-3TswRpp9g2dikutZsA_A3PX-fPew51Ya8xwpXm0LiGmtwquUb7fCgJpZfiYtPbvUhsEk9fAkB9ypxMIQvaFu0P4F1kD6XLoLnFZ158MLeq-A"
-      }
+      "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+      "gx-service-offering:name": "Gaia-X Web3 Ecosystem Portal",
+      "gx-service-offering:description": "A platform to find, publish and consume Gaia-X Service Offerings in the Gaia-X Test Network.",
+      "gx-service-offering:webAddress": "https://portal.minimal-gaia-x.eu/",
+      "gx-service-offering:serviceModel": "free web service",
+      "gx-service-offering:servicePrice": [
+        {
+          "gx-service-offering:servicePriceCurrency": "EUR",
+          "gx-service-offering:servicePriceValue": "0"
+        }
+      ],
+      "gx-service-offering:termsAndConditions": [
+        {
+          "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/imprint",
+          "gx-service-offering:hash": "ec71c2a7c9482823f83df7470da93f0447db5f6101b6124521518d610e9785f7"
+        }
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
+        },
+        {
+          "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
+        }
+      ],
+      "gx-service-offering:dataProtectionRegime": [
+        "GDPR2016"
+      ],
+      "gx-service-offering:dataExport": [
+        {
+          "gx-service-offering:requestType": "email",
+          "gx-service-offering:accessType": "digital",
+          "gx-service-offering:formatType": "mime/png"
+        }
+      ],
+      "gx-service-offering:dependsOn": [
+        "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+        "https://delta-dao.com/.well-known/serviceNetlify.json",
+        "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
+      ]
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ServiceOfferingCredentialExperimental"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664140772031",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-25T21:19:32.031Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceGaiaXWeb3EcosystemPortal.json",
-        "hash": "cc3fc6895d27d4dfc7e4a19148ac2bb1d8487abc62f7512d9c46edeb1e8d5eb0"
-      },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:19:32.031Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MB0Wo70Ocjl0Km6nmPTbobrSH9jONw4ob0FqlCzXrUhaJP4NYoFqYRhfF5-ncO8w_5HVRS93RTbWsGMMqoNJLxo4YHnedhJmIidLbX_dXSLiV7JX9iGpshzcTBUVA31oiFzn24fjY8CtE5_mXJ6Pf4tZvTL9OfF7PPe5iJsI55G4O5HxR2FYfm-FF9DE-Mfq5929J6TZF68jNzfW73_Ir2n9qkMdv4x1QNXwLOvnDY7gkDMcyhQ8kB68ktjgRnFcO12blPpXxxQRfftqyWYkVOVLBxGydZXCh24o2GDZdJDt2Q8A6Jemd0NevFVtzCAVBchgY-qOEH4C9joH_bF9mQ",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z",
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:45:23.229Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..RAXjEw0f0bDA2q1h2gv6ViNnVdM5XTPyB4Q8x4HR_537e1X2pxMlI38xS3vy9OWYrtwNx1pLUctGNOhF8mB9fqHsvMMg5YFYGU0ZQ8ir7kHFFF_ZInaUSpPQUDi9psN3hpwILtpNGgkUX9tJ8uLgY4G2IFmoguHXcrG8TsCMPf_TjCbywkRZ6gqVH9orSZ4vLaXNjXpiFhrflTdSr9H-YsUo_OC7lY845CmKyQD8Qct7sL_-Nl023Ne6WVEuFOCq3jqD-kMvLFPZTj1a2R2sqlDm2McxhF8jcXw8c7m8Epy91sdt7h0p5ShJIqxOtfjbQDTVZg7od8TwJniksH-jZw"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664523928549",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T07:45:28.549Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/serviceGaiaXWeb3EcosystemPortal.json",
+      "hash": "00063f0dabb6733aab90ef1aad13d3d74158e615ec554a603e052ff96c3ae404"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:45:28.549Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HEUsoIcd9AWrDwsfxQnfxEcSojfrn1uMVIlasFOVyro0PaqRsJWu0OoCBIH0WDbC1fi911xPs2CWfrtIMoMVFlXhE4SbmljiLKK6W6dlvLNQsT3H-y9Zs7ePNb3SwEN_ztROrDYLMhljNiSGW2cNN0pA2n2kqO8b5NEtTRifeT02CSI8X60C5S9yvnFnkC2aqhqj8dkm-Iak5mrIvH6kmFM6_2Si4bcC7E0YoBie7pHtjH0E2rQy5nDsdRb8QjaqTplNoDNjcsOBr6wJqpBciFjReFEIHDwpthBqZqneEgOv2uaKRzuXGnpIVEoRrZ3WCS-sc-uGwZ8HchDnkOd1gg",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
+}

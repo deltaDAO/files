@@ -1,69 +1,69 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://registry.gaia-x.eu/v2206/api/shape"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "LegalPerson"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantNetlify.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/participantNetlify.json",
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-23T23:23:23.235Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantNetlify.json",
-        "gx-participant:legalName": "Netlify Incorporated",
-        "gx-participant:website": "https://www.netlify.com/",
-        "gx-participant:registrationNumber": {
-          "gx-participant:registrationNumberType": "local",
-          "gx-participant:registrationNumberNumber": "C3644845"
-        },
-        "gx-participant:headquarterAddress": {
-          "gx-participant:addressCountryCode": "US",
-          "gx-participant:addressCode": "US-CA",
-          "gx-participant:streetAddress": "2325 3RD STREET, SUITE 215",
-          "gx-participant:postalCode": "CA 94107",
-          "gx-participant:locality": "SAN FRANCISCO"
-        },
-        "gx-participant:legalAddress": {
-          "gx-participant:addressCountryCode": "US",
-          "gx-participant:addressCode": "US-CA",
-          "gx-participant:streetAddress": "2325 3RD STREET, SUITE 215",
-          "gx-participant:postalCode": "CA 94107",
-          "gx-participant:locality": "SAN FRANCISCO"
-        },
-        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+      "gx-participant:legalName": "Netlify Incorporated",
+      "gx-participant:website": "https://www.netlify.com/",
+      "gx-participant:registrationNumber": {
+        "gx-participant:registrationNumberType": "local",
+        "gx-participant:registrationNumberNumber": "C3644845"
       },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:16:22.787Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:compliance.gaia-x.eu",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..qsTsClsDTrzsKFmDC3gScnoh5M4jQLRd3qnkCPBfCZ4xj6y_7rz_wih7pW61i0_IxD6_9UI3AyX0zHH-62kAIP8dDR78wOsHb_KxUas0OxQnwBtu82-3zdsPPgB658xKcOQKZIbEDSdhjeUUwXPjB5miTfjw-Kj--cPvaT3tKKnnAH66Ijql_WU0U87ViOW__BP-VkptDMWJSKxW0cZdDObY88COQGZrux2A15E7srMcozpP4Q2kX8FDuXxUePrUZcgh_enckpwkecFHCB5bPRXumiXRhVV6zsJy3bTbqs0CysyKoyWqMpYhK4q6AnVu0rDof3g7-CTbbfzBd1Zycw"
-      }
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "US",
+        "gx-participant:addressCode": "US-CA",
+        "gx-participant:streetAddress": "2325 3RD STREET, SUITE 215",
+        "gx-participant:postalCode": "CA 94107",
+        "gx-participant:locality": "SAN FRANCISCO"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "US",
+        "gx-participant:addressCode": "US-CA",
+        "gx-participant:streetAddress": "2325 3RD STREET, SUITE 215",
+        "gx-participant:postalCode": "CA 94107",
+        "gx-participant:locality": "SAN FRANCISCO"
+      },
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ParticipantCredential"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664140588137",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-25T21:16:28.137Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantNetlify.json",
-        "hash": "67af61546b923db91210299da52b8e590ec9c7f13af9ef7865b70d8af1914e6e"
-      },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:16:28.137Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..irkkbNZQ1ajh0d_gZXi9LThpxNnl3YFO0r0hxwDGwJgyVQ6AC_V1s2oS7RuZ4BOpllDYQHh2QhCLFUNbPLxvqHk39BsLSM9DI642Ru-anfnlXjuLRv7tXV7kAbFJjXJGb9rIo-FGzYOzRdczXD7unbe5oNXZU9vAzHBkR4jBfEajutF-f_Pb4M7tw_RcWc2OPQF8oKXFmmMnNynCfgowMMDNBWOy7qmh1G2HtQy7IShUf7ZlOg1Syf5hIibMrPCPWp_Ohqorua7r9oa6tRpo81pfb8DnlkGFdWeEiUoGld_KDHDQtYEYAjmN9fbpXIxSdmIqp-Ta7u7MTy8zdzXiQg",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:39:45.392Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..d7yYGq2rs_bcgBHMT3mn6GjFDYwOGNPUFTonT5cqG_37Wm5U62HWK8Dqd9zLSJpu4nTAsm5My5-da2NH8ZUOLdx-YV5h_4JnvLZbSqKevrW_BRvIJmFO8B2yonCQiKVbMgX5GNDIV100bsBzW44eJreFoebKrNNcm0RjcQZG1L4UOPCnRvpinWjUly95eHa4p3K6rtOeofcDa1RJQa0lYfiJ1bTy9OuCfBX7OAqkUlHWnyEICTa8b5EJjzIw1HXpP_xeYmeXNutPfk_hyiFffK84PbN56S2QNuqNqHxYBB26d95XcxcI5hKLzdTc6-idMhBF0REGhE_Vmq6qX6Efdg"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664523590734",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T07:39:50.734Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantNetlify.json",
+      "hash": "47abe8877b6d5d10dc05f3315610548148ed3e7e9197a7e644037c11f45825fd"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:39:50.734Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..KWN7ZQy0B5V7mXSnR5IwMJGv8asqwjuet1Aw_UdVjGaXQ5qcBcY0SbeC5IO4WLc4CeBOVnYbeRPBAuZj1eGtH4OBez-54tQuJArshPp4PpltSkGp_xQVVhlQO7gwhkfVCIKSBPPiVSXsda-BDTu9X0UOBA0buEj5e6eNambTqXUWWj8ZP1dib1IqJhTeHjIwwcz7Bq1uTyipirC_9b3v1jrz8QOTUZDPTUDuHdyW5GqL-oy_kAlRkYiGWznv0kLGWR-kCKaYWYophFKA5MVnB3RkexuN2H3Bemd-w7glBlzAUZq82xdj6kqsRi1H8QIodyTD-Jn5T51hhg-pPCwgxg",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
+}

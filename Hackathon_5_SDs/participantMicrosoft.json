@@ -1,97 +1,97 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://registry.gaia-x.eu/v2206/api/shape"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "LegalPerson"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-23T23:23:23.235Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
-        "gx-participant:legalName": "Microsoft Ireland Operations Limited",
-        "gx-participant:website": "https://www.microsoft.com/",
-        "gx-participant:registrationNumber": [
-          {
-            "gx-participant:registrationNumberType": "leiCode",
-            "gx-participant:registrationNumberNumber": "549300WCLFVEBTBNRF76"
-          },
-          {
-            "gx-participant:registrationNumberType": "EUID",
-            "gx-participant:registrationNumberNumber": "IECRO.905753"
-          }
-        ],
+      "gx-participant:legalName": "Microsoft Ireland Operations Limited",
+      "gx-participant:website": "https://www.microsoft.com/",
+      "gx-participant:registrationNumber": [
+        {
+          "gx-participant:registrationNumberType": "leiCode",
+          "gx-participant:registrationNumberNumber": "549300WCLFVEBTBNRF76"
+        },
+        {
+          "gx-participant:registrationNumberType": "EUID",
+          "gx-participant:registrationNumberNumber": "IECRO.905753"
+        }
+      ],
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "IE",
+        "gx-participant:addressCode": "IE-D",
+        "gx-participant:streetAddress": "70 Sir John Rogerson's Quay, Dublin 2",
+        "gx-participant:postalCode": "D02 R296",
+        "gx-participant:locality": "Dublin"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "IE",
+        "gx-participant:addressCode": "IE-D",
+        "gx-participant:streetAddress": "70 Sir John Rogerson's Quay, Dublin 2",
+        "gx-participant:postalCode": "D02 R296",
+        "gx-participant:locality": "Dublin"
+      },
+      "gx-participant:parentOrganisation": {
+        "gx-participant:legalName": "Microsoft Corporation",
+        "gx-participant:registrationNumber": {
+          "gx-participant:registrationNumberType": "local",
+          "gx-participant:registrationNumberNumber": "600413485"
+        },
         "gx-participant:headquarterAddress": {
-          "gx-participant:addressCountryCode": "IE",
-          "gx-participant:addressCode": "IE-D",
-          "gx-participant:streetAddress": "70 Sir John Rogerson's Quay, Dublin 2",
-          "gx-participant:postalCode": "D02 R296",
-          "gx-participant:locality": "Dublin"
+          "gx-participant:addressCountryCode": "US",
+          "gx-participant:addressCode": "US-WA",
+          "gx-participant:streetAddress": "300 DESCHUTES WAY SW STE 208 MC-CSC1",
+          "gx-participant:postalCode": "98501",
+          "gx-participant:locality": "TUMWATER"
         },
         "gx-participant:legalAddress": {
-          "gx-participant:addressCountryCode": "IE",
-          "gx-participant:addressCode": "IE-D",
-          "gx-participant:streetAddress": "70 Sir John Rogerson's Quay, Dublin 2",
-          "gx-participant:postalCode": "D02 R296",
-          "gx-participant:locality": "Dublin"
-        },
-        "gx-participant:parentOrganisation": {
-          "gx-participant:legalName": "Microsoft Corporation",
-          "gx-participant:registrationNumber": {
-            "gx-participant:registrationNumberType": "local",
-            "gx-participant:registrationNumberNumber": "600413485"
-          },
-          "gx-participant:headquarterAddress": {
-            "gx-participant:addressCountryCode": "US",
-            "gx-participant:addressCode": "US-WA",
-            "gx-participant:streetAddress": "300 DESCHUTES WAY SW STE 208 MC-CSC1",
-            "gx-participant:postalCode": "98501",
-            "gx-participant:locality": "TUMWATER"
-          },
-          "gx-participant:legalAddress": {
-            "gx-participant:addressCountryCode": "JP",
-            "gx-participant:addressCode": "US-WA",
-            "gx-participant:streetAddress": "1 Microsoft Way",
-            "gx-participant:postalCode": "98052",
-            "gx-participant:locality": "Redmond"
-          },
-          "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+          "gx-participant:addressCountryCode": "JP",
+          "gx-participant:addressCode": "US-WA",
+          "gx-participant:streetAddress": "1 Microsoft Way",
+          "gx-participant:postalCode": "98052",
+          "gx-participant:locality": "Redmond"
         },
         "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
       },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:14:00.545Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:compliance.gaia-x.eu",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..CQXlD4_kzxN-RbA1XkSGtnzWpeWKm54C48tjPBbeJekT7WWv0MNx0qbazW-BoeXES8YbCBk09H0hEYR3lWshDfnJfyUGE70JpnxjWyTSt6nkTgIROJx1gBXJtNj_FYlxhvWBOJWtZmV6OnbTO_lSWZGU_mVMrojxI5NHgNFyTEn75vF70IBqzXmIBl4uPvzSMuc4LqdurAiGgsNdgJUz5K86kl7Fy9H54fdynMtvvmxkErvKj-akmJsMJxTO9fj_Y0CoQ3bKrdhWGJVSfU0NnGugFL9gAtXAOc-D2KoFg7IWB2v_IWOpryz0zXQ5NX50XOTxV-OgXXi_oe_Vxm7ltw"
-      }
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ParticipantCredential"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664140445523",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-25T21:14:05.523Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
-        "hash": "8e0cf3e3ea161c698e9625ecb81b6940f26faeb1283d5933eb08e7f9eacd4eae"
-      },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:14:05.523Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..en0mGYGbiRAbo5LNFHVNZ_9nOj4b6buS7yzyo2e3b08TcOZtsPEt6hwqy8BoklZaTV3lpE7u0WqP5ok4CEK_Skmh9fqfhM-iCkqCb6zI0anEVocj1kIQTEU2A6Py_-CQlDvvDOmwpeVuT5-bmwQY7593qMLu9hZNOvEOr7SeBFHll-g7zaA-HmqF4mQdTSrsOA-fyND2cnbxPzbNck9arim4j7qQttWwMKqrCtD3ag3F0fQPaPQU8Nra5cfWAyl8YaQ11Z24_lcLEV1kXqUKEgwJi3-96ISmUcqNRvOjuTZWQL2yMiDXBaSnrs2RdCBJXgx14GSinUaxupPE9KNDRg",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:51:34.623Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Nz4qOA8n90rZ9erIOtmH6WBQQkLQzC0LQHxm7h1OWY7KpwV0anfll76ZKcw_eSiJbU3aXxeiRX9g-oxFgSxsTmcE08TTnylbSkdoMk9CwXGfnIHoNidGldrBIKd4mPNPv1K5IDJcdaeGjNVg4Ui3spdsfJNAXpQoWDFOxj1HdNbRayZU_6DNQMTyLO1FkKPb2SbjsJAZjWel7eUPr0i3-H3a162A9FIrLHDm2aVvBBfjcyOVGZ3ncSYXpH_fMiDd5iDAzEI5dMED4-JjtmfKdzImOpj7GS2ci88rknWLN53PUvmYs2zgnWtTWui3QWrijZXxVi2ab9dKsIpj4-tGCw"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664524299520",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T07:51:39.520Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+      "hash": "1df577a3ef04b9f2f7cb437d1ee57034f43098cf411e3a81d4b2396b3fcfca74"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:51:39.520Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..QJpSvakmyxqhzlzxTTHzCurMttokeIofCdcV4BV8dMDHMIQR98catk_bW3rsWktTPbU8Jx9MojUPk26_0M2_4Lw9qF6FhgjfJABiFax94vVArXwNCjzP-IgQyeaoy5z5VQbEDsCk_wFccCTMjXWRfzz_2cD6CpW4Rkb0ZuyGoor7W5lxImi1jnz9fAoIv_NMWAqT1uXCd10uTUcYnE08SGpZBk2R6ddM2dqKXjssavYvohGTV9q8D8bB3OyG_ffaruzMSu1M6nYgNgkyqEALJh9Sh50l7rL9o0hW_zwcctSYf4Ukmn_Bqbe25d26_Hou3yN89Hf90vf0o8r9HoDl_Q",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
+}

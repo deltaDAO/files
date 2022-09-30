@@ -1,74 +1,74 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://registry.gaia-x.eu/v2206/api/shape"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ServiceOfferingExperimental"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
-        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantMicrosoft.json",
-        "gx-service-offering:name": "Azure Managed Kubernetes Cluster",
-        "gx-service-offering:description": "The managed K8s cluster provides the basis for the computation and storage.",
-        "gx-service-offering:serviceModel": "subscription",
-        "gx-service-offering:termsAndConditions": [
-          {
-            "gx-service-offering:url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-            "gx-service-offering:hash": "115b40095d99fcca1f026bd6702d168b8065ec4e853e6279df4d947601222058"
-          }
-        ],
-        "gx-service-offering:gdpr": [
-          {
-            "gx-service-offering:imprint": "https://www.microsoft.com/de-de/rechtliche-hinweise/impressum"
-          },
-          {
-            "gx-service-offering:privacyPolicy": "https://privacy.microsoft.com/de-de/privacystatement"
-          }
-        ],
-        "gx-service-offering:dataProtectionRegime": [
-          "GDPR2016"
-        ],
-        "gx-service-offering:dataExport": {
-          "gx-service-offering:requestType": "email",
-          "gx-service-offering:accessType": "digital",
-          "gx-service-offering:formatType": "mime/png"
+      "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantMicrosoft.json",
+      "gx-service-offering:name": "Azure Managed Kubernetes Cluster",
+      "gx-service-offering:description": "The managed K8s cluster provides the basis for the computation and storage.",
+      "gx-service-offering:serviceModel": "subscription",
+      "gx-service-offering:termsAndConditions": [
+        {
+          "gx-service-offering:url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+          "gx-service-offering:hash": "115b40095d99fcca1f026bd6702d168b8065ec4e853e6279df4d947601222058"
         }
-      },
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-25T23:23:23.235Z",
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:19:50.147Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:compliance.gaia-x.eu",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..G5ozfmekcv1GmDvfCAyMIvebSdYGsTnQvjuf62T30P8HNMLwO5aHMxtL3y4p63wo3K2WUAw32uNJlvtF3r32sn1qOnR7m6JcKlOs9TZGNLU-uq1ba51wH2cMYL2QAJcdHfZUuWZOgCdNwWmKXQiN-zNF___Dw7MohnR6vwhVLDoQeoJva0PJLvr_zvKaGVtdYaAFEl0I3lRKbeWR9fld65cVCo-Q8KZzqbX-gGmKjRVc8ptgmVzWVejaOndd1yYLltk1KOs0Zr0PL4xbTYIg5NEbDBmNaCoDV28lmGZT6VfNg6ZBb26hor4JQS6WLDNtEs5EIjfZqrd6bwPtY3uEng"
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "gx-service-offering:imprint": "https://www.microsoft.com/de-de/rechtliche-hinweise/impressum"
+        },
+        {
+          "gx-service-offering:privacyPolicy": "https://privacy.microsoft.com/de-de/privacystatement"
+        }
+      ],
+      "gx-service-offering:dataProtectionRegime": [
+        "GDPR2016"
+      ],
+      "gx-service-offering:dataExport": {
+        "gx-service-offering:requestType": "email",
+        "gx-service-offering:accessType": "digital",
+        "gx-service-offering:formatType": "mime/png"
       }
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ServiceOfferingCredentialExperimental"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664140794739",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-25T21:19:54.739Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
-        "hash": "c5af9e62f705c92e86e6917e92263178b8ca2bdca4081dc410dd7048089469c9"
-      },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:19:54.739Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PNZOvgApDk-t_PVGBF06qNyNGxyIi4hesBVcwomhoLaoPi8uZviWF0LofD8Ciio0oJQMcVBVwrFsA1tG7DDwx3_IhHyOTdrDcAdxzakFRzXTxeT21INBcdmhquulgrAHaWbSAcqNwzDqN6xd_70Girvar00z4IGUA_FK7ucIG403vMzYWZNJE8onD6fsOoDsbUMR-Rak2kiLIkqgqDsSJlaJtcmk4p2VpgybBzy3oDr8Sz7zXPOnyqMIrtpXthKO0lVboHKD6_Z8ncDFfAfns7fMEONxwXNSgUUw3o8e6To0Px9bxghC5iGgdA4ESyMRNFGwsZXBFSyv_qGxvbieFg",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z",
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:46:04.479Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ZmD13HLFps_CwsHFInn1Y1FZnfNsJLX8loR65jK1tr0fbLw_oTmEID98Jq4aI-ZmaN6obyyArE27Aqz0p5B_BoJTE3Hl8YKUK4cXkx0aOFYL3jgAdn3en3-Wi-GaAko_FLWQL1Tr-osgeJ4TIU87PDorqYT-cvo8pnh1QCTZvXp5cgmbScUCWU98rflegW7PNVNgInCp9dBm7j8BjO90Gqdz4DLhRSqxqNzYD2SHZbIBIjIfTq13-vTQNpeYNrKs8IpwuOZ8UIL_XNg6Ron8F9tP-MSqAkoWNKcrepjWOetGOcZU8BoyEKF0swsYHRBNodKfGzYm792xDjhgG2wPNg"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664523969634",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T07:46:09.634Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json",
+      "hash": "9f9eb0bc3b4499b786eaf79ae8ead102305d2bd90c0503eb3d2fd57f2f457973"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:46:09.634Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..uANN6aKWgAd4VyAEgYyaqJzuWw_xt4dRfWGF-a9-J4xir8jP_ByP_0wC3vls4deg32xSmHasJfsBqkGZOLDfbIcytbhJscVG4qh-BS36PBZoW_2PYKnBIr0SeuMCmzGAFL2osBe51_Gb06TV75-z-2mcWSeDZgqVNSn--XnxonKu-EoMmBUT6yGiMaqs7J7wo2HJa_5-5HyQq1yXR9aPS269Fxe-vcOkoiqLH5_eTyC4SiJVygowJYCZAppqGUX6eGW6hAukFOIRUQ-NV0NI5BOvwxJG9bEwniL51s6CHYoqgvIMifgcYcpFDywCxWSbak9yNU0C8X27PviLq3rP7Q",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
+}

@@ -1,88 +1,88 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://registry.gaia-x.eu/v2206/api/shape"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ServiceOfferingExperimental"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceUniversityDeLleidaSciencePortal.json",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/serviceUniversityDeLleidaSciencePortal.json",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceUniversityDeLleidaSciencePortal.json",
-        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
-        "gx-service-offering:name": "UDL Science and Research Portal",
-        "gx-service-offering:description": "An open research and science platform for University de Lleida following the FAIR guiding principles of findability, accessibility, interoperability and reusability.",
-        "gx-service-offering:webAddress": "https://udl.portal.minimal-gaia-x.eu/",
-        "gx-service-offering:serviceModel": "free web service",
-        "gx-service-offering:servicePrice": [
-          {
-            "gx-service-offering:servicePriceCurrency": "EUR",
-            "gx-service-offering:servicePriceValue": "0"
-          }
-        ],
-        "gx-service-offering:termsAndConditions": [
-          {
-            "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/imprint",
-            "gx-service-offering:hash": "ec71c2a7c9482823f83df7470da93f0447db5f6101b6124521518d610e9785f7"
-          }
-        ],
-        "gx-service-offering:gdpr": [
-          {
-            "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
-          },
-          {
-            "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
-          }
-        ],
-        "gx-service-offering:dataProtectionRegime": [
-          "GDPR2016"
-        ],
-        "gx-service-offering:dataExport": [
-          {
-            "gx-service-offering:requestType": "email",
-            "gx-service-offering:accessType": "digital",
-            "gx-service-offering:formatType": "mime/png"
-          }
-        ],
-        "gx-service-offering:dependsOn": [
-          "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
-          "https://delta-dao.com/.well-known/serviceNetlify.json",
-          "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
-        ]
-      },
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-25T23:23:23.235Z",
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:20:45.474Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:compliance.gaia-x.eu",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..eY_tFC-Hpzjp73A92KVvCryaBpaXDNApYlbZ-LGXo-dke0dMqGgL8f6SAkMI58pr-fyerbGBLgBVNdGJvX2sS0TSjdMBD7J8gZd-wrs4mzF6L9BKJLT_mPgGYrE-0QL8eHY717_ktBlg0N5lmWePO-E8HKzKp_Pn79eWJ-KiAXFX1g4w__HQ12Od-wZcFtHbdlq4jwbsB1_CWTrHvtlE_cv0TqXTKXaga4Oq1_A_PvM-c4gsjAK7rgdK2fViU68Jz12tsPub14mH5G-xDsPFUBXVSGp-irtNnAwUf45EuaVvKu56ecLPIdfZOao0LIabgJfi49B7OYK4VHp_xdGNCw"
-      }
+      "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+      "gx-service-offering:name": "UDL Science and Research Portal",
+      "gx-service-offering:description": "An open research and science platform for University de Lleida following the FAIR guiding principles of findability, accessibility, interoperability and reusability.",
+      "gx-service-offering:webAddress": "https://udl.portal.minimal-gaia-x.eu/",
+      "gx-service-offering:serviceModel": "free web service",
+      "gx-service-offering:servicePrice": [
+        {
+          "gx-service-offering:servicePriceCurrency": "EUR",
+          "gx-service-offering:servicePriceValue": "0"
+        }
+      ],
+      "gx-service-offering:termsAndConditions": [
+        {
+          "gx-service-offering:url": "https://portal.minimal-gaia-x.eu/imprint",
+          "gx-service-offering:hash": "ec71c2a7c9482823f83df7470da93f0447db5f6101b6124521518d610e9785f7"
+        }
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "gx-service-offering:imprint": "https://portal.minimal-gaia-x.eu/imprint"
+        },
+        {
+          "gx-service-offering:privacyPolicy": "https://portal.minimal-gaia-x.eu/privacy/en"
+        }
+      ],
+      "gx-service-offering:dataProtectionRegime": [
+        "GDPR2016"
+      ],
+      "gx-service-offering:dataExport": [
+        {
+          "gx-service-offering:requestType": "email",
+          "gx-service-offering:accessType": "digital",
+          "gx-service-offering:formatType": "mime/png"
+        }
+      ],
+      "gx-service-offering:dependsOn": [
+        "https://delta-dao.com/.well-known/serviceCatalogueCacheDeltaDAO.json",
+        "https://delta-dao.com/.well-known/serviceNetlify.json",
+        "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json"
+      ]
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ServiceOfferingCredentialExperimental"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664140850110",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-25T21:20:50.110Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceUniversityDeLleidaSciencePortal.json",
-        "hash": "7fb05843332e9d28d9ee3421da09971de06f1f700adc38b3cf33a3e27fc838c8"
-      },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:20:50.110Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..m-ECl2cWQZvU-WYTWh-ozOimzxe46qS57HR78p36LavLAnhnx9-HmoN2Yne_Tn49vi4WL5Q2QFif2v9RM-LAU0ZEZQBuRnu12YjhCasoqu0AcXuZfcXPltr_BTPD_aCz8TfhXd2K6vGgts9Tnym_ex4SwOGnfJ8_LsVM8b969c4UNMaCM0iQjHg8m2B-zu5xru7FMog_SmgqcGy9ojTW2k_fpF9QbBQTm7c1DoF9yV0vtqhdu4krM6iZREmGD9Q3cRSAfD4csZi79Ofn-ya8apyb9WUjwBjgJPogqPUFV6fp9LdH7jWnuh8HnwMf1vDAvT84LbCoBkJE8QUbBWDJVA",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z",
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:48:05.563Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..bpWkINDBsB5xwNKcyu9tvl3ETpA4Fya2J8dv3GdFohJfPQiSdQeTSwEWxiWUGmTkMmHQ0ynGd6KaeMddhp074CGDxgW6wJdXQggOvJlZHlBiGitZp9xnBdnCNpmY9CE5d7nFuELBIax0xdkErueqT9cU9HTJClj4oybkjxqX9Te1SSETWw_DWJGjSxleXK1lV19NT2EFzZ7k6qhfY1kASKTdm88onnU0WSVh1B2TMNxNEXhaoYmqkX1Fb0t0hZ9UMnR8a0YW2mIoNtuqQ9NUPhAkV66qLCyNXZSJgBMoi6xtDs-EZTl7CImM5LPdjXiuqxiOWRj2v8AyNkxq3jBvtw"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664524090676",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T07:48:10.676Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/serviceUniversityDeLleidaSciencePortal.json",
+      "hash": "32f2ffd59c8c3280e9b61d3945c0f27b45cf56b3939a84b35aff738fdf01865d"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:48:10.676Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..e9Gs4NzGgt2swRcbnt4W7KZpOeHdvxz7iWL-gwCljzpwG-hOnXzeEZkZcs4kkXVyQIv12DfV2P7cbgEoBHMmfhmOZWVZu3vrZxIIFpN79ZABjRt6wG2cvW4Juv-kfmslihzaxKvxmqf9CMakHPj5YM_FKinA4XBx7x2unw6nDwuJrRY1rW1evfE5MeAZKn_TJf_mtYLEc0KOJcPaveX_DAjaUP6qFjimpPstxP3ev2axD_sbqorkQnzDyc_gxI-dykpxFeh1XoUczCtPYZRrR85KUWFs-DMlRXa7ZjblCaCpAII7RkLBeOsZlL0E4Fy6uTHL_2Vk0uoFYKdVdo78BA",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
+}

@@ -1,77 +1,77 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://registry.gaia-x.eu/v2206/api/shape"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ServiceOfferingExperimental"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "id": "https://delta-dao.com/.well-known/serviceNetlify.json",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/serviceNetlify.json",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceNetlify.json",
-        "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantNetlify.json",
-        "gx-service-offering:name": "deltaDAO Netlify App",
-        "gx-service-offering:description": "Netlify CDN: A global CDN to serve web apps, built directly from Git",
-        "gx-service-offering:webAddress": "https://deltadao.netlify.app",
-        "gx-service-offering:serviceModel": "subscription",
-        "gx-service-offering:termsAndConditions": [
-          {
-            "gx-service-offering:url": "https://www.netlify.com/legal/terms-of-use",
-            "gx-service-offering:hash": "ec23647e5cf07b87cb70114e3501a78420e59b5a229f8d80b0457fc615b8f363"
-          }
-        ],
-        "gx-service-offering:gdpr": [
-          {
-            "gx-service-offering:imprint": "https://www.netlify.com/about/"
-          },
-          {
-            "gx-service-offering:privacyPolicy": "https://www.netlify.com/privacy/"
-          }
-        ],
-        "gx-service-offering:dataProtectionRegime": [
-          "GDPR2016"
-        ],
-        "gx-service-offering:dataExport": [
-          {
-            "gx-service-offering:requestType": "email",
-            "gx-service-offering:accessType": "digital",
-            "gx-service-offering:formatType": "mime/png"
-          }
-        ]
-      },
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-25T23:23:23.235Z",
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:20:26.727Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:compliance.gaia-x.eu",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..RHXmAdgzN0gN7Ugv1xDcD4xKYgjp7dwy0dYw84g-ZmwOJP4TrULInOhkcwA4AoE62tZYoOtEfm0kmR6deWwDkPCIu5D54wHpiNkF9PuntGXyUhTF56JdR5n8VlfOh8wqfJOa7C7wrGsQJI-W0B2qyTYG4jzeaFL8pG_ZDb8mva9zKtt3QPxQLU3A_hDlJL02ZsjFwfrcYfyeDbL7CZkDIHVXm2PXzYLouJpDzCzKAPul2WH1xSLXSr_rBgAgaHe5COyE6TBbB9o_AnRi5MEpxggkpevY1jQff9o4TBBC-MdKq7MrLh6K3S-b7jVJs3OCYx0bgNZJl8gICGnXaS3yDg"
-      }
+      "gx-service-offering:providedBy": "https://delta-dao.com/.well-known/participantNetlify.json",
+      "gx-service-offering:name": "deltaDAO Netlify App",
+      "gx-service-offering:description": "Netlify CDN: A global CDN to serve web apps, built directly from Git",
+      "gx-service-offering:webAddress": "https://deltadao.netlify.app",
+      "gx-service-offering:serviceModel": "subscription",
+      "gx-service-offering:termsAndConditions": [
+        {
+          "gx-service-offering:url": "https://www.netlify.com/legal/terms-of-use",
+          "gx-service-offering:hash": "ec23647e5cf07b87cb70114e3501a78420e59b5a229f8d80b0457fc615b8f363"
+        }
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "gx-service-offering:imprint": "https://www.netlify.com/about/"
+        },
+        {
+          "gx-service-offering:privacyPolicy": "https://www.netlify.com/privacy/"
+        }
+      ],
+      "gx-service-offering:dataProtectionRegime": [
+        "GDPR2016"
+      ],
+      "gx-service-offering:dataExport": [
+        {
+          "gx-service-offering:requestType": "email",
+          "gx-service-offering:accessType": "digital",
+          "gx-service-offering:formatType": "mime/png"
+        }
+      ]
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ServiceOfferingCredentialExperimental"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664140831289",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-25T21:20:31.289Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/serviceNetlify.json",
-        "hash": "1211377538af15c7847b7eca3836df2a020028e7bb5500182a114d1f0de1eaaa"
-      },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:20:31.289Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..FyMk2MRABS2AonHKkJBJoXYKQbD4jZbx1OzmLCc2mBwUqjA28BtTIot6PhA367_fOoUYi566oMVXp9a4D5ueyjI2YIWvk1TYSuQacsgS6DT5q88yinPlTeyKz7frn3O6vROtsvgnJ5zumR_JoDTQBuLGla6UkuvpIjDekA7WTTWPVTT90KO-sauQUjRBq4xUsiMqtRf5q6TwoJqj8rLeEMOgIiwzvxdJmdeW4kHL3pmf6e3YfUBufttc8Rd8QNRlR7wswG5eMeUjnmytKEpNuKlIRLyGuM5eVhbsX1RiQ1KkSNEJMBFv1CtSOtc5GdwjVMvGbbH3ZpkQLP2kr98Ppw",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z",
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:47:21.339Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..OSR5zFor4Ms2AgFtG48Yhw6CBSbjvz6WcYfDQRosKfXAcnUU66LxZOxiRlIUON42bItY5287aqGMrVz04J7cXOlubuoO90LS7SZ2GS01sXgCFuMiHjkZ1mUfdKrelOORRBye9jMVuJT3dpjILgLiRBaTei6csW1DdpACG0jen6UYgkFkQSmK7pxXplXkHXLxGAVP4thxKxOY2Bqt3ot7pnCg3qoLhniAlkedoM7qlDPYJknh4h6MfQ-Qc-rUdNHxB3sgDr6TunlMcJOdOrL3yHlJqQnq2AA9B7WLFMbHsL0ueS7Wf1lv62Loz2s_R52bda34dYWorII8IgQ4OXNPiw"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664524046569",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T07:47:26.569Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/serviceNetlify.json",
+      "hash": "de700759737d5d8141abe86873437fbb6d652b919a013fdc59b176a2b3be53c7"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:47:26.569Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..IEAK0U98xKrYmks0EC-KbtFpuk6HCnP6gI_1D7_J8UIplk15ZWSntIky4cBCU6T5wI2pLD0odX55AQeqD9oQiSEYVrh9pQojDPoIHu1Wgv8vXKL8YUPYlNkvoU0gKZ9cHKifAClxYMyuBoS24cJyoanZQjfvfm63SPnaTgRc4YyROqII9P0-5IURprnQ5ecQdBdIxunkSA6JMQF5SLkxILD5cpHnFKnHcOAyzOzs-UFBHkHvCViU_4C05feVazsyFrU4WMiCIARKhOnD9to-r0adcYwmE8R7Hplic4PRG9aGSVJe57_w6QSAk3EHLcJFouVFbfxwq55QSR_UFIQdvQ",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
+}

@@ -1,70 +1,70 @@
 {
-    "selfDescriptionCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://registry.gaia-x.eu/v2206/api/shape"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "LegalPerson"
-      ],
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantBigchainDB.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
       "id": "https://delta-dao.com/.well-known/participantBigchainDB.json",
-      "issuer": "did:web:delta-dao.com",
-      "issuanceDate": "2022-09-23T23:23:23.235Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantBigchainDB.json",
-        "gx-participant:legalName": "BigchainDB GmbH",
-        "gx-participant:website": "https://www.bigchaindb.com/",
-        "gx-participant:registrationNumber": {
-          "gx-participant:registrationNumberType": "EUID",
-          "gx-participant:registrationNumberNumber": "DEF1103R.HRB160856B"
-        },
-        "gx-participant:blockchainAccountId": "0x61DB12d8b636Cb49ea09eCa58a893dA9480E1F33",
-        "gx-participant:headquarterAddress": {
-          "gx-participant:addressCountryCode": "DE",
-          "gx-participant:addressCode": "DE-BE",
-          "gx-participant:streetAddress": "An der Kolonade 11",
-          "gx-participant:postalCode": "10117",
-          "gx-participant:locality": "Berlin"
-        },
-        "gx-participant:legalAddress": {
-          "gx-participant:addressCountryCode": "DE",
-          "gx-participant:addressCode": "DE-BE",
-          "gx-participant:streetAddress": "An der Kolonade 11",
-          "gx-participant:postalCode": "10117",
-          "gx-participant:locality": "Berlin"
-        },
-        "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+      "gx-participant:legalName": "BigchainDB GmbH",
+      "gx-participant:website": "https://www.bigchaindb.com/",
+      "gx-participant:registrationNumber": {
+        "gx-participant:registrationNumberType": "EUID",
+        "gx-participant:registrationNumberNumber": "DEF1103R.HRB160856B"
       },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:11:44.831Z",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:compliance.gaia-x.eu",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..jj92P12iej3OQX77m2WRpVBdJduWxlFELVAYHRwgCP7ZnZB8MArqoYIW0ZfbKNZKERtQOmmAWLLEBOqCdMzq1o47L2Y1BrrcKb9hxsyhYF4jbLoBtGVc3f9h2aY5oUvaX4AhksdzSqX4nwyqpn0rKmg3jSJCxo8ijxtg-0-CsjluOukqixJ4sVqyPxRqvp7cfm6-yECkUgottSQSmi8oFrSh_rpRrX_cQXJLJYJlMeX2XMeHixdLsU8tFaklP0Q2--JjQEvRSDwu2pBtv8ucfKHFCsRLV5teorJQ91Z20F2iQ8hmZ-BomlVdh7sBHv8e1rhtxSLjVR_zU1ZK42_p-g"
-      }
+      "gx-participant:blockchainAccountId": "0x61DB12d8b636Cb49ea09eCa58a893dA9480E1F33",
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-BE",
+        "gx-participant:streetAddress": "An der Kolonade 11",
+        "gx-participant:postalCode": "10117",
+        "gx-participant:locality": "Berlin"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-BE",
+        "gx-participant:streetAddress": "An der Kolonade 11",
+        "gx-participant:postalCode": "10117",
+        "gx-participant:locality": "Berlin"
+      },
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
     },
-    "complianceCredential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "ParticipantCredential"
-      ],
-      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664140309681",
-      "issuer": "did:web:compliance.lab.gaia-x.eu",
-      "issuanceDate": "2022-09-25T21:11:49.681Z",
-      "credentialSubject": {
-        "id": "https://delta-dao.com/.well-known/participantBigchainDB.json",
-        "hash": "c1e4869ad69f9525d7a5571d05d0d1060ec4faba7db1c8ebf0048221e8979099"
-      },
-      "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2022-09-25T21:11:49.681Z",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..V_rHIxM0sFXNxL-o5xeZrRegaDrI8x2lqgH_4DagvQxLRAkI5a_5FvnJDBhX9TGQylkoAVmJ3Yq8W3faExi-DDJ__lmkIrvAvhlkE-wjuV4SlB788itHiV-yvZQkFa-F57P8QfdqE4450miFVvlkjmYUba-lnXp5UgQH0yI5FEOa2K2Mm71V9l-ISTr8ldRtgs3ZmY5WSFEHqk0JLbvmhUmgisGOGZAoW9uNEGbouAbStLGFCXKe4WHgpsr8EBdtoxNw0cU87oTGy0fxPaCmi_ASv1qXQyZbHuMkHXpvAOvcxoLNwl_5dIkX8iv77g9XSGhnB-KWWL3qDbgv3XMoXQ",
-        "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
-      }
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:36:12.608Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..RsIOtG2hfwktr0ActtIc9E0LyUbE1oWdpSsSNjkIG8lhdlzvYy_CGX2916RTf9Bbm2axn3Ju-1bBPSOVNtdJogZd4kB0mRGaOpWnB3m7PIo8QDJaNY-kpXGT0KtwgeS8D1G5uJ0Il_oQJP7vVitY71h7YicT8L54NksGacReStUJst0dSTbwzT0DZrhGcI220gnPt-LvuGe6TESw-rqvEdN8ZxTOYkww_w9_3g-__uJDDvgiwnF1NTJHk9dy5ki8h9r8uHuikz9FlB7QVUQWYEF9VbUN8P_a_pRR6hiShGvfz3KSZ07wda6NjuV7e2mzxHNsR3FI-sbu5kRv7Atbnw"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664523377526",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T07:36:17.526Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantBigchainDB.json",
+      "hash": "674f2cd3a0d6088934552c34ff81578171e7b339daf444e0d5d527da5ce5d777"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T07:36:17.526Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..KoTu0HtLFYclUHCjY-i4eAyNQ1hAfBZ5l73YOxF1kqvgFWKmUgAtHOVoojZSAM8TQmh_RJPhlZV7HAM2ppo41Mi3mm0IwPhmR1nHx0RuwVQPVeeUvOLRG-vOCIXunEwYBpSHFvIZt9WMp9WLdxjF9EBe4W7WGQ1j2AU90BNjh-PEkVkEqR9eVuJ3VXE8rmSPH-NKmM5YRQPs-_rnAnqzziBGxlWq76R9VzWpUDztSBPUqza-pAPMt8paNS30QJDn0Dn-5vnQH8hbfRc_WbI2JIXUipcD6sZe3n-jqbM5NSMpSTnq3rBexRiooxi4S4ix-Xdc-ocb7NJTAKmTP4LxeA",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
     }
   }
+}
