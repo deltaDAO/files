@@ -1,0 +1,67 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participant.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-15T20:05:20.997Z",
+    "credentialSubject": {
+      "id": "did:web:delta-dao.com",
+      "gx-participant:legalName": "Staatsbibliothek zu Berlin",
+      "gx-participant:registrationNumber": {
+        "gx-participant:registrationNumberType": "vatID",
+        "gx-participant:registrationNumberNumber": "DE338204900"
+      },
+      "gx-participant:blockchainAccountId": "",
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-BE",
+        "gx-participant:streetAddress": "Unter den Linden 8",
+        "gx-participant:postalCode": "10117"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-BE",
+        "gx-participant:streetAddress": "Unter den Linden 8",
+        "gx-participant:postalCode": "10117"
+      },
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T13:59:54.747Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Wh5_wEarMnoYjwJDYNdIIPhHfzHJcHFFUV8792r7ZRsGy0EoGdd41rew9-qCEvFzct8AphZkqzmqroWrGLAjkuvARKPicfnDHqCjySg9kYGHNl8J5LHdPhZzU9thnm2CADoqemCRBIzpljJXRMEjt4hmUU1ISXFQt58k_Nf_57D3zCrd-yJgaReUMB93mE-K-Lz2Vo-4QTph51rt43mILClDHymrzIs-KFa0k4JTlzFF8gG0neXmE4zmPvzUogFmwLALhNw9a5pucgfksSm9bEqMK8y3kxNt0vsnsTv4XPvjMEzmcPrzvgmD2sokyu8bBvL53pJ3_tKmB5VlvcQy_Q"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664546400098",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T14:00:00.098Z",
+    "credentialSubject": {
+      "id": "did:web:delta-dao.com",
+      "hash": "818b2964a066ff061ca4d7065ef04c9b5cada7154edb80c98e59b6c3c7ca7bad"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T14:00:00.098Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..cqudVKEAFMsM5dKipIhUFaEQcZ2yx_elgZqnTzb1Ck5z382v3o1jWF6DwUU-K-XDtHzaW0Yc49ynuJrGpmtHS7wUhzEPcJN0d2vK1-ACzEI3Ri9uLL3PmV_Imz44mgzboXxLt60P_0TX5kIehyYAvvQgVVc3ZDqI3-HpuXSfgAbJmHo5-Bly-4eA72PsXW4EOIyV_FudYX7Jv_yXaWWlvGe7bDGW_mDhZQq1WvZfR2H_FKQCdIIzNOCwTah04tDw1lOSLx3E4_uXztbmWFmVKjgqQZCTmQSC6l3VEILkkdTdpgLXmJuVpoM7Bb6Bx4pr2NeFU-zGTp51l3Yq6vfK4A",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}
