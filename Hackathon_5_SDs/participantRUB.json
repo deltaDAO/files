@@ -1,0 +1,67 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participant.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-15T20:05:20.997Z",
+    "credentialSubject": {
+      "id": "did:web:delta-dao.com",
+      "gx-participant:legalName": "Ruhr-Universität Bochum",
+      "gx-participant:registrationNumber": {
+        "gx-participant:registrationNumberType": "vatID",
+        "gx-participant:registrationNumberNumber": "DE 127 056 261"
+      },
+      "gx-participant:blockchainAccountId": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52",
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-NW",
+        "gx-participant:streetAddress": "Universitätsstraße 150",
+        "gx-participant:postalCode": "44801"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-NW",
+        "gx-participant:streetAddress": "Universitätsstraße 150",
+        "gx-participant:postalCode": "44801"
+      },
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-10-06T10:38:10.278Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..AMtytXvwGuXa_n9PV-cYfBSIr16qzCvIm6ypFOwmGS-M7zFNOcMTnrQ6SXFguINskFepiqdIsLwXkKpQxqgrzjbEMDGGVcV_qFPKxCcIho-RgnyoXmAW8wWTt8hX25f7gIKcjhO7yH3cFowNEEOmWRfSdFBpkD7CnHT8acRQOkFj3F1eJC2IWV0HOOsnLE_CoCKzMktAYpH9d-yrbUYpQI9BmKD2NvsHjWKO01bXMX7hRiJn1SG8Y-tPPZ8IksONsluL_AR2HIQnKx2u4kgqMj4HhAuwb8mPtwt18oyhUkhZBcLZswMpEEHh7j8FxkwhB9Nn-EVADmW0wNZ9o9g1NQ"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1665052695678",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-10-06T10:38:15.678Z",
+    "credentialSubject": {
+      "id": "did:web:delta-dao.com",
+      "hash": "f84bd2bad2e847e9f21b40b879bdad00fd21b841a740f89cd3d63699427fbe02"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-10-06T10:38:15.678Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Mnqu1y86qdDi5DHaFVQ8IkMX_w9DLHRrfSWGmB9cjET_xJrtoInDEK4KUhm1Aoa4KBQVGnWbhDat0acAKzk9FaHk8FhhHx8u0F90nAgPxaY8JhOwx5nWHih_mXkgFUiez4YVlL5vWMqHeKYzZRcMqhK71zSsPM0J9EmYF9Ceam5NWmsWIt3fqZsYB7b5WiPQShBrbjASLxXdQ91jaPq-FJajI-VO1bnpAbfy-v06y3Wm1VM95TEWEMP_k8aN1uSfs28MiOC2uFvsPgM5HHgVABN8RmpDUADQuMLxGt0-DlG1cAZAmovn4OVlvj7NIaHyGHvFw7tLuMaRxuNmwEW1DQ",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}
