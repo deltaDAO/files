@@ -1,0 +1,91 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.lab.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "id": "https://raw.githubusercontent.com/deltaDAO/files/main/Hackathon_5_SDs/serviceBIMKIT.json",
+    "credentialSubject": {
+      "id": "did:op:b77BbfDFBFcebB6f966b440eB2066fB3f226B9a0",
+      "gx-service-offering:providedBy": "https://raw.githubusercontent.com/deltaDAO/files/main/Hackathon_5_SDs/participantRUB.json",
+      "gx-service-offering:name": "BIMKIT Text localization in architectural floor plans data set",
+      "gx-service-offering:description": "his data service offering consists of architectural floor plans data.",
+      "gx-service-offering:serviceModel": "subscription",
+      "gx-service-offering:servicePrice": [
+        {
+          "gx-service-offering:servicePriceCurrency": "Ocean",
+          "gx-service-offering:servicePriceValue": "1"
+        }
+      ],
+      "gx-service-offering:subscriptionDuration": "86400",
+      "gx-service-offering:Policies": "computeToDataOnly",
+      "gx-service-offering:webAddress": "https://portal.minimal-gaia-x.eu/asset/did:op:b77BbfDFBFcebB6f966b440eB2066fB3f226B9a0",
+      "gx-service-offering:termsAndConditions": [
+        {
+          "gx-service-offering:url": "https://creativecommons.org/licenses/by/4.0/",
+          "gx-service-offering:hash": "2edd334433cb3ff9c2904b194653d714cf42398e6af750fb44c65679a9fce6cc"
+        }
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "gx-service-offering:imprint": "https://www.delta-dao.com/imprint/"
+        },
+        {
+          "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy/"
+        }
+      ],
+      "gx-service-offering:dependsOn": [
+        "https://www.delta-dao.com/.well-known/serviceOperatorEngine.json",
+        "https://www.delta-dao.com/.well-known/serviceOperatorService.json",
+        "https://www.delta-dao.com/.well-known/serviceAccessController.json",
+        "https://delta-dao.com/.well-known/serviceGaiaxDLTNetwork.json",
+        "https://delta-dao.com/.well-known/serviceS3Bucket.json",
+        "https://delta-dao.com/.well-known/serviceK8sClusterDeltaDAO.json"
+      ],
+      "gx-service-offering:dataProtectionRegime": [
+        "GDPR2016"
+      ],
+      "gx-service-offering:dataExport": {
+        "gx-service-offering:requestType": "email",
+        "gx-service-offering:accessType": "digital",
+        "gx-service-offering:formatType": "mime/png"
+      }
+    },
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-25T23:23:23.235Z",
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-10-06T12:10:28.916Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..aqLpqY2LgFbWtZxfaoGazxITzdcBM9VDgLnzrNa-oKKmFDz7qLdb4n4GOkzXZAUf0ZzelfVbuyVJD8rTV5ZwVjykAiCc4hNrVzJAv5v5Ux9QTSSuaZWrJhH-UhqhRmI5PS-KJMsQw9QuKhv91UKLtOdPaqPB8VDX5WTzq7A7qoQa2PkmQDO3enN2Vzgs-PF-hKJkJ1CvfqNZioTw34aziGYy0Vx5JZtlNYS3oofv9GEfKPkhmeA0ezL-wH3G16MX4K_1YoHA4wLI267_x0YH69Wjqkk6x9vB01-_70G31KLg0k0fbPpMoI2KJUhG9hWuvmwFe2YfurOBD2AkuCLpvQ"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1665058234160",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-10-06T12:10:34.160Z",
+    "credentialSubject": {
+      "id": "did:op:b77BbfDFBFcebB6f966b440eB2066fB3f226B9a0",
+      "hash": "404b834b24cd8d601c7cd1d7a9ee60c09a06757736990ca1c64829ace85870b3"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-10-06T12:10:34.160Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ZbQbhy4j9x8qT3FufH5C53AjHXhm7yN1wzpl7Xgi5sfK3uCARoJbuScXLYB8C7YlbiN8FL3hPzqq4qd8Zx1iBm90uGeS2KR9V-qNh5U9WIm6rh3t8j3Qfif8Sac2kqzJVNkjUITRkTESuk-2mOkLzbbc3FMSAyVgH0pJ5pIeOtxdeNCm8xOZgr6FASR0TFT4VLTTivLN1pSUTHXmP09wnYjdFc0afUoC1iCVF_QjxiLx0P57fsJhT9AD_ufsTMFE7SxQjHffaS8m5d-bG0TTM-gMXDqVRAv9cARjUnADbELVE0asvU0txhwO-vu0s9dExT46YWziUdCaAW0AHnM_xQ",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}
