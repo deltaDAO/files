@@ -28,23 +28,27 @@ package "DLT Layer" {
   [Contracting Service]-down->[Data Exchange Logging]
   [Data Exchange Logging] -down-> [Validator Nodes]
   [Federated Catalogue] -down-> [Smart Contract Templates]
+  [Gaia-X Registry Node 2]
 }
 package "Gaia-X Compliance" {
   [Gaia-X Verifiers] -down-> [Policy Agent]
   [Gaia-X Verifiers]-right->[Gaia-X Issuer]
-  [Gaia-X Registry] -right-> [Gaia-X Compliance Service]
+  [Gaia-X Registry Node 1] -right-> [Gaia-X Compliance Service]
 }
 
-Consumer -d-> Portals : consume
-Metamask -r-> Portals
-Metamask -d-> RPC
-RPC -r-> [Validator Nodes]
-Portals -r-> [SSI Wallet]
-[SSI Wallet] -r-> [Access Controller Provider]
-[SSI Wallet] -r-> Portals
-Portals <-d-> [Catalogue Cache]
-[Federated Catalogue] <-d-> [Catalogue Cache]
-[Access Controller Provider] <-d-> [Gaia-X Verifiers]
-[SSI Wallet] -d-> [Gaia-X Verifiers]
+Consumer --> Portals : consume
+Portals -> Metamask
+Metamask --> RPC
+[Validator Nodes] -> RPC
+Portals -> [SSI Wallet]
+[SSI Wallet] -> [Access Controller Provider]
+[SSI Wallet] -> Portals
+Portals --> [Catalogue Cache]
+[Federated Catalogue] --> [Catalogue Cache]
+[Access Controller Provider] --> [Gaia-X Verifiers]
+[SSI Wallet] --> [Gaia-X Verifiers]
+[Gaia-X Registry Node 1] -> [Gaia-X Registry Node 2]
+[Compute Services] <--> [Contracting Service]
+
 
 @enduml
