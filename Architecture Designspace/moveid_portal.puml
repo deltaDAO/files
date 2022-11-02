@@ -16,11 +16,11 @@ package "Authentication" {
   [SSI Wallet]
 }
 package "API Layer" {
-  [APIs (Publish, Consumes)] - [Access Controller Provider]
+  [APIs (Publish, Consume)] - [Access Controller Provider]
   [Catalogue Cache]
 }
 package "Storage Layer" {
-  [Storage Services] - [Compute Services]
+  [Storage Services] <- [Compute Services]
 
 }
 package "DLT Layer" {
@@ -45,12 +45,15 @@ Metamask --> RPC
 Portals -> [SSI Wallet]
 [SSI Wallet] -> [Access Controller Provider]
 [SSI Wallet] -> Portals
-Portals --> [Catalogue Cache]
-[Federated Catalogue] <-- [Catalogue Cache]
-[Access Controller Provider]-->[Compute Services]
+Portals <-- [Catalogue Cache]
+Portals --> [APIs (Publish, Consume)]
+[APIs (Publish, Consume)] --> [Federated Catalogue]
+[Federated Catalogue] --> [Catalogue Cache]
+[Access Controller Provider]->[Compute Services]
+[Access Controller Provider]-->[Federated Catalogue]
 [Access Controller Provider] --> [Gaia-X Verifiers]
 [SSI Wallet] --> [Gaia-X Verifiers]
-[Gaia-X Registry Node 1] -> [Gaia-X Registry Node 2]
+[Gaia-X Registry Node 1] <-> [Gaia-X Registry Node 2]
 [Compute Services] <--> [Contracting Service]
 
 
