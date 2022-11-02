@@ -1,7 +1,7 @@
 @startuml
 top to bottom direction
 package "Participant" {
-  [Consumer]
+  [Consumer] - [Publisher]
 }
 package "Frontend Layer" {
   [Portals]
@@ -21,30 +21,33 @@ package "API Layer" {
 }
 package "Storage Layer" {
   [Storage Services] - [Compute Services]
-[Access Controller Provider]-d->[Compute Services]
+
 }
 package "DLT Layer" {
   [Contracting Service] - [Federated Catalogue]
-  [Contracting Service]-down->[Data Exchange Logging]
-  [Data Exchange Logging] -down-> [Validator Nodes]
-  [Federated Catalogue] -down-> [Smart Contract Templates]
+  [Contracting Service]-->[Data Exchange Logging]
+  [Data Exchange Logging] --> [Validator Nodes]
+  [Federated Catalogue] --> [Smart Contract Templates]
+  [Contracting Service] --> [Smart Contract Templates]
   [Gaia-X Registry Node 2]
 }
 package "Gaia-X Compliance" {
-  [Gaia-X Verifiers] -down-> [Policy Agent]
-  [Gaia-X Verifiers]-right->[Gaia-X Issuer]
-  [Gaia-X Registry Node 1] -right-> [Gaia-X Compliance Service]
+  [Gaia-X Compliance Service] <-> [Gaia-X Registry Node 1]  
+  [Gaia-X Verifiers] --> [Policy Agent]
+  [Gaia-X Verifiers]->[Gaia-X Issuer]
 }
 
 Consumer --> Portals : consume
+Publisher --> Portals: publish
 Portals -> Metamask
 Metamask --> RPC
-[Validator Nodes] -> RPC
+[Validator Nodes] <- RPC
 Portals -> [SSI Wallet]
 [SSI Wallet] -> [Access Controller Provider]
 [SSI Wallet] -> Portals
 Portals --> [Catalogue Cache]
-[Federated Catalogue] --> [Catalogue Cache]
+[Federated Catalogue] <-- [Catalogue Cache]
+[Access Controller Provider]-->[Compute Services]
 [Access Controller Provider] --> [Gaia-X Verifiers]
 [SSI Wallet] --> [Gaia-X Verifiers]
 [Gaia-X Registry Node 1] -> [Gaia-X Registry Node 2]
