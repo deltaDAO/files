@@ -1,0 +1,80 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://registry.gaia-x.eu/v2206/api/shape"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "id": "https://compliance.gaia-x.eu/.well-known/serviceComplianceService.json",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/serviceComplianceService.json",
+      "gx-service-offering:providedBy": "https://raw.githubusercontent.com/deltaDAO/files/main/Hackathon_5_SDs/participantSBB.json",
+      "gx-service-offering:name": "Text Analysis Data Set - Berlin State Library",
+      "gx-service-offering:description": "Text Analysis Data Set - Berlin State Library",
+      "gx-service-offering:webAddress": "https://portal.minimal-gaia-x.eu/asset/did:op:7cb4Fd9E37061393A548809891805c70Af8d044F",
+      "gx-service-offering:termsAndConditions": [
+        {
+          "gx-service-offering:url": "https://compliance.gaia-x.eu/terms",
+          "gx-service-offering:hash": "myrandomhash"
+        }
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "gx-service-offering:imprint": "https://gaia-x.eu/imprint/"
+        },
+        {
+          "gx-service-offering:privacyPolicy": "https://gaia-x.eu/privacy-policy/"
+        }
+      ],
+      "gx-service-offering:dataProtectionRegime": [
+        "GDPR2016"
+      ],
+      "gx-service-offering:dataExport": [
+        {
+          "gx-service-offering:requestType": "email",
+          "gx-service-offering:accessType": "digital",
+          "gx-service-offering:formatType": "mime/png"
+        }
+      ],
+      "gx-service-offering:dependsOn": [
+        "https://compliance.gaia-x.eu/.well-known/serviceManagedPostgreSQLOVH.json",
+        "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json"
+      ]
+    },
+    "issuer": "did:web:compliance.lab.gaia-x.eu",
+    "issuanceDate": "2022-09-22T15:03:02.446Z",
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T14:26:36.623Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..JBv2ZCEUXce25mB7R1EUW4hyckTKJb96TuzaIhcgALJDcguUF8RuZah4hR1FVjLadUZWZKJFRsY2tFvFgdPkm2frdY5lBIeBAvumzJB2B54iSMTe9OcZK-9AVP0kMpz2-kCYflpTESPoie7PWuR-bAeJocw6jV6VW_v4TcDBfItO0SEO88yFy1jZB6oDC-K8yfVywNRYqG7hoU7L8ngFXwRrDq1jlVbaAIsjaunwGJa9aoAYo0YAHGorb45wUGeACA29VTvui-IOzpMfhMg3nGo_86o77xwpBxEBOW-oKlRsQYz0divv49xst_N6woHrAX03krGKbAHxO7r3axngrw"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1664548002034",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-09-30T14:26:42.034Z",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/serviceComplianceService.json",
+      "hash": "09a9dccbd7b8f31f535a40c8c5ce1f1436407ae1026fe72dcd665d1801bb3173"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-30T14:26:42.034Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..uSDG_FJMkCzjUUXKG9cHgtlUscSOnnEgc4gO1Hp6B3rUbX8UqiI11SaDF939ucksj64PQCQrbjxclUwNtZxOo8F86-fvi2nkrntNjlRzio64Gu6zeRQBNdRRtn-kGmnwcw1zk4pBqlikTkevMHTQSPJ9qQpiWsfQDOFf7Y9O6ks43KhQbvPmx6SzRGiKqs64maU8r7Vm6izt08f_R2GNvWQP6wzL2rjE9vf9j3b7OEi83FKdcAxjCBE7AaUTEHF3T9aY989O7CXM7KIXwjUAR1VftTcsLyW8gzgW06TUdjcrIzXyYcRoOiT-qrHw1SfzsIl_Z59gDztqvwL1J3oJlA",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}
