@@ -1,28 +1,35 @@
 @startuml
 top to bottom direction
 
-Participant <-- ServiceProvider
-Participant <-- Consumer
-Participant <-- Federator
+together {
+actor GXParticipant
+actor GXServiceProvider
+actor GXConsumer
+actor GXFederator
+}
+
+GXParticipant - GXServiceProvider
+GXParticipant - GXConsumer
+GXParticipant - GXFederator
 
 package "Participants" {
   [Trust Anchor]
   [Gaia-X AISBL]
 }
-package "Frontend Layer" {
+package "FrontendLayer" {
   [Portals]
-  [Exchange Logging Explorer]
-  [Monitoring Frontends]
+  [Catalogue]
+  [ExchangeLogging]
+  [Monitoring]
 }
-package "RPC Module" {
+package "RPCModules" {
   [RPC]
 }
 package "Authentication" {
-  [SSI Wallet]
-  [Web3 Wallet]
-  [VC Storage]
+  [SSIWallet]
+  [Web3Wallet]
 }
-package "API Layer" {
+package "APILayer" {
   [APIs (Publish, Consume)] - [Access Controller Provider]
   [Catalogue Cache]
 }
@@ -30,7 +37,7 @@ package "Storage Layer" {
   [Storage Services] <- [Compute Services]
 
 }
-package "DLT Layer" {
+package "DLTLayer" {
   [Contracting Service] - [Federated Catalogue]
   [Contracting Service]-->[Data Exchange Logging]
   [Data Exchange Logging] --> [Validator Nodes]
@@ -44,20 +51,23 @@ package "Gaia-X Compliance" {
   [Gaia-X Verifiers]->[Gaia-X Issuer]
 }
 
-Consumer --> Portals : consume
-ServiceProvider --> Portals: publish
-Portals -> Metamask
-Metamask --> RPC
-[Validator Nodes] <- RPC
-Portals -> [SSI Wallet]
-[SSI Wallet] -> [Access Controller Provider]
-[SSI Wallet] -> Portals
+GXConsumer --> Portals : consume
+GXServiceProvider --> Portals: publish
+GXFederator --> Portals: provide
+GXFederator --> DLTLayer: provide
+GXFederator --> APILayer: provide
+[Web3Wallet] --> RPCModules
+[Web3Wallet] --> FrontendLayer
+[Validator Nodes] <- RPCModules
+Portals -> Authentication
+Authentication -> [Access Controller Provider]
+Authentication -> FrontendLayer
 Portals <-- [Catalogue Cache]
 Portals --> [APIs (Publish, Consume)]
 [APIs (Publish, Consume)] --> [Federated Catalogue]
 [Federated Catalogue] --> [Catalogue Cache]
 [Access Controller Provider]->[Compute Services]
-[Access Controller Provider]-->[Federated Catalogue]
+[Access Controller Provider]-->[Federated Cata‚logue]
 [Access Controller Provider] --> [Gaia-X Verifiers]
 [SSI Wallet] --> [Gaia-X Verifiers]
 [Gaia-X Registry Node 1] <-> [Gaia-X Registry Node 2]
