@@ -1,19 +1,26 @@
 @startuml
 top to bottom direction
-package "Participant" {
-  [Consumer] - [Publisher]
+
+Participant <-- ServiceProvider
+Participant <-- Consumer
+Participant <-- Federator
+
+package "Participants" {
+  [Trust Anchor]
+  [Gaia-X AISBL]
 }
 package "Frontend Layer" {
   [Portals]
-}
-package "Web3 Wallet" {
-  [Metamask]
+  [Exchange Logging Explorer]
+  [Monitoring Frontends]
 }
 package "RPC Module" {
   [RPC]
 }
 package "Authentication" {
   [SSI Wallet]
+  [Web3 Wallet]
+  [VC Storage]
 }
 package "API Layer" {
   [APIs (Publish, Consume)] - [Access Controller Provider]
@@ -27,9 +34,9 @@ package "DLT Layer" {
   [Contracting Service] - [Federated Catalogue]
   [Contracting Service]-->[Data Exchange Logging]
   [Data Exchange Logging] --> [Validator Nodes]
-  [Federated Catalogue] --> [Smart Contract Templates]
   [Contracting Service] --> [Smart Contract Templates]
-  [Gaia-X Registry Node 2]
+  [Gaia-X Registry] --> [Compliance Service]
+  [Federated Catalogue]
 }
 package "Gaia-X Compliance" {
   [Gaia-X Compliance Service] <-> [Gaia-X Registry Node 1]  
@@ -38,7 +45,7 @@ package "Gaia-X Compliance" {
 }
 
 Consumer --> Portals : consume
-Publisher --> Portals: publish
+ServiceProvider --> Portals: publish
 Portals -> Metamask
 Metamask --> RPC
 [Validator Nodes] <- RPC
@@ -55,6 +62,5 @@ Portals --> [APIs (Publish, Consume)]
 [SSI Wallet] --> [Gaia-X Verifiers]
 [Gaia-X Registry Node 1] <-> [Gaia-X Registry Node 2]
 [Compute Services] <--> [Contracting Service]
-
 
 @enduml

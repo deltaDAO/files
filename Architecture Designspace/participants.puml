@@ -1,0 +1,9 @@
+@startuml
+group users
+    note over firstgroup
+        comment text
+    end note
+    actor participant1
+    actor participant2 
+end group
+@enduml
