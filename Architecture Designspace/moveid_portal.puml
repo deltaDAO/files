@@ -46,9 +46,11 @@ package "DLTLayer" {
   [Federated Catalogue]
 }
 package "Gaia-X Compliance" {
-  [Gaia-X Compliance Service] <-> [Gaia-X Registry Node 1]  
-  [Gaia-X Verifiers] --> [Policy Agent]
-  [Gaia-X Verifiers]->[Gaia-X Issuer]
+  [Gaia-X Compliance Service]
+  [Gaia-X Issuers]
+  [Gaia-X Registry]  
+  [Gaia-X Verifiers] 
+  [Policy Agent]
 }
 
 GXConsumer --> Portals : consume
@@ -67,10 +69,10 @@ Portals --> [APIs (Publish, Consume)]
 [APIs (Publish, Consume)] --> [Federated Catalogue]
 [Federated Catalogue] --> [Catalogue Cache]
 [Access Controller Provider]->[Compute Services]
-[Access Controller Provider]-->[Federated Cata‚logue]
+[Access Controller Provider]-->[Federated Catalogue]
 [Access Controller Provider] --> [Gaia-X Verifiers]
-[SSI Wallet] --> [Gaia-X Verifiers]
-[Gaia-X Registry Node 1] <-> [Gaia-X Registry Node 2]
+[SSIWallet] --> [Gaia-X Verifiers]
+[SSIWallet] --> [Gaia-X Issuers]
 [Compute Services] <--> [Contracting Service]
 
 @enduml
