@@ -66,11 +66,11 @@ async function computeResult(filepath, file_string) {
         [filepath]: quantities
     }
 
-    fs.appendFileSync(`${outputFolder}/results.json`, 'Product Quantity Computation Results: \n\n')
-    fs.appendFileSync(`${outputFolder}/results.json`, `${JSON.stringify(result)} \n\n`)
+    fs.appendFileSync(`${outputFolder}/results.txt`, 'Product Quantity Computation Results: \n\n')
+    fs.appendFileSync(`${outputFolder}/results.txt`, `${JSON.stringify(result)} \n\n`)
     
     for (let key in quantities) {
-      fs.appendFileSync(`${outputFolder}/results.json`, `${quantities[key]} units of product ${key} ordered. \n`)
+      fs.appendFileSync(`${outputFolder}/results.txt`, `${quantities[key]} units of product ${key} ordered. \n`)
     }
 
     console.log(`Added quantities for ${filepath} to results`)
@@ -100,7 +100,7 @@ function printIntro() {
   console.log("                  delta-dao.com\n")   
   console.log("                       ***\n")
   console.log("=================================================")
-  console.log(`Results will be written in results.json\n`)
+  console.log(`Results will be written in results.txt\n`)
 }
 
 function printOutro() {
