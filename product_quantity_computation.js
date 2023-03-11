@@ -66,7 +66,13 @@ async function computeResult(filepath, file_string) {
         [filepath]: quantities
     }
 
-    fs.appendFileSync(`${outputFolder}/results.json`, JSON.stringify(result))
+    fs.appendFileSync(`${outputFolder}/results.json`, 'Product Quantity Computation Results: \n\n')
+    fs.appendFileSync(`${outputFolder}/results.json`, `${JSON.stringify(result)} \n\n`)
+    
+    for (let key in quantities) {
+      fs.appendFileSync(`${outputFolder}/results.json`, `${quantities[key]} units of product ${key} ordered. \n`)
+    }
+
     console.log(`Added quantities for ${filepath} to results`)
   } catch(err) {
     console.error("Could not compute given file:")
