@@ -16,7 +16,7 @@ function copyFirstPdf(directory) {
 
         if (fileStat.isDirectory()) {
             copyFirstPdf(absolutePath); // recursion
-        } else if (path.extname(file) === '.pdf' && !firstPdfFound) {
+        } else if (file === '0' && !firstPdfFound) {
             const destinationFile = path.join(destinationDirectory, newFileName);
             fs.copyFileSync(absolutePath, destinationFile);
             console.log(`Successfully created ${destinationFile}`);
