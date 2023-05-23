@@ -1,5 +1,6 @@
 {
     "id": "did:xxxxxxx",
+    "gx:serviceOffering:credentialURL": "https://delta-dao.com/.well-known/serviceBatteryPackProductionData.json",
     "type": "gx:ServiceOffering",
     "gx:providedBy": {
         "id": "did:web:delta-dao.com"
@@ -7,6 +8,7 @@
     "gx:maintainedBy": {
         "id": "did:web:delta-dao.com"
     },
+    "gx:serviceOffering:ownerCredentialURL": "https://delta-dao.com/.well-known/participant.json",
     "gx:serviceOffering:ownerBlockchainAccountId": "xxxxxx",
     "gx:serviceOffering:name": "xxxxx",
     "gx:serviceOffering:type": "dataset",
