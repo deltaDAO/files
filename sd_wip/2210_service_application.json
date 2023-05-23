@@ -1,0 +1,57 @@
+{
+    "id": "did:xxxxxxx",
+    "type": "gx:ServiceOffering",
+    "gx:providedBy": {
+        "id": "did:web:delta-dao.com"
+    },
+    "gx:maintainedBy": {
+        "id": "did:web:delta-dao.com"
+    },
+    "gx:serviceOffering:ownerBlockchainAccountId": "xxxxxx",
+    "gx:serviceOffering:name": "xxxxx",
+    "gx:serviceOffering:type": "dataset",
+    "gx:serviceOffering:description": "xxxxxxxx",
+    "gx:serviceOffering:webAddress": "https://v4.minimal-gaia-x.eu/asset/xxxxxxxx",
+    "gx:serviceOffering:serviceModel": "subscription",
+    "gx:serviceOffering:subscriptionDuration": "86400",
+    "gx:serviceOffering:blockchainNetwork": [
+        {
+            "gx:blockchainName": "Polygon Mainnet",
+            "gx:blockchainId": "137"
+        }
+    ],
+    "gx:serviceOffering:settlement": [
+        {
+            "gx:serviceOffering:currencyName": "EUROe",
+            "gx:serviceOffering:currencyTokenAddress": "xxxxxx",
+            "gx:serviceOffering:currencyAmount": "10"
+        }
+    ],
+    "gx:policy": "ComputeToDataOnly",
+    "gx:serviceOffering:nftAddress": "xxxxxxx",
+    "gx:serviceOffering:accessTokenName": "Gaia-X Access Token",
+    "gx:serviceOffering:accessTokenAddress": "xxxxxxxx",
+    "gx:serviceOffering:accessTokenSymbol": "GXAT",
+    "gx:serviceOffering:serviceEndpoint": "https://provider.v4.genx.delta-dao.com",
+    "gx:dataAccountExport": {
+        "gx:requestType": "email",
+        "gx:accessType": "digital",
+        "gx:formatType": "mime/png"
+    },
+    "gx:serviceOffering:gdpr": [
+        {
+            "gx:serviceOffering:imprint": "https://www.delta-dao.com/imprint/"
+        },
+        {
+            "gx:serviceOffering:privacyPolicy": "https://www.delta-dao.com/privacy/"
+        }
+    ],
+    "gx:serviceOffering:dataProtectionRegime": [
+        "GDPR2016"
+    ],
+    "gx:termsAndConditions": {
+        "gx:URL": "https://v4.minimal-gaia-x.eu/terms",
+        "gx:hash": "e95f00613db1671183bfa8e46fc7fea01727f3fef71c19959c926569da054e0e"
+    },
+    "gx-terms-and-conditions:gaiaxTermsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+}
