@@ -1,35 +1,33 @@
-const fs = require('fs')
-const path = require('path')
+const fs = require('fs');
+const path = require('path');
 
-/*
-  Copy and rename the first pdf found in the input folder
-*/
-
-const sourceDirectory = '/data/inputs' // replace with your source directory
-const destinationDirectory = '/data/outputs' // replace with your destination directory
+const sourceDirectory = '/data/inputs'
+const destinationDirectory = '/data/outputs'
 const newFileName = 'carbon_footprint.pdf'
 
-let files
-try {
-  files = fs.readdirSync(sourceDirectory)
-} catch (err) {
-  console.error('An error occurred:', err)
-  return
+let firstPdfFound = false;
+
+function copyFirstPdf(directory) {
+    const files = fs.readdirSync(directory);
+    
+    for (const file of files) {
+        const absolutePath = path.join(directory, file);
+        const fileStat = fs.statSync(absolutePath);
+
+        if (fileStat.isDirectory()) {
+            copyFirstPdf(absolutePath); // recursion
+        } else if (path.extname(file) === '.pdf' && !firstPdfFound) {
+            const destinationFile = path.join(destinationDirectory, newFileName);
+            fs.copyFileSync(absolutePath, destinationFile);
+            console.log(`Successfully created ${destinationFile}`);
+            firstPdfFound = true;
+            break;
+        }
+    }
 }
 
-// copy first pdf
-for (const file of files) {
-  if (path.extname(file) === '.pdf') {
-    const sourceFile = path.join(sourceDirectory, file)
-    const destinationFile = path.join(destinationDirectory, newFileName)
-
-    try {
-      fs.copyFileSync(sourceFile, destinationFile)
-      console.log(`Successfully created ${destinationFile}`)
-    } catch (err) {
-      console.error(`Error occurred while creating ${destinationFile}`, err)
-    }
-
-    break
-  }
+try {
+    copyFirstPdf(sourceDirectory);
+} catch (err) {
+    console.error('An error occurred:', err);
 }
