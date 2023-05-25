@@ -76,7 +76,7 @@ Capitalised terms shall have the meaning given to them in this Agreement; and:
 
 **"Third-Party Content"** means Data Service Offerings published by other parties but the Customer.
 
-**"Website"** means the website at https://market.delta-dao.com/ (and any successor or related site designated by deltaDAO), as may be updated by deltaDAO from time to time.
+**"Website"** means the websites at https://market.delta-dao.com/, https://v4.minimal-gaia-x.eu/, https://euprogigant.portal.minimal-gaia-x.eu/, https://portal.moveid.eu/, https://marketplace.future-mobility-alliance.org/, https://gaia-x.portal.peaq.network/, https://sbb.portal.minimal-gaia-x.eu/, https://udl.portal.minimal-gaia-x.eu/, and https://oval.pepro.io/ (and any successor or related site designated by deltaDAO), as may be updated by deltaDAO from time to time.
 
 **1.2 Interpretation**  
 **1.1.1** Unless specified otherwise, these Terms shall be construed as follows:
