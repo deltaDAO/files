@@ -4,6 +4,15 @@ const path = require('path');
 // Path to the ddos directory
 const ddosDir = '/data/ddos/';
 
+// Read and log the content of algoCustomData.json
+try {
+    const algoCustomData = fs.readFileSync('/data/inputs/algoCustomData.json', 'utf8');
+    console.log(`Content of AlgoCustomData:`, algoCustomData);
+} catch (err) {
+    console.error('Error reading algoCustomData.json:', err);
+}
+
+// Check if the ddos directory exists
 if (fs.existsSync(ddosDir)) {
     // List all files in the directory
     const files = fs.readdirSync(ddosDir);
